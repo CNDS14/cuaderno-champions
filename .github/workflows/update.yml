@@ -6,8 +6,9 @@ name: Actualizar datos
 # Worker de Cloudflare, que la página consulta directamente.
 on:
   schedule:
-    # martes y miércoles, ventana de partidos (16:00–23:00 UTC), cada 10 min
-    - cron: "*/10 16-23 * * 2,3"
+    # martes y miercoles, ventana de partidos (16:00-23:00 UTC), cada 5 min
+    # (5 es el minimo que permite GitHub; suele retrasarse algo mas)
+    - cron: "*/5 16-23 * * 2,3"
     # todos los días a las 13:00 UTC (8:00 CDMX): tabla, cuotas, calendario
     - cron: "0 13 * * *"
   workflow_dispatch:        # botón manual en la pestaña Actions
@@ -37,7 +38,7 @@ jobs:
           SEASON: ${{ vars.SEASON }}
         # --full solo en la corrida diaria: gasta una petición por partido
         run: |
-          if [ "${{ github.event.schedule }}" = "*/10 16-23 * * 2,3" ]; then
+          if [ "${{ github.event.schedule }}" = "*/5 16-23 * * 2,3" ]; then
             node scripts/fetch-data.mjs
           else
             node scripts/fetch-data.mjs --full
