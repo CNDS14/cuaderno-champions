@@ -220,6 +220,7 @@ a{color:var(--accent)}
 
 <div class="wrap">
   <section id="v-hoy"></section>
+  <section id="v-picks" hidden></section>
   <section id="v-apuestas" hidden></section>
   <section id="v-tabla" hidden></section>
   <section id="v-stats" hidden></section>
@@ -243,6 +244,7 @@ let ACTUALIZADO = "8 sep 2026, 11:15 CDMX";
 let TABLA = null;                 // se llena desde data/standings.json
 let FUENTE = "semilla";           // semilla | repositorio | en vivo
 const DESCONOCIDOS = new Set();   // equipos sin calificacion propia
+let RECIENTES = [];               // resultados de los ultimos dias
 
 const CLUB = {  // color de club, solo como identificador visual
  "AEK Atenas":"#F5C518","LASK":"#111","Club Brujas":"#1B62B3","Aston Villa":"#95BFE5",
@@ -376,6 +378,35 @@ function model(fx){
     ch,ca,ctot:ch+ca, cards:S.refs[fx.ref][0]*fx.tn*((H[6]+A[6])/2),
     top:sc.slice(0,3)};
 }
+/* ═══ modelo en vivo ═══
+   Un partido en curso no se modela con las probabilidades del saque: hay
+   goles ya puestos y menos tiempo por delante. Reescalamos los goles
+   esperados al tiempo que falta y ajustamos por marcador — el que va
+   perdiendo empuja, el que gana se repliega — y de ahí sale la
+   distribucion de goles RESTANTES, que sumada al marcador actual da las
+   probabilidades de ahora.                                            */
+const R_VIVO=9;
+function enVivo(fx,md){
+  if(!EN_JUEGO.includes(fx.st))return null;
+  const gl=fx.gl??0, gv=fx.gv??0;
+  // si la fuente no manda minuto, estimamos por el estado
+  const min=Math.min(89, fx.min ?? (fx.st==="HT"?45:fx.st==="1H"?25:65));
+  const f=Math.max(0.02,(90-min)/90);
+  const d=gl-gv;
+  const lh=md.lh*f*(d<0?1.12:d>0?0.94:1);
+  const la=md.la*f*(d>0?1.12:d<0?0.94:1);
+  const g=[];
+  for(let i=0;i<R_VIVO;i++){g[i]=[];for(let j=0;j<R_VIVO;j++)g[i][j]=pois(i,lh)*pois(j,la);}
+  const sum=fn=>{let t=0;for(let i=0;i<R_VIVO;i++)for(let j=0;j<R_VIVO;j++)if(fn(i,j))t+=g[i][j];return t;};
+  const pH=sum((i,j)=>gl+i>gv+j), pD=sum((i,j)=>gl+i===gv+j);
+  const over=L=>sum((i,j)=>gl+gv+i+j>L);
+  const btts = (gl>0&&gv>0)?1 : gl>0?1-Math.exp(-la) : gv>0?1-Math.exp(-lh)
+             : (1-Math.exp(-lh))*(1-Math.exp(-la));
+  return{min,f,lh,la,gl,gv,pH,pD,pA:1-pH-pD,
+    o15:over(1.5),o25:over(2.5),o35:over(3.5),btts,
+    csL:gv===0?Math.exp(-la):0, csV:gl===0?Math.exp(-lh):0};
+}
+
 function devig(dec){
   const p=dec.map(d=>1/d), f=k=>p.reduce((s,x)=>s+Math.pow(x,k),0)-1;
   let lo=0.5,hi=1.5;
@@ -418,8 +449,50 @@ function mercados(m,fx){
 }
 const FIAB_W={alta:1.00,media:0.93,baja:0.85};
 
+/* Mercados con probabilidad en vivo, para comparar contra la previa. */
+function mercadosVivo(ev,fx){
+  const h=fx.h,a=fx.a;
+  return [
+   {g:"Resultado",sels:[{n:h+" gana",p:ev.pH,k:"1X2::H"},{n:"Empate",p:ev.pD,k:"1X2::D"},{n:a+" gana",p:ev.pA,k:"1X2::A"}]},
+   {g:"Doble oportunidad",sels:[{n:h+" o empate",p:ev.pH+ev.pD,k:"DO::1X"},{n:"Empate o "+a,p:ev.pD+ev.pA,k:"DO::X2"},{n:"Cualquiera gana",p:ev.pH+ev.pA,k:"DO::12"}]},
+   {g:"Total de goles",sels:[{n:"Más de 1.5",p:ev.o15,k:"OU::O|1.5"},{n:"Más de 2.5",p:ev.o25,k:"OU::O|2.5"},
+     {n:"Menos de 2.5",p:1-ev.o25,k:"OU::U|2.5"},{n:"Más de 3.5",p:ev.o35,k:"OU::O|3.5"},{n:"Menos de 3.5",p:1-ev.o35,k:"OU::U|3.5"}]},
+   {g:"Ambos anotan",sels:[{n:"Sí",p:ev.btts,k:"AA::S"},{n:"No",p:1-ev.btts,k:"AA::N"}]},
+   {g:"Portería a cero",sels:[{n:h+" deja el cero",p:ev.csL,k:"PA::L"},{n:a+" deja el cero",p:ev.csV,k:"PA::V"}]}
+  ];
+}
+/* Las mismas selecciones antes del saque, con la misma clave, para poder
+   comparar la previa contra el vivo y para registrarlas en el cuaderno. */
+function mercadosPrevios(md,fx){
+  const h=fx.h,a=fx.a;
+  return [
+   {g:"Resultado",sels:[{n:h+" gana",p:md.pH,k:"1X2::H"},{n:"Empate",p:md.pD,k:"1X2::D"},{n:a+" gana",p:md.pA,k:"1X2::A"}]},
+   {g:"Doble oportunidad",sels:[{n:h+" o empate",p:md.dc1x,k:"DO::1X"},{n:"Empate o "+a,p:md.dcx2,k:"DO::X2"},{n:"Cualquiera gana",p:md.dc12,k:"DO::12"}]},
+   {g:"Total de goles",sels:[{n:"Más de 1.5",p:md.o15,k:"OU::O|1.5"},{n:"Más de 2.5",p:md.o25,k:"OU::O|2.5"},
+     {n:"Menos de 2.5",p:1-md.o25,k:"OU::U|2.5"},{n:"Más de 3.5",p:md.o35,k:"OU::O|3.5"},{n:"Menos de 3.5",p:1-md.o35,k:"OU::U|3.5"}]},
+   {g:"Ambos anotan",sels:[{n:"Sí",p:md.btts,k:"AA::S"},{n:"No",p:1-md.btts,k:"AA::N"}]},
+   {g:"Portería a cero",sels:[{n:h+" deja el cero",p:md.hcs,k:"PA::L"},{n:a+" deja el cero",p:md.acs,k:"PA::V"}]}
+  ];
+}
+/* Reglas de liquidacion: con el marcador final, cada seleccion se resuelve
+   sola. Por eso el formulario usa listas y no texto libre — un pronostico
+   escrito a mano no se puede calificar automaticamente.               */
+const REGLAS={
+ "1X2":(g,a,sel)=>sel==="H"?g>a:sel==="D"?g===a:a>g,
+ "DO": (g,a,sel)=>sel==="1X"?g>=a:sel==="X2"?a>=g:g!==a,
+ "OU": (g,a,sel)=>{const[d,l]=sel.split("|");const t=g+a;return d==="O"?t>+l:t<+l;},
+ "AA": (g,a,sel)=>sel==="S"?(g>0&&a>0):!(g>0&&a>0),
+ "PA": (g,a,sel)=>sel==="L"?a===0:g===0
+};
+function resolver(k,gl,gv){
+  const [mk,sel]=k.split("::");
+  const f=REGLAS[mk]; if(!f||gl==null||gv==null)return null;
+  return f(gl,gv,sel);
+}
+
+
 /* ══════════ 5. VISTAS ══════════ */
-const TABS=[["hoy","Hoy"],["apuestas","Apuestas"],["tabla","Tabla"],["stats","Estadísticas"],["registro","Mi registro"]];
+const TABS=[["hoy","Hoy"],["picks","Picks"],["apuestas","Apuestas"],["tabla","Tabla"],["stats","Estadísticas"],["registro","Mi cuaderno"]];
 
 const EN_JUEGO=["1H","2H","HT","ET","BT","P","LIVE"], TERMINADO=["FT","AET","PEN"];
 function estado(fx){
@@ -480,6 +553,99 @@ function vistaHoy(){
   h+=`<div class="note"><h4>Convicción no es lo mismo que valor</h4>
     <p>Esta lista ordena por <b>qué tan probable</b> es cada apuesta, no por cuánto dinero deja. Un 88% pagado a 1.10 es una probabilidad alta y una apuesta mala. Para saber si conviene hace falta la cuota: métela en la pestaña <b>Apuestas</b> y ahí sí sale el valor esperado.</p>
     <p>La etiqueta de fiabilidad dice cuánto confiar en la estructura del modelo, no en el resultado: <b>alta</b> sale directo de la matriz de goles; <b>baja</b> depende de parámetros míos que todavía no están ajustados sobre datos reales.</p></div>`;
+  return h;
+}
+
+
+/* ═══ PICKS: previos y en vivo ═══ */
+function filaPick(sel,i,extra=""){
+  return `<div class="pick">
+    <span class="rank">${i+1}</span>
+    <div><div class="lbl">${sel.n}</div>
+      <div class="tags"><span class="tag">${sel.g}</span>${extra}</div>
+      <div class="meter"><i style="width:${(sel.p*100).toFixed(0)}%"></i></div></div>
+    <div class="nums"><div class="p">${pct(sel.p)}</div><div class="fo">justa ${(1/sel.p).toFixed(2)}</div></div>
+  </div>`;
+}
+function vistaPicks(){
+  const previos=[],vivos=[];
+  FIX.forEach(fx=>{
+    const md=model(fx), ev=enVivo(fx,md);
+    if(ev)vivos.push({fx,md,ev}); else if(fx.st!=="FT")previos.push({fx,md});
+  });
+
+  let h=`<p class="lead">Dos listas distintas porque son dos modelos distintos. Los previos salen de la matriz de goles del saque; los de en vivo la recalculan con el marcador actual y el tiempo que falta, así que se mueven solos conforme avanza el partido.</p>`;
+
+  /* ---- EN VIVO ---- */
+  h+=`<h2 class="sec">Picks en vivo</h2>`;
+  if(!vivos.length){
+    h+=`<div class="empty">No hay partidos en juego ahora mismo. Cuando empiecen, aquí aparece cómo se mueven las probabilidades minuto a minuto.</div>`;
+  }else{
+    h+=`<p class="lead">La flecha compara contra la probabilidad que había antes del saque. Un salto grande significa que el partido ya cambió de guion.</p>`;
+    vivos.forEach(({fx,md,ev})=>{
+      const prev=mercadosPrevios(md,fx), vv=mercadosVivo(ev,fx);
+      const antes={}; prev.forEach(g=>g.sels.forEach(x=>antes[x.k]=x.p));
+      const todos=vv.flatMap(g=>g.sels.map(x=>({...x,g:g.g,d:x.p-(antes[x.k]??x.p)})))
+        .filter(x=>x.p>0.5).sort((a,b)=>b.p-a.p).slice(0,6);
+      h+=`<article class="card">
+        <header>
+          <div class="fixture">${crest(fx.h)}<h3>${fx.h}<span class="vs">vs</span>${fx.a}</h3>${crest(fx.a)}</div>
+          <div class="state"><span class="pill play">${ev.gl}–${ev.gv} · min ${ev.min}</span>
+            <span class="mono">quedan ${(ev.f*90).toFixed(0)}'</span></div>
+        </header>
+        <div class="grid-meta">
+          <div class="mcell"><div class="k">Goles restantes esperados</div><div class="v mono">${ev.lh.toFixed(2)} – ${ev.la.toFixed(2)}</div></div>
+          <div class="mcell"><div class="k">Gana ${fx.h}</div><div class="v mono">${pct(ev.pH)} <small>era ${pct(md.pH)}</small></div></div>
+          <div class="mcell"><div class="k">Empate</div><div class="v mono">${pct(ev.pD)} <small>era ${pct(md.pD)}</small></div></div>
+          <div class="mcell"><div class="k">Gana ${fx.a}</div><div class="v mono">${pct(ev.pA)} <small>era ${pct(md.pA)}</small></div></div>
+        </div>
+        <div class="picks"><h4>Lo más probable de aquí al final</h4>
+          ${todos.map((x,i)=>filaPick(x,i,
+            `<span class="tag ${x.d>0.03?"alta":x.d<-0.03?"":"baja"}">${x.d>=0?"▲":"▼"} ${(Math.abs(x.d)*100).toFixed(0)} pts</span>`)).join("")}
+        </div>
+      </article>`;
+    });
+  }
+
+  /* ---- PREVIOS ---- */
+  h+=`<h2 class="sec">Picks previos</h2>`;
+  if(!previos.length){
+    h+=`<div class="empty">Todos los partidos de la jornada ya empezaron o terminaron.</div>`;
+  }else{
+    previos.forEach(({fx,md})=>{
+      const mk=mercadosPrevios(md,fx);
+      const todos=mk.flatMap(g=>g.sels.map(x=>({...x,g:g.g})))
+        .filter(x=>x.p>0.5).sort((a,b)=>b.p-a.p).slice(0,6);
+      const opts=mk.map(g=>`<optgroup label="${g.g}">`+
+        g.sels.map(x=>`<option value="${x.k}" data-p="${x.p.toFixed(4)}">${x.n} — modelo ${pct(x.p)}</option>`).join("")+
+        `</optgroup>`).join("");
+      h+=`<article class="card">
+        <header>
+          <div class="fixture">${crest(fx.h)}<h3>${fx.h}<span class="vs">vs</span>${fx.a}</h3>${crest(fx.a)}</div>
+          <div class="state"><span class="pill soon">${fx.cdmx} CDMX</span>
+            <span class="mono">xG ${md.lh.toFixed(2)}–${md.la.toFixed(2)}</span></div>
+        </header>
+        <div class="picks"><h4>Lo más probable según el modelo</h4>
+          ${todos.map((x,i)=>filaPick(x,i)).join("")}
+        </div>
+        <details class="mk"><summary>Apuntar mi pronóstico antes del pitazo</summary><div class="inner">
+          <p style="font-size:13.5px;color:var(--ink-2);max-width:70ch;margin:0 0 10px">
+            Elige una selección y pon <b>tu</b> probabilidad, no la del modelo. Cuando termine el partido
+            se califica sola y en <b>Mi cuaderno</b> verás si tus números están bien calibrados —
+            si lo que dices al 70% pasa el 70% de las veces.</p>
+          <form class="log" data-pick="${fx.id||fx.h+"|"+fx.a}" data-part="${fx.h} vs ${fx.a}">
+            <label style="flex:2">Selección<select name="k">${opts}</select></label>
+            <label>Mi probabilidad %<input name="prob" type="number" min="1" max="99" step="1" value="60" required></label>
+            <button class="act" type="submit">Apuntar</button>
+          </form>
+        </div></details>
+      </article>`;
+    });
+  }
+
+  h+=`<div class="note"><h4>Por qué separo previos de en vivo</h4>
+    <p>Son dos modelos, no dos vistas del mismo. El previo reparte los goles esperados sobre 90 minutos; el de en vivo toma el marcador como dado, reescala los goles al tiempo que falta y ajusta por contexto: el que va perdiendo ataca más y el que gana se repliega. Mezclarlos es el error que hace que la gente vea "valor" en un equipo que va dos goles abajo.</p>
+    <p>Del minuto lo que sepa la fuente: si no lo manda, lo estimo por el estado del partido y las probabilidades salen más gruesas. Aparece en la tarjeta para que sepas cuánto fiarte.</p></div>`;
   return h;
 }
 
@@ -639,43 +805,147 @@ function vistaStats(){
 }
 
 /* ---------- registro con almacenamiento persistente ---------- */
-let DB=null, BETS=[];
-async function initDB(){
-  try{DB=await claude.use("db");}catch(e){DB=null;}
-  if(!DB)return;
-  DB.collection("apuestas").orderBy("ts","desc").limit(500).onSnapshot(
-    snap=>{BETS=snap.docs.map(d=>({id:d.id,...d.data}));if(S.tab==="registro")render();},
-    ()=>{}
-  );
+/* ═══ almacenamiento ═══
+   La misma pagina corre en dos sitios: publicada como artifact, donde
+   existe un almacen compartido, y en GitHub Pages, donde no hay nada de
+   eso. Probamos el primero y caemos al navegador. En Pages los datos
+   viven solo en ESE navegador: no se sincronizan entre tu celular y tu
+   laptop. Es la limitacion honesta de servir la pagina como estatica. */
+let BETS=[], PICKS=[];
+const STORE={
+  db:null,
+  async init(){ try{ this.db = (typeof claude!=="undefined") ? await claude.use("db") : null; }
+                catch(e){ this.db=null; } return this.db; },
+  _local(c){ try{ return JSON.parse(localStorage.getItem("cc-"+c)||"[]"); }catch(e){ return []; } },
+  _guarda(c,a){ try{ localStorage.setItem("cc-"+c,JSON.stringify(a)); }catch(e){} },
+  async lista(c){
+    if(this.db){ try{
+      const s=await this.db.collection(c).orderBy("ts","desc").limit(500).get();
+      return s.docs.map(d=>({id:d.id,...d.data}));
+    }catch(e){ return []; } }
+    return this._local(c);
+  },
+  async agrega(c,d){
+    if(this.db){ try{ await this.db.collection(c).add(d); return; }catch(e){} }
+    const a=this._local(c);
+    a.unshift({id:"l"+Date.now().toString(36)+Math.random().toString(36).slice(2,6),...d});
+    this._guarda(c,a);
+  },
+  async borra(c,id){
+    if(this.db){ try{ await this.db.collection(c).doc(id).delete(); return; }catch(e){} }
+    this._guarda(c,this._local(c).filter(x=>x.id!==id));
+  },
+  async actualiza(c,id,d){
+    if(this.db){ try{ await this.db.collection(c).doc(id).update(d); return; }catch(e){} }
+    this._guarda(c,this._local(c).map(x=>x.id===id?{...x,...d}:x));
+  }
+};
+async function recargar(){
+  [BETS,PICKS]=await Promise.all([STORE.lista("apuestas"),STORE.lista("pronosticos")]);
 }
+async function initDB(){ await STORE.init(); await recargar(); }
+
+/* Busca el marcador final de un partido, primero entre los de hoy y
+   luego entre los resultados recientes. Si el pronostico ya guardo el
+   marcador, ese manda: los partidos viejos salen de la ventana de datos
+   y no queremos perder el historial de aciertos.                      */
+function marcadorDe(pk){
+  if(pk.gl!=null&&pk.gv!=null)return[pk.gl,pk.gv];
+  const buscar=l=>(l||[]).find(f=>String(f.id)===String(pk.fixId));
+  const f=buscar(FIX.map(x=>({id:x.id,st:x.st,gl:x.gl,gv:x.gv})))||buscar(RECIENTES);
+  if(f&&["FT","AET","PEN"].includes(f.st||f.estado)&&f.gl!=null)return[f.gl,f.gv];
+  if(f&&f.estado==="FT"&&f.golesLocal!=null)return[f.golesLocal,f.golesVisita];
+  return[null,null];
+}
+function calibracion(items,campo){
+  const B=[[0,.55],[.55,.65],[.65,.75],[.75,.85],[.85,1.01]];
+  const et=["<55%","55–65%","65–75%","75–85%",">85%"];
+  return B.map((b,i)=>{
+    const g=items.filter(x=>x[campo]>=b[0]&&x[campo]<b[1]);
+    const n=g.length;
+    return {et:et[i], n,
+      dicho:n?g.reduce((a,x)=>a+x[campo],0)/n:null,
+      real:n?g.filter(x=>x.ok).length/n:null};
+  }).filter(x=>x.n);
+}
+function brier(items,campo){
+  if(!items.length)return null;
+  return items.reduce((a,x)=>a+Math.pow(x[campo]-(x.ok?1:0),2),0)/items.length;
+}
+
 function vistaRegistro(){
+  /* ---- pronosticos, calificados solos contra el marcador final ---- */
+  const evaluados=[];
+  const filasPk=PICKS.map(pk=>{
+    const [gl,gv]=marcadorDe(pk);
+    const ok=(gl!=null)?resolver(pk.k,gl,gv):null;
+    if(ok!==null)evaluados.push({...pk,ok,mia:(+pk.prob)/100,mod:+pk.probModelo||null});
+    const est= ok===null?'<span class="dim">pendiente</span>'
+      : ok?'<span class="pos">acierto</span>':'<span class="neg">fallo</span>';
+    return `<tr><td style="font-size:13px">${pk.partido||"—"}
+        <div class="dim">${pk.etiqueta||pk.k}</div></td>
+      <td>${(+pk.prob).toFixed(0)}%</td>
+      <td>${pk.probModelo?(+pk.probModelo*100).toFixed(0)+"%":"—"}</td>
+      <td>${gl!=null?gl+"–"+gv:"—"}</td>
+      <td>${est}</td>
+      <td><button class="ghost" data-delpk="${pk.id}">Borrar</button></td></tr>`;
+  }).join("");
+
+  const nEv=evaluados.length;
+  const aciertos=evaluados.filter(x=>x.ok).length;
+  const bMia=brier(evaluados,"mia");
+  const conMod=evaluados.filter(x=>x.mod);
+  const bMod=conMod.length?brier(conMod.map(x=>({...x,m:x.mod})),"mod"):null;
+  const calMia=calibracion(evaluados,"mia");
+
+  /* ---- apuestas ---- */
   const set=BETS.filter(b=>b.res&&b.res!=="pend");
   const risk=set.reduce((s,b)=>s+(+b.stake||0),0);
   const ret=set.reduce((s,b)=>s+(b.res==="gan"?(+b.stake)*(+b.cuota):b.res==="nula"?(+b.stake):0),0);
   const roi=risk>0?(ret-risk)/risk*100:0;
   const conClv=set.filter(b=>+b.cierre>1);
   const clv=conClv.length?conClv.reduce((s,b)=>s+((+b.cuota)/(+b.cierre)-1),0)/conClv.length*100:null;
-  const gan=set.filter(b=>b.res==="gan").length;
-  const rows=BETS.map(b=>`<tr>
-    <td style="font-size:13px">${b.partido||"—"}<div class="dim">${b.mercado||""} · ${b.sel||""}</div></td>
+  const filasBet=BETS.map(b=>`<tr>
+    <td style="font-size:13px">${b.partido||"—"}<div class="dim">${b.mercado||""} ${b.sel||""}</div></td>
     <td>${(+b.cuota||0).toFixed(2)}</td><td>${mxn(+b.stake||0)}</td>
     <td>${+b.cierre>1?(+b.cierre).toFixed(2):"—"}</td>
     <td class="${+b.cierre>1?((+b.cuota)>(+b.cierre)?"pos":"neg"):""}">${+b.cierre>1?(((+b.cuota)/(+b.cierre)-1)*100).toFixed(1)+"%":"—"}</td>
     <td>${b.res==="gan"?'<span class="pos">Ganada</span>':b.res==="per"?'<span class="neg">Perdida</span>':b.res==="nula"?"Nula":"Pendiente"}</td>
     <td><button class="ghost" data-del="${b.id}">Borrar</button></td></tr>`).join("");
 
-  return `<p class="lead">Aquí es donde se decide si el modelo sirve. Un edge del 3% no se distingue del azar en veinte apuestas: hacen falta cientos, anotadas todas, también las que perdieron.</p>
+  return `<h2 class="sec">Mis pronósticos</h2>
+  <p class="lead">Aquí es donde te entrenas. Apuntas tu probabilidad antes del pitazo desde la pestaña <b>Picks</b>, el partido la califica sola, y con el tiempo sabes si tus números significan algo. No se trata de acertar mucho: se trata de que cuando digas 70%, pase el 70% de las veces.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="k">Pronósticos</div><div class="v">${PICKS.length}</div></div>
+    <div class="kpi"><div class="k">Calificados</div><div class="v">${nEv}</div></div>
+    <div class="kpi"><div class="k">Aciertos</div><div class="v">${nEv?aciertos+" · "+(aciertos/nEv*100).toFixed(0)+"%":"—"}</div></div>
+    <div class="kpi"><div class="k">Brier tuyo</div><div class="v" style="color:${bMia===null?"var(--ink)":bMia<0.25?"var(--pos)":"var(--neg)"}">${bMia===null?"—":bMia.toFixed(3)}</div></div>
+    <div class="kpi"><div class="k">Brier del modelo</div><div class="v">${bMod===null?"—":bMod.toFixed(3)}</div></div>
+  </div>
+  ${nEv>=5?`<div class="panel"><h3>Tu calibración</h3>
+    <p>De cada tramo de confianza, cuántas veces acertaste de verdad. Si las dos columnas se parecen, tus probabilidades son honestas. Si dices 80% y aciertas 55%, estás sobreconfiado — el error más común y más caro.</p>
+    <div class="scroll"><table><thead><tr><th>Cuando dijiste</th><th>Pronósticos</th><th>Confianza media</th><th>Aciertos reales</th><th>Desvío</th></tr></thead><tbody>
+    ${calMia.map(c=>{const d=(c.real-c.dicho)*100;return `<tr><td>${c.et}</td><td>${c.n}</td>
+      <td>${(c.dicho*100).toFixed(0)}%</td><td>${(c.real*100).toFixed(0)}%</td>
+      <td class="${Math.abs(d)<10?"":d<0?"neg":"pos"}">${d>=0?"+":""}${d.toFixed(0)} pts</td></tr>`}).join("")}
+    </tbody></table></div></div>`
+   :`<div class="empty">Con 5 pronósticos calificados aparece aquí tu tabla de calibración. Llevas ${nEv}.</div>`}
+  <div class="panel" style="padding:0;margin-top:14px">${PICKS.length?`<div class="scroll"><table>
+    <thead><tr><th>Pronóstico</th><th>Yo dije</th><th>Modelo</th><th>Marcador</th><th>Resultado</th><th></th></tr></thead>
+    <tbody>${filasPk}</tbody></table></div>`
+    :'<div class="empty" style="margin:16px">Todavía no apuntas ninguno. Ve a <b>Picks</b> y abre «Apuntar mi pronóstico» en cualquier partido por jugar.</div>'}</div>
+
+  <h2 class="sec">Mis apuestas</h2>
+  <p class="lead">Esto es dinero, no práctica. La cuota de cierre es la que tenía la casa justo antes del pitazo, y es el dato más importante de la tabla.</p>
   <div class="kpis">
     <div class="kpi"><div class="k">Apuestas</div><div class="v">${BETS.length}</div></div>
-    <div class="kpi"><div class="k">Resueltas</div><div class="v">${set.length}${set.length?` <span style="font-size:13px;color:var(--ink-3)">${gan}G</span>`:""}</div></div>
+    <div class="kpi"><div class="k">Resueltas</div><div class="v">${set.length}</div></div>
     <div class="kpi"><div class="k">Riesgo acumulado</div><div class="v">${mxn(risk)}</div></div>
     <div class="kpi"><div class="k">ROI</div><div class="v" style="color:${roi>0?"var(--pos)":roi<0?"var(--neg)":"var(--ink)"}">${set.length?(roi>0?"+":"")+roi.toFixed(1)+"%":"—"}</div></div>
     <div class="kpi"><div class="k">CLV medio</div><div class="v" style="color:${clv===null?"var(--ink)":clv>0?"var(--pos)":"var(--neg)"}">${clv===null?"—":(clv>0?"+":"")+clv.toFixed(1)+"%"}</div></div>
   </div>
-  ${DB?"":'<div class="note"><h4>Guardado no disponible en esta vista</h4><p>El registro necesita el almacenamiento de la página y aquí no cargó. Puedes seguir viendo el resto del tablero; lo que anotes ahora no se guardará.</p></div>'}
   <div class="panel">
     <h3>Anotar una apuesta</h3>
-    <p>La cuota de cierre es la que tenía la casa justo antes del pitazo. Es el dato más importante de toda esta tabla.</p>
     <form class="log" id="frm">
       <label>Partido<select name="partido">${FIX.map(f=>`<option>${f.h} vs ${f.a}</option>`).join("")}</select></label>
       <label>Mercado<input name="mercado" placeholder="Total de goles"></label>
@@ -689,10 +959,13 @@ function vistaRegistro(){
   </div>
   <div class="panel" style="padding:0">${BETS.length?`<div class="scroll"><table>
     <thead><tr><th>Apuesta</th><th>Cuota</th><th>Stake</th><th>Cierre</th><th>CLV</th><th>Estado</th><th></th></tr></thead>
-    <tbody>${rows}</tbody></table></div>`:'<div class="empty" style="margin:16px">Todavía no has anotado ninguna apuesta.</div>'}</div>
-  <div class="note"><h4>Por qué el CLV importa más que el ROI</h4>
-    <p>Si tomaste 2.40 y el partido cerró en 2.10, ganaste valor aunque la apuesta perdiera: conseguiste un precio mejor que el que el mercado terminó fijando con toda la información disponible. Eso, repetido, es lo único que predice ganancia a largo plazo.</p>
-    <p>El ROI en pocas apuestas es casi puro ruido. El CLV se estabiliza mucho antes. Si tu CLV medio es negativo después de cincuenta apuestas, el modelo no está encontrando valor — está encontrando errores propios.</p></div>`;
+    <tbody>${filasBet}</tbody></table></div>`:'<div class="empty" style="margin:16px">Todavía no has anotado ninguna apuesta.</div>'}</div>
+
+  <div class="note"><h4>Brier, calibración y por qué no basta con acertar</h4>
+    <p>El Brier mide qué tan buenas son tus probabilidades: 0 es perfecto, 0.25 es lo que sacarías diciendo 50% a todo. Si el tuyo baja de 0.25 le estás ganando al volado; si además baja del Brier del modelo, le estás aportando algo que el modelo no ve. Si está arriba, tus corazonadas están empeorando un cálculo que ya era decente — es información valiosa, aunque no la que uno quiere.</p>
+    <p>Acertar mucho no prueba nada por sí solo: puedes acertar el 90% pronosticando siempre lo obvio y perder dinero, porque eso ya está en la cuota. Lo que se entrena aquí es distinto — poner el número correcto, no el resultado correcto.</p>
+    ${STORE.db?"":'<p><b>Ojo con dónde se guarda.</b> En esta página los pronósticos y apuestas viven en el almacenamiento de este navegador. No se sincronizan entre tu celular y tu laptop, y se borran si limpias los datos del sitio. Si eso te estorba, te lo puedo mover a algo compartido.</p>'}
+  </div>`;
 }
 
 /* ══════════ 6. RENDER Y EVENTOS ══════════ */
@@ -705,7 +978,7 @@ function render(){
   document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{S.tab=b.dataset.t;save();render();window.scrollTo(0,0);});
   TABS.forEach(([id])=>document.getElementById("v-"+id).hidden=(id!==S.tab));
   const el=document.getElementById("v-"+S.tab);
-  el.innerHTML={hoy:vistaHoy,apuestas:vistaApuestas,tabla:vistaTabla,stats:vistaStats,registro:vistaRegistro}[S.tab]();
+  el.innerHTML={hoy:vistaHoy,picks:vistaPicks,apuestas:vistaApuestas,tabla:vistaTabla,stats:vistaStats,registro:vistaRegistro}[S.tab]();
   wire();
 }
 function wire(){
@@ -721,17 +994,35 @@ function wire(){
     const v=parseFloat(e.target.value);if(v>0){S.teams[e.target.dataset.t][+e.target.dataset.x]=v;save();render();}});
   document.querySelectorAll(".odds-in[data-r]").forEach(n=>n.onchange=e=>{
     const v=parseFloat(e.target.value);if(v>0){S.refs[e.target.dataset.r]=[v,0];save();render();}});
+  // apuntar un pronostico antes del partido
+  document.querySelectorAll("form[data-pick]").forEach(f=>f.onsubmit=async ev=>{
+    ev.preventDefault();
+    const sel=f.querySelector("select[name=k]"), op=sel.options[sel.selectedIndex];
+    const prob=parseFloat(f.querySelector("input[name=prob]").value);
+    if(!(prob>0&&prob<100))return;
+    await STORE.agrega("pronosticos",{
+      ts:Date.now(), fixId:f.dataset.pick, partido:f.dataset.part,
+      k:sel.value, etiqueta:op.textContent.split(" — ")[0],
+      prob, probModelo:parseFloat(op.dataset.p)||null
+    });
+    await recargar();
+    op.parentElement.parentElement.blur();
+    f.querySelector("button").textContent="Apuntado ✓";
+    setTimeout(()=>render(),700);
+  });
+  document.querySelectorAll("[data-delpk]").forEach(b=>b.onclick=async()=>{
+    await STORE.borra("pronosticos",b.dataset.delpk); await recargar(); render();});
+
   const frm=document.getElementById("frm");
   if(frm)frm.onsubmit=async ev=>{
     ev.preventDefault();
-    if(!DB)return;
     const f=new FormData(frm),d={ts:Date.now()};
     ["partido","mercado","sel","res"].forEach(k=>d[k]=(f.get(k)||"").toString());
     ["cuota","stake","cierre"].forEach(k=>d[k]=parseFloat(f.get(k))||0);
-    try{await DB.collection("apuestas").add(d);frm.reset();}catch(e){}
+    await STORE.agrega("apuestas",d); await recargar(); render();
   };
   document.querySelectorAll("[data-del]").forEach(b=>b.onclick=async()=>{
-    if(!DB)return;try{await DB.collection("apuestas").doc(b.dataset.del).delete();}catch(e){}});
+    await STORE.borra("apuestas",b.dataset.del); await recargar(); render();});
 }
 /* ══════════ 7. CARGA DE DATOS REALES ══════════
    Tres capas, de menos a más fresca. Cada una es opcional: si falla, la
@@ -830,6 +1121,8 @@ async function cargar(){
     const d=h2h[f.id];
     if(d?.n)f.h2h={n:d.n,hw:d.hw,d:d.d,aw:d.aw,txt:(d.ultimos||[]).join(" · ")};});
   if(Array.isArray(tabla)&&tabla.length)TABLA=tabla;
+  const rec=await json("./data/recientes.json");
+  if(Array.isArray(rec))RECIENTES=rec;
   if(meta?.actualizado){
     ACTUALIZADO=new Date(meta.actualizado).toLocaleString("es-MX",
       {timeZone:"America/Mexico_City",dateStyle:"medium",timeStyle:"short"})+" CDMX";
@@ -860,7 +1153,7 @@ async function envivo(){
 
 let AJUSTADO="parámetros a priori, sin ajustar";
 render();
-initDB().then(()=>{if(S.tab==="registro")render();});
+initDB().then(()=>{if(S.tab==="registro"||S.tab==="picks")render();});
 cargar();
 if(WORKER_URL){envivo();setInterval(envivo,VIVO_MS);}
 </script>
