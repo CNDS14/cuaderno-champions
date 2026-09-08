@@ -15,16 +15,30 @@ Worker de Cloudflare (opcional)  →  marcadores al minuto
 
 ## Puesta en marcha (20 minutos)
 
-### 1. Llave de API-Football
+### 1. Llave de football-data.org (gratis, obligatoria)
 
-Regístrate gratis en [dashboard.api-football.com](https://dashboard.api-football.com).
-El plan gratuito da **100 peticiones al día**, que alcanzan de sobra: una
-jornada completa consume entre 12 y 18.
+Regístrate en [football-data.org/client/register](https://www.football-data.org/client/register).
+Su plan gratuito **incluye la Champions League y da la temporada en
+curso**: calendario, marcadores en vivo, árbitro designado, sede y tabla.
+Límite de 10 peticiones por minuto; nosotros gastamos 2 o 3 por corrida.
 
-Cubre lo que necesitamos: calendario, marcadores en vivo, alineaciones,
-árbitro designado, estadísticas por partido (remates, córners, tarjetas,
-posesión), historial entre equipos, lesiones, tabla y cuotas previas y
-en juego.
+> **Por qué no API-Football.** Su plan gratuito solo da las temporadas
+> 2022 a 2024 — devuelve literalmente *"Free plans do not have access to
+> this season, try from 2022 to 2024"*. Sirve solo si contratas el plan
+> Pro (19 USD/mes), y entonces añade lo único que football-data.org no
+> tiene: remates, córners y tarjetas en vivo. El script lo usa solo si
+> defines `API_FOOTBALL_KEY`; si no, sigue sin él.
+
+### 1b. Cuotas (opcional pero recomendado)
+
+Llave gratis en [the-odds-api.com](https://the-odds-api.com): 500
+créditos al mes. Cada llamada gasta tantos créditos como regiones ×
+mercados pidas, así que el script pide una región y un mercado —
+**1 crédito por corrida**. Secreto `ODDS_API_KEY`.
+
+Sin esto el tablero funciona igual, solo que las cuotas las escribes tú.
+Y sin cuotas no hay cálculo de valor: el modelo te dice qué es probable,
+pero no si conviene.
 
 ### 2. Subir el repo
 
@@ -41,8 +55,9 @@ gh repo create cuaderno-champions --public --source=. --push
 
 En el repo, **Settings → Secrets and variables → Actions**:
 
-- pestaña *Secrets* → `API_FOOTBALL_KEY` = tu llave
-- pestaña *Variables* → `SEASON` = `2026`
+- *Secrets* → `FOOTBALL_DATA_KEY` = tu llave de football-data.org **(obligatoria)**
+- *Secrets* → `ODDS_API_KEY` = tu llave de the-odds-api *(opcional)*
+- *Secrets* → `API_FOOTBALL_KEY` = solo si contratas el plan Pro *(opcional)*
 
 En **Settings → Pages**: fuente *Deploy from a branch*, rama `main`, carpeta `/ (root)`.
 
@@ -133,15 +148,17 @@ corrección por liga.
 
 | Fuente | Gratis | Sirve para | Límite real |
 |---|---|---|---|
-| **API-Football** (api-sports.io) | 100 pet./día | Todo: calendario, en vivo, árbitro, estadísticas, alineaciones, lesiones, tabla, cuotas | El cupo diario; temporadas viejas restringidas |
-| **football-data.co.uk** | Sí, sin llave | Histórico con remates, córners, tarjetas y árbitro — la base del ajuste | Solo ligas domésticas, no Champions. Descarga manual |
-| **The Odds API** | 500 créditos/mes | Segunda fuente de cuotas para comparar precios entre casas | Los créditos se multiplican por región × mercado: se agotan en menos de 85 llamadas |
-| **football-data.org** | 10 pet./min | Calendario y tabla, sencillo | Sin remates, córners ni tarjetas |
+| **football-data.org** ✅ *en uso* | 10 pet./min | Calendario, marcadores en vivo, **árbitro**, sede y tabla — con la temporada en curso | Sin remates, córners ni tarjetas |
+| **football-data.co.uk** ✅ *para el ajuste* | Sí, sin llave | Histórico con remates, córners, tarjetas y árbitro — la base del ajuste | Solo ligas domésticas, no Champions. Descarga manual |
+| **The Odds API** ✅ *opcional* | 500 créditos/mes | Cuotas reales de varias casas, que es lo que convierte probabilidad en valor | Los créditos se multiplican por región × mercado |
+| **API-Football** ❌ *gratis no sirve* | 100 pet./día | Lo tendría todo, incluidas estadísticas por partido | **El plan gratuito solo da 2022–2024.** Necesita Pro, 19 USD/mes |
 | **StatsBomb Open Data** | Sí, en GitHub | Eventos con xG de verdad, partido a partido | Competiciones sueltas, no la Champions actual |
 | **Understat** | Scraping | xG por partido y equipo | Sin API oficial |
 
-Recomendación: **API-Football para lo del día, football-data.co.uk para
-el ajuste histórico.** Con esas dos alcanza; las demás son redundantes.
+Recomendación: **football-data.org para lo del día, the-odds-api para
+las cuotas, football-data.co.uk para el ajuste histórico.** Las tres son
+gratis y entre ellas cubren todo menos remates y córners en vivo, que
+alimentan justo los mercados menos fiables del modelo.
 
 ---
 

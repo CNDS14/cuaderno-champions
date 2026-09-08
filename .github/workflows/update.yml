@@ -31,14 +31,16 @@ jobs:
 
       - name: Traer datos
         env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           SEASON: ${{ vars.SEASON }}
         # --full solo en la corrida diaria: gasta una petición por partido
         run: |
-          if [ "${{ github.event.schedule }}" = "0 13 * * *" ]; then
-            node scripts/fetch-data.mjs --full
-          else
+          if [ "${{ github.event.schedule }}" = "*/10 16-23 * * 2,3" ]; then
             node scripts/fetch-data.mjs
+          else
+            node scripts/fetch-data.mjs --full
           fi
 
       - name: Publicar cambios
