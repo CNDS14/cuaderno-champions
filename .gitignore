@@ -1,0 +1,4 @@
+historico/
+node_modules/
+data/_raw-*.json
+.env

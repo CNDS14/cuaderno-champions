@@ -1,0 +1,11 @@
+name = "cuaderno-champions-api"
+main = "index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+# Cámbialo por tu dominio real de GitHub Pages cuando lo tengas.
+# Dejarlo en "*" funciona, pero permite que cualquier sitio use tu cupo.
+ORIGEN_PERMITIDO = "*"
+
+# La llave NO va aquí. Se guarda cifrada con:
+#   wrangler secret put API_FOOTBALL_KEY

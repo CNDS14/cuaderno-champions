@@ -1,0 +1,182 @@
+#!/usr/bin/env node
+/**
+ * Ajusta los parámetros del modelo sobre partidos reales.
+ * Esto es lo que convierte el tablero de "opinión estructurada" en modelo.
+ *
+ *   node scripts/fit-model.mjs historico/*.csv
+ *
+ * Espera CSVs de football-data.co.uk (E0.csv, SP1.csv, D1.csv, I1.csv,
+ * F1.csv, P1.csv, N1.csv, B1.csv ...). Descárgalos desde el navegador en
+ * https://www.football-data.co.uk/data.php y déjalos en historico/.
+ * Columnas que usa: Date, HomeTeam, AwayTeam, FTHG, FTAG, HS, AS, HST,
+ * AST, HC, AC, HY, AY, HR, AR, Referee.
+ *
+ * Método: máxima verosimilitud Poisson por ajuste proporcional iterativo
+ * con decaimiento temporal exponencial (media vida configurable). Es el
+ * mismo esquema de Dixon-Coles (1997) sin el término de dependencia, que
+ * se aplica después en el tablero.
+ *
+ * Salida: data/params.json — el tablero lo carga y sustituye mis valores
+ * a priori.
+ */
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const MEDIA_VIDA_DIAS = Number(process.env.HALF_LIFE || 240); // ~1.5 temporadas
+const ITERACIONES = 60;
+
+const archivos = process.argv.slice(2);
+if (!archivos.length) {
+  console.error("Uso: node scripts/fit-model.mjs historico/*.csv");
+  process.exit(1);
+}
+
+/* ---------- lectura ---------- */
+function parseCSV(txt) {
+  const lineas = txt.split(/\r?\n/).filter(l => l.trim());
+  const cab = lineas[0].split(",").map(s => s.trim());
+  return lineas.slice(1).map(l => {
+    const c = l.split(",");
+    const o = {};
+    cab.forEach((k, i) => o[k] = (c[i] ?? "").trim());
+    return o;
+  });
+}
+function fecha(s) {
+  // football-data usa dd/mm/yy o dd/mm/yyyy
+  const [d, m, y] = (s || "").split("/");
+  if (!d) return null;
+  const año = y?.length === 2 ? 2000 + Number(y) : Number(y);
+  return new Date(Date.UTC(año, Number(m) - 1, Number(d)));
+}
+
+const partidos = [];
+for (const f of archivos) {
+  let filas;
+  try { filas = parseCSV(readFileSync(f, "utf8")); }
+  catch (e) { console.warn(`saltando ${f}: ${e.message}`); continue; }
+  for (const r of filas) {
+    const fe = fecha(r.Date);
+    const gl = Number(r.FTHG), gv = Number(r.FTAG);
+    if (!fe || !r.HomeTeam || !r.AwayTeam || !Number.isFinite(gl) || !Number.isFinite(gv)) continue;
+    partidos.push({
+      fecha: fe, local: r.HomeTeam, visita: r.AwayTeam, gl, gv,
+      rl: Number(r.HS), rv: Number(r.AS),
+      pl: Number(r.HST), pv: Number(r.AST),
+      cl: Number(r.HC), cv: Number(r.AC),
+      tl: Number(r.HY) + 2 * (Number(r.HR) || 0),
+      tv: Number(r.AY) + 2 * (Number(r.AR) || 0),
+      arbitro: r.Referee || null
+    });
+  }
+}
+if (!partidos.length) { console.error("Ningún partido legible."); process.exit(1); }
+partidos.sort((a, b) => a.fecha - b.fecha);
+const hoy = partidos[partidos.length - 1].fecha;
+const LAMBDA = Math.log(2) / MEDIA_VIDA_DIAS;
+for (const p of partidos) {
+  const dias = (hoy - p.fecha) / 86400000;
+  p.w = Math.exp(-LAMBDA * dias);   // peso: los partidos viejos pesan menos
+}
+console.log(`${partidos.length} partidos, de ${partidos[0].fecha.toISOString().slice(0,10)} a ${hoy.toISOString().slice(0,10)}`);
+console.log(`Media vida ${MEDIA_VIDA_DIAS} días → el partido más antiguo pesa ${(partidos[0].w*100).toFixed(1)}%`);
+
+/* ---------- ajuste de ataque y defensa ---------- */
+const equipos = [...new Set(partidos.flatMap(p => [p.local, p.visita]))].sort();
+const att = {}, def = {};
+equipos.forEach(t => { att[t] = 1; def[t] = 1; });
+
+let W = 0, GL = 0, GV = 0;
+for (const p of partidos) { W += p.w; GL += p.w * p.gl; GV += p.w * p.gv; }
+const mediaLocal = GL / W, mediaVisita = GV / W;
+const BASE = (mediaLocal + mediaVisita) / 2;
+const HFA_H = mediaLocal / BASE, HFA_A = mediaVisita / BASE;
+console.log(`Goles medios: ${mediaLocal.toFixed(3)} local / ${mediaVisita.toFixed(3)} visita`);
+console.log(`Base ${BASE.toFixed(3)} · factor local ${HFA_H.toFixed(3)} · factor visita ${HFA_A.toFixed(3)}`);
+
+for (let it = 0; it < ITERACIONES; it++) {
+  const numA = {}, denA = {}, numD = {}, denD = {};
+  equipos.forEach(t => { numA[t] = denA[t] = numD[t] = denD[t] = 0; });
+  for (const p of partidos) {
+    // ataque: goles marcados / goles que "debería" marcar contra esa defensa
+    numA[p.local]  += p.w * p.gl;  denA[p.local]  += p.w * BASE * def[p.visita] * HFA_H;
+    numA[p.visita] += p.w * p.gv;  denA[p.visita] += p.w * BASE * def[p.local]  * HFA_A;
+    // defensa: goles recibidos / goles que "debería" recibir de ese ataque
+    numD[p.visita] += p.w * p.gl;  denD[p.visita] += p.w * BASE * att[p.local]  * HFA_H;
+    numD[p.local]  += p.w * p.gv;  denD[p.local]  += p.w * BASE * att[p.visita] * HFA_A;
+  }
+  for (const t of equipos) {
+    if (denA[t] > 0) att[t] = numA[t] / denA[t];
+    if (denD[t] > 0) def[t] = numD[t] / denD[t];
+  }
+  // normalizamos para que el equipo promedio siga valiendo 1.00
+  const mA = equipos.reduce((s, t) => s + att[t], 0) / equipos.length;
+  const mD = equipos.reduce((s, t) => s + def[t], 0) / equipos.length;
+  equipos.forEach(t => { att[t] /= mA; def[t] /= mD; });
+}
+
+/* ---------- tasas de remates, córners y tarjetas ---------- */
+const acc = {};
+const nuevo = () => ({ w: 0, rf: 0, rc: 0, cf: 0, cc: 0, tf: 0 });
+for (const t of equipos) acc[t] = nuevo();
+for (const p of partidos) {
+  const A = acc[p.local], B = acc[p.visita];
+  A.w += p.w; B.w += p.w;
+  const num = v => Number.isFinite(v) ? v : 0;
+  A.rf += p.w * num(p.rl); A.rc += p.w * num(p.rv);
+  B.rf += p.w * num(p.rv); B.rc += p.w * num(p.rl);
+  A.cf += p.w * num(p.cl); A.cc += p.w * num(p.cv);
+  B.cf += p.w * num(p.cv); B.cc += p.w * num(p.cl);
+  A.tf += p.w * num(p.tl); B.tf += p.w * num(p.tv);
+}
+const tarjMedia = partidos.reduce((s, p) => s + p.w * ((p.tl || 0) + (p.tv || 0)), 0) / W;
+
+/* ---------- árbitros ---------- */
+const arb = {};
+for (const p of partidos) {
+  if (!p.arbitro) continue;
+  arb[p.arbitro] ??= { w: 0, t: 0, n: 0 };
+  arb[p.arbitro].w += p.w;
+  arb[p.arbitro].t += p.w * ((p.tl || 0) + (p.tv || 0));
+  arb[p.arbitro].n++;
+}
+
+/* ---------- salida ---------- */
+const teams = {};
+for (const t of equipos) {
+  const a = acc[t];
+  if (a.w < 5) continue;                       // muy pocos partidos: no es señal
+  teams[t] = [
+    +att[t].toFixed(3), +def[t].toFixed(3),
+    +(a.rf / a.w).toFixed(2), +(a.rc / a.w).toFixed(2),
+    +(a.cf / a.w).toFixed(2), +(a.cc / a.w).toFixed(2),
+    +((a.tf / a.w) / (tarjMedia / 2)).toFixed(3)   // indisciplina relativa
+  ];
+}
+const refs = {};
+for (const [r, v] of Object.entries(arb)) {
+  if (v.n < 12) continue;                      // menos de 12 partidos es ruido
+  refs[r] = [+(v.t / v.w).toFixed(2), 1, v.n];  // [tarjetas/partido, verificado, n]
+}
+
+const out = {
+  ajustadoEl: new Date().toISOString(),
+  partidos: partidos.length,
+  desde: partidos[0].fecha.toISOString().slice(0, 10),
+  hasta: hoy.toISOString().slice(0, 10),
+  mediaVidaDias: MEDIA_VIDA_DIAS,
+  base: +BASE.toFixed(3), hfaLocal: +HFA_H.toFixed(3), hfaVisita: +HFA_A.toFixed(3),
+  tarjetasMedia: +tarjMedia.toFixed(2),
+  teams, refs
+};
+mkdirSync(join(ROOT, "data"), { recursive: true });
+writeFileSync(join(ROOT, "data", "params.json"), JSON.stringify(out, null, 1));
+
+console.log(`\n${Object.keys(teams).length} equipos y ${Object.keys(refs).length} árbitros ajustados.`);
+const orden = Object.entries(teams).sort((a, b) => b[1][0] - a[1][0]);
+console.log("\nMejores ataques:  " + orden.slice(0, 5).map(([t, v]) => `${t} ${v[0]}`).join(" · "));
+console.log("Mejores defensas: " + Object.entries(teams).sort((a, b) => a[1][1] - b[1][1])
+  .slice(0, 5).map(([t, v]) => `${t} ${v[1]}`).join(" · "));
+console.log("\nEscrito en data/params.json");

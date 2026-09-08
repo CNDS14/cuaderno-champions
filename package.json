@@ -1,0 +1,12 @@
+{
+ "name": "cuaderno-champions",
+ "private": true,
+ "type": "module",
+ "scripts": {
+  "datos": "node scripts/fetch-data.mjs",
+  "datos:full": "node scripts/fetch-data.mjs --full",
+  "ajustar": "node scripts/fit-model.mjs historico/*.csv",
+  "servir": "node --run servir:impl || python3 -m http.server 8080",
+  "servir:impl": "npx --yes serve -l 8080 ."
+ }
+}

@@ -1,0 +1,795 @@
+<title>Cuaderno de Champions</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{
+  --paper:#F1F3F5; --surface:#FBFCFD; --sunk:#E7EBEF; --deep:#1A2430;
+  --ink:#141A21; --ink-2:#3E4A57; --ink-3:#6B7885;
+  --line:#D3DAE1; --line-soft:#E3E8ED;
+  --accent:#2E4A7D; --accent-soft:#DDE5F1;
+  --star:#A67512; --star-soft:#F7EACE;
+  --pos:#186B4C; --pos-soft:#D9EDE4;
+  --neg:#9E3B3B; --neg-soft:#F6E0E0;
+  --warn:#8A6212; --warn-soft:#F5E7C8;
+  --live:#B8341F;
+  --shadow:0 1px 2px rgba(20,26,33,.06),0 8px 24px -16px rgba(20,26,33,.28);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1318; --surface:#161D24; --sunk:#0A0E12; --deep:#060A0D;
+    --ink:#E8EDF2; --ink-2:#AEBAC6; --ink-3:#7C8894;
+    --line:#29333C; --line-soft:#202830;
+    --accent:#8FB0E4; --accent-soft:#1C2A3D;
+    --star:#E2B45E; --star-soft:#32270F;
+    --pos:#5FC79B; --pos-soft:#123328;
+    --neg:#E08585; --neg-soft:#331616;
+    --warn:#E0B45C; --warn-soft:#32270F;
+    --live:#FF6B52;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.85);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1318; --surface:#161D24; --sunk:#0A0E12; --deep:#060A0D;
+  --ink:#E8EDF2; --ink-2:#AEBAC6; --ink-3:#7C8894;
+  --line:#29333C; --line-soft:#202830;
+  --accent:#8FB0E4; --accent-soft:#1C2A3D;
+  --star:#E2B45E; --star-soft:#32270F;
+  --pos:#5FC79B; --pos-soft:#123328;
+  --neg:#E08585; --neg-soft:#331616;
+  --warn:#E0B45C; --warn-soft:#32270F;
+  --live:#FF6B52;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.85);
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;
+  font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 72px}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque","Source Sans 3",sans-serif;text-wrap:balance;margin:0}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+
+/* ---------- cabecera nocturna ---------- */
+.hero{background:var(--deep);color:#EAF0F6;margin:0 -20px 0;padding:26px 20px 20px;position:relative;overflow:hidden}
+.hero .inner{max-width:1140px;margin:0 auto;position:relative;z-index:1}
+.hero h1{font-size:clamp(26px,4.2vw,38px);font-weight:800;letter-spacing:-.025em;line-height:1.02;color:#fff}
+.hero .sub{color:#9FB0C2;font-size:14px;margin-top:6px;max-width:60ch}
+.hero .eyebrow{color:var(--star)}
+.stars{position:absolute;inset:0;opacity:.5}
+.hero-row{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:flex-end}
+.updated{font-size:12px;color:#9FB0C2;text-align:right;line-height:1.7}
+.updated b{color:#EAF0F6;font-weight:600}
+.pulse{display:inline-block;width:7px;height:7px;border-radius:99px;background:var(--live);margin-right:5px;
+  animation:pl 1.8s ease-in-out infinite;vertical-align:1px}
+@keyframes pl{0%,100%{opacity:1}50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.pulse{animation:none}}
+
+/* ---------- navegacion ---------- */
+nav.tabs{background:var(--deep);margin:0 -20px 22px;padding:0 20px;border-bottom:2px solid var(--star)}
+nav.tabs .inner{max-width:1140px;margin:0 auto;display:flex;gap:2px;overflow-x:auto}
+nav.tabs button{background:none;border:0;color:#8FA2B5;padding:11px 16px;cursor:pointer;white-space:nowrap;
+  font-family:"Bricolage Grotesque",sans-serif;font-size:14px;font-weight:700;letter-spacing:-.01em;
+  border-bottom:3px solid transparent;margin-bottom:-2px}
+nav.tabs button[aria-selected="true"]{color:#fff;border-bottom-color:var(--star)}
+nav.tabs button:hover{color:#DCE6F0}
+
+.lead{font-size:14px;color:var(--ink-2);max-width:76ch;margin:0 0 18px}
+section[hidden]{display:none}
+h2.sec{font-size:20px;font-weight:800;letter-spacing:-.015em;margin:26px 0 4px}
+h2.sec:first-child{margin-top:0}
+
+/* ---------- tarjeta de partido ---------- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:4px;margin-bottom:14px;
+  box-shadow:var(--shadow);overflow:hidden}
+.card>header{padding:14px 18px;background:var(--sunk);border-bottom:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+.fixture{display:flex;align-items:center;gap:11px;min-width:0}
+.crest{width:5px;height:34px;border-radius:2px;flex:none}
+.fixture h3{font-size:17px;font-weight:700;letter-spacing:-.015em}
+.fixture .vs{color:var(--ink-3);font-weight:500;font-size:14px;margin:0 4px}
+.state{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-2)}
+.pill{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;
+  border-radius:99px;border:1px solid var(--line)}
+.pill.soon{background:var(--star-soft);color:var(--star);border-color:var(--star)}
+.pill.play{background:var(--neg-soft);color:var(--live);border-color:var(--live)}
+.pill.done{background:var(--sunk);color:var(--ink-3)}
+
+.grid-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));border-bottom:1px solid var(--line-soft)}
+.mcell{padding:10px 18px;border-right:1px solid var(--line-soft)}
+.mcell:last-child{border-right:0}
+.mcell .k{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.mcell .v{font-size:14px;font-weight:600;margin-top:2px}
+.mcell .v small{font-weight:400;color:var(--ink-3);font-size:12px}
+
+/* ---------- apuestas fuertes ---------- */
+.picks{padding:14px 18px}
+.picks h4{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:10px}
+.pick{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:12px;align-items:center;
+  padding:9px 0;border-bottom:1px solid var(--line-soft)}
+.pick:last-child{border-bottom:0}
+.rank{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3);font-weight:600}
+.pick .lbl{font-weight:600;font-size:14.5px}
+.pick .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:3px}
+.tag{font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;font-weight:600;padding:1.5px 7px;
+  border-radius:2px;border:1px solid var(--line);color:var(--ink-3)}
+.tag.alta{background:var(--pos-soft);color:var(--pos);border-color:var(--pos)}
+.tag.media{background:var(--warn-soft);color:var(--warn);border-color:var(--warn)}
+.tag.baja{background:var(--sunk);color:var(--ink-3)}
+.pick .nums{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pick .p{font-size:19px;font-weight:600;letter-spacing:-.02em}
+.pick .fo{font-size:11.5px;color:var(--ink-3)}
+.meter{height:4px;background:var(--sunk);border-radius:99px;overflow:hidden;margin-top:5px}
+.meter>i{display:block;height:100%;background:var(--accent)}
+
+/* ---------- tablas ---------- */
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;
+  text-align:right;padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child{text-align:left}
+td{padding:8px 12px;text-align:right;border-bottom:1px solid var(--line-soft);
+  font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:13.5px}
+td:first-child{text-align:left;font-family:"Source Sans 3",sans-serif;font-size:14px;font-weight:600}
+tbody tr:last-child td{border-bottom:0}
+tr.hl{background:var(--pos-soft)}
+tr.warnrow{background:var(--warn-soft)}
+.odds-in{width:64px;background:var(--sunk);border:1px solid var(--line);color:var(--ink);border-radius:2px;
+  padding:4px 6px;text-align:right;font-family:"IBM Plex Mono",monospace;font-size:13.5px}
+.odds-in::placeholder{color:var(--ink-3)}
+.pos{color:var(--pos);font-weight:600}
+.neg{color:var(--neg)}
+.dim{color:var(--ink-3);font-weight:400;font-size:12px}
+
+details.mk{border-top:1px solid var(--line-soft)}
+details.mk>summary{cursor:pointer;padding:10px 18px;font-size:13px;font-weight:600;color:var(--ink-2);
+  list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.mk>summary::after{content:"ver mercados ▾";font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+details.mk[open]>summary::after{content:"ocultar ▴"}
+details.mk>summary::-webkit-details-marker{display:none}
+details.mk .inner{padding:0 18px 16px}
+
+/* ---------- tabla de clasificacion ---------- */
+.band{display:inline-block;width:3px;height:16px;border-radius:1px;vertical-align:-3px;margin-right:8px}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:12.5px;color:var(--ink-2);margin-bottom:12px}
+.legend span{display:flex;align-items:center;gap:7px}
+.legend i{width:3px;height:14px;border-radius:1px;display:block}
+
+/* ---------- paneles ---------- */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin-bottom:14px;box-shadow:var(--shadow)}
+.panel h3{font-size:16px;font-weight:700;margin-bottom:4px}
+.panel p{color:var(--ink-2);font-size:13.5px;margin:0 0 12px;max-width:76ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--line-soft);
+  border:1px solid var(--line-soft);border-radius:3px;overflow:hidden;margin-bottom:14px}
+.kpi{background:var(--surface);padding:11px 14px}
+.kpi .k{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.kpi .v{font-family:"IBM Plex Mono",monospace;font-size:21px;font-weight:600;letter-spacing:-.02em;margin-top:1px}
+
+.ctlbar{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line-soft);
+  border:1px solid var(--line);border-radius:4px;overflow:hidden;margin-bottom:18px}
+.ctl{background:var(--surface);padding:11px 14px;display:flex;flex-direction:column;gap:4px}
+.ctl label{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.ctl input,.ctl select{background:var(--sunk);border:1px solid var(--line);color:var(--ink);border-radius:2px;
+  padding:5px 7px;font-family:"IBM Plex Mono",monospace;font-size:14px;width:100%}
+.ctl input[type=range]{accent-color:var(--accent);padding:0}
+.ctl .v{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink)}
+
+form.log{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:9px;align-items:end;margin-bottom:14px}
+form.log label{display:flex;flex-direction:column;gap:3px;font-size:10.5px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:600}
+form.log input,form.log select{background:var(--sunk);border:1px solid var(--line);color:var(--ink);
+  border-radius:2px;padding:6px 8px;font-size:14px;font-family:"Source Sans 3",sans-serif}
+form.log input[type=number]{font-family:"IBM Plex Mono",monospace}
+button.act{background:var(--accent);color:#fff;border:0;border-radius:3px;padding:8px 16px;font-size:13.5px;
+  font-weight:600;cursor:pointer;font-family:"Source Sans 3",sans-serif}
+button.act:hover{filter:brightness(1.1)}
+button.ghost{background:none;border:1px solid var(--line);color:var(--ink-2);border-radius:3px;
+  padding:5px 11px;font-size:12px;cursor:pointer;font-family:"Source Sans 3",sans-serif}
+button.ghost:hover{border-color:var(--ink-3);color:var(--ink)}
+.empty{color:var(--ink-3);font-size:13.5px;padding:14px 0;text-align:center;border:1px dashed var(--line);border-radius:3px}
+
+.note{border-left:3px solid var(--warn);background:var(--warn-soft);border-radius:3px;padding:12px 16px;margin:16px 0}
+.note h4{font-size:13.5px;font-weight:700;margin-bottom:5px}
+.note p{margin:0 0 7px;font-size:13.5px;color:var(--ink-2)}
+.note p:last-child{margin-bottom:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="hero">
+  <svg class="stars" aria-hidden="true" viewBox="0 0 1200 130" preserveAspectRatio="xMidYMid slice">
+    <g fill="#2A3A4C">
+      <circle cx="70" cy="28" r="1.6"/><circle cx="210" cy="70" r="1.1"/><circle cx="340" cy="24" r="1.5"/>
+      <circle cx="470" cy="96" r="1.2"/><circle cx="600" cy="40" r="1.7"/><circle cx="735" cy="82" r="1.1"/>
+      <circle cx="860" cy="30" r="1.4"/><circle cx="985" cy="72" r="1.3"/><circle cx="1120" cy="36" r="1.6"/>
+      <circle cx="150" cy="108" r="1.2"/><circle cx="415" cy="58" r="1"/><circle cx="675" cy="112" r="1.3"/>
+      <circle cx="915" cy="104" r="1"/><circle cx="1055" cy="16" r="1.2"/>
+    </g>
+  </svg>
+  <div class="inner">
+    <div class="hero-row">
+      <div>
+        <span class="eyebrow">Fase liga · Jornada 1 de 8</span>
+        <h1>Cuaderno de Champions</h1>
+        <p class="sub">Seis partidos, siete mercados y un solo modelo detrás. Las apuestas más fuertes de cada juego salen ordenadas abajo de sus estadísticas.</p>
+      </div>
+      <div class="updated" id="updated"></div>
+    </div>
+  </div>
+</div>
+
+<nav class="tabs"><div class="inner" id="tabs" role="tablist"></div></nav>
+
+<div class="wrap">
+  <section id="v-hoy"></section>
+  <section id="v-apuestas" hidden></section>
+  <section id="v-tabla" hidden></section>
+  <section id="v-stats" hidden></section>
+  <section id="v-registro" hidden></section>
+</div>
+
+<script>
+/* ══════════ 0. CONFIGURACIÓN ══════════
+   Deja WORKER_URL vacío y la página funciona sola con los JSON del repo,
+   que GitHub Actions refresca. Pon aquí la URL de tu Worker de Cloudflare
+   y además consultará marcadores en vivo cada 45 segundos.              */
+const WORKER_URL = "";            // p.ej. "https://cuaderno-champions-api.tu-usuario.workers.dev"
+const LIGA = 2, TEMPORADA = 2026;
+const VIVO_MS = 45000;
+
+/* ══════════ 1. DATOS ══════════
+   Los valores de abajo son la semilla: funcionan sin conexión y se
+   sustituyen por los reales en cuanto data/*.json esté disponible.
+   Verificado = de fuente. Estimado = valor a priori.                    */
+let ACTUALIZADO = "8 sep 2026, 11:15 CDMX";
+let TABLA = null;                 // se llena desde data/standings.json
+let FUENTE = "semilla";           // semilla | repositorio | en vivo
+
+const CLUB = {  // color de club, solo como identificador visual
+ "AEK Atenas":"#F5C518","LASK":"#111","Club Brujas":"#1B62B3","Aston Villa":"#95BFE5",
+ "Dortmund":"#FDE100","Villarreal":"#FFE667","Porto":"#0F4C9C","Man City":"#6CABDD",
+ "Lille":"#E01E24","Real Betis":"#00954C","Real Madrid":"#FEBE10","Inter":"#0068A8"
+};
+/* [ataque, defensa, remates_f, remates_c, corners_f, corners_c, indisciplina] */
+const T0={
+ "AEK Atenas":  [0.88,1.05,12.0,12.5,5.0,5.2,1.15], "LASK":        [0.72,1.28, 9.5,15.0,4.0,6.5,1.10],
+ "Club Brujas": [1.00,1.06,12.0,13.0,5.0,5.5,1.00], "Aston Villa": [1.12,0.88,13.5,11.0,5.4,4.7,1.00],
+ "Dortmund":    [1.18,1.02,14.0,12.0,5.6,4.8,1.00], "Villarreal":  [1.08,1.00,12.8,12.0,5.0,5.2,1.10],
+ "Porto":       [1.02,0.92,12.5,11.5,5.2,5.0,1.10], "Man City":    [1.48,0.76,16.5, 8.0,7.0,3.4,0.90],
+ "Lille":       [1.05,1.00,13.0,12.0,5.2,5.0,1.05], "Real Betis":  [1.02,1.02,12.5,12.5,4.9,5.3,1.15],
+ "Real Madrid": [1.42,0.82,15.5, 9.5,6.2,3.9,1.05], "Inter":       [1.22,0.72,14.5, 9.0,5.8,4.0,1.10]
+};
+const R0={"Godinho":[4.20,0],"Scharer":[3.80,0],"Sozza":[4.60,0],
+          "Marciniak":[4.20,0],"Kabakov":[4.00,0],"Oliver":[3.49,1]};
+
+let FIX=[
+ {h:"AEK Atenas",a:"LASK",cet:"18:45",cdmx:"10:45",ref:"Godinho",tn:1.00,
+  sede:"OPAP Arena, Atenas", tv:"HBO Max · TNT Sports",
+  h2h:null, news:null,
+  odds:[1.76,4.05,4.65]},
+ {h:"Club Brujas",a:"Aston Villa",cet:"18:45",cdmx:"10:45",ref:"Scharer",tn:1.00,
+  sede:"Jan Breydel, Brujas", tv:"HBO Max · TNT Sports",
+  h2h:null, news:null,
+  odds:[2.80,3.65,2.47]},
+ {h:"Dortmund",a:"Villarreal",cet:"21:00",cdmx:"13:00",ref:"Sozza",tn:1.00,
+  sede:"Signal Iduna Park, Dortmund", tv:"HBO Max · TNT Sports",
+  h2h:null, news:null,
+  odds:[1.77,4.10,4.25]},
+ {h:"Porto",a:"Man City",cet:"21:00",cdmx:"13:00",ref:"Marciniak",tn:1.05,
+  sede:"Estádio do Dragão, Oporto", tv:"HBO Max · TNT Sports",
+  h2h:{n:4,hw:0,d:1,aw:3,txt:"City invicto en los cuatro cruces: 2-1 y 4-0 en Europa League 2012, 3-1 y 0-0 en Champions 2020. Porto nunca les ha ganado."},
+  news:null,
+  odds:[4.60,4.00,1.75]},
+ {h:"Lille",a:"Real Betis",cet:"21:00",cdmx:"13:00",ref:"Kabakov",tn:1.00,
+  sede:"Stade Pierre-Mauroy, Lille", tv:"HBO Max · TNT Sports",
+  h2h:null, news:null,
+  odds:[2.27,3.60,3.20]},
+ {h:"Real Madrid",a:"Inter",cet:"21:00",cdmx:"13:00",ref:"Oliver",tn:1.15,
+  sede:"Santiago Bernabéu, Madrid", tv:"HBO Max · TNT Sports",
+  h2h:{n:19,hw:10,d:2,aw:7,txt:"19 duelos desde la final de 1964 (que ganó el Inter 3-1). Madrid domina 10-2-7 y llega de ganar los últimos cuatro cruces, con portería a cero en los tres más recientes."},
+  news:"Madrid sin Camavinga, Güler ni Bernardo Silva (sanción), ni Tchouaméni, Rodrygo, Endrick y Asencio (lesión); viene de caer ante el Betis. El Inter solo echa en falta a Dimarco y llega de ganarle al Napoli.",
+  odds:[1.62,4.30,5.40]}
+];
+let EQUIPOS36=["AEK Atenas","Arsenal","Aston Villa","Atlético de Madrid","Barcelona","Bayern München",
+ "Bodø/Glimt","Borussia Dortmund","Club Brujas","Como","Fenerbahçe","Feyenoord","Galatasaray","Inter",
+ "LASK","Leipzig","Lens","Lille","Liverpool","Manchester City","Manchester United","Napoli",
+ "Paris Saint-Germain","Porto","PSV Eindhoven","Real Betis","Real Madrid","Roma","Sabah",
+ "Shakhtar Donetsk","Slavia Praha","Slovan Bratislava","Sporting CP","Stuttgart","Villarreal","Viking"];
+
+/* ══════════ 2. ESTADO ══════════ */
+const KEY="ucl-cuaderno-v3";
+const clone=o=>JSON.parse(JSON.stringify(o));
+let S={teams:clone(T0),refs:clone(R0),odds:{},bank:5000,wmkt:65,kfrac:25,thr:2,tab:"hoy"};
+FIX.forEach(f=>S.odds[f.h+"|"+f.a]={"1X2":f.odds.slice()});
+try{const r=localStorage.getItem(KEY);if(r)S=Object.assign(S,JSON.parse(r));}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}};
+
+/* ══════════ 3. MATEMÁTICAS ══════════ */
+const MAXG=11,GB=1.45,HH=1.12,HA=0.90,RHO=-0.03,R_CORN=20,R_CARD=12;
+const fc=[1];for(let i=1;i<40;i++)fc[i]=fc[i-1]*i;
+const pois=(k,l)=>Math.exp(-l)*Math.pow(l,k)/fc[k];
+function lgam(z){const g=[676.5203683,-1259.1392167,771.3234288,-176.6150291,12.5073432,-0.1385710,9.9843695e-6,1.5056327e-7];
+  if(z<0.5)return Math.log(Math.PI/Math.sin(Math.PI*z))-lgam(1-z);
+  z-=1;let x=0.99999999999980993;for(let i=0;i<8;i++)x+=g[i]/(z+i+1);
+  const t=z+7.5;return 0.5*Math.log(2*Math.PI)+(z+0.5)*Math.log(t)-t+Math.log(x);}
+const nbp=(k,mu,r)=>Math.exp(lgam(k+r)-lgam(r)-lgam(k+1)+r*Math.log(r/(r+mu))+k*Math.log(mu/(r+mu)));
+function nbOver(L,mu,r){let c=0;for(let k=0;k<=Math.floor(L);k++)c+=nbp(k,mu,r);return 1-c;}
+function tau(x,y,lh,la){
+  if(x===0&&y===0)return 1-lh*la*RHO;
+  if(x===0&&y===1)return 1+lh*RHO;
+  if(x===1&&y===0)return 1+la*RHO;
+  if(x===1&&y===1)return 1-RHO;
+  return 1;}
+function grid(lh,la){
+  const g=[];let s=0;
+  for(let i=0;i<MAXG;i++){g[i]=[];for(let j=0;j<MAXG;j++){const v=pois(i,lh)*pois(j,la)*tau(i,j,lh,la);g[i][j]=v;s+=v;}}
+  for(let i=0;i<MAXG;i++)for(let j=0;j<MAXG;j++)g[i][j]/=s;
+  return g;}
+const agg=(g,f)=>{let t=0;for(let i=0;i<MAXG;i++)for(let j=0;j<MAXG;j++)if(f(i,j))t+=g[i][j];return t;};
+
+function model(fx){
+  const H=S.teams[fx.h],A=S.teams[fx.a];
+  const lh=GB*H[0]*A[1]*HH, la=GB*A[0]*H[1]*HA, g=grid(lh,la);
+  // contrafactual en campo neutral, para medir cuanto vale la localia
+  const gn=grid(GB*H[0]*A[1],GB*A[0]*H[1]);
+  const sc=[];for(let i=0;i<6;i++)for(let j=0;j<6;j++)sc.push([g[i][j],i+"–"+j]);
+  sc.sort((x,y)=>y[0]-x[0]);
+  const ch=Math.sqrt(H[4]*A[5])*1.08, ca=Math.sqrt(A[4]*H[5])*0.92;
+  const sh=Math.sqrt(H[2]*A[3])*1.06, sa=Math.sqrt(A[2]*H[3])*0.94;
+  return{lh,la,g,
+    pH:agg(g,(i,j)=>i>j), pD:agg(g,(i,j)=>i===j), pA:agg(g,(i,j)=>j>i),
+    nH:agg(gn,(i,j)=>i>j), nA:agg(gn,(i,j)=>j>i),
+    o15:agg(g,(i,j)=>i+j>1), o25:agg(g,(i,j)=>i+j>2), o35:agg(g,(i,j)=>i+j>3), o45:agg(g,(i,j)=>i+j>4),
+    btts:agg(g,(i,j)=>i>0&&j>0),
+    o25btts:agg(g,(i,j)=>i+j>2&&i>0&&j>0),
+    hO25:agg(g,(i,j)=>i+j>2&&i>j), aO25:agg(g,(i,j)=>i+j>2&&j>i),
+    hcs:agg(g,(i,j)=>j===0), acs:agg(g,(i,j)=>i===0),
+    sh,sa,sot_h:sh*0.34,sot_a:sa*0.34, xgc_h:sh*0.34*0.31, xgc_a:sa*0.34*0.31,
+    ch,ca,ctot:ch+ca, cards:S.refs[fx.ref][0]*fx.tn*((H[6]+A[6])/2),
+    top:sc.slice(0,3)};
+}
+function devig(dec){
+  const p=dec.map(d=>1/d), f=k=>p.reduce((s,x)=>s+Math.pow(x,k),0)-1;
+  let lo=0.5,hi=1.5;
+  for(let i=0;i<60;i++){const m=(lo+hi)/2;if(f(m)>0){lo=m;}else{hi=m;}}
+  return p.map(x=>Math.pow(x,(lo+hi)/2));}
+const pct=x=>(x*100).toFixed(1)+"%";
+const mxn=x=>"$"+Math.round(x).toLocaleString("es-MX");
+
+/* ══════════ 4. MERCADOS ══════════
+   fiab: cuánta confianza merece la estructura del modelo en ese mercado.
+   alta = sale directo de la matriz de goles ajustada con Dixon-Coles.
+   media = sale de la matriz pero depende de más supuestos.
+   baja  = depende de parámetros míos sin ajustar (córners, tarjetas).  */
+function mercados(m,fx){
+  const h=fx.h,a=fx.a;
+  return [
+   {g:"Resultado", fiab:"alta", key:"1X2", sels:[
+     {n:h+" gana",p:m.pH},{n:"Empate",p:m.pD},{n:a+" gana",p:m.pA}]},
+   {g:"Doble oportunidad", fiab:"alta", key:"DO", sels:[
+     {n:h+" o empate (1X)",p:m.pH+m.pD},{n:"Empate o "+a+" (X2)",p:m.pD+m.pA},
+     {n:"Cualquiera gana (12)",p:m.pH+m.pA}]},
+   {g:"Total de goles", fiab:"alta", key:"GOL", sels:[
+     {n:"Más de 1.5",p:m.o15},{n:"Menos de 2.5",p:1-m.o25},{n:"Más de 2.5",p:m.o25},
+     {n:"Menos de 3.5",p:1-m.o35},{n:"Más de 3.5",p:m.o35},{n:"Más de 4.5",p:m.o45}]},
+   {g:"Ambos anotan", fiab:"alta", key:"AA", sels:[
+     {n:"Ambos anotan — Sí",p:m.btts},{n:"Ambos anotan — No",p:1-m.btts}]},
+   {g:"Portería a cero", fiab:"alta", key:"PA", sels:[
+     {n:h+" deja el cero",p:m.hcs},{n:a+" deja el cero",p:m.acs}]},
+   {g:"Combinadas", fiab:"media", key:"CMB", combo:true, sels:[
+     {n:"Más 2.5 + Ambos anotan",p:m.o25btts,ing:m.o25*m.btts},
+     {n:h+" gana + Más 2.5",p:m.hO25,ing:m.pH*m.o25},
+     {n:a+" gana + Más 2.5",p:m.aO25,ing:m.pA*m.o25}]},
+   {g:"Córners", fiab:"baja", key:"COR", sels:[
+     {n:"Más de 8.5 córners",p:nbOver(8.5,m.ctot,R_CORN)},{n:"Más de 9.5 córners",p:nbOver(9.5,m.ctot,R_CORN)},
+     {n:"Más de 10.5 córners",p:nbOver(10.5,m.ctot,R_CORN)},{n:"Menos de 10.5 córners",p:1-nbOver(10.5,m.ctot,R_CORN)}]},
+   {g:"Tarjetas", fiab:"baja", key:"TAR", sels:[
+     {n:"Más de 3.5 tarjetas",p:nbOver(3.5,m.cards,R_CARD)},{n:"Más de 4.5 tarjetas",p:nbOver(4.5,m.cards,R_CARD)},
+     {n:"Más de 5.5 tarjetas",p:nbOver(5.5,m.cards,R_CARD)},{n:"Menos de 4.5 tarjetas",p:1-nbOver(4.5,m.cards,R_CARD)}]}
+  ];
+}
+const FIAB_W={alta:1.00,media:0.93,baja:0.85};
+
+/* ══════════ 5. VISTAS ══════════ */
+const TABS=[["hoy","Hoy"],["apuestas","Apuestas"],["tabla","Tabla"],["stats","Estadísticas"],["registro","Mi registro"]];
+
+const EN_JUEGO=["1H","2H","HT","ET","BT","P","LIVE"], TERMINADO=["FT","AET","PEN"];
+function estado(fx){
+  // fx.st viene de la API cuando hay datos; si no, cae a la semilla
+  if(fx.st){
+    if(TERMINADO.includes(fx.st))
+      return ["done", fx.gl!=null?`Final ${fx.gl}–${fx.gv}`:"Terminado"];
+    if(EN_JUEGO.includes(fx.st))
+      return ["play", fx.gl!=null?`${fx.gl}–${fx.gv} · ${fx.min??""}'`:"En juego"];
+    return ["soon","Por jugar"];
+  }
+  return ["soon","Por jugar"];
+}
+function crest(t){return `<span class="crest" style="background:${CLUB[t]||"#888"}"></span>`;}
+
+function vistaHoy(){
+  let h=`<p class="lead">Los seis partidos de la jornada con su hora en CDMX, dónde verlos, el árbitro designado y lo que el modelo espera. Debajo de cada uno, las cinco apuestas de mayor convicción de ese juego.</p>`;
+  FIX.forEach(fx=>{
+    const m=model(fx), [cls,txt]=estado(fx);
+    const picks=mercados(m,fx).flatMap(mk=>mk.sels.map(s=>({...s,g:mk.g,fiab:mk.fiab})))
+      .filter(s=>s.p>0.5).sort((x,y)=>y.p*FIAB_W[y.fiab]-x.p*FIAB_W[x.fiab]).slice(0,5);
+    h+=`<article class="card">
+      <header>
+        <div class="fixture">${crest(fx.h)}<h3>${fx.h}<span class="vs">vs</span>${fx.a}</h3>${crest(fx.a)}</div>
+        <div class="state">
+          <span class="pill ${cls}">${txt}</span>
+          <span class="mono">${fx.cdmx} CDMX · ${fx.cet} CET</span>
+        </div>
+      </header>
+      <div class="grid-meta">
+        <div class="mcell"><div class="k">Dónde ver</div><div class="v">${fx.tv}</div></div>
+        <div class="mcell"><div class="k">Sede</div><div class="v" style="font-size:13px">${fx.sede}</div></div>
+        <div class="mcell"><div class="k">Árbitro</div><div class="v">${fx.ref} <small>${S.refs[fx.ref][0].toFixed(2)} t/p</small></div></div>
+        <div class="mcell"><div class="k">Goles esperados</div><div class="v mono">${m.lh.toFixed(2)} – ${m.la.toFixed(2)}</div></div>
+        <div class="mcell"><div class="k">Marcador más probable</div><div class="v mono">${m.top[0][1]} <small>${pct(m.top[0][0])}</small></div></div>
+        <div class="mcell"><div class="k">Córners / tarjetas</div><div class="v mono">${m.ctot.toFixed(1)} / ${m.cards.toFixed(1)}</div></div>
+      </div>
+      ${fx.h2h?`<div style="padding:11px 18px;border-bottom:1px solid var(--line-soft);font-size:13.5px;color:var(--ink-2)">
+        <b style="color:var(--ink)">Historial ${fx.h2h.hw}-${fx.h2h.d}-${fx.h2h.aw}</b> en ${fx.h2h.n} duelos. ${fx.h2h.txt}</div>`:""}
+      ${fx.news?`<div style="padding:11px 18px;border-bottom:1px solid var(--line-soft);font-size:13.5px;color:var(--ink-2)">
+        <b style="color:var(--ink)">Plantillas.</b> ${fx.news}</div>`:""}
+      <div class="picks">
+        <h4>Apuestas de mayor convicción</h4>
+        ${picks.map((s,i)=>`<div class="pick">
+          <span class="rank">${i+1}</span>
+          <div><div class="lbl">${s.n}</div>
+            <div class="tags"><span class="tag">${s.g}</span><span class="tag ${s.fiab}">fiabilidad ${s.fiab}</span></div>
+            <div class="meter"><i style="width:${(s.p*100).toFixed(0)}%"></i></div></div>
+          <div class="nums"><div class="p">${pct(s.p)}</div><div class="fo">justa ${(1/s.p).toFixed(2)}</div></div>
+        </div>`).join("")}
+      </div>
+    </article>`;
+  });
+  h+=`<div class="note"><h4>Convicción no es lo mismo que valor</h4>
+    <p>Esta lista ordena por <b>qué tan probable</b> es cada apuesta, no por cuánto dinero deja. Un 88% pagado a 1.10 es una probabilidad alta y una apuesta mala. Para saber si conviene hace falta la cuota: métela en la pestaña <b>Apuestas</b> y ahí sí sale el valor esperado.</p>
+    <p>La etiqueta de fiabilidad dice cuánto confiar en la estructura del modelo, no en el resultado: <b>alta</b> sale directo de la matriz de goles; <b>baja</b> depende de parámetros míos que todavía no están ajustados sobre datos reales.</p></div>`;
+  return h;
+}
+
+function vistaApuestas(){
+  const W=S.wmkt/100,KF=S.kfrac/100,THR=S.thr/100;
+  let tot=0,risk=0,ev=0,html="";
+  html+=`<div class="ctlbar">
+    <div class="ctl"><label for="bank">Banco (MXN)</label><input type="number" id="bank" value="${S.bank}" min="0" step="100"></div>
+    <div class="ctl"><label for="wmkt">Peso del mercado</label><input type="range" id="wmkt" min="0" max="100" value="${S.wmkt}"><span class="v">${S.wmkt}% mercado / ${100-S.wmkt}% modelo</span></div>
+    <div class="ctl"><label for="kfrac">Fracción de Kelly</label><input type="range" id="kfrac" min="5" max="100" step="5" value="${S.kfrac}"><span class="v">${S.kfrac===100?"Kelly completo":"1/"+(100/S.kfrac).toFixed(1).replace(".0","")+" Kelly"}</span></div>
+    <div class="ctl"><label for="thr">Umbral de EV</label><input type="range" id="thr" min="0" max="10" step="0.5" value="${S.thr}"><span class="v">+${S.thr.toFixed(1)}% mínimo</span></div>
+  </div>`;
+  let cards="";
+  FIX.forEach(fx=>{
+    const key=fx.h+"|"+fx.a, m=model(fx), mks=mercados(m,fx);
+    S.odds[key]=S.odds[key]||{};
+    let best=[],blocks="";
+    mks.forEach(mk=>{
+      const stored=S.odds[key][mk.key]||[];
+      let fair=null;
+      if(mk.key==="1X2"&&stored.length===3&&stored.every(x=>x>1))fair=devig(stored);
+      let rows="";
+      mk.sels.forEach((s,i)=>{
+        let bl=s.p;
+        if(fair){const raw=mk.sels.map((z,k)=>W*fair[k]+(1-W)*z.p),t=raw.reduce((x,y)=>x+y,0);bl=raw[i]/t;}
+        const o=stored[i];
+        let evc="—",stc="",cls="";
+        if(o&&o>1){
+          const e=bl*o-1,b=o-1,kel=Math.max(0,(bl*b-(1-bl))/b)*KF,st=Math.min(kel,0.02)*S.bank;
+          if(e>THR){tot++;risk+=st;ev+=st*e;cls=e>0.10?"warnrow":"hl";
+            best.push({n:s.n,g:mk.g,o,e,st,fiab:mk.fiab});}
+          evc=`<span class="${e>0?'pos':'neg'}">${e>=0?"+":""}${(e*100).toFixed(1)}%</span>`;
+          stc=e>THR?mxn(st):"—";
+        }
+        rows+=`<tr class="${cls}"><td>${s.n}</td>
+          ${mk.combo?`<td class="dim">${pct(s.ing)}</td>`:""}
+          <td>${pct(s.p)}</td>${fair?`<td>${pct(fair[i])}</td><td>${pct(bl)}</td>`:""}
+          <td>${(1/bl).toFixed(2)}</td>
+          <td><input class="odds-in" type="number" step="0.01" min="1.01" placeholder="—"
+              data-k="${key}" data-m="${mk.key}" data-i="${i}" data-n="${mk.sels.length}"
+              value="${o&&o>1?(+o).toFixed(2):""}"></td>
+          <td>${evc}</td><td>${stc||"—"}</td></tr>`;
+      });
+      blocks+=`<h4 style="font-size:13px;margin:16px 0 6px;display:flex;gap:8px;align-items:center">
+          ${mk.g}<span class="tag ${mk.fiab}">fiabilidad ${mk.fiab}</span></h4>
+        <div class="scroll"><table><thead><tr>
+          <th>Selección</th>${mk.combo?"<th>Producto ingenuo</th>":""}<th>${mk.combo?"Real":"Modelo"}</th>
+          ${fair?"<th>Justa mkt</th><th>Final</th>":""}<th>Cuota justa</th><th>Tu cuota</th><th>EV</th><th>Stake</th>
+        </tr></thead><tbody>${rows}</tbody></table></div>`;
+    });
+    best.sort((x,y)=>y.e-x.e);
+    cards+=`<article class="card">
+      <header><div class="fixture">${crest(fx.h)}<h3>${fx.h}<span class="vs">vs</span>${fx.a}</h3>${crest(fx.a)}</div>
+        <div class="state"><span class="mono">${fx.cdmx} CDMX</span></div></header>
+      <div class="picks"><h4>Con valor según tus cuotas</h4>
+        ${best.length?best.map((b,i)=>`<div class="pick">
+            <span class="rank">${i+1}</span>
+            <div><div class="lbl">${b.n}</div>
+              <div class="tags"><span class="tag">${b.g}</span><span class="tag ${b.fiab}">fiabilidad ${b.fiab}</span>
+                <span class="tag">cuota ${(+b.o).toFixed(2)}</span></div></div>
+            <div class="nums"><div class="p ${b.e>0?"pos":""}">${b.e>=0?"+":""}${(b.e*100).toFixed(1)}%</div>
+              <div class="fo">apostar ${mxn(b.st)}</div></div></div>`).join("")
+          :`<div class="empty">Escribe abajo las cuotas que te ofrezcan y aquí aparecen solo las que superen tu umbral de +${S.thr.toFixed(1)}%.</div>`}
+      </div>
+      <details class="mk"><summary>Los ocho mercados en detalle</summary><div class="inner">${blocks}</div></details>
+    </article>`;
+  });
+  html+=`<div class="kpis">
+    <div class="kpi"><div class="k">Apuestas con valor</div><div class="v">${tot}</div></div>
+    <div class="kpi"><div class="k">Riesgo total</div><div class="v">${mxn(risk)}</div></div>
+    <div class="kpi"><div class="k">% del banco</div><div class="v">${S.bank>0?(risk/S.bank*100).toFixed(1):"0.0"}%</div></div>
+    <div class="kpi"><div class="k">Ganancia esperada</div><div class="v" style="color:${ev>0?"var(--pos)":"var(--ink)"}">${ev>0?"+":""}${mxn(ev)}</div></div>
+  </div>`+cards;
+  html+=`<div class="note"><h4>Solo el 1X2 trae cuotas de mercado</h4>
+    <p>En resultado puedo quitar el margen de la casa y mezclar mercado con modelo — por eso ahí ves las columnas «justa mkt» y «final». En los otros siete mercados no tengo cuotas cargadas: verás mi probabilidad y la cuota justa, y en cuanto escribas la que te ofrezcan calculo el valor.</p>
+    <p>El margen de la casa hoy va del 5.2% al 6.2%. Con esa comisión lo normal es que la mayoría de las celdas salgan en rojo: eso significa que el mercado está bien puesto y lo racional es no apostar, no que el tablero esté fallando.</p></div>`;
+  return html;
+}
+
+function vistaTabla(){
+  const enJuego=new Set(); FIX.forEach(f=>{enJuego.add(f.h);enJuego.add(f.a);});
+  const norm={"Dortmund":"Borussia Dortmund","Man City":"Manchester City"};
+  const activos=new Set([...enJuego].map(t=>norm[t]||t));
+  const real=Array.isArray(TABLA)&&TABLA.length;
+  const filas=real?TABLA:EQUIPOS36.map(t=>({equipo:t,pj:0,g:0,e:0,p:0,gf:0,gc:0,pts:0}));
+  const rows=filas.map((r,i)=>{
+    const band=i<8?"var(--pos)":i<24?"var(--star)":"var(--neg)";
+    const juega=activos.has(corto(r.equipo))||activos.has(r.equipo);
+    return `<tr><td><span class="band" style="background:${band}"></span>${r.equipo}
+      ${juega?'<span class="tag" style="margin-left:6px">juega hoy</span>':""}</td>
+      <td>${r.pj}</td><td>${r.g}</td><td>${r.e}</td><td>${r.p}</td>
+      <td>${r.gf}</td><td>${r.gc}</td><td><b>${r.pts}</b></td></tr>`;
+  }).join("");
+  return `<p class="lead">Los 36 equipos de la fase liga. Todos arrancan en cero: hoy es la jornada 1 de 8, y la tabla se llena conforme se juegue. El orden aquí es alfabético hasta que haya puntos.</p>
+  <div class="legend">
+    <span><i style="background:var(--pos)"></i>1–8: a octavos directo</span>
+    <span><i style="background:var(--star)"></i>9–24: repesca a doble partido</span>
+    <span><i style="background:var(--neg)"></i>25–36: eliminados</span>
+  </div>
+  <div class="panel" style="padding:0"><div class="scroll"><table>
+    <thead><tr><th>Equipo</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>Pts</th></tr></thead>
+    <tbody>${rows}</tbody></table></div></div>
+  <div class="note"><h4>Cómo funciona la fase liga</h4>
+    <p>Una sola tabla de 36 equipos, ocho partidos cada uno contra rivales distintos: cuatro de local y cuatro de visitante. No hay grupos. Del 1 al 8 pasan directo a octavos; del 9 al 24 juegan una repesca a doble partido en febrero; del 25 al 36 quedan fuera de todo, sin paracaídas a la Europa League.</p>
+    <p>Para apostar esto importa más de lo que parece: un equipo del puesto 9 al 24 sigue jugándose la vida en la jornada 8, mientras que el que ya aseguró el top 8 rota. Hacia el final de la fase, la motivación desigual mueve las cuotas más que la calidad.</p></div>`;
+}
+
+function vistaStats(){
+  let loc="",h2h="",diag="";
+  FIX.forEach(fx=>{
+    const m=model(fx);
+    const d=(m.pH-m.nH)*100;
+    loc+=`<tr><td>${fx.h} vs ${fx.a}</td><td>${pct(m.nH)}</td><td>${pct(m.pH)}</td>
+      <td class="${d>0?"pos":"neg"}">+${d.toFixed(1)} pts</td>
+      <td>${(m.lh-m.la).toFixed(2)}</td></tr>`;
+    if(fx.h2h)h2h+=`<div class="panel"><h3>${fx.h} vs ${fx.a}</h3>
+      <p style="margin-bottom:8px"><b class="mono">${fx.h2h.hw}–${fx.h2h.d}–${fx.h2h.aw}</b> en ${fx.h2h.n} enfrentamientos. ${fx.h2h.txt}</p>
+      <div class="meter" style="height:8px;display:flex"><i style="width:${fx.h2h.hw/fx.h2h.n*100}%;background:var(--pos)"></i><i style="width:${fx.h2h.d/fx.h2h.n*100}%;background:var(--ink-3)"></i><i style="width:${fx.h2h.aw/fx.h2h.n*100}%;background:var(--accent)"></i></div>
+      <p class="dim" style="margin-top:6px;font-size:12px">Verde: gana ${fx.h} · gris: empate · azul: gana ${fx.a}</p></div>`;
+    const dv=Math.abs(m.xgc_h-m.lh)+Math.abs(m.xgc_a-m.la);
+    diag+=`<tr><td>${fx.h} vs ${fx.a}</td><td>${m.lh.toFixed(2)} – ${m.la.toFixed(2)}</td>
+      <td>${m.xgc_h.toFixed(2)} – ${m.xgc_a.toFixed(2)}</td>
+      <td class="${dv>0.6?"neg":""}">${dv.toFixed(2)}</td></tr>`;
+  });
+  const cols=["Ataque","Defensa","Remates F","Remates C","Córners F","Córners C","Indisciplina"];
+  const cal=Object.keys(S.teams).map(n=>`<tr><td>${n}</td>`+
+    S.teams[n].map((v,i)=>`<td><input class="odds-in" type="number" step="0.01" min="0" data-t="${n}" data-x="${i}" value="${v.toFixed(2)}"></td>`).join("")+`</tr>`).join("");
+  const refs=Object.keys(S.refs).map(r=>`<tr><td>${r}</td>
+    <td><input class="odds-in" type="number" step="0.05" min="0" data-r="${r}" value="${S.refs[r][0].toFixed(2)}"></td>
+    <td style="font-family:'Source Sans 3',sans-serif;font-size:13px;text-align:right;color:var(--ink-2)">
+      ${S.refs[r][1]?"verificado · 546 partidos":"estimación mía"}</td></tr>`).join("");
+
+  return `<h2 class="sec">Cuánto vale jugar en casa</h2>
+  <p class="lead">El modelo aplica ×1.12 al local y ×0.90 al visitante. Esta tabla lo traduce a lo único que importa: cuántos puntos porcentuales de probabilidad de victoria regala el estadio, comparando cada partido contra el mismo partido en campo neutral.</p>
+  <div class="panel" style="padding:0"><div class="scroll"><table>
+    <thead><tr><th>Partido</th><th>Gana local en neutral</th><th>Gana local en casa</th><th>Valor de la localía</th><th>Diferencia de xG</th></tr></thead>
+    <tbody>${loc}</tbody></table></div></div>
+  <div class="note"><h4>La localía no vale lo mismo en todos lados</h4>
+    <p>Aquí el factor es el mismo para todos porque no tengo datos por estadio. En la realidad no lo es: la altitud, el viaje del visitante, el césped y la presión del público cambian bastante entre el Bernabéu y una cancha de Bakú. Cuando tengamos histórico por sede, este número deja de ser uno solo y pasa a ser doce.</p></div>
+
+  <h2 class="sec">Enfrentamientos históricos</h2>
+  <p class="lead">Solo pongo los que pude verificar hoy. Un historial no predice por sí solo — plantillas de hace veinte años no juegan el partido de esta noche — pero sí dice algo cuando es reciente y repetido.</p>
+  ${h2h||'<div class="empty">Sin historiales verificados.</div>'}
+
+  <h2 class="sec">Diagnóstico: los dos xG no coinciden</h2>
+  <p class="lead">El modelo de goles y la cadena de remates deberían dar el mismo xG. No lo hacen. Mientras la diferencia siga arriba de 0.4, no confíes en distinciones de EV de uno o dos puntos: están dentro del error del propio modelo.</p>
+  <div class="panel" style="padding:0"><div class="scroll"><table>
+    <thead><tr><th>Partido</th><th>xG Dixon–Coles</th><th>xG vía remates</th><th>Δ</th></tr></thead>
+    <tbody>${diag}</tbody></table></div></div>
+
+  <h2 class="sec">Parámetros del modelo</h2>
+  <p class="lead">Todo esto son mis valores a priori, no un ajuste sobre datos históricos. Si sabes algo que el modelo no sabe — una baja, rotación, un cambio de entrenador — cámbialo aquí y todo el tablero se recalcula.</p>
+  <div class="panel" style="padding:0"><div class="scroll"><table>
+    <thead><tr><th>Equipo</th>${cols.map(c=>`<th>${c}</th>`).join("")}</tr></thead><tbody>${cal}</tbody></table></div></div>
+  <div class="panel" style="padding:0;margin-top:14px"><div class="scroll"><table>
+    <thead><tr><th>Árbitro</th><th>Tarjetas/partido</th><th>Origen</th></tr></thead><tbody>${refs}</tbody></table></div></div>`;
+}
+
+/* ---------- registro con almacenamiento persistente ---------- */
+let DB=null, BETS=[];
+async function initDB(){
+  try{DB=await claude.use("db");}catch(e){DB=null;}
+  if(!DB)return;
+  DB.collection("apuestas").orderBy("ts","desc").limit(500).onSnapshot(
+    snap=>{BETS=snap.docs.map(d=>({id:d.id,...d.data}));if(S.tab==="registro")render();},
+    ()=>{}
+  );
+}
+function vistaRegistro(){
+  const set=BETS.filter(b=>b.res&&b.res!=="pend");
+  const risk=set.reduce((s,b)=>s+(+b.stake||0),0);
+  const ret=set.reduce((s,b)=>s+(b.res==="gan"?(+b.stake)*(+b.cuota):b.res==="nula"?(+b.stake):0),0);
+  const roi=risk>0?(ret-risk)/risk*100:0;
+  const conClv=set.filter(b=>+b.cierre>1);
+  const clv=conClv.length?conClv.reduce((s,b)=>s+((+b.cuota)/(+b.cierre)-1),0)/conClv.length*100:null;
+  const gan=set.filter(b=>b.res==="gan").length;
+  const rows=BETS.map(b=>`<tr>
+    <td style="font-size:13px">${b.partido||"—"}<div class="dim">${b.mercado||""} · ${b.sel||""}</div></td>
+    <td>${(+b.cuota||0).toFixed(2)}</td><td>${mxn(+b.stake||0)}</td>
+    <td>${+b.cierre>1?(+b.cierre).toFixed(2):"—"}</td>
+    <td class="${+b.cierre>1?((+b.cuota)>(+b.cierre)?"pos":"neg"):""}">${+b.cierre>1?(((+b.cuota)/(+b.cierre)-1)*100).toFixed(1)+"%":"—"}</td>
+    <td>${b.res==="gan"?'<span class="pos">Ganada</span>':b.res==="per"?'<span class="neg">Perdida</span>':b.res==="nula"?"Nula":"Pendiente"}</td>
+    <td><button class="ghost" data-del="${b.id}">Borrar</button></td></tr>`).join("");
+
+  return `<p class="lead">Aquí es donde se decide si el modelo sirve. Un edge del 3% no se distingue del azar en veinte apuestas: hacen falta cientos, anotadas todas, también las que perdieron.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="k">Apuestas</div><div class="v">${BETS.length}</div></div>
+    <div class="kpi"><div class="k">Resueltas</div><div class="v">${set.length}${set.length?` <span style="font-size:13px;color:var(--ink-3)">${gan}G</span>`:""}</div></div>
+    <div class="kpi"><div class="k">Riesgo acumulado</div><div class="v">${mxn(risk)}</div></div>
+    <div class="kpi"><div class="k">ROI</div><div class="v" style="color:${roi>0?"var(--pos)":roi<0?"var(--neg)":"var(--ink)"}">${set.length?(roi>0?"+":"")+roi.toFixed(1)+"%":"—"}</div></div>
+    <div class="kpi"><div class="k">CLV medio</div><div class="v" style="color:${clv===null?"var(--ink)":clv>0?"var(--pos)":"var(--neg)"}">${clv===null?"—":(clv>0?"+":"")+clv.toFixed(1)+"%"}</div></div>
+  </div>
+  ${DB?"":'<div class="note"><h4>Guardado no disponible en esta vista</h4><p>El registro necesita el almacenamiento de la página y aquí no cargó. Puedes seguir viendo el resto del tablero; lo que anotes ahora no se guardará.</p></div>'}
+  <div class="panel">
+    <h3>Anotar una apuesta</h3>
+    <p>La cuota de cierre es la que tenía la casa justo antes del pitazo. Es el dato más importante de toda esta tabla.</p>
+    <form class="log" id="frm">
+      <label>Partido<select name="partido">${FIX.map(f=>`<option>${f.h} vs ${f.a}</option>`).join("")}</select></label>
+      <label>Mercado<input name="mercado" placeholder="Total de goles"></label>
+      <label>Selección<input name="sel" placeholder="Más de 2.5"></label>
+      <label>Cuota<input name="cuota" type="number" step="0.01" min="1.01" required></label>
+      <label>Stake<input name="stake" type="number" step="1" min="0" required></label>
+      <label>Cuota de cierre<input name="cierre" type="number" step="0.01" min="0" placeholder="opcional"></label>
+      <label>Resultado<select name="res"><option value="pend">Pendiente</option><option value="gan">Ganada</option><option value="per">Perdida</option><option value="nula">Nula</option></select></label>
+      <button class="act" type="submit">Guardar</button>
+    </form>
+  </div>
+  <div class="panel" style="padding:0">${BETS.length?`<div class="scroll"><table>
+    <thead><tr><th>Apuesta</th><th>Cuota</th><th>Stake</th><th>Cierre</th><th>CLV</th><th>Estado</th><th></th></tr></thead>
+    <tbody>${rows}</tbody></table></div>`:'<div class="empty" style="margin:16px">Todavía no has anotado ninguna apuesta.</div>'}</div>
+  <div class="note"><h4>Por qué el CLV importa más que el ROI</h4>
+    <p>Si tomaste 2.40 y el partido cerró en 2.10, ganaste valor aunque la apuesta perdiera: conseguiste un precio mejor que el que el mercado terminó fijando con toda la información disponible. Eso, repetido, es lo único que predice ganancia a largo plazo.</p>
+    <p>El ROI en pocas apuestas es casi puro ruido. El CLV se estabiliza mucho antes. Si tu CLV medio es negativo después de cincuenta apuestas, el modelo no está encontrando valor — está encontrando errores propios.</p></div>`;
+}
+
+/* ══════════ 6. RENDER Y EVENTOS ══════════ */
+function render(){
+  document.getElementById("updated").innerHTML=
+    `<span class="pulse"></span><b>Actualizado</b> ${ACTUALIZADO}<br>
+     Datos: ${FUENTE} · Modelo: ${typeof AJUSTADO!=="undefined"?AJUSTADO:"a priori"}`;
+  document.getElementById("tabs").innerHTML=TABS.map(([id,n])=>
+    `<button role="tab" data-t="${id}" aria-selected="${S.tab===id}">${n}</button>`).join("");
+  document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{S.tab=b.dataset.t;save();render();window.scrollTo(0,0);});
+  TABS.forEach(([id])=>document.getElementById("v-"+id).hidden=(id!==S.tab));
+  const el=document.getElementById("v-"+S.tab);
+  el.innerHTML={hoy:vistaHoy,apuestas:vistaApuestas,tabla:vistaTabla,stats:vistaStats,registro:vistaRegistro}[S.tab]();
+  wire();
+}
+function wire(){
+  const bank=document.getElementById("bank");
+  if(bank)bank.oninput=e=>{S.bank=Math.max(0,+e.target.value||0);save();render();};
+  ["wmkt","kfrac","thr"].forEach(id=>{const n=document.getElementById(id);
+    if(n)n.oninput=e=>{S[id]=+e.target.value;save();render();};});
+  document.querySelectorAll(".odds-in[data-k]").forEach(n=>n.onchange=e=>{
+    const t=e.target,k=t.dataset.k,mk=t.dataset.m,i=+t.dataset.i,len=+t.dataset.n,v=parseFloat(t.value);
+    S.odds[k]=S.odds[k]||{};S.odds[k][mk]=S.odds[k][mk]||new Array(len).fill(0);
+    S.odds[k][mk][i]=v>1?v:0;save();render();});
+  document.querySelectorAll(".odds-in[data-t]").forEach(n=>n.onchange=e=>{
+    const v=parseFloat(e.target.value);if(v>0){S.teams[e.target.dataset.t][+e.target.dataset.x]=v;save();render();}});
+  document.querySelectorAll(".odds-in[data-r]").forEach(n=>n.onchange=e=>{
+    const v=parseFloat(e.target.value);if(v>0){S.refs[e.target.dataset.r]=[v,0];save();render();}});
+  const frm=document.getElementById("frm");
+  if(frm)frm.onsubmit=async ev=>{
+    ev.preventDefault();
+    if(!DB)return;
+    const f=new FormData(frm),d={ts:Date.now()};
+    ["partido","mercado","sel","res"].forEach(k=>d[k]=(f.get(k)||"").toString());
+    ["cuota","stake","cierre"].forEach(k=>d[k]=parseFloat(f.get(k))||0);
+    try{await DB.collection("apuestas").add(d);frm.reset();}catch(e){}
+  };
+  document.querySelectorAll("[data-del]").forEach(b=>b.onclick=async()=>{
+    if(!DB)return;try{await DB.collection("apuestas").doc(b.dataset.del).delete();}catch(e){}});
+}
+/* ══════════ 7. CARGA DE DATOS REALES ══════════
+   Tres capas, de menos a más fresca. Cada una es opcional: si falla, la
+   anterior sigue en pie y la página nunca se queda en blanco.
+     1. semilla       — la que va escrita arriba, funciona sin red
+     2. repositorio   — data/*.json, que GitHub Actions refresca
+     3. Worker        — marcadores al minuto, si WORKER_URL está puesto  */
+
+const HORA=iso=>{const d=new Date(iso);return{
+  cet:d.toLocaleTimeString("es-ES",{timeZone:"Europe/Madrid",hour:"2-digit",minute:"2-digit"}),
+  cdmx:d.toLocaleTimeString("es-MX",{timeZone:"America/Mexico_City",hour:"2-digit",minute:"2-digit"})};};
+
+// nombres de la API -> nombres cortos que usa el modelo
+const ALIAS={"Borussia Dortmund":"Dortmund","Manchester City":"Man City","AEK Athens":"AEK Atenas",
+ "Club Brugge KV":"Club Brujas","Club Brugge":"Club Brujas","Inter":"Inter","FC Porto":"Porto",
+ "Real Betis":"Real Betis","Lille":"Lille","LOSC Lille":"Lille","Villarreal":"Villarreal"};
+const corto=n=>ALIAS[n]||n;
+const MEDIO=[1.00,1.00,12.5,12.5,5.0,5.0,1.00];   // equipo promedio, para debutantes
+
+async function json(u,ms=6000){
+  const c=new AbortController(), t=setTimeout(()=>c.abort(),ms);
+  try{const r=await fetch(u,{signal:c.signal,cache:"no-store"});
+      return r.ok?await r.json():null;}
+  catch(e){return null;} finally{clearTimeout(t);}
+}
+
+function aplicarPartidos(lista){
+  if(!Array.isArray(lista)||!lista.length)return false;
+  FIX=lista.map(p=>{
+    const h=corto(p.local),a=corto(p.visita),t=p.utc?HORA(p.utc):{cet:"",cdmx:""};
+    [h,a].forEach(n=>{if(!S.teams[n])S.teams[n]=MEDIO.slice();if(!CLUB[n])CLUB[n]="#7C8894";});
+    const ref=p.arbitro?p.arbitro.split("(")[0].trim():"Sin designar";
+    if(!S.refs[ref])S.refs[ref]=[4.20,0];
+    return{h,a,cet:t.cet,cdmx:t.cdmx,ref,tn:1.00,
+      sede:p.sede||"—", tv:"HBO Max · TNT Sports",
+      h2h:null,news:null,odds:[0,0,0],
+      id:p.id, st:p.estado, gl:p.golesLocal, gv:p.golesVisita, min:p.minuto};
+  });
+  FIX.forEach(f=>{S.odds[f.h+"|"+f.a]=S.odds[f.h+"|"+f.a]||{};});
+  return true;
+}
+
+async function cargar(){
+  const [params,fx,tabla,cuotas,h2h,meta]=await Promise.all([
+    json("./data/params.json"), json("./data/fixtures.json"), json("./data/standings.json"),
+    json("./data/odds.json"), json("./data/h2h.json"), json("./data/meta.json")]);
+
+  // 1. parámetros ajustados sobre histórico: sustituyen mis valores a priori
+  if(params?.teams){
+    for(const [n,v] of Object.entries(params.teams)){const k=corto(n);if(S.teams[k])S.teams[k]=v;}
+    for(const [r,v] of Object.entries(params.refs||{}))S.refs[r]=[v[0],1];
+    AJUSTADO=`ajustado sobre ${params.partidos} partidos (${params.desde} a ${params.hasta})`;
+  }
+  // 2. partidos, tabla, cuotas
+  const hayFx=aplicarPartidos(fx);
+  if(hayFx&&cuotas)FIX.forEach(f=>{
+    const c=cuotas[f.id]; if(Array.isArray(c)&&c.length===3){f.odds=c;S.odds[f.h+"|"+f.a]["1X2"]=c.slice();}});
+  if(hayFx&&h2h)FIX.forEach(f=>{
+    const d=h2h[f.id];
+    if(d?.n)f.h2h={n:d.n,hw:d.hw,d:d.d,aw:d.aw,txt:(d.ultimos||[]).join(" · ")};});
+  if(Array.isArray(tabla)&&tabla.length)TABLA=tabla;
+  if(meta?.actualizado){
+    ACTUALIZADO=new Date(meta.actualizado).toLocaleString("es-MX",
+      {timeZone:"America/Mexico_City",dateStyle:"medium",timeStyle:"short"})+" CDMX";
+    FUENTE="repositorio";
+  }
+  if(hayFx||TABLA)render();
+}
+
+async function envivo(){
+  if(!WORKER_URL)return;
+  const r=await json(`${WORKER_URL}/fixtures?league=${LIGA}&season=${TEMPORADA}&live=all`,8000);
+  const lista=r?.response;
+  if(!Array.isArray(lista)||!lista.length)return;
+  let tocado=false;
+  for(const f of lista){
+    const fx=FIX.find(x=>x.id===f.fixture?.id);
+    if(!fx)continue;
+    fx.st=f.fixture?.status?.short; fx.min=f.fixture?.status?.elapsed;
+    fx.gl=f.goals?.home; fx.gv=f.goals?.away; tocado=true;
+  }
+  if(tocado){
+    FUENTE="en vivo";
+    ACTUALIZADO=new Date().toLocaleTimeString("es-MX",
+      {timeZone:"America/Mexico_City",hour:"2-digit",minute:"2-digit"})+" CDMX";
+    render();
+  }
+}
+
+let AJUSTADO="parámetros a priori, sin ajustar";
+render();
+initDB().then(()=>{if(S.tab==="registro")render();});
+cargar();
+if(WORKER_URL){envivo();setInterval(envivo,VIVO_MS);}
+</script>
