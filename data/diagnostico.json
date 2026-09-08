@@ -1,0 +1,11 @@
+{
+ "fuentes": {
+  "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
+  "cuotas": "sin configurar",
+  "estadisticas": "API-Football"
+ },
+ "avisos": [
+  "Sin ODDS_API_KEY: no traigo cuotas. El tablero deja los campos vacíos para que las escribas."
+ ],
+ "errores": []
+}

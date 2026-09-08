@@ -1,4 +1,8 @@
 {
- "actualizado": null,
- "nota": "Todavia sin correr fetch-data. La pagina usa la semilla escrita en index.html."
+ "actualizado": "2026-09-08T18:05:15.633Z",
+ "fuente": "football-data.org",
+ "partidos": 6,
+ "equiposEnTabla": 36,
+ "partidosConCuotas": 0,
+ "resultadosRecientes": 0
 }
