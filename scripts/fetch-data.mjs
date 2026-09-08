@@ -122,6 +122,32 @@ const norm = s => (s || "").toLowerCase()
   .replace(/\b(fc|cf|sc|ac|afc|kv|sk|fk|club|de|the)\b/g, "")
   .replace(/[^a-z0-9]/g, "");
 
+/* Emparejar clubes entre fuentes es más difícil de lo que parece:
+   football-data dice "PAE AEK" y "Man City", the-odds-api dice
+   "AEK Athens" y "Manchester City". Comparar la cadena completa falla en
+   los dos casos. Comparamos por palabras: basta que una palabra
+   significativa coincida (o sea prefijo de la otra) para dar por bueno
+   el equipo.                                                          */
+const GENERICAS = new Set(["fc","cf","sc","ac","afc","kv","sk","fk","club","pae",
+  "de","del","the","and","calcio","futebol","football","futbol","cp","cd","ud","if","bk"]);
+const palabras = s => (s || "").toLowerCase().normalize("NFD")
+  .replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ")
+  .split(" ").filter(w => w.length >= 3 && !GENERICAS.has(w));
+const casan = (x, y) =>
+  x === y || (x.length >= 3 && y.startsWith(x)) || (y.length >= 3 && x.startsWith(y));
+
+/* Exigimos que TODAS las palabras del nombre más corto encuentren pareja.
+   Con "una palabra basta" se colaban falsos positivos caros: "Real Madrid"
+   emparejaba con "Real Sociedad" y "Man City" con "Man United" — le
+   pegaríamos las cuotas al partido equivocado y ni cuenta nos daríamos. */
+function mismoEquipo(a, b) {
+  const A = palabras(a), B = palabras(b);
+  if (!A.length || !B.length) return false;
+  const [corto, largo] = A.length <= B.length ? [A, B] : [B, A];
+  const casadas = corto.filter(x => largo.some(y => casan(x, y))).length;
+  return casadas === corto.length;
+}
+
 async function cuotas(ps) {
   if (!ODDS_KEY) { aviso("Sin ODDS_API_KEY: no traigo cuotas. El tablero deja los campos vacíos para que las escribas."); return {}; }
   const u = new URL("https://api.the-odds-api.com/v4/sports/soccer_uefa_champs_league/odds");
@@ -132,14 +158,30 @@ async function cuotas(ps) {
   const j = await pedir(u, {}, "odds/h2h");
   if (!Array.isArray(j)) return {};
 
+  // Solo partidos que NO han empezado. Las cuotas en vivo de un partido
+  // que va 2-3 no se pueden comparar contra un modelo previo al saque:
+  // el "valor" que saldria de ahi seria basura.
+  const previos = ps.filter(p => ["NS","TIMED","SCHEDULED"].includes(p.estado));
+  const enJuego = ps.length - previos.length;
+  if (enJuego) aviso(`${enJuego} partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).`);
+
   const out = {};
   for (const ev of j) {
-    const hn = norm(ev.home_team), an = norm(ev.away_team);
-    const fx = ps.find(p => {
-      const a = norm(p.local), b = norm(p.visita);
-      return (a.includes(hn) || hn.includes(a)) && (b.includes(an) || an.includes(b));
+    const t = Date.parse(ev.commence_time || 0);
+    // Un nombre corto puede ser subcadena de varios ("Sporting" cabe en
+    // Sporting CP y Sporting Gijon). Si hay más de un candidato, no
+    // adivinamos: preferimos quedarnos sin cuota que ponersela al
+    // partido equivocado.
+    const cands = previos.filter(p => {
+      const dt = Math.abs(Date.parse(p.utc || 0) - t);
+      return dt < 6 * 3600e3 && mismoEquipo(p.local, ev.home_team) && mismoEquipo(p.visita, ev.away_team);
     });
-    if (!fx) continue;
+    if (cands.length !== 1) {
+      if (cands.length > 1)
+        aviso(`"${ev.home_team} vs ${ev.away_team}" empareja con ${cands.length} partidos: lo omito por ambiguo.`);
+      continue;
+    }
+    const fx = cands[0];
     const mejor = { H: 0, D: 0, A: 0 };
     for (const casa of ev.bookmakers || [])
       for (const mk of casa.markets || [])
@@ -149,8 +191,8 @@ async function cuotas(ps) {
         }
     if (mejor.H && mejor.D && mejor.A) out[fx.id] = [mejor.H, mejor.D, mejor.A];
   }
-  const sin = ps.length - Object.keys(out).length;
-  if (sin > 0) aviso(`${sin} partido(s) sin cuotas emparejadas (nombres distintos entre fuentes).`);
+  const sin = previos.length - Object.keys(out).length;
+  if (sin > 0) aviso(`${sin} partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).`);
   return out;
 }
 
