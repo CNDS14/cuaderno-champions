@@ -50,10 +50,22 @@ jobs:
           git add data/
           if git diff --staged --quiet; then
             echo "Sin cambios."
-          else
-            git commit -m "datos: $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git push
+            exit 0
           fi
+          git commit -m "datos: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          # Si alguien empujo al repo mientras corriamos, rebasamos y
+          # reintentamos. Sin esto, cualquier commit simultaneo tumba el job.
+          for intento in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Publicado en el intento $intento."
+              exit 0
+            fi
+            echo "Push rechazado; traigo cambios remotos y reintento..."
+            git pull --rebase --autostash origin main || true
+            sleep 5
+          done
+          echo "No se pudo publicar tras 3 intentos."
+          exit 1
 
   # GitHub apaga los workflows programados tras 60 días sin actividad en
   # el repo. Este job vacío mensual mantiene el repo "vivo".
