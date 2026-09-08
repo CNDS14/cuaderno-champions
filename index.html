@@ -246,16 +246,45 @@ let FUENTE = "semilla";           // semilla | repositorio | en vivo
 const CLUB = {  // color de club, solo como identificador visual
  "AEK Atenas":"#F5C518","LASK":"#111","Club Brujas":"#1B62B3","Aston Villa":"#95BFE5",
  "Dortmund":"#FDE100","Villarreal":"#FFE667","Porto":"#0F4C9C","Man City":"#6CABDD",
- "Lille":"#E01E24","Real Betis":"#00954C","Real Madrid":"#FEBE10","Inter":"#0068A8"
+ "Lille":"#E01E24","Real Betis":"#00954C","Real Madrid":"#FEBE10","Inter":"#0068A8",
+ "Arsenal":"#EF0107","Atlético de Madrid":"#CB3524","Barcelona":"#A50044","Bayern München":"#DC052D",
+ "Bodø/Glimt":"#FFDD00","Como":"#005BAC","Fenerbahçe":"#FFED00","Feyenoord":"#CC0000",
+ "Galatasaray":"#FDB912","Leipzig":"#DD0741","Lens":"#FFCC00","Liverpool":"#C8102E",
+ "Manchester United":"#DA291C","Napoli":"#12A0D7","Paris Saint-Germain":"#004170",
+ "PSV Eindhoven":"#EE2724","Roma":"#8E1F2F","Sabah":"#0B5FA5","Shakhtar Donetsk":"#F47A20",
+ "Slavia Praha":"#D7143A","Slovan Bratislava":"#0C4DA2","Sporting CP":"#008057",
+ "Stuttgart":"#E32219","Viking":"#0A2C5A"
 };
 /* [ataque, defensa, remates_f, remates_c, corners_f, corners_c, indisciplina] */
+/* Los 36 de la fase liga. Estos son valores A PRIORI míos: la estructura
+   matemática es correcta, los números son una opinión informada. Corre
+   scripts/fit-model.mjs sobre CSV históricos y data/params.json los
+   sustituye por estimaciones de verdad.                                */
 const T0={
- "AEK Atenas":  [0.88,1.05,12.0,12.5,5.0,5.2,1.15], "LASK":        [0.72,1.28, 9.5,15.0,4.0,6.5,1.10],
- "Club Brujas": [1.00,1.06,12.0,13.0,5.0,5.5,1.00], "Aston Villa": [1.12,0.88,13.5,11.0,5.4,4.7,1.00],
- "Dortmund":    [1.18,1.02,14.0,12.0,5.6,4.8,1.00], "Villarreal":  [1.08,1.00,12.8,12.0,5.0,5.2,1.10],
- "Porto":       [1.02,0.92,12.5,11.5,5.2,5.0,1.10], "Man City":    [1.48,0.76,16.5, 8.0,7.0,3.4,0.90],
- "Lille":       [1.05,1.00,13.0,12.0,5.2,5.0,1.05], "Real Betis":  [1.02,1.02,12.5,12.5,4.9,5.3,1.15],
- "Real Madrid": [1.42,0.82,15.5, 9.5,6.2,3.9,1.05], "Inter":       [1.22,0.72,14.5, 9.0,5.8,4.0,1.10]
+ // Élite continental
+ "Man City":    [1.48,0.76,16.5, 8.0,7.0,3.4,0.90], "Bayern München":[1.46,0.80,16.0, 8.5,6.8,3.6,0.95],
+ "Real Madrid": [1.42,0.82,15.5, 9.5,6.2,3.9,1.05], "Liverpool":     [1.40,0.80,15.5, 9.0,6.6,3.8,0.95],
+ "Paris Saint-Germain":[1.40,0.82,15.8,9.0,6.7,3.7,1.05],
+ "Barcelona":   [1.38,0.88,15.5,10.0,6.4,4.2,1.00], "Arsenal":       [1.32,0.78,14.5, 8.8,6.3,3.7,1.00],
+ // Muy fuertes
+ "Inter":       [1.22,0.72,14.5, 9.0,5.8,4.0,1.10], "Atlético de Madrid":[1.15,0.80,13.0,9.5,5.4,4.2,1.20],
+ "Napoli":      [1.15,0.82,13.2, 9.8,5.5,4.3,1.10], "Dortmund":      [1.18,1.02,14.0,12.0,5.6,4.8,1.00],
+ "Manchester United":[1.15,0.95,13.8,11.0,5.7,4.6,1.05],
+ "Leipzig":     [1.12,0.95,13.5,11.0,5.6,4.6,1.00], "Aston Villa":   [1.12,0.88,13.5,11.0,5.4,4.7,1.00],
+ "Sporting CP": [1.10,0.92,13.2,10.5,5.5,4.5,1.05], "PSV Eindhoven": [1.10,1.00,13.5,11.5,5.6,4.9,1.00],
+ "Roma":        [1.08,0.90,13.0,10.5,5.3,4.4,1.15], "Villarreal":    [1.08,1.00,12.8,12.0,5.0,5.2,1.10],
+ // Zona media
+ "Lille":       [1.05,1.00,13.0,12.0,5.2,5.0,1.05], "Feyenoord":     [1.05,1.05,13.0,12.5,5.3,5.2,1.05],
+ "Stuttgart":   [1.05,1.02,13.0,12.0,5.3,5.0,1.00], "Galatasaray":   [1.05,1.02,12.8,12.0,5.2,5.1,1.20],
+ "Fenerbahçe":  [1.05,1.00,12.8,11.8,5.2,5.0,1.20], "Porto":         [1.02,0.92,12.5,11.5,5.2,5.0,1.10],
+ "Real Betis":  [1.02,1.02,12.5,12.5,4.9,5.3,1.15], "Lens":          [1.00,0.95,12.2,11.5,5.0,4.8,1.10],
+ "Club Brujas": [1.00,1.06,12.0,13.0,5.0,5.5,1.00], "Como":          [0.98,1.02,12.2,12.2,5.0,5.1,1.05],
+ "Bodø/Glimt":  [0.95,1.10,12.0,13.0,5.0,5.6,0.95], "Shakhtar Donetsk":[0.92,1.08,11.8,12.8,4.8,5.5,1.05],
+ "Slavia Praha":[0.92,1.05,11.8,12.5,4.8,5.4,1.05],
+ // Los que llegan a sufrir
+ "AEK Atenas":  [0.88,1.05,12.0,12.5,5.0,5.2,1.15], "Viking":        [0.75,1.25,10.0,14.5,4.2,6.2,1.05],
+ "LASK":        [0.72,1.28, 9.5,15.0,4.0,6.5,1.10], "Slovan Bratislava":[0.70,1.30,9.2,15.2,3.9,6.6,1.10],
+ "Sabah":       [0.65,1.35, 9.0,15.5,3.8,6.8,1.10]
 };
 const R0={"Godinho":[4.20,0],"Scharer":[3.80,0],"Sozza":[4.60,0],
           "Marciniak":[4.20,0],"Kabakov":[4.00,0],"Oliver":[3.49,1]};
@@ -711,9 +740,18 @@ const HORA=iso=>{const d=new Date(iso);return{
   cdmx:d.toLocaleTimeString("es-MX",{timeZone:"America/Mexico_City",hour:"2-digit",minute:"2-digit"})};};
 
 // nombres de la API -> nombres cortos que usa el modelo
-const ALIAS={"Borussia Dortmund":"Dortmund","Manchester City":"Man City","AEK Athens":"AEK Atenas",
- "Club Brugge KV":"Club Brujas","Club Brugge":"Club Brujas","Inter":"Inter","FC Porto":"Porto",
- "Real Betis":"Real Betis","Lille":"Lille","LOSC Lille":"Lille","Villarreal":"Villarreal"};
+const ALIAS={
+ "Borussia Dortmund":"Dortmund","Manchester City":"Man City","AEK Athens":"AEK Atenas",
+ "Club Brugge KV":"Club Brujas","Club Brugge":"Club Brujas","FC Porto":"Porto",
+ "LOSC Lille":"Lille","Betis":"Real Betis","Inter Milan":"Inter","Internazionale":"Inter",
+ "Bayern Munich":"Bayern München","Bayern Munchen":"Bayern München",
+ "Atletico Madrid":"Atlético de Madrid","Atlético Madrid":"Atlético de Madrid",
+ "Paris Saint Germain":"Paris Saint-Germain","PSG":"Paris Saint-Germain",
+ "RB Leipzig":"Leipzig","VfB Stuttgart":"Stuttgart","Fenerbahce":"Fenerbahçe",
+ "Bodo/Glimt":"Bodø/Glimt","FK Bodo/Glimt":"Bodø/Glimt","PSV":"PSV Eindhoven",
+ "Shakhtar Donetsk":"Shakhtar Donetsk","SK Slavia Praha":"Slavia Praha","Slavia Prague":"Slavia Praha",
+ "SK Slovan Bratislava":"Slovan Bratislava","Viking FK":"Viking","RC Lens":"Lens",
+ "Sporting Lisbon":"Sporting CP","Sporting":"Sporting CP","Man United":"Manchester United"};
 const corto=n=>ALIAS[n]||n;
 const MEDIO=[1.00,1.00,12.5,12.5,5.0,5.0,1.00];   // equipo promedio, para debutantes
 
