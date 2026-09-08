@@ -143,15 +143,54 @@ for (const p of partidos) {
   arb[p.arbitro].n++;
 }
 
+/* ---------- reescalado a nivel Champions ----------
+   PASO CRÍTICO. El ajuste de arriba deja el promedio en 1.00 sobre los
+   110 equipos de las cinco ligas domésticas. Pero el modelo del tablero
+   define 1.00 como "equipo promedio DE LA FASE LIGA", que es mucho más
+   fuerte: son los mejores de cada liga. Sin reescalar, el ataque de 2.11
+   del Bayern (que es 2.11 veces el promedio de la Bundesliga) entraría
+   como si fuera 2.11 veces el promedio de la Champions, e inflaría los
+   goles esperados de forma absurda.
+
+   Además hay equipos de la fase liga que no juegan en estas cinco ligas
+   (Porto, Brujas, PSV, Galatasaray...). Esos conservan valores a priori
+   que YA están en escala Champions. Reescalar es lo que hace que unos y
+   otros sean comparables entre sí.                                    */
+const EN_CHAMPIONS = ["Bayern Munich","Real Madrid","Man City","Liverpool","Arsenal","Barcelona",
+  "Paris SG","Inter","Ath Madrid","Napoli","Dortmund","Man United","Leipzig","Aston Villa",
+  "Roma","Villarreal","Lille","Betis","Lens","Como","Stuttgart","Juventus","Marseille","Monaco",
+  "Atalanta","Leverkusen","Sociedad","Newcastle","Tottenham","Chelsea","Milan","Ath Bilbao"];
+const enCL = EN_CHAMPIONS.filter(t => att[t] && acc[t] && acc[t].w >= 5);
+let ESCALA_ATT = 1, ESCALA_DEF = 1;
+if (enCL.length >= 8) {
+  ESCALA_ATT = enCL.reduce((s, t) => s + att[t], 0) / enCL.length;
+  ESCALA_DEF = enCL.reduce((s, t) => s + def[t], 0) / enCL.length;
+  console.log(`\nReescalado a nivel Champions con ${enCL.length} equipos de referencia:`);
+  console.log(`  ataque ÷${ESCALA_ATT.toFixed(3)} · defensa ÷${ESCALA_DEF.toFixed(3)}`);
+} else {
+  console.warn(`\n⚠ Solo ${enCL.length} equipos de referencia: NO reescalo.`);
+  console.warn("  Los valores quedan en escala doméstica y NO son comparables con los a priori.");
+}
+// lo mismo con remates y córners: la referencia es el equipo de Champions
+const refCL = t => acc[t] && acc[t].w >= 5;
+const media = f => { const v = enCL.filter(refCL).map(f); return v.reduce((a, b) => a + b, 0) / v.length; };
+const M_RF = enCL.length >= 8 ? media(t => acc[t].rf / acc[t].w) : null;
+const M_CF = enCL.length >= 8 ? media(t => acc[t].cf / acc[t].w) : null;
+
 /* ---------- salida ---------- */
 const teams = {};
 for (const t of equipos) {
   const a = acc[t];
   if (a.w < 5) continue;                       // muy pocos partidos: no es señal
+  // Los remates y córners se dejan en su escala absoluta (son conteos por
+  // partido, no ratios), pero se corrigen por el nivel de oposición: un
+  // equipo de Champions remata menos contra rivales de Champions.
+  const kR = M_RF ? (12.9 / M_RF) : 1;   // 12.9 remates = referencia de fase liga
+  const kC = M_CF ? (5.3 / M_CF) : 1;    // 5.3 córners  = referencia de fase liga
   teams[t] = [
-    +att[t].toFixed(3), +def[t].toFixed(3),
-    +(a.rf / a.w).toFixed(2), +(a.rc / a.w).toFixed(2),
-    +(a.cf / a.w).toFixed(2), +(a.cc / a.w).toFixed(2),
+    +(att[t] / ESCALA_ATT).toFixed(3), +(def[t] / ESCALA_DEF).toFixed(3),
+    +((a.rf / a.w) * kR).toFixed(2), +((a.rc / a.w) * kR).toFixed(2),
+    +((a.cf / a.w) * kC).toFixed(2), +((a.cc / a.w) * kC).toFixed(2),
     +((a.tf / a.w) / (tarjMedia / 2)).toFixed(3)   // indisciplina relativa
   ];
 }
@@ -176,7 +215,14 @@ writeFileSync(join(ROOT, "data", "params.json"), JSON.stringify(out, null, 1));
 
 console.log(`\n${Object.keys(teams).length} equipos y ${Object.keys(refs).length} árbitros ajustados.`);
 const orden = Object.entries(teams).sort((a, b) => b[1][0] - a[1][0]);
-console.log("\nMejores ataques:  " + orden.slice(0, 5).map(([t, v]) => `${t} ${v[0]}`).join(" · "));
-console.log("Mejores defensas: " + Object.entries(teams).sort((a, b) => a[1][1] - b[1][1])
-  .slice(0, 5).map(([t, v]) => `${t} ${v[1]}`).join(" · "));
+console.log("\nMejores ataques (escala Champions, 1.00 = equipo medio de fase liga):");
+console.log("  " + orden.slice(0, 8).map(([t, v]) => `${t} ${v[0]}`).join(" · "));
+console.log("Mejores defensas:");
+console.log("  " + Object.entries(teams).sort((a, b) => a[1][1] - b[1][1])
+  .slice(0, 8).map(([t, v]) => `${t} ${v[1]}`).join(" · "));
+const ordArb = Object.entries(refs).sort((a, b) => b[1][0] - a[1][0]);
+if (ordArb.length) {
+  console.log("\nÁrbitros más severos: " + ordArb.slice(0, 4).map(([r, v]) => `${r} ${v[0]}`).join(" · "));
+  console.log("Más permisivos:       " + ordArb.slice(-4).map(([r, v]) => `${r} ${v[0]}`).join(" · "));
+}
 console.log("\nEscrito en data/params.json");

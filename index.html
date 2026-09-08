@@ -1052,26 +1052,40 @@ const ALIAS={
  "PAE AEK":"AEK Atenas","AEK":"AEK Atenas","Paris":"Paris Saint-Germain",
  "Atleti":"Atlético de Madrid","Atlético":"Atlético de Madrid","Bayern":"Bayern München",
  "Shakhtar":"Shakhtar Donetsk","Slovan":"Slovan Bratislava","Brugge":"Club Brujas",
- "Barça":"Barcelona","Bodø/Glimt":"Bodø/Glimt","Bodo/Glimt":"Bodø/Glimt"};
+ "Barça":"Barcelona","Bodø/Glimt":"Bodø/Glimt","Bodo/Glimt":"Bodø/Glimt",
+ // nombres tal como los escribe football-data.co.uk (el ajuste histórico)
+ "Paris SG":"Paris Saint-Germain","Ath Madrid":"Atlético de Madrid",
+ "Bayern Munich":"Bayern München","Man United":"Manchester United",
+ "RB Leipzig":"Leipzig","Ein Frankfurt":"Eintracht Frankfurt","Sp Lisbon":"Sporting CP"};
 /* Resolver nombres: cada fuente escribe los clubes distinto ("FC
    Internazionale Milano", "Inter", "Inter Milan"). Probamos alias exacto,
    luego coincidencia normalizada contra los equipos que el modelo conoce.
    Sin esto, un nombre nuevo entraría como equipo promedio y aplanaría
    los picks sin que se note.                                           */
-const _norm=s=>(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")
-  .replace(/\b(fc|cf|sc|ac|afc|kv|sk|fk|club|de|the|milano|milan)\b/g,"")
-  .replace(/[^a-z0-9]/g,"");
+const _GEN=new Set(["fc","cf","sc","ac","afc","kv","sk","fk","club","pae","cp","cd","ud",
+  "de","del","the","and","calcio","futebol","football","futbol","if","bk"]);
+const _pal=s=>(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")
+  .replace(/[^a-z0-9]+/g," ").split(" ").filter(w=>w.length>=3&&!_GEN.has(w));
+const _casan=(x,y)=>x===y||(x.length>=3&&y.startsWith(x))||(y.length>=3&&x.startsWith(y));
+/* Coincidencia SIMÉTRICA: todas las palabras de ambos nombres tienen que
+   encontrar pareja. Con la regla laxa de antes pasaban dos horrores:
+   "Milan" caía en Man City y "Paris FC" en el PSG — el ajuste de un club
+   se le colgaba a otro y todos sus picks salían mal sin ninguna señal.
+   Ante la duda, no resolvemos: un equipo sin calificar se avisa en
+   pantalla; uno mal calificado no se nota nunca.                      */
+function _mismo(a,b){
+  const A=_pal(a),B=_pal(b);
+  if(!A.length||!B.length)return false;
+  return A.every(x=>B.some(y=>_casan(x,y))) && B.every(y=>A.some(x=>_casan(x,y)));
+}
 const _EQ=Object.keys(T0);
-const _IDX=Object.fromEntries(_EQ.map(k=>[_norm(k),k]));
 const _SIN=new Map();
 function corto(n){
   if(!n)return n;
   if(ALIAS[n])return ALIAS[n];
   if(T0[n])return n;
   if(_SIN.has(n))return _SIN.get(n);
-  const q=_norm(n);
-  let r=_IDX[q];
-  if(!r)r=_EQ.find(k=>{const a=_norm(k);return a.length>3&&(q.includes(a)||a.includes(q));});
+  const r=_EQ.find(k=>_mismo(k,n));
   _SIN.set(n,r||n);
   return r||n;
 }
