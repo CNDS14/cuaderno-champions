@@ -2,7 +2,7 @@
  {
   "id": 575323,
   "utc": "2026-09-08T16:45:00Z",
-  "estado": "1H",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -11,13 +11,13 @@
   "visita": "Aston Villa",
   "idLocal": 851,
   "idVisita": 58,
-  "golesLocal": 1,
+  "golesLocal": 2,
   "golesVisita": 3
  },
  {
   "id": 575324,
   "utc": "2026-09-08T16:45:00Z",
-  "estado": "1H",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -26,7 +26,7 @@
   "visita": "LASK",
   "idLocal": 1899,
   "idVisita": 2016,
-  "golesLocal": 1,
+  "golesLocal": 2,
   "golesVisita": 0
  },
  {

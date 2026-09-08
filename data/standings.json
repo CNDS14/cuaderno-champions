@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "PAE AEK",
+  "escudo": "https://crests.football-data.org/1899.png",
+  "pj": 1,
+  "g": 1,
+  "e": 0,
+  "p": 0,
+  "gf": 2,
+  "gc": 0,
+  "pts": 3,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Aston Villa",
   "escudo": "https://crests.football-data.org/58.png",
   "pj": 1,
@@ -8,20 +21,7 @@
   "e": 0,
   "p": 0,
   "gf": 3,
-  "gc": 1,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 2,
-  "equipo": "PAE AEK",
-  "escudo": "https://crests.football-data.org/1899.png",
-  "pj": 1,
-  "g": 1,
-  "e": 0,
-  "p": 0,
-  "gf": 1,
-  "gc": 0,
+  "gc": 2,
   "pts": 3,
   "forma": ""
  },
@@ -443,6 +443,19 @@
  },
  {
   "pos": 35,
+  "equipo": "Club Brugge",
+  "escudo": "https://crests.football-data.org/851.png",
+  "pj": 1,
+  "g": 0,
+  "e": 0,
+  "p": 1,
+  "gf": 2,
+  "gc": 3,
+  "pts": 0,
+  "forma": ""
+ },
+ {
+  "pos": 36,
   "equipo": "LASK",
   "escudo": "https://crests.football-data.org/2016.png",
   "pj": 1,
@@ -450,20 +463,7 @@
   "e": 0,
   "p": 1,
   "gf": 0,
-  "gc": 1,
-  "pts": 0,
-  "forma": ""
- },
- {
-  "pos": 36,
-  "equipo": "Club Brugge",
-  "escudo": "https://crests.football-data.org/851.png",
-  "pj": 1,
-  "g": 0,
-  "e": 0,
-  "p": 1,
-  "gf": 1,
-  "gc": 3,
+  "gc": 2,
   "pts": 0,
   "forma": ""
  }
