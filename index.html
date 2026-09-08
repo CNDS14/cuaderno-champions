@@ -242,6 +242,7 @@ const VIVO_MS = 45000;
 let ACTUALIZADO = "8 sep 2026, 11:15 CDMX";
 let TABLA = null;                 // se llena desde data/standings.json
 let FUENTE = "semilla";           // semilla | repositorio | en vivo
+const DESCONOCIDOS = new Set();   // equipos sin calificacion propia
 
 const CLUB = {  // color de club, solo como identificador visual
  "AEK Atenas":"#F5C518","LASK":"#111","Club Brujas":"#1B62B3","Aston Villa":"#95BFE5",
@@ -472,6 +473,10 @@ function vistaHoy(){
       </div>
     </article>`;
   });
+  if(DESCONOCIDOS.size)h+=`<div class="note"><h4>Equipos sin calificación propia</h4>
+    <p>${[...DESCONOCIDOS].join(", ")} — no los reconocí y entraron como equipo promedio (1.00 en todo).
+    Sus picks salen planos y no valen gran cosa. Dímelo y les pongo calificación, o corrige el nombre
+    en la tabla de parámetros.</p></div>`;
   h+=`<div class="note"><h4>Convicción no es lo mismo que valor</h4>
     <p>Esta lista ordena por <b>qué tan probable</b> es cada apuesta, no por cuánto dinero deja. Un 88% pagado a 1.10 es una probabilidad alta y una apuesta mala. Para saber si conviene hace falta la cuota: métela en la pestaña <b>Apuestas</b> y ahí sí sale el valor esperado.</p>
     <p>La etiqueta de fiabilidad dice cuánto confiar en la estructura del modelo, no en el resultado: <b>alta</b> sale directo de la matriz de goles; <b>baja</b> depende de parámetros míos que todavía no están ajustados sobre datos reales.</p></div>`;
@@ -751,7 +756,12 @@ const ALIAS={
  "Bodo/Glimt":"Bodø/Glimt","FK Bodo/Glimt":"Bodø/Glimt","PSV":"PSV Eindhoven",
  "Shakhtar Donetsk":"Shakhtar Donetsk","SK Slavia Praha":"Slavia Praha","Slavia Prague":"Slavia Praha",
  "SK Slovan Bratislava":"Slovan Bratislava","Viking FK":"Viking","RC Lens":"Lens",
- "Sporting Lisbon":"Sporting CP","Sporting":"Sporting CP","Man United":"Manchester United"};
+ "Sporting Lisbon":"Sporting CP","Sporting":"Sporting CP","Man United":"Manchester United",
+ // nombres cortos tal como los devuelve football-data.org
+ "PAE AEK":"AEK Atenas","AEK":"AEK Atenas","Paris":"Paris Saint-Germain",
+ "Atleti":"Atlético de Madrid","Atlético":"Atlético de Madrid","Bayern":"Bayern München",
+ "Shakhtar":"Shakhtar Donetsk","Slovan":"Slovan Bratislava","Brugge":"Club Brujas",
+ "Barça":"Barcelona","Bodø/Glimt":"Bodø/Glimt","Bodo/Glimt":"Bodø/Glimt"};
 /* Resolver nombres: cada fuente escribe los clubes distinto ("FC
    Internazionale Milano", "Inter", "Inter Milan"). Probamos alias exacto,
    luego coincidencia normalizada contra los equipos que el modelo conoce.
@@ -787,7 +797,9 @@ function aplicarPartidos(lista){
   if(!Array.isArray(lista)||!lista.length)return false;
   FIX=lista.map(p=>{
     const h=corto(p.local),a=corto(p.visita),t=p.utc?HORA(p.utc):{cet:"",cdmx:""};
-    [h,a].forEach(n=>{if(!S.teams[n])S.teams[n]=MEDIO.slice();if(!CLUB[n])CLUB[n]="#7C8894";});
+    [h,a].forEach(n=>{
+      if(!S.teams[n]){S.teams[n]=MEDIO.slice();DESCONOCIDOS.add(n);}
+      if(!CLUB[n])CLUB[n]="#7C8894";});
     const ref=p.arbitro?p.arbitro.split("(")[0].trim():"Sin designar";
     if(!S.refs[ref])S.refs[ref]=[4.20,0];
     return{h,a,cet:t.cet,cdmx:t.cdmx,ref,tn:1.00,

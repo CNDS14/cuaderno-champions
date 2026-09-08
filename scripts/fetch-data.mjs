@@ -63,7 +63,7 @@ const fdHead = { "X-Auth-Token": FD_KEY || "" };
 const hoyISO = () => new Date().toISOString().slice(0, 10);
 const masDias = n => new Date(Date.now() + n * 86400000).toISOString().slice(0, 10);
 
-const EST = { SCHEDULED:"NS", TIMED:"NS", IN_PLAY:"1H", PAUSED:"HT", FINISHED:"FT",
+const EST = { SCHEDULED:"NS", TIMED:"NS", IN_PLAY:"LIVE", PAUSED:"HT", FINISHED:"FT",
               SUSPENDED:"SUSP", POSTPONED:"PST", CANCELLED:"CANC", AWARDED:"FT" };
 
 function mapaPartido(m) {
