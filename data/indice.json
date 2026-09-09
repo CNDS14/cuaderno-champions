@@ -1,0 +1,65 @@
+[
+ {
+  "fd": "CL",
+  "nombre": "Champions League",
+  "pais": "Europa",
+  "partidos": 6,
+  "hoy": 6,
+  "enTabla": 36,
+  "conCuotas": 4,
+  "resultados": 6
+ },
+ {
+  "fd": "PD",
+  "nombre": "LaLiga",
+  "pais": "España",
+  "partidos": 20,
+  "hoy": 0,
+  "enTabla": 20,
+  "conCuotas": 0,
+  "resultados": 11
+ },
+ {
+  "fd": "PL",
+  "nombre": "Premier League",
+  "pais": "Inglaterra",
+  "partidos": 11,
+  "hoy": 0,
+  "enTabla": 20,
+  "conCuotas": 0,
+  "resultados": 10
+ },
+ {
+  "fd": "SA",
+  "nombre": "Serie A",
+  "pais": "Italia",
+  "partidos": 0,
+  "hoy": 0,
+  "enTabla": 0,
+  "conCuotas": 0,
+  "resultados": 0,
+  "obsoleto": true
+ },
+ {
+  "fd": "BL1",
+  "nombre": "Bundesliga",
+  "pais": "Alemania",
+  "partidos": 0,
+  "hoy": 0,
+  "enTabla": 0,
+  "conCuotas": 0,
+  "resultados": 0,
+  "obsoleto": true
+ },
+ {
+  "fd": "FL1",
+  "nombre": "Ligue 1",
+  "pais": "Francia",
+  "partidos": 0,
+  "hoy": 0,
+  "enTabla": 0,
+  "conCuotas": 0,
+  "resultados": 0,
+  "obsoleto": true
+ }
+]

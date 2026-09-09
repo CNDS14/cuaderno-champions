@@ -1,11 +1,92 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com",
+  "cuotas": "the-odds-api.com · 1/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "2 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes)."
+  "2 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
+  "SA: la fuente no respondió; conservo los datos anteriores.",
+  "BL1: la fuente no respondió; conservo los datos anteriores.",
+  "FL1: la fuente no respondió; conservo los datos anteriores.",
+  "Sin calificacion para Sevilla FC o Valencia: no registro picks de ese partido.",
+  "Sin calificacion para Santander o Alavés: no registro picks de ese partido.",
+  "Sin calificacion para Osasuna o Espanyol: no registro picks de ese partido.",
+  "Sin calificacion para Athletic o Elche: no registro picks de ese partido.",
+  "Sin calificacion para Real Madrid o Rayo Vallecano: no registro picks de ese partido.",
+  "Sin calificacion para Celta o Málaga: no registro picks de ese partido.",
+  "Sin calificacion para Levante o Barcelona: no registro picks de ese partido.",
+  "Sin calificacion para Getafe o Deportivo: no registro picks de ese partido.",
+  "Sin calificacion para Real Sociedad o Atlético de Madrid: no registro picks de ese partido.",
+  "Sin calificacion para Rayo Vallecano o Espanyol: no registro picks de ese partido.",
+  "Sin calificacion para Alavés o Valencia: no registro picks de ese partido.",
+  "Sin calificacion para Elche o Real Madrid: no registro picks de ese partido.",
+  "Sin calificacion para Deportivo o Sevilla FC: no registro picks de ese partido.",
+  "Sin calificacion para Atlético de Madrid o Osasuna: no registro picks de ese partido.",
+  "Sin calificacion para Levante o Athletic: no registro picks de ese partido.",
+  "Sin calificacion para Barcelona o Santander: no registro picks de ese partido.",
+  "Sin calificacion para Real Betis o Getafe: no registro picks de ese partido.",
+  "Sin calificacion para Málaga o Villarreal: no registro picks de ese partido.",
+  "Sin calificacion para Espanyol o Elche: no registro picks de ese partido.",
+  "Sin calificacion para Crystal Palace o Ipswich Town: no registro picks de ese partido.",
+  "Sin calificacion para Liverpool o Fulham: no registro picks de ese partido.",
+  "Sin calificacion para Aston Villa o Nottingham: no registro picks de ese partido.",
+  "Sin calificacion para Bournemouth o Brentford: no registro picks de ese partido.",
+  "Sin calificacion para Chelsea o Hull City: no registro picks de ese partido.",
+  "Sin calificacion para Tottenham o Everton: no registro picks de ese partido.",
+  "Sin calificacion para Sunderland o Arsenal: no registro picks de ese partido.",
+  "Sin calificacion para Coventry City o Brighton Hove: no registro picks de ese partido.",
+  "Sin calificacion para Leeds United o Newcastle: no registro picks de ese partido.",
+  "Sin calificacion para Brentford o Chelsea: no registro picks de ese partido."
  ],
- "errores": []
+ "errores": [
+  {
+   "donde": "SA/hoy",
+   "error": "HTTP 429 You reached your request limit. Wait 58 seconds."
+  },
+  {
+   "donde": "SA/proximos",
+   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+  },
+  {
+   "donde": "SA/tabla",
+   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+  },
+  {
+   "donde": "SA/recientes",
+   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+  },
+  {
+   "donde": "BL1/hoy",
+   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+  },
+  {
+   "donde": "BL1/proximos",
+   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+  },
+  {
+   "donde": "BL1/tabla",
+   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+  },
+  {
+   "donde": "BL1/recientes",
+   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+  },
+  {
+   "donde": "FL1/hoy",
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
+  },
+  {
+   "donde": "FL1/proximos",
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
+  },
+  {
+   "donde": "FL1/tabla",
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
+  },
+  {
+   "donde": "FL1/recientes",
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
+  }
+ ]
 }
