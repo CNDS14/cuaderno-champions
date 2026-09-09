@@ -245,6 +245,7 @@ let TABLA = null;                 // se llena desde data/standings.json
 let FUENTE = "semilla";           // semilla | repositorio | en vivo
 const DESCONOCIDOS = new Set();   // equipos sin calificacion propia
 let RECIENTES = [];               // resultados de los ultimos dias
+let PICKSMOD = [];                // apuestas de papel del modelo, ya comprometidas
 
 const CLUB = {  // color de club, solo como identificador visual
  "AEK Atenas":"#F5C518","LASK":"#111","Club Brujas":"#1B62B3","Aston Villa":"#95BFE5",
@@ -467,7 +468,8 @@ function mercadosPrevios(md,fx){
   const h=fx.h,a=fx.a;
   return [
    {g:"Resultado",sels:[{n:h+" gana",p:md.pH,k:"1X2::H"},{n:"Empate",p:md.pD,k:"1X2::D"},{n:a+" gana",p:md.pA,k:"1X2::A"}]},
-   {g:"Doble oportunidad",sels:[{n:h+" o empate",p:md.dc1x,k:"DO::1X"},{n:"Empate o "+a,p:md.dcx2,k:"DO::X2"},{n:"Cualquiera gana",p:md.dc12,k:"DO::12"}]},
+   {g:"Doble oportunidad",sels:[{n:h+" o empate",p:md.pH+md.pD,k:"DO::1X"},
+     {n:"Empate o "+a,p:md.pD+md.pA,k:"DO::X2"},{n:"Cualquiera gana",p:md.pH+md.pA,k:"DO::12"}]},
    {g:"Total de goles",sels:[{n:"Más de 1.5",p:md.o15,k:"OU::O|1.5"},{n:"Más de 2.5",p:md.o25,k:"OU::O|2.5"},
      {n:"Menos de 2.5",p:1-md.o25,k:"OU::U|2.5"},{n:"Más de 3.5",p:md.o35,k:"OU::O|3.5"},{n:"Menos de 3.5",p:1-md.o35,k:"OU::U|3.5"}]},
    {g:"Ambos anotan",sels:[{n:"Sí",p:md.btts,k:"AA::S"},{n:"No",p:1-md.btts,k:"AA::N"}]},
@@ -482,7 +484,7 @@ const REGLAS={
  "DO": (g,a,sel)=>sel==="1X"?g>=a:sel==="X2"?a>=g:g!==a,
  "OU": (g,a,sel)=>{const[d,l]=sel.split("|");const t=g+a;return d==="O"?t>+l:t<+l;},
  "AA": (g,a,sel)=>sel==="S"?(g>0&&a>0):!(g>0&&a>0),
- "PA": (g,a,sel)=>sel==="L"?a===0:g===0
+ "PA": (g,a,sel)=>sel==="L"?a===0:sel==="V"?g===0:sel==="NL"?a>0:g>0
 };
 function resolver(k,gl,gv){
   const [mk,sel]=k.split("::");
@@ -559,6 +561,8 @@ function vistaHoy(){
 
 /* ═══ PICKS: previos y en vivo ═══ */
 function filaPick(sel,i,extra=""){
+  const p=Number.isFinite(sel.p)?sel.p:0;   // una seleccion rota no tumba la pagina
+  sel={...sel,p};
   return `<div class="pick">
     <span class="rank">${i+1}</span>
     <div><div class="lbl">${sel.n}</div>
@@ -617,7 +621,7 @@ function vistaPicks(){
       const todos=mk.flatMap(g=>g.sels.map(x=>({...x,g:g.g})))
         .filter(x=>x.p>0.5).sort((a,b)=>b.p-a.p).slice(0,6);
       const opts=mk.map(g=>`<optgroup label="${g.g}">`+
-        g.sels.map(x=>`<option value="${x.k}" data-p="${x.p.toFixed(4)}">${x.n} — modelo ${pct(x.p)}</option>`).join("")+
+        g.sels.map(x=>`<option value="${x.k}" data-p="${(x.p||0).toFixed(4)}">${x.n} — modelo ${pct(x.p||0)}</option>`).join("")+
         `</optgroup>`).join("");
       h+=`<article class="card">
         <header>
@@ -628,6 +632,19 @@ function vistaPicks(){
         <div class="picks"><h4>Lo más probable según el modelo</h4>
           ${todos.map((x,i)=>filaPick(x,i)).join("")}
         </div>
+        ${(()=>{const c=PICKSMOD.filter(x=>String(x.fixId)===String(fx.id));
+          if(!c.length)return "";
+          const cuando=new Date(c[0].registradoEl);
+          return `<div class="picks" style="border-top:1px solid var(--line-soft)">
+            <h4>Lo que el modelo ya apostó — sin dinero</h4>
+            ${c.map((x,i)=>`<div class="pick">
+              <span class="rank">${i+1}</span>
+              <div><div class="lbl">${x.etiqueta}</div>
+                <div class="tags"><span class="tag">${x.grupo}</span>
+                  <span class="tag">comprometido ${isNaN(cuando)?"":cuando.toLocaleString("es-MX",{timeZone:"America/Mexico_City",dateStyle:"short",timeStyle:"short"})}</span></div></div>
+              <div class="nums"><div class="p">${pct(x.p)}</div><div class="fo">se califica solo</div></div>
+            </div>`).join("")}
+          </div>`;})()}
         <details class="mk"><summary>Apuntar mi pronóstico antes del pitazo</summary><div class="inner">
           <p style="font-size:13.5px;color:var(--ink-2);max-width:70ch;margin:0 0 10px">
             Elige una selección y pon <b>tu</b> probabilidad, no la del modelo. Cuando termine el partido
@@ -913,7 +930,54 @@ function vistaRegistro(){
     <td>${b.res==="gan"?'<span class="pos">Ganada</span>':b.res==="per"?'<span class="neg">Perdida</span>':b.res==="nula"?"Nula":"Pendiente"}</td>
     <td><button class="ghost" data-del="${b.id}">Borrar</button></td></tr>`).join("");
 
-  return `<h2 class="sec">Mis pronósticos</h2>
+  /* ---- registro del modelo: sus propias apuestas de papel ---- */
+  const modCal=PICKSMOD.filter(x=>x.ok===true||x.ok===false).map(x=>({...x,mia:x.p}));
+  const modAc=modCal.filter(x=>x.ok).length;
+  const bMod2=brier(modCal,"mia");
+  const calMod=calibracion(modCal,"mia");
+  const pend=PICKSMOD.filter(x=>x.ok===null||x.ok===undefined).length;
+  const porGrupo={};
+  modCal.forEach(x=>{const g=x.grupo||"—";porGrupo[g]=porGrupo[g]||{n:0,ok:0,sp:0};
+    porGrupo[g].n++; if(x.ok)porGrupo[g].ok++; porGrupo[g].sp+=x.p;});
+
+  const bloqueModelo=`<h2 class="sec">El modelo apostando sin dinero</h2>
+  <p class="lead">Antes de cada partido el modelo deja cinco pronósticos y no los vuelve a tocar. Se califican solos con el marcador final. Esto es lo que te dice si sirve — y contra qué comparar tus propios números.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="k">Comprometidos</div><div class="v">${PICKSMOD.length}</div></div>
+    <div class="kpi"><div class="k">Por jugarse</div><div class="v">${pend}</div></div>
+    <div class="kpi"><div class="k">Calificados</div><div class="v">${modCal.length}</div></div>
+    <div class="kpi"><div class="k">Aciertos</div><div class="v">${modCal.length?modAc+" · "+(modAc/modCal.length*100).toFixed(0)+"%":"—"}</div></div>
+    <div class="kpi"><div class="k">Brier</div><div class="v" style="color:${bMod2===null?"var(--ink)":bMod2<0.25?"var(--pos)":"var(--neg)"}">${bMod2===null?"—":bMod2.toFixed(3)}</div></div>
+  </div>
+  ${modCal.length>=5?`<div class="panel"><h3>Calibración del modelo</h3>
+    <p>Si el modelo dice 70% y pasa el 70% de las veces, sus probabilidades son honestas y puedes usarlas para calcular valor. Si dice 70% y pasa el 50%, está sobreconfiado y toda apuesta basada en él pierde.</p>
+    <div class="scroll"><table><thead><tr><th>Cuando dijo</th><th>Pronósticos</th><th>Confianza media</th><th>Aciertos reales</th><th>Desvío</th></tr></thead><tbody>
+    ${calMod.map(c=>{const d=(c.real-c.dicho)*100;return `<tr><td>${c.et}</td><td>${c.n}</td>
+      <td>${(c.dicho*100).toFixed(0)}%</td><td>${(c.real*100).toFixed(0)}%</td>
+      <td class="${Math.abs(d)<10?"":d<0?"neg":"pos"}">${d>=0?"+":""}${d.toFixed(0)} pts</td></tr>`}).join("")}
+    </tbody></table></div></div>
+  <div class="panel" style="padding:0;margin-top:14px"><div class="scroll"><table>
+    <thead><tr><th>Mercado</th><th>Pronósticos</th><th>Confianza media</th><th>Aciertos</th><th>Desvío</th></tr></thead><tbody>
+    ${Object.entries(porGrupo).sort((a,b)=>b[1].n-a[1].n).map(([g,v])=>{
+      const dicho=v.sp/v.n, real=v.ok/v.n, d=(real-dicho)*100;
+      return `<tr><td>${g}</td><td>${v.n}</td><td>${(dicho*100).toFixed(0)}%</td>
+        <td>${(real*100).toFixed(0)}%</td>
+        <td class="${Math.abs(d)<12?"":d<0?"neg":"pos"}">${d>=0?"+":""}${d.toFixed(0)} pts</td></tr>`}).join("")}
+    </tbody></table></div></div>`
+   :`<div class="empty">Con 5 partidos jugados aparece la calibración del modelo. Van ${modCal.length} pronósticos calificados${pend?` y ${pend} esperando a que se jueguen`:""}.</div>`}
+  ${PICKSMOD.length?`<div class="panel" style="padding:0;margin-top:14px"><div class="scroll"><table>
+    <thead><tr><th>Partido</th><th>Pronóstico</th><th>Dijo</th><th>Marcador</th><th>Resultado</th></tr></thead><tbody>
+    ${PICKSMOD.slice(0,40).map(x=>`<tr><td style="font-size:13px">${x.partido}<div class="dim">${x.grupo}</div></td>
+      <td style="text-align:left;font-family:'Source Sans 3',sans-serif;font-size:13.5px">${x.etiqueta}</td>
+      <td>${pct(x.p)}</td><td>${x.gl!=null?x.gl+"–"+x.gv:"—"}</td>
+      <td>${x.ok===true?'<span class="pos">acierto</span>':x.ok===false?'<span class="neg">fallo</span>':'<span class="dim">por jugarse</span>'}</td></tr>`).join("")}
+    </tbody></table></div></div>`:""}
+  <div class="note"><h4>Por qué esto es honesto y no un truco</h4>
+    <p>Los pronósticos se escriben en el repositorio <b>antes</b> del partido, con su hora, y no se vuelven a tocar. Cada uno queda en el historial de commits: si alguna vez cambiara uno después del resultado, se vería. Un registro que se puede editar hacia atrás no prueba nada, y la mayoría de los "tipsters" con 80% de acierto viven de eso.</p>
+    <p>Ojo con la tabla por mercado: el modelo va a acertar mucho en "más de 1.5 goles" y poco en el resultado exacto, y eso no significa que sea bueno en uno y malo en otro. Lo que importa es el desvío — acertar el 88% cuando dijiste 88% es perfecto; acertar el 88% cuando dijiste 60% significa que estás midiendo mal, aunque se vea bien.</p>
+  </div>`;
+
+  return bloqueModelo + `<h2 class="sec">Mis pronósticos</h2>
   <p class="lead">Aquí es donde te entrenas. Apuntas tu probabilidad antes del pitazo desde la pestaña <b>Picks</b>, el partido la califica sola, y con el tiempo sabes si tus números significan algo. No se trata de acertar mucho: se trata de que cuando digas 70%, pase el 70% de las veces.</p>
   <div class="kpis">
     <div class="kpi"><div class="k">Pronósticos</div><div class="v">${PICKS.length}</div></div>
@@ -1141,6 +1205,8 @@ async function cargar(){
   if(Array.isArray(tabla)&&tabla.length)TABLA=tabla;
   const rec=await json("./data/recientes.json");
   if(Array.isArray(rec))RECIENTES=rec;
+  const pm=await json("./data/picks-modelo.json");
+  if(Array.isArray(pm))PICKSMOD=pm;
   if(meta?.actualizado){
     ACTUALIZADO=new Date(meta.actualizado).toLocaleString("es-MX",
       {timeZone:"America/Mexico_City",dateStyle:"medium",timeStyle:"short"})+" CDMX";

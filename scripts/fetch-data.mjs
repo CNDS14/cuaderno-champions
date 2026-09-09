@@ -22,9 +22,10 @@
  * Ningún fallo tumba el workflow: lo que se pudo traer se guarda, y lo
  * que falló queda explicado en data/diagnostico.json.
  */
-import { writeFile, mkdir } from "node:fs/promises";
+import { writeFile, mkdir, readFile } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { cargarEquipos, modelo, picksDe, resolver, corto } from "./modelo.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = join(ROOT, "data");
@@ -228,6 +229,66 @@ async function estadisticas(ps) {
   return out;
 }
 
+
+/* ═══════════ picks del modelo (apuestas de papel) ═══════════
+   El modelo deja su pronostico ANTES de cada partido y no lo vuelve a
+   tocar. Es lo que hace que el registro valga: un pronostico que se
+   puede editar despues del resultado no prueba nada. Cada entrada se
+   escribe una sola vez y luego solo se le añade el marcador final.   */
+const EMPEZADOS = ["LIVE","HT","FT","AET","PEN","1H","2H"];
+
+async function picksDelModelo(ps, rec) {
+  const ARCH = join(DATA, "picks-modelo.json");
+  let previos = [];
+  try { previos = JSON.parse(await readFile(ARCH, "utf8")); } catch (e) {}
+  if (!Array.isArray(previos)) previos = [];
+
+  const { eq, ajustados, info } = cargarEquipos();
+  const yaTiene = new Set(previos.map(x => String(x.fixId)));
+  let nuevos = 0, sinCalificar = 0;
+
+  for (const p of ps) {
+    if (EMPEZADOS.includes(p.estado)) continue;      // tarde para pronosticar
+    if (yaTiene.has(String(p.id))) continue;         // ya se comprometio
+    const h = corto(p.local), a = corto(p.visita);
+    const md = modelo(eq, h, a);
+    if (!md) { aviso(`Sin calificacion para ${h} o ${a}: no registro picks de ese partido.`); continue; }
+    const sello = new Date().toISOString();
+    for (const pk of picksDe(md, h, a)) {
+      previos.push({ fixId: p.id, partido: `${h} vs ${a}`, utc: p.utc,
+        grupo: pk.grupo, etiqueta: pk.etiqueta, k: pk.k, p: pk.p,
+        registradoEl: sello, gl: null, gv: null, ok: null });
+      nuevos++;
+    }
+  }
+
+  // liquidacion: buscamos el marcador final entre los de hoy y los recientes
+  const finales = new Map();
+  for (const f of [...ps, ...rec])
+    if (["FT","AET","PEN"].includes(f.estado) && f.golesLocal != null)
+      finales.set(String(f.id), [f.golesLocal, f.golesVisita]);
+  for (const x of previos) {
+    if (x.ok !== null && x.ok !== undefined) continue;
+    const m = finales.get(String(x.fixId));
+    if (!m) { sinCalificar++; continue; }
+    x.gl = m[0]; x.gv = m[1];
+    x.ok = resolver(x.k, m[0], m[1]);
+  }
+
+  previos.sort((a, b) => String(b.utc || "").localeCompare(String(a.utc || "")));
+  if (previos.length > 3000) previos.length = 3000;
+  await writeFile(ARCH, JSON.stringify(previos, null, 1));
+
+  const califs = previos.filter(x => x.ok === true || x.ok === false);
+  const aciertos = califs.filter(x => x.ok).length;
+  const brier = califs.length
+    ? califs.reduce((s, x) => s + Math.pow(x.p - (x.ok ? 1 : 0), 2), 0) / califs.length : null;
+  console.log(`  picks del modelo: ${nuevos} nuevos · ${califs.length} calificados` +
+    (califs.length ? ` · ${aciertos} aciertos (${(aciertos / califs.length * 100).toFixed(0)}%) · Brier ${brier.toFixed(3)}` : ""));
+  return { total: previos.length, nuevos, calificados: califs.length, aciertos,
+    brier: brier === null ? null : +brier.toFixed(4), equiposAjustados: ajustados, ajuste: info };
+}
+
 /* ═══════════ principal ═══════════ */
 async function main() {
   await mkdir(DATA, { recursive: true });
@@ -250,6 +311,7 @@ async function main() {
   const rec = await recientes();
   const cu = ps.length ? await cuotas(ps) : {};
   const stats = FULL && AF_KEY ? await estadisticas(ps.filter(p => p.estado === "FT")) : {};
+  const picks = await picksDelModelo(ps, rec).catch(e => { nota("picks-modelo", e.message); return null; });
 
   diag.fuentes = {
     calendarioYTabla: "football-data.org (gratis, temporada en curso)",
@@ -262,7 +324,8 @@ async function main() {
     fuente: "football-data.org" + (ODDS_KEY ? " + the-odds-api" : ""),
     partidos: ps.length, equiposEnTabla: tb.length,
     partidosConCuotas: Object.keys(cu).length,
-    resultadosRecientes: rec.length
+    resultadosRecientes: rec.length,
+    picksModelo: picks
   };
 
   await Promise.all([

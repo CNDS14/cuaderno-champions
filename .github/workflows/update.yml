@@ -9,7 +9,11 @@ on:
     # martes y miercoles, ventana de partidos (16:00-23:00 UTC), cada 5 min
     # (5 es el minimo que permite GitHub; suele retrasarse algo mas)
     - cron: "*/5 16-23 * * 2,3"
-    # todos los días a las 13:00 UTC (8:00 CDMX): tabla, cuotas, calendario
+    # el resto del tiempo, cada media hora: el tablero nunca se queda viejo
+    # y los picks del modelo quedan comprometidos en cuanto aparece un
+    # partido nuevo en el calendario
+    - cron: "*/30 * * * *"
+    # todos los días a las 13:00 UTC (8:00 CDMX): corrida completa
     - cron: "0 13 * * *"
   workflow_dispatch:        # botón manual en la pestaña Actions
 
