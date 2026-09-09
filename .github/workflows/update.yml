@@ -13,7 +13,7 @@ on:
     # y los picks del modelo quedan comprometidos en cuanto aparece un
     # partido nuevo en el calendario
     - cron: "*/30 * * * *"
-    # todos los días a las 13:00 UTC (8:00 CDMX): corrida completa
+    # todos los días a las 13:00 UTC (7:00 en Durango): corrida completa
     - cron: "0 13 * * *"
   workflow_dispatch:        # botón manual en la pestaña Actions
 

@@ -149,6 +149,27 @@ function mismoEquipo(a, b) {
   return casadas === corto.length;
 }
 
+/* Presupuesto de creditos.
+   the-odds-api da 500 creditos al mes. Corriendo cada 30 minutos serian
+   ~1440 al mes: se agotarian en diez dias. Asi que pedimos cuotas solo
+   cuando hay un partido cerca, y con un intervalo minimo entre llamadas.
+   En dia de partidos son ~10 creditos; en dia muerto, cero.            */
+function tocaPedirCuotas(ps, ultima) {
+  const ahora = Date.now();
+  const proximos = ps
+    .filter(p => ["NS","TIMED","SCHEDULED"].includes(p.estado) && p.utc)
+    .map(p => Date.parse(p.utc) - ahora)
+    .filter(ms => ms > 0);
+  if (!proximos.length) return { si: false, razon: "no hay partidos por jugar" };
+  const faltan = Math.min(...proximos) / 3600e3;                 // horas
+  if (faltan > 24) return { si: false, razon: `el proximo partido es en ${faltan.toFixed(0)} h` };
+  const minutosDesde = ultima ? (ahora - Date.parse(ultima)) / 60000 : Infinity;
+  const espera = faltan <= 3 ? 30 : 120;                          // minutos
+  if (minutosDesde < espera)
+    return { si: false, razon: `ultima consulta hace ${minutosDesde.toFixed(0)} min (espero ${espera})` };
+  return { si: true, razon: `proximo partido en ${faltan.toFixed(1)} h` };
+}
+
 async function cuotas(ps) {
   if (!ODDS_KEY) { aviso("Sin ODDS_API_KEY: no traigo cuotas. El tablero deja los campos vacíos para que las escribas."); return {}; }
   const u = new URL("https://api.the-odds-api.com/v4/sports/soccer_uefa_champs_league/odds");
@@ -309,7 +330,20 @@ async function main() {
   // Siempre, no solo en modo completo: el cuaderno necesita los
   // marcadores finales para calificar los pronosticos de dias previos.
   const rec = await recientes();
-  const cu = ps.length ? await cuotas(ps) : {};
+  // ¿gastamos un credito de cuotas en esta corrida?
+  let metaPrev = {};
+  try { metaPrev = JSON.parse(await readFile(join(DATA, "meta.json"), "utf8")); } catch (e) {}
+  let cuotasPrev = {};
+  try { cuotasPrev = JSON.parse(await readFile(join(DATA, "odds.json"), "utf8")); } catch (e) {}
+  const decision = tocaPedirCuotas(ps, metaPrev.ultimaConsultaCuotas);
+  let cu = cuotasPrev, ultimaCuota = metaPrev.ultimaConsultaCuotas || null;
+  if (ODDS_KEY && decision.si) {
+    cu = await cuotas(ps);
+    ultimaCuota = new Date().toISOString();
+    console.log(`  cuotas pedidas (${decision.razon})`);
+  } else {
+    console.log(`  cuotas: no pido (${decision.razon}) — conservo las ${Object.keys(cuotasPrev).length} que ya tenia`);
+  }
   const stats = FULL && AF_KEY ? await estadisticas(ps.filter(p => p.estado === "FT")) : {};
   const picks = await picksDelModelo(ps, rec).catch(e => { nota("picks-modelo", e.message); return null; });
 
@@ -325,6 +359,7 @@ async function main() {
     partidos: ps.length, equiposEnTabla: tb.length,
     partidosConCuotas: Object.keys(cu).length,
     resultadosRecientes: rec.length,
+    ultimaConsultaCuotas: ultimaCuota,
     picksModelo: picks
   };
 
