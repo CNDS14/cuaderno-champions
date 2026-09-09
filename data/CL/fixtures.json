@@ -34,7 +34,7 @@
  {
   "id": 575331,
   "utc": "2026-09-09T19:00:00Z",
-  "estado": "NS",
+  "estado": "HT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Atleti",
   "idLocal": 64,
   "idVisita": 78,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "CL"
  },
  {
   "id": 575332,
   "utc": "2026-09-09T19:00:00Z",
-  "estado": "NS",
+  "estado": "HT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -59,14 +59,14 @@
   "visita": "Sl. Bratislava",
   "idLocal": 524,
   "idVisita": 7509,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 0,
   "comp": "CL"
  },
  {
   "id": 575333,
   "utc": "2026-09-09T19:00:00Z",
-  "estado": "NS",
+  "estado": "HT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -75,14 +75,14 @@
   "visita": "Arsenal",
   "idLocal": 113,
   "idVisita": 57,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "CL"
  },
  {
   "id": 575334,
   "utc": "2026-09-09T19:00:00Z",
-  "estado": "NS",
+  "estado": "HT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -91,8 +91,8 @@
   "visita": "Galatasaray",
   "idLocal": 498,
   "idVisita": 610,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "CL"
  }
 ]
