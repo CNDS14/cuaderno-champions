@@ -162,6 +162,64 @@ alimentan justo los mercados menos fiables del modelo.
 
 ---
 
+## Competiciones
+
+Se configuran en `scripts/competiciones.mjs`. Poner una en `activa: true`
+basta para que el recolector la traiga en la siguiente corrida.
+
+| Competición | Calendario y tabla | Cuotas | Estado |
+|---|---|---|---|
+| Champions League | gratis | sí | activa |
+| LaLiga | gratis | sí | activa |
+| Premier League | gratis | sí | activa |
+| Serie A | gratis | sin cuotas | activa |
+| Bundesliga | gratis | sin cuotas | activa |
+| Ligue 1 | gratis | sin cuotas | activa |
+| Eredivisie, Primeira, Brasileirão, Championship | gratis | — | listas, apagadas |
+| **Liga MX** | **de paga** | gratis | **no disponible** |
+
+### El problema con la Liga MX
+
+El plan gratuito de football-data.org incluye 12 competiciones y la Liga
+MX no está entre ellas: aparece con código `LMX` pero requiere el plan
+**Standard, 49 €/mes**. Las *cuotas* sí están gratis en the-odds-api
+(`soccer_mexico_ligamx`), pero sin calendario ni marcadores no hay modelo
+que alimentar.
+
+Tres salidas, de más barata a más cara:
+
+1. **API-Football Pro, 19 USD/mes.** La opción sensata si quieres Liga MX.
+   Cubre todo —calendario, en vivo, alineaciones, estadísticas por
+   partido— y de paso desbloquea remates y córners reales, que es lo que
+   hoy le falta al modelo. El código ya la soporta: define
+   `API_FOOTBALL_KEY` y la usa.
+2. **the-odds-api sola.** Su endpoint `/scores` da marcadores de Liga MX
+   dentro del plan gratuito. Alcanza para resultados y cuotas, pero no
+   para tabla ni árbitros, y consume del mismo presupuesto de 500
+   créditos. Viable si solo quieres Liga MX y poco más.
+3. **football-data.org Standard, 49 €/mes.** Más caro y aporta menos que
+   la opción 1.
+
+### El ajuste histórico de la Liga MX
+
+Aparte del calendario, para que el modelo prediga Liga MX hacen falta
+partidos suyos en el ajuste. `football-data.co.uk` publica México en su
+sección de ligas extra (`MEX.csv`), pero **sin remates, córners ni
+tarjetas** — solo marcadores y cuotas. Con eso el modelo de goles sí se
+puede ajustar; los mercados de córners y tarjetas se quedarían con
+valores a priori.
+
+### Escalas por liga
+
+Cada liga marca goles a su propio ritmo: la Bundesliga produce 1.64 por
+equipo y la Serie A 1.25. Y la ventaja de local tampoco es igual —LaLiga
+×1.155, Serie A ×1.036—. Por eso `fit-model.mjs` guarda dos juegos de
+calificaciones: uno normalizado dentro de cada liga, para partidos
+domésticos, y otro reescalado a nivel Champions, para cruces europeos.
+Usar la escala equivocada mueve los goles esperados hasta un 11%.
+
+---
+
 ## Estructura
 
 ```

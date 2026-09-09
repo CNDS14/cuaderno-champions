@@ -27,23 +27,36 @@ const src = [
 const { T0, corto } = new Function(src + "; return {T0, corto};")();
 export { T0, corto };
 
-/* Parámetros ajustados, si existen: sustituyen a los a priori. */
+/* Parámetros ajustados, si existen: sustituyen a los a priori.
+   Devolvemos DOS escalas. `eq` está en nivel Champions (para partidos
+   entre equipos de ligas distintas) y `eqDom` en nivel de cada liga
+   (para partidos domésticos). Usar la escala equivocada desplaza los
+   goles esperados alrededor de un 10%, que en cuotas es muchísimo.   */
 export function cargarEquipos() {
   const eq = JSON.parse(JSON.stringify(T0));
-  let ajustados = 0, info = null;
+  const eqDom = {};
+  let ajustados = 0, info = null, ligas = {}, teamLiga = {};
   try {
     const P = JSON.parse(readFileSync(join(ROOT, "data", "params.json"), "utf8"));
     info = { partidos: P.partidos, desde: P.desde, hasta: P.hasta };
+    ligas = P.ligas || {};
     for (const [n, v] of Object.entries(P.teams || {})) {
       const k = corto(n);
       if (eq[k]) { eq[k] = v; ajustados++; }
     }
+    for (const [n, v] of Object.entries(P.teamsDom || {})) eqDom[corto(n)] = v;
+    for (const [n, L] of Object.entries(P.teamLiga || {})) teamLiga[corto(n)] = L;
   } catch (e) { /* sin ajuste: seguimos con los a priori */ }
-  return { eq, ajustados, info };
+  return { eq, eqDom, ligas, teamLiga, ajustados, info };
 }
 
 /* ---------- Dixon-Coles ---------- */
-const MAXG = 11, GB = 1.45, HH = 1.12, HA = 0.90, RHO = -0.03;
+const MAXG = 11, RHO = -0.03;
+/* Referencia de la fase liga de Champions. Para las ligas domésticas
+   usamos su propia media de goles y su propia ventaja de local, que el
+   ajuste calcula: la Bundesliga produce 1.64 goles por equipo y la
+   Serie A 1.25, y tratarlas igual sería un error de 30%.             */
+export const REF_CL = { base: 1.45, hfaLocal: 1.12, hfaVisita: 0.90 };
 const fc = [1]; for (let i = 1; i < 40; i++) fc[i] = fc[i - 1] * i;
 const pois = (k, l) => Math.exp(-l) * Math.pow(l, k) / fc[k];
 const tau = (x, y, lh, la) =>
@@ -52,10 +65,11 @@ const tau = (x, y, lh, la) =>
   x === 1 && y === 0 ? 1 + la * RHO :
   x === 1 && y === 1 ? 1 - RHO : 1;
 
-export function modelo(eq, local, visita) {
+export function modelo(eq, local, visita, ref = REF_CL) {
   const H = eq[local], A = eq[visita];
   if (!H || !A) return null;
-  const lh = GB * H[0] * A[1] * HH, la = GB * A[0] * H[1] * HA;
+  const lh = ref.base * H[0] * A[1] * ref.hfaLocal;
+  const la = ref.base * A[0] * H[1] * ref.hfaVisita;
   const g = []; let s = 0;
   for (let i = 0; i < MAXG; i++) { g[i] = [];
     for (let j = 0; j < MAXG; j++) { const v = pois(i, lh) * pois(j, la) * tau(i, j, lh, la); g[i][j] = v; s += v; } }
@@ -69,6 +83,14 @@ export function modelo(eq, local, visita) {
 
 /* Un pick por grupo de mercado: el más probable de cada uno. Es una
    apuesta de papel, y se registra ANTES del saque sin volver a tocarse. */
+/* Elige la escala correcta segun la competicion del partido. */
+export function modeloPara(datos, comp, local, visita) {
+  const { eq, eqDom, ligas } = datos;
+  if (comp && comp !== "CL" && ligas[comp] && eqDom[local] && eqDom[visita])
+    return modelo(eqDom, local, visita, ligas[comp]);
+  return modelo(eq, local, visita, REF_CL);
+}
+
 export function picksDe(md, local, visita) {
   const grupos = [
     ["Resultado", [[`${local} gana`, md.pH, "1X2::H"], ["Empate", md.pD, "1X2::D"], [`${visita} gana`, md.pA, "1X2::A"]]],

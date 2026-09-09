@@ -26,6 +26,7 @@ import { writeFile, mkdir, readFile } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { cargarEquipos, modelo, picksDe, resolver, corto } from "./modelo.mjs";
+import { ACTIVAS } from "./competiciones.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = join(ROOT, "data");
@@ -85,20 +86,19 @@ function mapaPartido(m) {
   };
 }
 
-async function partidos() {
+async function partidos(cod) {
   // los del día; si no hay, los de la próxima semana
-  let j = await pedir(`${FD}/competitions/CL/matches?dateFrom=${hoyISO()}&dateTo=${hoyISO()}`, fdHead, "fd/partidos-hoy");
+  let j = await pedir(`${FD}/competitions/${cod}/matches?dateFrom=${hoyISO()}&dateTo=${hoyISO()}`, fdHead, `${cod}/hoy`);
   let ms = j?.matches || [];
   if (!ms.length) {
-    j = await pedir(`${FD}/competitions/CL/matches?dateFrom=${hoyISO()}&dateTo=${masDias(9)}`, fdHead, "fd/proximos");
-    ms = (j?.matches || []).slice(0, 18);
-    if (ms.length) console.log(`  sin partidos hoy → tomo los ${ms.length} próximos`);
+    j = await pedir(`${FD}/competitions/${cod}/matches?dateFrom=${hoyISO()}&dateTo=${masDias(9)}`, fdHead, `${cod}/proximos`);
+    ms = (j?.matches || []).slice(0, 20);
   }
-  return ms.map(mapaPartido);
+  return ms.map(m => ({ ...mapaPartido(m), comp: cod }));
 }
 
-async function tabla() {
-  const j = await pedir(`${FD}/competitions/CL/standings`, fdHead, "fd/tabla");
+async function tabla(cod) {
+  const j = await pedir(`${FD}/competitions/${cod}/standings`, fdHead, `${cod}/tabla`);
   const bloque = (j?.standings || []).find(s => (s.type || "").toUpperCase() === "TOTAL") || (j?.standings || [])[0];
   return (bloque?.table || []).map(t => ({
     pos: t.position,
@@ -111,10 +111,10 @@ async function tabla() {
 }
 
 /** Resultados recientes, para que el tablero muestre cómo van quedando. */
-async function recientes() {
-  const j = await pedir(`${FD}/competitions/CL/matches?dateFrom=${masDias(-8)}&dateTo=${masDias(-1)}&status=FINISHED`,
-    fdHead, "fd/recientes");
-  return (j?.matches || []).map(mapaPartido).slice(-24);
+async function recientes(cod) {
+  const j = await pedir(`${FD}/competitions/${cod}/matches?dateFrom=${masDias(-8)}&dateTo=${masDias(-1)}&status=FINISHED`,
+    fdHead, `${cod}/recientes`);
+  return (j?.matches || []).map(m => ({ ...mapaPartido(m), comp: cod })).slice(-24);
 }
 
 /* ═══════════ the-odds-api (cuotas) ═══════════ */
@@ -170,14 +170,14 @@ function tocaPedirCuotas(ps, ultima) {
   return { si: true, razon: `proximo partido en ${faltan.toFixed(1)} h` };
 }
 
-async function cuotas(ps) {
+async function cuotas(ps, clave) {
   if (!ODDS_KEY) { aviso("Sin ODDS_API_KEY: no traigo cuotas. El tablero deja los campos vacíos para que las escribas."); return {}; }
-  const u = new URL("https://api.the-odds-api.com/v4/sports/soccer_uefa_champs_league/odds");
+  const u = new URL(`https://api.the-odds-api.com/v4/sports/${clave}/odds`);
   u.searchParams.set("apiKey", ODDS_KEY);
   u.searchParams.set("regions", "eu");        // una sola región = 1 crédito
   u.searchParams.set("markets", "h2h");       // un solo mercado
   u.searchParams.set("oddsFormat", "decimal");
-  const j = await pedir(u, {}, "odds/h2h");
+  const j = await pedir(u, {}, `odds/${clave}`);
   if (!Array.isArray(j)) return {};
 
   // Solo partidos que NO han empezado. Las cuotas en vivo de un partido
@@ -310,72 +310,124 @@ async function picksDelModelo(ps, rec) {
     brier: brier === null ? null : +brier.toFixed(4), equiposAjustados: ajustados, ajuste: info };
 }
 
+async function leerPrevio(dir) {
+  const leer = async n => { try { return JSON.parse(await readFile(join(dir, n), "utf8")); } catch (e) { return null; } };
+  const [f, t, o, r] = await Promise.all(["fixtures.json","standings.json","odds.json","recientes.json"].map(leer));
+  const fixtures = Array.isArray(f) ? f : [], recientes = Array.isArray(r) ? r : [];
+  return { fixtures, recientes,
+    resumen: { partidos: fixtures.length, hoy: 0, enTabla: Array.isArray(t) ? t.length : 0,
+      conCuotas: o ? Object.keys(o).length : 0, resultados: recientes.length } };
+}
+
 /* ═══════════ principal ═══════════ */
 async function main() {
   await mkdir(DATA, { recursive: true });
-  console.log(`${hoyISO()} · modo ${FULL ? "completo" : "ligero"}`);
+  console.log(`${hoyISO()} · modo ${FULL ? "completo" : "ligero"} · ${ACTIVAS.length} competiciones`);
 
   if (!FD_KEY) {
     console.error("✗ Falta FOOTBALL_DATA_KEY — es la fuente principal y es gratis.");
     console.error("  Regístrate en football-data.org/client/register");
-    console.error("  Luego: repo → Settings → Secrets and variables → Actions → New repository secret");
     diag.errores.push({ donde: "config", error: "FOOTBALL_DATA_KEY ausente" });
     await writeFile(join(DATA, "diagnostico.json"), JSON.stringify(diag, null, 1));
     process.exit(1);
   }
 
-  const ps = await partidos();
-  console.log(`${ps.length} partido(s)`);
-  const tb = await tabla();
-  // Siempre, no solo en modo completo: el cuaderno necesita los
-  // marcadores finales para calificar los pronosticos de dias previos.
-  const rec = await recientes();
-  // ¿gastamos un credito de cuotas en esta corrida?
-  let metaPrev = {};
-  try { metaPrev = JSON.parse(await readFile(join(DATA, "meta.json"), "utf8")); } catch (e) {}
-  let cuotasPrev = {};
-  try { cuotasPrev = JSON.parse(await readFile(join(DATA, "odds.json"), "utf8")); } catch (e) {}
-  const decision = tocaPedirCuotas(ps, metaPrev.ultimaConsultaCuotas);
-  let cu = cuotasPrev, ultimaCuota = metaPrev.ultimaConsultaCuotas || null;
-  if (ODDS_KEY && decision.si) {
-    cu = await cuotas(ps);
-    ultimaCuota = new Date().toISOString();
-    console.log(`  cuotas pedidas (${decision.razon})`);
-  } else {
-    console.log(`  cuotas: no pido (${decision.razon}) — conservo las ${Object.keys(cuotasPrev).length} que ya tenia`);
+  /* Presupuesto de créditos de cuotas, con memoria entre corridas.
+     Cada competición tiene su propio sport_key, así que cada una gasta
+     su propio crédito: sin control, seis ligas se comen los 500 del mes
+     en tres días. */
+  const mesActual = new Date().toISOString().slice(0, 7);
+  let cred = { mes: mesActual, gastados: 0, tope: 450, ultima: {} };
+  try {
+    const prev = JSON.parse(await readFile(join(DATA, "creditos.json"), "utf8"));
+    if (prev.mes === mesActual) cred = { ...cred, ...prev };
+  } catch (e) {}
+  if (cred.mes !== mesActual) cred = { mes: mesActual, gastados: 0, tope: 450, ultima: {} };
+
+  const indice = [], todos = [], todosRec = [];
+
+  for (const comp of ACTIVAS) {
+    const cod = comp.fd;
+    const dir = join(DATA, cod);
+    await mkdir(dir, { recursive: true });
+
+    const ps = await partidos(cod);
+    const tb = await tabla(cod);
+    const rec = await recientes(cod);
+
+    // cuotas: solo si esta competición las tiene habilitadas, hay partido
+    // cerca, pasó el intervalo mínimo y queda presupuesto
+    let cu = {};
+    try { cu = JSON.parse(await readFile(join(dir, "odds.json"), "utf8")); } catch (e) {}
+    if (ODDS_KEY && comp.cuotas && comp.odds) {
+      const d = tocaPedirCuotas(ps, cred.ultima[cod]);
+      if (!d.si) console.log(`  ${cod} cuotas: no pido (${d.razon})`);
+      else if (cred.gastados >= cred.tope) aviso(`Presupuesto de cuotas agotado (${cred.gastados}/${cred.tope} este mes): no pido más.`);
+      else {
+        cu = await cuotas(ps, comp.odds);
+        cred.gastados++; cred.ultima[cod] = new Date().toISOString();
+        console.log(`  ${cod} cuotas pedidas (${d.razon}) · crédito ${cred.gastados}/${cred.tope}`);
+      }
+    }
+
+    /* Si la API falló y no trajimos NADA, no pisamos lo que ya había:
+       una caída pasajera de la fuente no debe vaciar el tablero. Solo
+       escribimos cuando hay algo real, o cuando el vacío es legítimo
+       (no hubo errores, simplemente no hay partidos ahora).            */
+    const fallo = diag.errores.some(e => String(e.donde).startsWith(cod + "/"));
+    const vacio = !ps.length && !tb.length && !rec.length;
+    if (fallo && vacio) {
+      aviso(`${cod}: la fuente no respondió; conservo los datos anteriores.`);
+      const prev = await leerPrevio(dir);
+      indice.push({ fd: cod, nombre: comp.nombre, pais: comp.pais, ...prev.resumen, obsoleto: true });
+      todos.push(...prev.fixtures); todosRec.push(...prev.recientes);
+      continue;
+    }
+
+    await Promise.all([
+      writeFile(join(dir, "fixtures.json"),  JSON.stringify(ps, null, 1)),
+      writeFile(join(dir, "standings.json"), JSON.stringify(tb, null, 1)),
+      writeFile(join(dir, "odds.json"),      JSON.stringify(cu, null, 1)),
+      writeFile(join(dir, "recientes.json"), JSON.stringify(rec, null, 1))
+    ]);
+
+    const hoy = ps.filter(p => (p.utc || "").slice(0, 10) === hoyISO()).length;
+    indice.push({ fd: cod, nombre: comp.nombre, pais: comp.pais,
+      partidos: ps.length, hoy, enTabla: tb.length,
+      conCuotas: Object.keys(cu).length, resultados: rec.length });
+    todos.push(...ps); todosRec.push(...rec);
+    console.log(`  ${cod}: ${ps.length} partidos (${hoy} hoy) · ${tb.length} en tabla · ${Object.keys(cu).length} con cuotas`);
   }
-  const stats = FULL && AF_KEY ? await estadisticas(ps.filter(p => p.estado === "FT")) : {};
-  const picks = await picksDelModelo(ps, rec).catch(e => { nota("picks-modelo", e.message); return null; });
+
+  const picks = await picksDelModelo(todos, todosRec).catch(e => { nota("picks-modelo", e.message); return null; });
 
   diag.fuentes = {
     calendarioYTabla: "football-data.org (gratis, temporada en curso)",
-    cuotas: ODDS_KEY ? "the-odds-api.com" : "sin configurar",
+    cuotas: ODDS_KEY ? `the-odds-api.com · ${cred.gastados}/${cred.tope} créditos este mes` : "sin configurar",
     estadisticas: AF_KEY ? "API-Football" : "sin configurar (requiere plan de paga)"
   };
 
   const meta = {
     actualizado: new Date().toISOString(),
-    fuente: "football-data.org" + (ODDS_KEY ? " + the-odds-api" : ""),
-    partidos: ps.length, equiposEnTabla: tb.length,
-    partidosConCuotas: Object.keys(cu).length,
-    resultadosRecientes: rec.length,
-    ultimaConsultaCuotas: ultimaCuota,
+    competiciones: indice,
+    partidosTotales: todos.length,
+    creditosCuotas: { gastados: cred.gastados, tope: cred.tope, mes: cred.mes },
     picksModelo: picks
   };
 
   await Promise.all([
-    writeFile(join(DATA, "fixtures.json"),   JSON.stringify(ps, null, 1)),
-    writeFile(join(DATA, "standings.json"),  JSON.stringify(tb, null, 1)),
-    writeFile(join(DATA, "odds.json"),       JSON.stringify(cu, null, 1)),
-    writeFile(join(DATA, "stats.json"),      JSON.stringify(stats, null, 1)),
-    writeFile(join(DATA, "recientes.json"),  JSON.stringify(rec, null, 1)),
-    writeFile(join(DATA, "meta.json"),       JSON.stringify(meta, null, 1)),
-    writeFile(join(DATA, "diagnostico.json"),JSON.stringify(diag, null, 1))
+    writeFile(join(DATA, "indice.json"),      JSON.stringify(indice, null, 1)),
+    writeFile(join(DATA, "meta.json"),        JSON.stringify(meta, null, 1)),
+    writeFile(join(DATA, "creditos.json"),    JSON.stringify(cred, null, 1)),
+    writeFile(join(DATA, "diagnostico.json"), JSON.stringify(diag, null, 1)),
+    // compatibilidad: el tablero viejo lee estos de la raíz
+    writeFile(join(DATA, "fixtures.json"),    JSON.stringify(todos, null, 1)),
+    writeFile(join(DATA, "recientes.json"),   JSON.stringify(todosRec, null, 1))
   ]);
 
-  console.log(`\n${ps.length} partidos · ${tb.length} en tabla · ${Object.keys(cu).length} con cuotas · ${rec.length} resultados recientes`);
+  console.log(`\n${todos.length} partidos en ${ACTIVAS.length} competiciones · ${cred.gastados}/${cred.tope} créditos de cuotas`);
   if (diag.avisos.length)  { console.log("\nAvisos:");  diag.avisos.forEach(a => console.log("  ⚠ " + a)); }
-  if (diag.errores.length) { console.log("\nFallos (detalle en data/diagnostico.json):");
+  if (diag.errores.length) { console.log(`\n${diag.errores.length} fallo(s) — detalle en data/diagnostico.json`);
                              diag.errores.forEach(e => console.log(`  ✗ ${e.donde} → ${e.error}`)); }
 }
 

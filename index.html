@@ -71,6 +71,12 @@ nav.tabs button{background:none;border:0;color:#8FA2B5;padding:11px 16px;cursor:
 nav.tabs button[aria-selected="true"]{color:#fff;border-bottom-color:var(--star)}
 nav.tabs button:hover{color:#DCE6F0}
 
+.comps{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
+.chip-comp{background:var(--surface);border:1px solid var(--line);color:var(--ink-2);border-radius:99px;
+  padding:5px 13px;font-size:13px;font-weight:600;cursor:pointer;font-family:"Source Sans 3",sans-serif}
+.chip-comp[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip-comp[aria-pressed="true"] .dim{color:rgba(255,255,255,.75)}
+.chip-comp:hover{border-color:var(--ink-3)}
 .lead{font-size:14px;color:var(--ink-2);max-width:76ch;margin:0 0 18px}
 section[hidden]{display:none}
 h2.sec{font-size:20px;font-weight:800;letter-spacing:-.015em;margin:26px 0 4px}
@@ -246,6 +252,11 @@ let FUENTE = "semilla";           // semilla | repositorio | en vivo
 const DESCONOCIDOS = new Set();   // equipos sin calificacion propia
 let RECIENTES = [];               // resultados de los ultimos dias
 let PICKSMOD = [];                // apuestas de papel del modelo, ya comprometidas
+let INDICE = [];                  // competiciones que trae el repositorio
+let TABLAS = {};                  // clasificacion por competicion
+let LIGAS = {};                   // base de goles y localia de cada liga
+let TEAMSDOM = {};                // calificaciones en escala de su propia liga
+const REF_CL = {base:1.45, hfaLocal:1.12, hfaVisita:0.90};
 
 const CLUB = {  // color de club, solo como identificador visual
  "AEK Atenas":"#F5C518","LASK":"#111","Club Brujas":"#1B62B3","Aston Villa":"#95BFE5",
@@ -330,7 +341,7 @@ let EQUIPOS36=["AEK Atenas","Arsenal","Aston Villa","Atlético de Madrid","Barce
 /* ══════════ 2. ESTADO ══════════ */
 const KEY="ucl-cuaderno-v3";
 const clone=o=>JSON.parse(JSON.stringify(o));
-let S={teams:clone(T0),refs:clone(R0),odds:{},bank:5000,wmkt:65,kfrac:25,thr:2,tab:"hoy"};
+let S={teams:clone(T0),refs:clone(R0),odds:{},bank:5000,wmkt:65,kfrac:25,thr:2,tab:"hoy",comp:"todas"};
 FIX.forEach(f=>S.odds[f.h+"|"+f.a]={"1X2":f.odds.slice()});
 try{const r=localStorage.getItem(KEY);if(r)S=Object.assign(S,JSON.parse(r));}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}};
@@ -358,11 +369,23 @@ function grid(lh,la){
   return g;}
 const agg=(g,f)=>{let t=0;for(let i=0;i<MAXG;i++)for(let j=0;j<MAXG;j++)if(f(i,j))t+=g[i][j];return t;};
 
+/* La escala depende de la competicion. En Champions se enfrentan equipos
+   de ligas distintas y usamos la referencia continental; en un partido
+   domestico hay que usar la media de goles y la localia de ESA liga. La
+   Bundesliga produce 1.64 goles por equipo y la Serie A 1.25: tratarlas
+   igual desplaza los goles esperados hasta un 11%.                     */
+function escalaDe(fx){
+  const L=LIGAS[fx.comp];
+  if(fx.comp && fx.comp!=="CL" && L && TEAMSDOM[fx.h] && TEAMSDOM[fx.a])
+    return {eq:TEAMSDOM, ref:L};
+  return {eq:S.teams, ref:REF_CL};
+}
 function model(fx){
-  const H=S.teams[fx.h],A=S.teams[fx.a];
-  const lh=GB*H[0]*A[1]*HH, la=GB*A[0]*H[1]*HA, g=grid(lh,la);
+  const {eq,ref}=escalaDe(fx);
+  const H=eq[fx.h]||S.teams[fx.h], A=eq[fx.a]||S.teams[fx.a];
+  const lh=ref.base*H[0]*A[1]*ref.hfaLocal, la=ref.base*A[0]*H[1]*ref.hfaVisita, g=grid(lh,la);
   // contrafactual en campo neutral, para medir cuanto vale la localia
-  const gn=grid(GB*H[0]*A[1],GB*A[0]*H[1]);
+  const gn=grid(ref.base*H[0]*A[1],ref.base*A[0]*H[1]);
   const sc=[];for(let i=0;i<6;i++)for(let j=0;j<6;j++)sc.push([g[i][j],i+"–"+j]);
   sc.sort((x,y)=>y[0]-x[0]);
   const ch=Math.sqrt(H[4]*A[5])*1.08, ca=Math.sqrt(A[4]*H[5])*0.92;
@@ -508,11 +531,21 @@ function estado(fx){
   }
   return ["soon","Por jugar"];
 }
+/* Los partidos que se muestran, segun el filtro de competicion. */
+function FIXV(){ return S.comp==="todas" ? FIX : FIX.filter(f=>(f.comp||"CL")===S.comp); }
+const nombreComp=c=>(INDICE.find(x=>x.fd===c)||{}).nombre||c;
+function barraComps(){
+  if(INDICE.length<2)return "";
+  const chip=(v,n,extra="")=>`<button class="chip-comp" data-comp="${v}" aria-pressed="${S.comp===v}">${n}${extra}</button>`;
+  return `<div class="comps">${chip("todas","Todas",` <span class="dim">${FIX.length}</span>`)}
+    ${INDICE.map(c=>{const n=FIX.filter(f=>(f.comp||"CL")===c.fd).length;
+      return n?chip(c.fd,c.nombre,` <span class="dim">${n}</span>`):"";}).join("")}</div>`;
+}
 function crest(t){return `<span class="crest" style="background:${CLUB[t]||"#888"}"></span>`;}
 
 function vistaHoy(){
-  let h=`<p class="lead">Los seis partidos de la jornada con su hora en Dgo, dónde verlos, el árbitro designado y lo que el modelo espera. Debajo de cada uno, las cinco apuestas de mayor convicción de ese juego.</p>`;
-  FIX.forEach(fx=>{
+  let h=barraComps()+`<p class="lead">Los partidos con su hora de Durango, dónde verlos, el árbitro designado y lo que el modelo espera. Debajo de cada uno, las cinco apuestas de mayor convicción de ese juego.</p>`;
+  FIXV().forEach(fx=>{
     const m=model(fx), [cls,txt]=estado(fx);
     const picks=mercados(m,fx).flatMap(mk=>mk.sels.map(s=>({...s,g:mk.g,fiab:mk.fiab})))
       .filter(s=>s.p>0.5).sort((x,y)=>y.p*FIAB_W[y.fiab]-x.p*FIAB_W[x.fiab]).slice(0,5);
@@ -573,12 +606,12 @@ function filaPick(sel,i,extra=""){
 }
 function vistaPicks(){
   const previos=[],vivos=[];
-  FIX.forEach(fx=>{
+  FIXV().forEach(fx=>{
     const md=model(fx), ev=enVivo(fx,md);
     if(ev)vivos.push({fx,md,ev}); else if(fx.st!=="FT")previos.push({fx,md});
   });
 
-  let h=`<p class="lead">Dos listas distintas porque son dos modelos distintos. Los previos salen de la matriz de goles del saque; los de en vivo la recalculan con el marcador actual y el tiempo que falta, así que se mueven solos conforme avanza el partido.</p>`;
+  let h=barraComps()+`<p class="lead">Dos listas distintas porque son dos modelos distintos. Los previos salen de la matriz de goles del saque; los de en vivo la recalculan con el marcador actual y el tiempo que falta, así que se mueven solos conforme avanza el partido.</p>`;
 
   /* ---- EN VIVO ---- */
   h+=`<h2 class="sec">Picks en vivo</h2>`;
@@ -676,7 +709,7 @@ function vistaApuestas(){
     <div class="ctl"><label for="thr">Umbral de EV</label><input type="range" id="thr" min="0" max="10" step="0.5" value="${S.thr}"><span class="v">+${S.thr.toFixed(1)}% mínimo</span></div>
   </div>`;
   let cards="";
-  FIX.forEach(fx=>{
+  FIXV().forEach(fx=>{
     const key=fx.h+"|"+fx.a, m=model(fx), mks=mercados(m,fx);
     S.odds[key]=S.odds[key]||{};
     let best=[],blocks="";
@@ -743,36 +776,56 @@ function vistaApuestas(){
 }
 
 function vistaTabla(){
-  const enJuego=new Set(); FIX.forEach(f=>{enJuego.add(f.h);enJuego.add(f.a);});
-  const norm={"Dortmund":"Borussia Dortmund","Man City":"Manchester City"};
-  const activos=new Set([...enJuego].map(t=>norm[t]||t));
-  const real=Array.isArray(TABLA)&&TABLA.length;
-  const filas=real?TABLA:EQUIPOS36.map(t=>({equipo:t,pj:0,g:0,e:0,p:0,gf:0,gc:0,pts:0}));
-  const rows=filas.map((r,i)=>{
-    const band=i<8?"var(--pos)":i<24?"var(--star)":"var(--neg)";
-    const juega=activos.has(corto(r.equipo))||activos.has(r.equipo);
-    return `<tr><td><span class="band" style="background:${band}"></span>${r.equipo}
-      ${juega?'<span class="tag" style="margin-left:6px">juega hoy</span>':""}</td>
+  const comps=INDICE.filter(c=>(TABLAS[c.fd]||[]).length);
+  if(!comps.length){
+    return `<p class="lead">Todavía no hay clasificaciones descargadas. Se llenan en la próxima corrida del recolector.</p>`;
+  }
+  const sel=comps.find(c=>c.fd===S.comp)||comps[0];
+  const tabla=TABLAS[sel.fd]||[];
+  const esCL=sel.fd==="CL";
+  const jugando=new Set(FIX.filter(f=>(f.comp||"CL")===sel.fd).flatMap(f=>[f.h,f.a]));
+  const corteA=esCL?8:4, corteB=esCL?24:tabla.length-3;
+
+  const filas=tabla.map((r,i)=>{
+    const pos=i+1;
+    const band=pos<=corteA?"var(--pos)":pos<=corteB?"var(--star)":"var(--neg)";
+    const juega=jugando.has(corto(r.equipo))||jugando.has(r.equipo);
+    return `<tr><td><span class="band" style="background:${band}"></span>${r.pos||pos}. ${r.equipo}
+      ${juega?'<span class="tag" style="margin-left:6px">juega</span>':""}</td>
       <td>${r.pj}</td><td>${r.g}</td><td>${r.e}</td><td>${r.p}</td>
-      <td>${r.gf}</td><td>${r.gc}</td><td><b>${r.pts}</b></td></tr>`;
+      <td>${r.gf}</td><td>${r.gc}</td><td>${r.gf-r.gc>0?"+":""}${r.gf-r.gc}</td><td><b>${r.pts}</b></td></tr>`;
   }).join("");
-  return `<p class="lead">Los 36 equipos de la fase liga. Todos arrancan en cero: hoy es la jornada 1 de 8, y la tabla se llena conforme se juegue. El orden aquí es alfabético hasta que haya puntos.</p>
-  <div class="legend">
-    <span><i style="background:var(--pos)"></i>1–8: a octavos directo</span>
-    <span><i style="background:var(--star)"></i>9–24: repesca a doble partido</span>
-    <span><i style="background:var(--neg)"></i>25–36: eliminados</span>
-  </div>
+
+  const pestañas=`<div class="comps">${comps.map(c=>
+    `<button class="chip-comp" data-comp="${c.fd}" aria-pressed="${c.fd===sel.fd}">${c.nombre}</button>`).join("")}</div>`;
+
+  const leyenda=esCL
+    ? `<span><i style="background:var(--pos)"></i>1–8: a octavos directo</span>
+       <span><i style="background:var(--star)"></i>9–24: repesca a doble partido</span>
+       <span><i style="background:var(--neg)"></i>25–36: eliminados</span>`
+    : `<span><i style="background:var(--pos)"></i>zona de Champions</span>
+       <span><i style="background:var(--star)"></i>media tabla</span>
+       <span><i style="background:var(--neg)"></i>descenso</span>`;
+
+  const explica=esCL
+    ? `<div class="note"><h4>Cómo funciona la fase liga</h4>
+      <p>Una sola tabla de 36 equipos, ocho partidos cada uno contra rivales distintos: cuatro de local y cuatro de visitante. No hay grupos. Del 1 al 8 pasan directo a octavos; del 9 al 24 juegan una repesca en febrero; del 25 al 36 quedan fuera de todo, sin paracaídas a la Europa League.</p>
+      <p>Para apostar importa más de lo que parece: un equipo del puesto 9 al 24 se juega la vida en la jornada 8, mientras que el que ya aseguró el top 8 rota. Hacia el final, la motivación desigual mueve las cuotas más que la calidad.</p></div>`
+    : `<div class="note"><h4>Los cortes son aproximados</h4>
+      <p>Las bandas de color son orientativas: cada liga tiene sus propias plazas europeas y de descenso, y algunas cambian según la copa. Úsalas como referencia visual, no como reglamento.</p>
+      <p>Lo que sí es exacto son los puntos y los goles: vienen de la fuente y se actualizan solos.</p></div>`;
+
+  return pestañas+
+  `<p class="lead">${sel.nombre} · ${sel.pais}. ${tabla.length} equipos, actualizado con el resto del tablero.</p>
+  <div class="legend">${leyenda}</div>
   <div class="panel" style="padding:0"><div class="scroll"><table>
-    <thead><tr><th>Equipo</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>Pts</th></tr></thead>
-    <tbody>${rows}</tbody></table></div></div>
-  <div class="note"><h4>Cómo funciona la fase liga</h4>
-    <p>Una sola tabla de 36 equipos, ocho partidos cada uno contra rivales distintos: cuatro de local y cuatro de visitante. No hay grupos. Del 1 al 8 pasan directo a octavos; del 9 al 24 juegan una repesca a doble partido en febrero; del 25 al 36 quedan fuera de todo, sin paracaídas a la Europa League.</p>
-    <p>Para apostar esto importa más de lo que parece: un equipo del puesto 9 al 24 sigue jugándose la vida en la jornada 8, mientras que el que ya aseguró el top 8 rota. Hacia el final de la fase, la motivación desigual mueve las cuotas más que la calidad.</p></div>`;
+    <thead><tr><th>Equipo</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DIF</th><th>Pts</th></tr></thead>
+    <tbody>${filas}</tbody></table></div></div>`+explica;
 }
 
 function vistaStats(){
   let loc="",h2h="",diag="";
-  FIX.forEach(fx=>{
+  FIXV().forEach(fx=>{
     const m=model(fx);
     const d=(m.pH-m.nH)*100;
     loc+=`<tr><td>${fx.h} vs ${fx.a}</td><td>${pct(m.nH)}</td><td>${pct(m.pH)}</td>
@@ -1046,6 +1099,8 @@ function render(){
   wire();
 }
 function wire(){
+  document.querySelectorAll("[data-comp]").forEach(b=>b.onclick=()=>{
+    S.comp=b.dataset.comp;save();render();});
   const bank=document.getElementById("bank");
   if(bank)bank.oninput=e=>{S.bank=Math.max(0,+e.target.value||0);save();render();};
   ["wmkt","kfrac","thr"].forEach(id=>{const n=document.getElementById(id);
@@ -1178,7 +1233,7 @@ function aplicarPartidos(lista){
     return{h,a,cet:t.cet,dgo:t.dgo,ref,tn:1.00,
       sede:p.sede||"—", tv:"HBO Max · TNT Sports",
       h2h:null,news:null,odds:[0,0,0],
-      id:p.id, st:p.estado, gl:p.golesLocal, gv:p.golesVisita, min:p.minuto};
+      id:p.id, comp:p.comp||"CL", st:p.estado, gl:p.golesLocal, gv:p.golesVisita, min:p.minuto};
   });
   FIX.forEach(f=>{S.odds[f.h+"|"+f.a]=S.odds[f.h+"|"+f.a]||{};});
   return true;
@@ -1193,7 +1248,29 @@ async function cargar(){
   if(params?.teams){
     for(const [n,v] of Object.entries(params.teams)){const k=corto(n);if(S.teams[k])S.teams[k]=v;}
     for(const [r,v] of Object.entries(params.refs||{}))S.refs[r]=[v[0],1];
+    LIGAS=params.ligas||{};
+    for(const [n,v] of Object.entries(params.teamsDom||{}))TEAMSDOM[corto(n)]=v;
     AJUSTADO=`ajustado sobre ${params.partidos} partidos (${params.desde} a ${params.hasta})`;
+  }
+  // competiciones: cada una tiene su carpeta bajo data/
+  const idx=await json("./data/indice.json");
+  if(Array.isArray(idx)&&idx.length){
+    INDICE=idx;
+    const cargas=await Promise.all(idx.map(async c=>{
+      const [f,t,o,r]=await Promise.all([
+        json(`./data/${c.fd}/fixtures.json`), json(`./data/${c.fd}/standings.json`),
+        json(`./data/${c.fd}/odds.json`),     json(`./data/${c.fd}/recientes.json`)]);
+      return {c,f:Array.isArray(f)?f:[],t:Array.isArray(t)?t:[],o:o||{},r:Array.isArray(r)?r:[]};
+    }));
+    const juntos=[], recs=[], cuotasTodas={};
+    for(const {c,f,t,o,r} of cargas){
+      juntos.push(...f.map(x=>({...x,comp:x.comp||c.fd})));
+      recs.push(...r); TABLAS[c.fd]=t; Object.assign(cuotasTodas,o);
+    }
+    if(juntos.length){ aplicarPartidos(juntos); RECIENTES=recs;
+      FIX.forEach(f=>{const q=cuotasTodas[f.id];
+        if(Array.isArray(q)&&q.length===3){f.odds=q;S.odds[f.h+"|"+f.a]["1X2"]=q.slice();}});
+    }
   }
   // 2. partidos, tabla, cuotas
   const hayFx=aplicarPartidos(fx);

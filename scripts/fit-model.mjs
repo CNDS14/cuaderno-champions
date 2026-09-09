@@ -52,8 +52,19 @@ function fecha(s) {
   return new Date(Date.UTC(año, Number(m) - 1, Number(d)));
 }
 
+/* De qué liga es cada archivo. football-data.co.uk usa estos códigos y
+   nosotros los traducimos a los de football-data.org, que es lo que el
+   tablero entiende.                                                     */
+const LIGA_DE = { E0:"PL", E1:"ELC", SP1:"PD", D1:"BL1", I1:"SA", F1:"FL1",
+                  N1:"DED", P1:"PPL", B1:"JPL", SC0:"SPL", T1:"TSL", G1:"GSL" };
+const ligaDeArchivo = ruta => {
+  const base = ruta.split(/[\\/]/).pop().replace(/\.csv$/i, "").replace(/\s*\(\d+\)$/, "").trim();
+  return LIGA_DE[base] || base;
+};
+
 const partidos = [];
 for (const f of archivos) {
+  const LIGA = ligaDeArchivo(f);
   let filas;
   try { filas = parseCSV(readFileSync(f, "utf8")); }
   catch (e) { console.warn(`saltando ${f}: ${e.message}`); continue; }
@@ -68,7 +79,8 @@ for (const f of archivos) {
       cl: Number(r.HC), cv: Number(r.AC),
       tl: Number(r.HY) + 2 * (Number(r.HR) || 0),
       tv: Number(r.AY) + 2 * (Number(r.AR) || 0),
-      arbitro: r.Referee || null
+      arbitro: r.Referee || null,
+      liga: LIGA
     });
   }
 }
@@ -143,6 +155,43 @@ for (const p of partidos) {
   arb[p.arbitro].n++;
 }
 
+/* ---------- normalización por liga ----------
+   El ajuste de arriba pone la media en 1.00 sobre TODOS los equipos de
+   TODAS las ligas juntas. Para un partido de Champions eso está bien
+   (equipos de ligas distintas se enfrentan), pero para un partido
+   doméstico es incorrecto: si LaLiga entera es más goleadora que la
+   Ligue 1, sus equipos quedan inflados y los goles esperados de un
+   Madrid-Betis salen mal.
+
+   Así que guardamos DOS juegos de calificaciones: uno normalizado dentro
+   de cada liga, con la media de goles de esa liga, y otro reescalado a
+   nivel Champions. El tablero usa el que corresponda a la competición.  */
+const ligas = {};
+for (const p of partidos) {
+  const L = ligas[p.liga] ??= { w: 0, gl: 0, gv: 0, equipos: new Set() };
+  L.w += p.w; L.gl += p.w * p.gl; L.gv += p.w * p.gv;
+  L.equipos.add(p.local); L.equipos.add(p.visita);
+}
+const teamLiga = {};
+for (const p of partidos) { teamLiga[p.local] = p.liga; teamLiga[p.visita] = p.liga; }
+
+const infoLigas = {};
+for (const [cod, L] of Object.entries(ligas)) {
+  const eq = [...L.equipos].filter(t => att[t]);
+  if (eq.length < 6) continue;
+  const mLocal = L.gl / L.w, mVisita = L.gv / L.w;
+  const base = (mLocal + mVisita) / 2;
+  const mA = eq.reduce((s, t) => s + att[t], 0) / eq.length;
+  const mD = eq.reduce((s, t) => s + def[t], 0) / eq.length;
+  infoLigas[cod] = { base: +base.toFixed(3),
+    hfaLocal: +(mLocal / base).toFixed(3), hfaVisita: +(mVisita / base).toFixed(3),
+    equipos: eq.length, partidos: partidos.filter(p => p.liga === cod).length,
+    escalaAtt: +mA.toFixed(4), escalaDef: +mD.toFixed(4) };
+}
+console.log("\nPor liga (1.00 = equipo medio DE ESA liga):");
+for (const [c, v] of Object.entries(infoLigas))
+  console.log(`  ${c.padEnd(5)} ${String(v.partidos).padStart(4)} partidos · ${v.equipos} equipos · ${v.base.toFixed(2)} goles/equipo · local ×${v.hfaLocal}`);
+
 /* ---------- reescalado a nivel Champions ----------
    PASO CRÍTICO. El ajuste de arriba deja el promedio en 1.00 sobre los
    110 equipos de las cinco ligas domésticas. Pero el modelo del tablero
@@ -200,6 +249,18 @@ for (const [r, v] of Object.entries(arb)) {
   refs[r] = [+(v.t / v.w).toFixed(2), 1, v.n];  // [tarjetas/partido, verificado, n]
 }
 
+// calificaciones en escala de su propia liga
+const teamsDom = {};
+for (const t of Object.keys(teams)) {
+  const L = infoLigas[teamLiga[t]];
+  if (!L) continue;
+  const v = teams[t].slice();
+  // deshacemos el reescalado a Champions y aplicamos el de su liga
+  v[0] = +(att[t] / L.escalaAtt).toFixed(3);
+  v[1] = +(def[t] / L.escalaDef).toFixed(3);
+  teamsDom[t] = v;
+}
+
 const out = {
   ajustadoEl: new Date().toISOString(),
   partidos: partidos.length,
@@ -208,6 +269,7 @@ const out = {
   mediaVidaDias: MEDIA_VIDA_DIAS,
   base: +BASE.toFixed(3), hfaLocal: +HFA_H.toFixed(3), hfaVisita: +HFA_A.toFixed(3),
   tarjetasMedia: +tarjMedia.toFixed(2),
+  ligas: infoLigas, teamLiga, teamsDom,
   teams, refs
 };
 mkdirSync(join(ROOT, "data"), { recursive: true });
