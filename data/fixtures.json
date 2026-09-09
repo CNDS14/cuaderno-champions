@@ -2,7 +2,7 @@
  {
   "id": 575329,
   "utc": "2026-09-09T16:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Feyenoord",
   "idLocal": 81,
   "idVisita": 675,
-  "golesLocal": 2,
-  "golesVisita": 0,
+  "golesLocal": 5,
+  "golesVisita": 1,
   "comp": "CL"
  },
  {
   "id": 575330,
   "utc": "2026-09-09T16:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 1,
   "sede": "",

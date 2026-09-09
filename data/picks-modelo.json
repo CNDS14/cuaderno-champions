@@ -398,9 +398,9 @@
   "k": "1X2::H",
   "p": 0.6854,
   "registradoEl": "2026-09-09T04:29:38.104Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 5,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 575329,
@@ -411,9 +411,9 @@
   "k": "DO::1X",
   "p": 0.8573,
   "registradoEl": "2026-09-09T04:29:38.104Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 5,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 575329,
@@ -424,9 +424,9 @@
   "k": "OU::O|1.5",
   "p": 0.8867,
   "registradoEl": "2026-09-09T04:29:38.104Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 5,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 575329,
@@ -437,9 +437,9 @@
   "k": "AA::S",
   "p": 0.6265,
   "registradoEl": "2026-09-09T04:29:38.104Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 5,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 575329,
@@ -450,9 +450,9 @@
   "k": "PA::NV",
   "p": 0.9245,
   "registradoEl": "2026-09-09T04:29:38.104Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 5,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 575330,
@@ -463,9 +463,9 @@
   "k": "1X2::H",
   "p": 0.5866,
   "registradoEl": "2026-09-09T04:29:38.104Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 3,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 575330,
@@ -476,9 +476,9 @@
   "k": "DO::1X",
   "p": 0.8035,
   "registradoEl": "2026-09-09T04:29:38.104Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 3,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 575330,
@@ -489,9 +489,9 @@
   "k": "OU::O|1.5",
   "p": 0.8228,
   "registradoEl": "2026-09-09T04:29:38.104Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 3,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 575330,
@@ -502,9 +502,9 @@
   "k": "AA::S",
   "p": 0.5825,
   "registradoEl": "2026-09-09T04:29:38.104Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 3,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 575330,
@@ -515,8 +515,8 @@
   "k": "PA::NV",
   "p": 0.8692,
   "registradoEl": "2026-09-09T04:29:38.104Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 3,
+  "gv": 1,
+  "ok": true
  }
 ]
