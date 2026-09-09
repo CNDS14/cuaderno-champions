@@ -61,19 +61,19 @@
   },
   {
    "donde": "BL1/proximos",
-   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
   },
   {
    "donde": "BL1/tabla",
-   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
   },
   {
    "donde": "BL1/recientes",
-   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
   },
   {
    "donde": "FL1/hoy",
-   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
   },
   {
    "donde": "FL1/proximos",
@@ -85,7 +85,7 @@
   },
   {
    "donde": "FL1/recientes",
-   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
+   "error": "HTTP 429 You reached your request limit. Wait 55 seconds."
   }
  ]
 }
