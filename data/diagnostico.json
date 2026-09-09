@@ -1,7 +1,7 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 1/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 2/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
@@ -70,7 +70,7 @@
   },
   {
    "donde": "BL1/recientes",
-   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
   },
   {
    "donde": "FL1/hoy",
