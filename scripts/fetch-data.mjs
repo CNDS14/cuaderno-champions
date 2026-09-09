@@ -245,7 +245,9 @@ async function main() {
   const ps = await partidos();
   console.log(`${ps.length} partido(s)`);
   const tb = await tabla();
-  const rec = FULL ? await recientes() : [];
+  // Siempre, no solo en modo completo: el cuaderno necesita los
+  // marcadores finales para calificar los pronosticos de dias previos.
+  const rec = await recientes();
   const cu = ps.length ? await cuotas(ps) : {};
   const stats = FULL && AF_KEY ? await estadisticas(ps.filter(p => p.estado === "FT")) : {};
 
