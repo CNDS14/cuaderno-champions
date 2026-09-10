@@ -5,7 +5,6 @@
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
   "SA: la fuente no respondió; conservo los datos anteriores.",
   "BL1: la fuente no respondió; conservo los datos anteriores.",
   "FL1: la fuente no respondió; conservo los datos anteriores.",
@@ -73,11 +72,11 @@
   },
   {
    "donde": "BL1/tabla",
-   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
   },
   {
    "donde": "BL1/recientes",
-   "error": "HTTP 429 You reached your request limit. Wait 57 seconds."
+   "error": "HTTP 429 You reached your request limit. Wait 56 seconds."
   },
   {
    "donde": "FL1/hoy",
