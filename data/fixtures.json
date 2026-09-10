@@ -34,7 +34,7 @@
  {
   "id": 575337,
   "utc": "2026-09-10T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Bodø/Glimt",
   "idLocal": 5,
   "idVisita": 5721,
-  "golesLocal": 0,
+  "golesLocal": 5,
   "golesVisita": 0,
   "comp": "CL"
  },
  {
   "id": 575338,
   "utc": "2026-09-10T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -59,14 +59,14 @@
   "visita": "Sabah FK",
   "idLocal": 66,
   "idVisita": 10233,
-  "golesLocal": 3,
+  "golesLocal": 4,
   "golesVisita": 0,
   "comp": "CL"
  },
  {
   "id": 575339,
   "utc": "2026-09-10T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -75,14 +75,14 @@
   "visita": "RB Leipzig",
   "idLocal": 7397,
   "idVisita": 721,
-  "golesLocal": 2,
-  "golesVisita": 0,
+  "golesLocal": 4,
+  "golesVisita": 1,
   "comp": "CL"
  },
  {
   "id": 575340,
   "utc": "2026-09-10T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -91,8 +91,8 @@
   "visita": "RC Lens",
   "idLocal": 930,
   "idVisita": 546,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 3,
   "comp": "CL"
  },
  {
@@ -674,7 +674,7 @@
  {
   "id": 558606,
   "utc": "2026-09-11T18:45:00Z",
-  "estado": "NS",
+  "estado": "2026-09-11 17:45:00Z",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -690,7 +690,7 @@
  {
   "id": 558604,
   "utc": "2026-09-12T13:00:00Z",
-  "estado": "NS",
+  "estado": "2026-09-12 12:00:00Z",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -706,7 +706,7 @@
  {
   "id": 558600,
   "utc": "2026-09-12T16:00:00Z",
-  "estado": "NS",
+  "estado": "2026-09-12 15:00:00Z",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -722,7 +722,7 @@
  {
   "id": 558607,
   "utc": "2026-09-12T18:45:00Z",
-  "estado": "NS",
+  "estado": "2026-09-12 17:45:00Z",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -738,7 +738,7 @@
  {
   "id": 558605,
   "utc": "2026-09-13T13:00:00Z",
-  "estado": "NS",
+  "estado": "2026-09-13 12:00:00Z",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -754,7 +754,7 @@
  {
   "id": 558599,
   "utc": "2026-09-13T16:00:00Z",
-  "estado": "NS",
+  "estado": "2026-09-13 15:00:00Z",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -770,7 +770,7 @@
  {
   "id": 558608,
   "utc": "2026-09-13T18:45:00Z",
-  "estado": "NS",
+  "estado": "2026-09-13 17:45:00Z",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -786,7 +786,7 @@
  {
   "id": 558602,
   "utc": "2026-09-14T16:30:00Z",
-  "estado": "NS",
+  "estado": "2026-09-14 15:30:00Z",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -802,7 +802,7 @@
  {
   "id": 558603,
   "utc": "2026-09-14T16:30:00Z",
-  "estado": "NS",
+  "estado": "2026-09-14 15:30:00Z",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -818,7 +818,7 @@
  {
   "id": 558601,
   "utc": "2026-09-14T18:45:00Z",
-  "estado": "NS",
+  "estado": "2026-09-14 17:45:00Z",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -834,7 +834,7 @@
  {
   "id": 558596,
   "utc": "2026-09-18T18:45:00Z",
-  "estado": "NS",
+  "estado": "2026-09-18 17:45:00Z",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -850,7 +850,7 @@
  {
   "id": 558598,
   "utc": "2026-09-19T13:00:00Z",
-  "estado": "NS",
+  "estado": "2026-09-19 12:00:00Z",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -866,7 +866,7 @@
  {
   "id": 558589,
   "utc": "2026-09-19T13:00:00Z",
-  "estado": "NS",
+  "estado": "2026-09-19 12:00:00Z",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -882,7 +882,7 @@
  {
   "id": 558593,
   "utc": "2026-09-19T16:00:00Z",
-  "estado": "NS",
+  "estado": "2026-09-19 15:00:00Z",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -898,7 +898,7 @@
  {
   "id": 558594,
   "utc": "2026-09-19T18:45:00Z",
-  "estado": "NS",
+  "estado": "2026-09-19 17:45:00Z",
   "minuto": null,
   "jornada": 5,
   "sede": "",

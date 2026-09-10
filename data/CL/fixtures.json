@@ -34,7 +34,7 @@
  {
   "id": 575337,
   "utc": "2026-09-10T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Bodø/Glimt",
   "idLocal": 5,
   "idVisita": 5721,
-  "golesLocal": 0,
+  "golesLocal": 5,
   "golesVisita": 0,
   "comp": "CL"
  },
  {
   "id": 575338,
   "utc": "2026-09-10T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -59,14 +59,14 @@
   "visita": "Sabah FK",
   "idLocal": 66,
   "idVisita": 10233,
-  "golesLocal": 3,
+  "golesLocal": 4,
   "golesVisita": 0,
   "comp": "CL"
  },
  {
   "id": 575339,
   "utc": "2026-09-10T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -75,14 +75,14 @@
   "visita": "RB Leipzig",
   "idLocal": 7397,
   "idVisita": 721,
-  "golesLocal": 2,
-  "golesVisita": 0,
+  "golesLocal": 4,
+  "golesVisita": 1,
   "comp": "CL"
  },
  {
   "id": 575340,
   "utc": "2026-09-10T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 1,
   "sede": "",
@@ -91,8 +91,8 @@
   "visita": "RC Lens",
   "idLocal": 930,
   "idVisita": 546,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 3,
   "comp": "CL"
  }
 ]
