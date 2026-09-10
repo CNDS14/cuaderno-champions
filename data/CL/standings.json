@@ -159,17 +159,56 @@
   "pos": 13,
   "equipo": "Roma",
   "escudo": "https://crests.football-data.org/100.png",
-  "pj": 0,
+  "pj": 1,
   "g": 0,
-  "e": 0,
+  "e": 1,
   "p": 0,
   "gf": 0,
   "gc": 0,
-  "pts": 0,
+  "pts": 1,
   "forma": ""
  },
  {
   "pos": 13,
+  "equipo": "Fenerbahçe",
+  "escudo": "https://crests.football-data.org/613.png",
+  "pj": 1,
+  "g": 0,
+  "e": 1,
+  "p": 0,
+  "gf": 0,
+  "gc": 0,
+  "pts": 1,
+  "forma": ""
+ },
+ {
+  "pos": 13,
+  "equipo": "PSV",
+  "escudo": "https://crests.football-data.org/674.png",
+  "pj": 1,
+  "g": 0,
+  "e": 1,
+  "p": 0,
+  "gf": 0,
+  "gc": 0,
+  "pts": 1,
+  "forma": ""
+ },
+ {
+  "pos": 13,
+  "equipo": "Shaktar",
+  "escudo": "https://crests.football-data.org/1887.png",
+  "pj": 1,
+  "g": 0,
+  "e": 1,
+  "p": 0,
+  "gf": 0,
+  "gc": 0,
+  "pts": 1,
+  "forma": ""
+ },
+ {
+  "pos": 17,
   "equipo": "Bayern",
   "escudo": "https://crests.football-data.org/5.png",
   "pj": 0,
@@ -182,7 +221,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 17,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
   "pj": 0,
@@ -195,20 +234,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
-  "equipo": "Fenerbahçe",
-  "escudo": "https://crests.football-data.org/613.png",
-  "pj": 0,
-  "g": 0,
-  "e": 0,
-  "p": 0,
-  "gf": 0,
-  "gc": 0,
-  "pts": 0,
-  "forma": ""
- },
- {
-  "pos": 13,
+  "pos": 17,
   "equipo": "Bodø/Glimt",
   "escudo": "https://crests.football-data.org/5721.png",
   "pj": 0,
@@ -221,7 +247,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 17,
   "equipo": "Man United",
   "escudo": "https://crests.football-data.org/66.png",
   "pj": 0,
@@ -234,20 +260,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
-  "equipo": "PSV",
-  "escudo": "https://crests.football-data.org/674.png",
-  "pj": 0,
-  "g": 0,
-  "e": 0,
-  "p": 0,
-  "gf": 0,
-  "gc": 0,
-  "pts": 0,
-  "forma": ""
- },
- {
-  "pos": 13,
+  "pos": 17,
   "equipo": "RB Leipzig",
   "escudo": "https://crests.football-data.org/721.png",
   "pj": 0,
@@ -260,7 +273,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 17,
   "equipo": "RC Lens",
   "escudo": "https://crests.football-data.org/546.png",
   "pj": 0,
@@ -273,7 +286,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 17,
   "equipo": "Sabah FK",
   "escudo": "https://crests.football-data.org/10233.png",
   "pj": 0,
@@ -286,20 +299,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
-  "equipo": "Shaktar",
-  "escudo": "https://crests.football-data.org/1887.png",
-  "pj": 0,
-  "g": 0,
-  "e": 0,
-  "p": 0,
-  "gf": 0,
-  "gc": 0,
-  "pts": 0,
-  "forma": ""
- },
- {
-  "pos": 13,
+  "pos": 17,
   "equipo": "Slavia Praha",
   "escudo": "https://crests.football-data.org/930.png",
   "pj": 0,
