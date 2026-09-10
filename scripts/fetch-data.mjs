@@ -25,7 +25,7 @@
 import { writeFile, mkdir, readFile } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { cargarEquipos, modelo, picksDe, resolver, corto } from "./modelo.mjs";
+import { cargarEquipos, modeloPara, picksDe, resolver, corto } from "./modelo.mjs";
 import { ACTIVAS } from "./competiciones.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -40,7 +40,27 @@ const diag = { fuentes: {}, avisos: [], errores: [] };
 const nota = (donde, msg) => { diag.errores.push({ donde, error: msg }); console.error(`  ✗ ${donde} → ${msg}`); };
 const aviso = m => { diag.avisos.push(m); console.warn(`  ⚠ ${m}`); };
 
-async function pedir(url, headers, donde) {
+/* football-data.org permite 10 peticiones por minuto en el plan gratuito.
+   Con seis competiciones nos pasábamos y las últimas (Serie A, Bundesliga,
+   Ligue 1) recibían 429 sistemáticamente: siempre las mismas, porque el
+   orden es fijo. Un limitador de ventana deslizante espera lo justo en
+   vez de quemar peticiones que ya sabemos que van a rebotar.           */
+const LIMITE = { max: 9, ventanaMs: 60000, sellos: [] };
+const dormir = ms => new Promise(r => setTimeout(r, ms));
+async function esperarTurno() {
+  const ahora = Date.now();
+  LIMITE.sellos = LIMITE.sellos.filter(t => ahora - t < LIMITE.ventanaMs);
+  if (LIMITE.sellos.length >= LIMITE.max) {
+    const espera = LIMITE.ventanaMs - (ahora - LIMITE.sellos[0]) + 250;
+    console.log(`  … esperando ${(espera / 1000).toFixed(0)} s por el límite de la API`);
+    await dormir(espera);
+    return esperarTurno();
+  }
+  LIMITE.sellos.push(Date.now());
+}
+
+async function pedir(url, headers, donde, limitar = true) {
+  if (limitar) await esperarTurno();
   try {
     const r = await fetch(url, { headers });
     const txt = await r.text();
@@ -177,7 +197,7 @@ async function cuotas(ps, clave) {
   u.searchParams.set("regions", "eu");        // una sola región = 1 crédito
   u.searchParams.set("markets", "h2h");       // un solo mercado
   u.searchParams.set("oddsFormat", "decimal");
-  const j = await pedir(u, {}, `odds/${clave}`);
+  const j = await pedir(u, {}, `odds/${clave}`, false);
   if (!Array.isArray(j)) return {};
 
   // Solo partidos que NO han empezado. Las cuotas en vivo de un partido
@@ -264,7 +284,8 @@ async function picksDelModelo(ps, rec) {
   try { previos = JSON.parse(await readFile(ARCH, "utf8")); } catch (e) {}
   if (!Array.isArray(previos)) previos = [];
 
-  const { eq, ajustados, info } = cargarEquipos();
+  const datos = cargarEquipos();
+  const { ajustados, info } = datos;
   const yaTiene = new Set(previos.map(x => String(x.fixId)));
   let nuevos = 0, sinCalificar = 0;
 
@@ -272,7 +293,10 @@ async function picksDelModelo(ps, rec) {
     if (EMPEZADOS.includes(p.estado)) continue;      // tarde para pronosticar
     if (yaTiene.has(String(p.id))) continue;         // ya se comprometio
     const h = corto(p.local), a = corto(p.visita);
-    const md = modelo(eq, h, a);
+    // modeloPara elige la escala segun la competicion: sin esto, un
+    // partido de LaLiga entre equipos que no juegan Champions no encuentra
+    // calificacion y se queda sin picks.
+    const md = modeloPara(datos, p.comp, h, a);
     if (!md) { aviso(`Sin calificacion para ${h} o ${a}: no registro picks de ese partido.`); continue; }
     const sello = new Date().toISOString();
     for (const pk of picksDe(md, h, a)) {

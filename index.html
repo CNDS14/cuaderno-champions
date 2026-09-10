@@ -249,6 +249,7 @@ const VIVO_MS = 45000;
 let ACTUALIZADO = "8 sep 2026, 11:15 Dgo";
 let TABLA = null;                 // se llena desde data/standings.json
 let FUENTE = "semilla";           // semilla | repositorio | en vivo
+let ACT_MS = 0;                   // cuándo se actualizaron los datos, para avisar si envejecen
 const DESCONOCIDOS = new Set();   // equipos sin calificacion propia
 let RECIENTES = [];               // resultados de los ultimos dias
 let PICKSMOD = [];                // apuestas de papel del modelo, ya comprometidas
@@ -399,7 +400,9 @@ function model(fx){
     hO25:agg(g,(i,j)=>i+j>2&&i>j), aO25:agg(g,(i,j)=>i+j>2&&j>i),
     hcs:agg(g,(i,j)=>j===0), acs:agg(g,(i,j)=>i===0),
     sh,sa,sot_h:sh*0.34,sot_a:sa*0.34, xgc_h:sh*0.34*0.31, xgc_a:sa*0.34*0.31,
-    ch,ca,ctot:ch+ca, cards:S.refs[fx.ref][0]*fx.tn*((H[6]+A[6])/2),
+    // un árbitro que no conocemos no debe tumbar el modelo: 4.20 es la
+    // media general de tarjetas y la tarjeta lo muestra como "sin designar"
+    ch,ca,ctot:ch+ca, cards:(S.refs[fx.ref]?.[0] ?? 4.20)*(fx.tn||1)*((H[6]+A[6])/2),
     top:sc.slice(0,3)};
 }
 /* ═══ modelo en vivo ═══
@@ -532,6 +535,14 @@ function estado(fx){
   return ["soon","Por jugar"];
 }
 /* Los partidos que se muestran, segun el filtro de competicion. */
+/* Cómo se lee la fecha de un partido en toda la interfaz. */
+function cuando(fx,largo=false){
+  if(!fx.fecha)return `${fx.dgo||""} ${fx.dgo?"Dgo":""}`.trim();
+  const rel=fx.relativo&&fx.relativo!=="hoy"?` <span class="dim">· ${fx.relativo}</span>`:"";
+  return largo
+    ? `${fx.dia} ${fx.fecha} · ${fx.dgo} Dgo${rel}`
+    : `${fx.dia} ${fx.fecha} · ${fx.dgo}${rel}`;
+}
 function FIXV(){ return S.comp==="todas" ? FIX : FIX.filter(f=>(f.comp||"CL")===S.comp); }
 const nombreComp=c=>(INDICE.find(x=>x.fd===c)||{}).nombre||c;
 function barraComps(){
@@ -545,7 +556,13 @@ function crest(t){return `<span class="crest" style="background:${CLUB[t]||"#888
 
 function vistaHoy(){
   let h=barraComps()+`<p class="lead">Los partidos con su hora de Durango, dónde verlos, el árbitro designado y lo que el modelo espera. Debajo de cada uno, las cinco apuestas de mayor convicción de ese juego.</p>`;
-  FIXV().forEach(fx=>{
+  let diaPrevio=null;
+  FIXV().slice().sort((a,b)=>String(a.diaISO||"").localeCompare(String(b.diaISO||""))).forEach(fx=>{
+    if(fx.diaISO&&fx.diaISO!==diaPrevio){
+      diaPrevio=fx.diaISO;
+      h+=`<h2 class="sec" style="font-size:16px;margin:22px 0 10px;text-transform:capitalize">
+        ${fx.dia} ${fx.fecha}${fx.relativo&&fx.relativo!=="hoy"?` <span class="dim" style="font-weight:400;font-size:13px">· ${fx.relativo}</span>`:' <span class="dim" style="font-weight:400;font-size:13px">· hoy</span>'}</h2>`;
+    }
     const m=model(fx), [cls,txt]=estado(fx);
     const picks=mercados(m,fx).flatMap(mk=>mk.sels.map(s=>({...s,g:mk.g,fiab:mk.fiab})))
       .filter(s=>s.p>0.5).sort((x,y)=>y.p*FIAB_W[y.fiab]-x.p*FIAB_W[x.fiab]).slice(0,5);
@@ -554,13 +571,13 @@ function vistaHoy(){
         <div class="fixture">${crest(fx.h)}<h3>${fx.h}<span class="vs">vs</span>${fx.a}</h3>${crest(fx.a)}</div>
         <div class="state">
           <span class="pill ${cls}">${txt}</span>
-          <span class="mono">${fx.dgo} Dgo · ${fx.cet} CET</span>
+          <span class="mono">${cuando(fx,true)}</span><span class="dim">${fx.cet} CET</span>
         </div>
       </header>
       <div class="grid-meta">
         <div class="mcell"><div class="k">Dónde ver</div><div class="v">${fx.tv}</div></div>
         <div class="mcell"><div class="k">Sede</div><div class="v" style="font-size:13px">${fx.sede}</div></div>
-        <div class="mcell"><div class="k">Árbitro</div><div class="v">${fx.ref} <small>${S.refs[fx.ref][0].toFixed(2)} t/p</small></div></div>
+        <div class="mcell"><div class="k">Árbitro</div><div class="v">${fx.ref} <small>${(S.refs[fx.ref]?.[0] ?? 4.20).toFixed(2)} t/p</small></div></div>
         <div class="mcell"><div class="k">Goles esperados</div><div class="v mono">${m.lh.toFixed(2)} – ${m.la.toFixed(2)}</div></div>
         <div class="mcell"><div class="k">Marcador más probable</div><div class="v mono">${m.top[0][1]} <small>${pct(m.top[0][0])}</small></div></div>
         <div class="mcell"><div class="k">Córners / tarjetas</div><div class="v mono">${m.ctot.toFixed(1)} / ${m.cards.toFixed(1)}</div></div>
@@ -659,7 +676,7 @@ function vistaPicks(){
       h+=`<article class="card">
         <header>
           <div class="fixture">${crest(fx.h)}<h3>${fx.h}<span class="vs">vs</span>${fx.a}</h3>${crest(fx.a)}</div>
-          <div class="state"><span class="pill soon">${fx.dgo} Dgo</span>
+          <div class="state"><span class="pill soon">${cuando(fx)}</span>
             <span class="mono">xG ${md.lh.toFixed(2)}–${md.la.toFixed(2)}</span></div>
         </header>
         <div class="picks"><h4>Lo más probable según el modelo</h4>
@@ -749,7 +766,7 @@ function vistaApuestas(){
     best.sort((x,y)=>y.e-x.e);
     cards+=`<article class="card">
       <header><div class="fixture">${crest(fx.h)}<h3>${fx.h}<span class="vs">vs</span>${fx.a}</h3>${crest(fx.a)}</div>
-        <div class="state"><span class="mono">${fx.dgo} Dgo</span></div></header>
+        <div class="state"><span class="mono">${cuando(fx)}</span></div></header>
       <div class="picks"><h4>Con valor según tus cuotas</h4>
         ${best.length?best.map((b,i)=>`<div class="pick">
             <span class="rank">${i+1}</span>
@@ -1087,9 +1104,12 @@ function vistaRegistro(){
 
 /* ══════════ 6. RENDER Y EVENTOS ══════════ */
 function render(){
+  const viejo = ACT_MS && (Date.now()-ACT_MS) > 3*3600e3;
+  const horas = ACT_MS ? Math.round((Date.now()-ACT_MS)/3600e3) : null;
   document.getElementById("updated").innerHTML=
-    `<span class="pulse"></span><b>Actualizado</b> ${ACTUALIZADO}<br>
-     Datos: ${FUENTE} · Modelo: ${typeof AJUSTADO!=="undefined"?AJUSTADO:"a priori"}`;
+    `<span class="pulse" style="${viejo?"background:var(--star)":""}"></span><b>Actualizado</b> ${ACTUALIZADO}<br>
+     Datos: ${FUENTE} · Modelo: ${typeof AJUSTADO!=="undefined"?AJUSTADO:"a priori"}
+     ${viejo?`<br><b style="color:var(--star)">Los datos tienen ${horas} h — el recolector no ha corrido</b>`:""}`;
   document.getElementById("tabs").innerHTML=TABS.map(([id,n])=>
     `<button role="tab" data-t="${id}" aria-selected="${S.tab===id}">${n}</button>`).join("");
   document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{S.tab=b.dataset.t;save();render();window.scrollTo(0,0);});
@@ -1150,9 +1170,25 @@ function wire(){
      2. repositorio   — data/*.json, que GitHub Actions refresca
      3. Worker        — marcadores al minuto, si WORKER_URL está puesto  */
 
-const HORA=iso=>{const d=new Date(iso);return{
-  cet:d.toLocaleTimeString("es-ES",{timeZone:"Europe/Madrid",hour:"2-digit",minute:"2-digit"}),
-  dgo:d.toLocaleTimeString("es-MX",{timeZone:"America/Monterrey",hour:"2-digit",minute:"2-digit"})};};
+/* Fecha y hora en tiempo de Durango. Un partido "a las 13:00" sin fecha
+   no dice nada cuando el calendario abarca varios días — que es lo
+   normal fuera de la semana de Champions.                              */
+const TZ={timeZone:"America/Monterrey"};
+const HORA=iso=>{
+  const d=new Date(iso);
+  if(isNaN(d))return{cet:"",dgo:"",fecha:"",dia:"",relativo:"",iso:""};
+  const hoy=new Date(), f=v=>v.toLocaleDateString("en-CA",TZ);   // aaaa-mm-dd local
+  const dLoc=f(d), hLoc=f(hoy);
+  const dias=Math.round((Date.parse(dLoc)-Date.parse(hLoc))/86400000);
+  const relativo = dias===0?"hoy" : dias===1?"mañana" : dias===-1?"ayer"
+    : dias>1&&dias<7 ? d.toLocaleDateString("es-MX",{...TZ,weekday:"long"})
+    : dias<0 ? `hace ${-dias} días` : `en ${dias} días`;
+  return{
+    cet:d.toLocaleTimeString("es-ES",{timeZone:"Europe/Madrid",hour:"2-digit",minute:"2-digit",hour12:false}),
+    dgo:d.toLocaleTimeString("es-MX",{...TZ,hour:"2-digit",minute:"2-digit",hour12:false}),
+    fecha:d.toLocaleDateString("es-MX",{...TZ,day:"numeric",month:"short"}),
+    dia:d.toLocaleDateString("es-MX",{...TZ,weekday:"short"}).replace(".",""),
+    relativo, iso:dLoc, dias};};
 
 // nombres de la API -> nombres cortos que usa el modelo
 const ALIAS={
@@ -1214,9 +1250,13 @@ function corto(n){
 }
 const MEDIO=[1.00,1.00,12.5,12.5,5.0,5.0,1.00];   // equipo promedio, para debutantes
 
+/* El ?v= no es adorno: GitHub Pages sirve detrás de un CDN que cachea, y
+   sin una URL distinta el navegador puede seguir viendo el JSON de hace
+   horas aunque el repositorio ya esté actualizado.                     */
 async function json(u,ms=6000){
   const c=new AbortController(), t=setTimeout(()=>c.abort(),ms);
-  try{const r=await fetch(u,{signal:c.signal,cache:"no-store"});
+  const sep=u.includes("?")?"&":"?";
+  try{const r=await fetch(u+sep+"v="+Date.now(),{signal:c.signal,cache:"no-store"});
       return r.ok?await r.json():null;}
   catch(e){return null;} finally{clearTimeout(t);}
 }
@@ -1226,11 +1266,18 @@ function aplicarPartidos(lista){
   FIX=lista.map(p=>{
     const h=corto(p.local),a=corto(p.visita),t=p.utc?HORA(p.utc):{cet:"",dgo:""};
     [h,a].forEach(n=>{
-      if(!S.teams[n]){S.teams[n]=MEDIO.slice();DESCONOCIDOS.add(n);}
+      // Un equipo de liga doméstica no está en la lista de los 36 de
+      // Champions, pero sí puede tener calificación ajustada en su propia
+      // liga. Solo avisamos cuando de verdad no sabemos nada de él.
+      if(!S.teams[n]){
+        S.teams[n]=TEAMSDOM[n]?TEAMSDOM[n].slice():MEDIO.slice();
+        if(!TEAMSDOM[n])DESCONOCIDOS.add(n);
+      }
       if(!CLUB[n])CLUB[n]="#7C8894";});
     const ref=p.arbitro?p.arbitro.split("(")[0].trim():"Sin designar";
     if(!S.refs[ref])S.refs[ref]=[4.20,0];
-    return{h,a,cet:t.cet,dgo:t.dgo,ref,tn:1.00,
+    return{h,a,cet:t.cet,dgo:t.dgo,fecha:t.fecha,dia:t.dia,relativo:t.relativo,
+      diaISO:t.iso,dias:t.dias,ref,tn:1.00,
       sede:p.sede||"—", tv:"HBO Max · TNT Sports",
       h2h:null,news:null,odds:[0,0,0],
       id:p.id, comp:p.comp||"CL", st:p.estado, gl:p.golesLocal, gv:p.golesVisita, min:p.minuto};
@@ -1285,6 +1332,7 @@ async function cargar(){
   const pm=await json("./data/picks-modelo.json");
   if(Array.isArray(pm))PICKSMOD=pm;
   if(meta?.actualizado){
+    ACT_MS=Date.parse(meta.actualizado)||0;
     ACTUALIZADO=new Date(meta.actualizado).toLocaleString("es-MX",
       {timeZone:"America/Monterrey",dateStyle:"medium",timeStyle:"short"})+" Dgo";
     FUENTE="repositorio";
