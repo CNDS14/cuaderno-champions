@@ -2,11 +2,11 @@
  {
   "id": 564669,
   "utc": "2026-09-11T19:00:00Z",
-  "estado": "NS",
+  "estado": "2026-09-11 18:00:00Z",
   "minuto": null,
   "jornada": 5,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Mateo Busquets Ferrer",
   "local": "Sevilla FC",
   "visita": "Valencia",
   "idLocal": 559,
