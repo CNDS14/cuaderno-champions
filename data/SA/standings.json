@@ -183,6 +183,19 @@
  },
  {
   "pos": 15,
+  "equipo": "Fiorentina",
+  "escudo": "https://crests.football-data.org/99.png",
+  "pj": 4,
+  "g": 1,
+  "e": 0,
+  "p": 3,
+  "gf": 3,
+  "gc": 10,
+  "pts": 3,
+  "forma": ""
+ },
+ {
+  "pos": 16,
   "equipo": "Bologna",
   "escudo": "https://crests.football-data.org/103.png",
   "pj": 3,
@@ -195,7 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Parma",
   "escudo": "https://crests.football-data.org/112.png",
   "pj": 3,
@@ -208,7 +221,7 @@
   "forma": ""
  },
  {
-  "pos": 17,
+  "pos": 18,
   "equipo": "Monza",
   "escudo": "https://crests.football-data.org/5911.png",
   "pj": 3,
@@ -221,20 +234,20 @@
   "forma": ""
  },
  {
-  "pos": 18,
+  "pos": 19,
   "equipo": "Venezia FC",
   "escudo": "https://crests.football-data.org/454.png",
-  "pj": 3,
+  "pj": 4,
   "g": 0,
   "e": 0,
-  "p": 3,
-  "gf": 2,
-  "gc": 7,
+  "p": 4,
+  "gf": 3,
+  "gc": 9,
   "pts": 0,
   "forma": ""
  },
  {
-  "pos": 19,
+  "pos": 20,
   "equipo": "Genoa",
   "escudo": "https://crests.football-data.org/107.png",
   "pj": 3,
@@ -243,19 +256,6 @@
   "p": 3,
   "gf": 1,
   "gc": 7,
-  "pts": 0,
-  "forma": ""
- },
- {
-  "pos": 20,
-  "equipo": "Fiorentina",
-  "escudo": "https://crests.football-data.org/99.png",
-  "pj": 3,
-  "g": 0,
-  "e": 0,
-  "p": 3,
-  "gf": 1,
-  "gc": 9,
   "pts": 0,
   "forma": ""
  }

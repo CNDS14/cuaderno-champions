@@ -1,11 +1,10 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 17/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 18/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "Sin calificacion para Sevilla FC o Valencia: no registro picks de ese partido.",
   "Sin calificacion para Crystal Palace o Ipswich Town: no registro picks de ese partido.",
   "Sin calificacion para Aston Villa o Nottingham: no registro picks de ese partido.",
   "Sin calificacion para Chelsea o Hull City: no registro picks de ese partido.",
@@ -15,10 +14,7 @@
   "Sin calificacion para Brighton Hove o Arsenal: no registro picks de ese partido.",
   "Sin calificacion para Newcastle o Hull City: no registro picks de ese partido.",
   "Sin calificacion para Nottingham o Coventry City: no registro picks de ese partido.",
-  "Sin calificacion para Leeds United o Crystal Palace: no registro picks de ese partido.",
-  "Sin calificacion para Venezia FC o Fiorentina: no registro picks de ese partido.",
-  "Sin calificacion para Union Berlin o Schalke: no registro picks de ese partido.",
-  "Sin calificacion para Stade Rennais o Marseille: no registro picks de ese partido."
+  "Sin calificacion para Leeds United o Crystal Palace: no registro picks de ese partido."
  ],
  "errores": []
 }

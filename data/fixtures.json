@@ -2,7 +2,7 @@
  {
   "id": 564669,
   "utc": "2026-09-11T19:00:00Z",
-  "estado": "2026-09-11 18:00:00Z",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Valencia",
   "idLocal": 559,
   "idVisita": 95,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -338,7 +338,7 @@
  {
   "id": 558606,
   "utc": "2026-09-11T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -347,14 +347,14 @@
   "visita": "Fiorentina",
   "idLocal": 454,
   "idVisita": 99,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {
   "id": 565797,
   "utc": "2026-09-11T18:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 3,
   "sede": "",
@@ -363,14 +363,14 @@
   "visita": "Schalke",
   "idLocal": 28,
   "idVisita": 6,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 2,
   "comp": "BL1"
  },
  {
   "id": 559689,
   "utc": "2026-09-11T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -379,8 +379,8 @@
   "visita": "Marseille",
   "idLocal": 529,
   "idVisita": 516,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

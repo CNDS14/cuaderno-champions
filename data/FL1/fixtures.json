@@ -2,7 +2,7 @@
  {
   "id": 559689,
   "utc": "2026-09-11T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Marseille",
   "idLocal": 529,
   "idVisita": 516,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]
