@@ -2,7 +2,7 @@
  {
   "id": 565797,
   "utc": "2026-09-11T18:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 3,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Schalke",
   "idLocal": 28,
   "idVisita": 6,
-  "golesLocal": 0,
-  "golesVisita": 2,
+  "golesLocal": 1,
+  "golesVisita": 3,
   "comp": "BL1"
  }
 ]

@@ -27,6 +27,19 @@
  },
  {
   "pos": 3,
+  "equipo": "Sevilla FC",
+  "escudo": "https://crests.football-data.org/559.png",
+  "pj": 5,
+  "g": 3,
+  "e": 1,
+  "p": 1,
+  "gf": 8,
+  "gc": 6,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 4,
   "equipo": "Real Madrid",
   "escudo": "https://crests.football-data.org/86.png",
   "pj": 4,
@@ -39,7 +52,7 @@
   "forma": ""
  },
  {
-  "pos": 4,
+  "pos": 5,
   "equipo": "Real Betis",
   "escudo": "https://crests.football-data.org/90.png",
   "pj": 4,
@@ -52,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Deportivo",
   "escudo": "https://crests.football-data.org/560.png",
   "pj": 4,
@@ -61,19 +74,6 @@
   "p": 0,
   "gf": 8,
   "gc": 5,
-  "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 6,
-  "equipo": "Sevilla FC",
-  "escudo": "https://crests.football-data.org/559.png",
-  "pj": 5,
-  "g": 2,
-  "e": 2,
-  "p": 1,
-  "gf": 7,
-  "gc": 6,
   "pts": 8,
   "forma": ""
  },
@@ -235,19 +235,6 @@
  },
  {
   "pos": 19,
-  "equipo": "Valencia",
-  "escudo": "https://crests.football-data.org/95.png",
-  "pj": 5,
-  "g": 0,
-  "e": 2,
-  "p": 3,
-  "gf": 1,
-  "gc": 9,
-  "pts": 2,
-  "forma": ""
- },
- {
-  "pos": 20,
   "equipo": "Elche",
   "escudo": "https://crests.football-data.org/285.png",
   "pj": 4,
@@ -256,6 +243,19 @@
   "p": 3,
   "gf": 5,
   "gc": 12,
+  "pts": 1,
+  "forma": ""
+ },
+ {
+  "pos": 20,
+  "equipo": "Valencia",
+  "escudo": "https://crests.football-data.org/95.png",
+  "pj": 5,
+  "g": 0,
+  "e": 1,
+  "p": 4,
+  "gf": 1,
+  "gc": 10,
   "pts": 1,
   "forma": ""
  }

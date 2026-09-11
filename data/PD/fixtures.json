@@ -2,7 +2,7 @@
  {
   "id": 564669,
   "utc": "2026-09-11T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -11,7 +11,7 @@
   "visita": "Valencia",
   "idLocal": 559,
   "idVisita": 95,
-  "golesLocal": 0,
+  "golesLocal": 1,
   "golesVisita": 0,
   "comp": "PD"
  }

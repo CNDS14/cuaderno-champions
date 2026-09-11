@@ -189,8 +189,8 @@
   "g": 1,
   "e": 0,
   "p": 3,
-  "gf": 3,
-  "gc": 10,
+  "gf": 5,
+  "gc": 11,
   "pts": 3,
   "forma": ""
  },
@@ -235,19 +235,6 @@
  },
  {
   "pos": 19,
-  "equipo": "Venezia FC",
-  "escudo": "https://crests.football-data.org/454.png",
-  "pj": 4,
-  "g": 0,
-  "e": 0,
-  "p": 4,
-  "gf": 3,
-  "gc": 9,
-  "pts": 0,
-  "forma": ""
- },
- {
-  "pos": 20,
   "equipo": "Genoa",
   "escudo": "https://crests.football-data.org/107.png",
   "pj": 3,
@@ -256,6 +243,19 @@
   "p": 3,
   "gf": 1,
   "gc": 7,
+  "pts": 0,
+  "forma": ""
+ },
+ {
+  "pos": 20,
+  "equipo": "Venezia FC",
+  "escudo": "https://crests.football-data.org/454.png",
+  "pj": 4,
+  "g": 0,
+  "e": 0,
+  "p": 4,
+  "gf": 4,
+  "gc": 11,
   "pts": 0,
   "forma": ""
  }

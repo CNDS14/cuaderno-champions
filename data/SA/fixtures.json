@@ -2,7 +2,7 @@
  {
   "id": 558606,
   "utc": "2026-09-11T18:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Fiorentina",
   "idLocal": 454,
   "idVisita": 99,
-  "golesLocal": 1,
-  "golesVisita": 2,
+  "golesLocal": 2,
+  "golesVisita": 4,
   "comp": "SA"
  }
 ]
