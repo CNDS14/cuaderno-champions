@@ -2,7 +2,7 @@
  {
   "id": 560572,
   "utc": "2026-09-12T14:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 560574,
   "utc": "2026-09-12T14:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -50,7 +50,7 @@
  {
   "id": 560576,
   "utc": "2026-09-12T14:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -82,7 +82,7 @@
  {
   "id": 560575,
   "utc": "2026-09-12T16:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -91,8 +91,8 @@
   "visita": "Everton",
   "idLocal": 73,
   "idVisita": 62,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PL"
  },
  {
@@ -102,7 +102,7 @@
   "minuto": null,
   "jornada": 4,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "John Brooks",
   "local": "Sunderland",
   "visita": "Arsenal",
   "idLocal": 71,

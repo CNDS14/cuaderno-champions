@@ -79,6 +79,19 @@
  },
  {
   "pos": 7,
+  "equipo": "Everton",
+  "escudo": "https://crests.football-data.org/62.png",
+  "pj": 4,
+  "g": 1,
+  "e": 3,
+  "p": 0,
+  "gf": 5,
+  "gc": 3,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Ipswich Town",
   "escudo": "https://crests.football-data.org/349.png",
   "pj": 4,
@@ -91,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 9,
   "equipo": "Newcastle",
   "escudo": "https://crests.football-data.org/67.png",
   "pj": 3,
@@ -100,19 +113,6 @@
   "p": 0,
   "gf": 6,
   "gc": 4,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 9,
-  "equipo": "Everton",
-  "escudo": "https://crests.football-data.org/62.png",
-  "pj": 3,
-  "g": 1,
-  "e": 2,
-  "p": 0,
-  "gf": 5,
-  "gc": 3,
   "pts": 5,
   "forma": ""
  },
@@ -209,6 +209,19 @@
  },
  {
   "pos": 17,
+  "equipo": "Tottenham",
+  "escudo": "https://crests.football-data.org/73.png",
+  "pj": 4,
+  "g": 0,
+  "e": 2,
+  "p": 2,
+  "gf": 0,
+  "gc": 5,
+  "pts": 2,
+  "forma": ""
+ },
+ {
+  "pos": 18,
   "equipo": "Fulham",
   "escudo": "https://crests.football-data.org/63.png",
   "pj": 4,
@@ -217,19 +230,6 @@
   "p": 3,
   "gf": 4,
   "gc": 7,
-  "pts": 1,
-  "forma": ""
- },
- {
-  "pos": 18,
-  "equipo": "Tottenham",
-  "escudo": "https://crests.football-data.org/73.png",
-  "pj": 3,
-  "g": 0,
-  "e": 1,
-  "p": 2,
-  "gf": 0,
-  "gc": 5,
   "pts": 1,
   "forma": ""
  },

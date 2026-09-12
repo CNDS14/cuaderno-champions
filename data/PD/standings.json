@@ -146,12 +146,12 @@
   "pos": 12,
   "equipo": "Athletic",
   "escudo": "https://crests.football-data.org/77.png",
-  "pj": 4,
+  "pj": 5,
   "g": 2,
   "e": 0,
-  "p": 2,
+  "p": 3,
   "gf": 6,
-  "gc": 5,
+  "gc": 6,
   "pts": 6,
   "forma": ""
  },
@@ -196,6 +196,19 @@
  },
  {
   "pos": 16,
+  "equipo": "Elche",
+  "escudo": "https://crests.football-data.org/285.png",
+  "pj": 5,
+  "g": 1,
+  "e": 1,
+  "p": 3,
+  "gf": 6,
+  "gc": 12,
+  "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 17,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 5,
@@ -208,7 +221,7 @@
   "forma": ""
  },
  {
-  "pos": 17,
+  "pos": 18,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 4,
@@ -221,7 +234,7 @@
   "forma": ""
  },
  {
-  "pos": 18,
+  "pos": 19,
   "equipo": "Málaga",
   "escudo": "https://crests.football-data.org/84.png",
   "pj": 4,
@@ -231,19 +244,6 @@
   "gf": 1,
   "gc": 7,
   "pts": 2,
-  "forma": ""
- },
- {
-  "pos": 19,
-  "equipo": "Elche",
-  "escudo": "https://crests.football-data.org/285.png",
-  "pj": 4,
-  "g": 0,
-  "e": 1,
-  "p": 3,
-  "gf": 5,
-  "gc": 12,
-  "pts": 1,
   "forma": ""
  },
  {

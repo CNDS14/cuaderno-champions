@@ -1,13 +1,13 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 29/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 31/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "Sin calificacion para Athletic o Elche: no registro picks de ese partido.",
+  "3 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
+  "6 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
   "Sin calificacion para Real Madrid o Rayo Vallecano: no registro picks de ese partido.",
-  "Sin calificacion para 1. FC Köln o Bremen: no registro picks de ese partido.",
   "Sin calificacion para Le Havre o Angers SCO: no registro picks de ese partido.",
   "Sin calificacion para Paris FC o Olympique Lyon: no registro picks de ese partido."
  ],

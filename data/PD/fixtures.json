@@ -18,7 +18,7 @@
  {
   "id": 564673,
   "utc": "2026-09-12T14:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 564676,
   "utc": "2026-09-12T16:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Elche",
   "idLocal": 77,
   "idVisita": 285,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
@@ -54,7 +54,7 @@
   "minuto": null,
   "jornada": 5,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Víctor García Verdura",
   "local": "Real Madrid",
   "visita": "Rayo Vallecano",
   "idLocal": 86,

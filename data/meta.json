@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-12T16:06:11.782Z",
+ "actualizado": "2026-09-12T18:06:49.647Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -18,7 +18,7 @@
    "partidos": 4,
    "hoy": 4,
    "enTabla": 20,
-   "conCuotas": 2,
+   "conCuotas": 1,
    "resultados": 11
   },
   {
@@ -28,7 +28,7 @@
    "partidos": 7,
    "hoy": 7,
    "enTabla": 20,
-   "conCuotas": 2,
+   "conCuotas": 1,
    "resultados": 10
   },
   {
@@ -64,16 +64,16 @@
  ],
  "partidosTotales": 25,
  "creditosCuotas": {
-  "gastados": 29,
+  "gastados": 31,
   "tope": 450,
   "mes": "2026-09"
  },
  "picksModelo": {
   "total": 245,
   "nuevos": 0,
-  "calificados": 70,
-  "aciertos": 57,
-  "brier": 0.1409,
+  "calificados": 85,
+  "aciertos": 65,
+  "brier": 0.1546,
   "equiposAjustados": 21,
   "ajuste": {
    "partidos": 3650,
