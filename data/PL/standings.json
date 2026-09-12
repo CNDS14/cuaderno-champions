@@ -79,6 +79,19 @@
  },
  {
   "pos": 7,
+  "equipo": "Ipswich Town",
+  "escudo": "https://crests.football-data.org/349.png",
+  "pj": 4,
+  "g": 2,
+  "e": 0,
+  "p": 2,
+  "gf": 7,
+  "gc": 10,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Newcastle",
   "escudo": "https://crests.football-data.org/67.png",
   "pj": 3,
@@ -91,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 9,
   "equipo": "Everton",
   "escudo": "https://crests.football-data.org/62.png",
   "pj": 3,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Leeds United",
   "escudo": "https://crests.football-data.org/341.png",
   "pj": 3,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Nottingham",
   "escudo": "https://crests.football-data.org/351.png",
   "pj": 4,
@@ -130,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Brighton Hove",
   "escudo": "https://crests.football-data.org/397.png",
   "pj": 3,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "Man United",
   "escudo": "https://crests.football-data.org/66.png",
   "pj": 3,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Sunderland",
   "escudo": "https://crests.football-data.org/71.png",
   "pj": 3,
@@ -169,33 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
-  "equipo": "Crystal Palace",
-  "escudo": "https://crests.football-data.org/354.png",
-  "pj": 4,
-  "g": 1,
-  "e": 1,
-  "p": 2,
-  "gf": 6,
-  "gc": 10,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 14,
-  "equipo": "Ipswich Town",
-  "escudo": "https://crests.football-data.org/349.png",
-  "pj": 4,
-  "g": 1,
-  "e": 1,
-  "p": 2,
-  "gf": 6,
-  "gc": 10,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 16,
+  "pos": 15,
   "equipo": "Bournemouth",
   "escudo": "https://crests.football-data.org/bournemouth.png",
   "pj": 4,
@@ -204,6 +191,19 @@
   "p": 1,
   "gf": 6,
   "gc": 7,
+  "pts": 3,
+  "forma": ""
+ },
+ {
+  "pos": 16,
+  "equipo": "Crystal Palace",
+  "escudo": "https://crests.football-data.org/354.png",
+  "pj": 4,
+  "g": 1,
+  "e": 0,
+  "p": 3,
+  "gf": 6,
+  "gc": 11,
   "pts": 3,
   "forma": ""
  },

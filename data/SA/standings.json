@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "Lazio",
+  "escudo": "https://crests.football-data.org/110.png",
+  "pj": 4,
+  "g": 3,
+  "e": 1,
+  "p": 0,
+  "gf": 4,
+  "gc": 1,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Roma",
   "escudo": "https://crests.football-data.org/100.png",
   "pj": 3,
@@ -13,7 +26,7 @@
   "forma": ""
  },
  {
-  "pos": 2,
+  "pos": 3,
   "equipo": "Inter",
   "escudo": "https://crests.football-data.org/108.png",
   "pj": 3,
@@ -26,20 +39,20 @@
   "forma": ""
  },
  {
-  "pos": 3,
-  "equipo": "Lazio",
-  "escudo": "https://crests.football-data.org/110.png",
-  "pj": 3,
-  "g": 3,
-  "e": 0,
+  "pos": 4,
+  "equipo": "Milan",
+  "escudo": "https://crests.football-data.org/98.png",
+  "pj": 4,
+  "g": 2,
+  "e": 2,
   "p": 0,
-  "gf": 4,
-  "gc": 1,
-  "pts": 9,
+  "gf": 5,
+  "gc": 2,
+  "pts": 8,
   "forma": ""
  },
  {
-  "pos": 4,
+  "pos": 5,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
   "pj": 3,
@@ -52,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Frosinone",
   "escudo": "https://crests.football-data.org/470.png",
   "pj": 4,
@@ -61,19 +74,6 @@
   "p": 1,
   "gf": 7,
   "gc": 4,
-  "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 6,
-  "equipo": "Milan",
-  "escudo": "https://crests.football-data.org/98.png",
-  "pj": 3,
-  "g": 2,
-  "e": 1,
-  "p": 0,
-  "gf": 5,
-  "gc": 2,
   "pts": 7,
   "forma": ""
  },
