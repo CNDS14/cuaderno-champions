@@ -53,6 +53,19 @@
  },
  {
   "pos": 5,
+  "equipo": "Frosinone",
+  "escudo": "https://crests.football-data.org/470.png",
+  "pj": 4,
+  "g": 2,
+  "e": 1,
+  "p": 1,
+  "gf": 7,
+  "gc": 4,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 6,
   "equipo": "Milan",
   "escudo": "https://crests.football-data.org/98.png",
   "pj": 3,
@@ -65,7 +78,7 @@
   "forma": ""
  },
  {
-  "pos": 6,
+  "pos": 7,
   "equipo": "Juventus",
   "escudo": "https://crests.football-data.org/109.png",
   "pj": 3,
@@ -75,19 +88,6 @@
   "gf": 4,
   "gc": 1,
   "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 7,
-  "equipo": "Frosinone",
-  "escudo": "https://crests.football-data.org/470.png",
-  "pj": 3,
-  "g": 2,
-  "e": 0,
-  "p": 1,
-  "gf": 6,
-  "gc": 3,
-  "pts": 6,
   "forma": ""
  },
  {
@@ -237,13 +237,13 @@
   "pos": 19,
   "equipo": "Genoa",
   "escudo": "https://crests.football-data.org/107.png",
-  "pj": 3,
+  "pj": 4,
   "g": 0,
-  "e": 0,
+  "e": 1,
   "p": 3,
-  "gf": 1,
-  "gc": 7,
-  "pts": 0,
+  "gf": 2,
+  "gc": 8,
+  "pts": 1,
   "forma": ""
  },
  {

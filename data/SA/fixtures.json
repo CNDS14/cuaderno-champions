@@ -2,7 +2,7 @@
  {
   "id": 558604,
   "utc": "2026-09-12T13:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Frosinone",
   "idLocal": 107,
   "idVisita": 470,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
@@ -22,7 +22,7 @@
   "minuto": null,
   "jornada": 4,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Matteo Marcenaro",
   "local": "Lazio",
   "visita": "Milan",
   "idLocal": 110,

@@ -2,7 +2,7 @@
  {
   "id": 564670,
   "utc": "2026-09-12T12:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Alavés",
   "idLocal": 5335,
   "idVisita": 263,
-  "golesLocal": 0,
+  "golesLocal": 2,
   "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 564673,
   "utc": "2026-09-12T14:15:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "Espanyol",
   "idLocal": 79,
   "idVisita": 80,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 2,
   "comp": "PD"
  },
  {
@@ -38,7 +38,7 @@
   "minuto": null,
   "jornada": 5,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Manuel Orellana Cid",
   "local": "Athletic",
   "visita": "Elche",
   "idLocal": 77,

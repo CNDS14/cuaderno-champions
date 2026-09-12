@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "Monaco",
+  "escudo": "https://crests.football-data.org/548.png",
+  "pj": 4,
+  "g": 3,
+  "e": 1,
+  "p": 0,
+  "gf": 5,
+  "gc": 1,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Stade Rennais",
   "escudo": "https://crests.football-data.org/529.png",
   "pj": 4,
@@ -10,19 +23,6 @@
   "gf": 8,
   "gc": 5,
   "pts": 10,
-  "forma": ""
- },
- {
-  "pos": 2,
-  "equipo": "Monaco",
-  "escudo": "https://crests.football-data.org/548.png",
-  "pj": 3,
-  "g": 3,
-  "e": 0,
-  "p": 0,
-  "gf": 5,
-  "gc": 1,
-  "pts": 9,
   "forma": ""
  },
  {
@@ -68,13 +68,13 @@
   "pos": 6,
   "equipo": "Strasbourg",
   "escudo": "https://crests.football-data.org/576.png",
-  "pj": 3,
+  "pj": 4,
   "g": 2,
-  "e": 0,
+  "e": 1,
   "p": 1,
   "gf": 8,
   "gc": 7,
-  "pts": 6,
+  "pts": 7,
   "forma": ""
  },
  {

@@ -1,19 +1,6 @@
 [
  {
   "pos": 1,
-  "equipo": "Alavés",
-  "escudo": "https://crests.football-data.org/263.png",
-  "pj": 5,
-  "g": 4,
-  "e": 1,
-  "p": 0,
-  "gf": 11,
-  "gc": 3,
-  "pts": 13,
-  "forma": ""
- },
- {
-  "pos": 2,
   "equipo": "Barça",
   "escudo": "https://crests.football-data.org/81.png",
   "pj": 4,
@@ -23,6 +10,19 @@
   "gf": 17,
   "gc": 2,
   "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 2,
+  "equipo": "Alavés",
+  "escudo": "https://crests.football-data.org/263.png",
+  "pj": 5,
+  "g": 3,
+  "e": 1,
+  "p": 1,
+  "gf": 11,
+  "gc": 5,
+  "pts": 10,
   "forma": ""
  },
  {
@@ -79,6 +79,19 @@
  },
  {
   "pos": 7,
+  "equipo": "Espanyol",
+  "escudo": "https://crests.football-data.org/80.png",
+  "pj": 5,
+  "g": 2,
+  "e": 1,
+  "p": 2,
+  "gf": 8,
+  "gc": 5,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Atleti",
   "escudo": "https://crests.football-data.org/78.png",
   "pj": 4,
@@ -91,20 +104,20 @@
   "forma": ""
  },
  {
-  "pos": 8,
-  "equipo": "Osasuna",
-  "escudo": "https://crests.football-data.org/79.png",
-  "pj": 4,
+  "pos": 9,
+  "equipo": "Santander",
+  "escudo": "https://crests.football-data.org/5335.png",
+  "pj": 5,
   "g": 2,
   "e": 1,
-  "p": 1,
-  "gf": 5,
-  "gc": 6,
+  "p": 2,
+  "gf": 9,
+  "gc": 9,
   "pts": 7,
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Real Sociedad",
   "escudo": "https://crests.football-data.org/92.png",
   "pj": 5,
@@ -117,7 +130,20 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
+  "equipo": "Osasuna",
+  "escudo": "https://crests.football-data.org/79.png",
+  "pj": 5,
+  "g": 2,
+  "e": 1,
+  "p": 2,
+  "gf": 5,
+  "gc": 8,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 12,
   "equipo": "Athletic",
   "escudo": "https://crests.football-data.org/77.png",
   "pj": 4,
@@ -130,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 13,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
   "pj": 4,
@@ -140,32 +166,6 @@
   "gf": 5,
   "gc": 5,
   "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 12,
-  "equipo": "Espanyol",
-  "escudo": "https://crests.football-data.org/80.png",
-  "pj": 4,
-  "g": 1,
-  "e": 1,
-  "p": 2,
-  "gf": 6,
-  "gc": 5,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 13,
-  "equipo": "Santander",
-  "escudo": "https://crests.football-data.org/5335.png",
-  "pj": 5,
-  "g": 1,
-  "e": 1,
-  "p": 3,
-  "gf": 7,
-  "gc": 9,
-  "pts": 4,
   "forma": ""
  },
  {

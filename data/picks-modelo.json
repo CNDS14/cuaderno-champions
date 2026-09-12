@@ -2218,9 +2218,9 @@
   "k": "1X2::H",
   "p": 0.5899,
   "registradoEl": "2026-09-10T19:56:31.831Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 0,
+  "ok": false
  },
  {
   "fixId": 560573,
@@ -2231,9 +2231,9 @@
   "k": "DO::1X",
   "p": 0.8013,
   "registradoEl": "2026-09-10T19:56:31.831Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 560573,
@@ -2244,9 +2244,9 @@
   "k": "OU::O|1.5",
   "p": 0.8402,
   "registradoEl": "2026-09-10T19:56:31.831Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 0,
+  "ok": false
  },
  {
   "fixId": 560573,
@@ -2257,9 +2257,9 @@
   "k": "AA::S",
   "p": 0.6051,
   "registradoEl": "2026-09-10T19:56:31.831Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 0,
+  "ok": false
  },
  {
   "fixId": 560573,
@@ -2270,9 +2270,9 @@
   "k": "PA::NV",
   "p": 0.879,
   "registradoEl": "2026-09-10T19:56:31.831Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 0,
+  "ok": false
  },
  {
   "fixId": 560576,
@@ -2348,9 +2348,9 @@
   "k": "1X2::A",
   "p": 0.4345,
   "registradoEl": "2026-09-10T19:56:31.835Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 565794,
@@ -2361,9 +2361,9 @@
   "k": "DO::12",
   "p": 0.7774,
   "registradoEl": "2026-09-10T19:56:31.835Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 565794,
@@ -2374,9 +2374,9 @@
   "k": "OU::O|1.5",
   "p": 0.8789,
   "registradoEl": "2026-09-10T19:56:31.835Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 565794,
@@ -2387,9 +2387,9 @@
   "k": "AA::S",
   "p": 0.7,
   "registradoEl": "2026-09-10T19:56:31.835Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 565794,
@@ -2400,9 +2400,9 @@
   "k": "PA::NL",
   "p": 0.854,
   "registradoEl": "2026-09-10T19:56:31.835Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 565796,
@@ -2413,9 +2413,9 @@
   "k": "1X2::A",
   "p": 0.4904,
   "registradoEl": "2026-09-10T19:56:31.836Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 2,
+  "ok": false
  },
  {
   "fixId": 565796,
@@ -2426,9 +2426,9 @@
   "k": "DO::12",
   "p": 0.7504,
   "registradoEl": "2026-09-10T19:56:31.836Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 2,
+  "ok": false
  },
  {
   "fixId": 565796,
@@ -2439,9 +2439,9 @@
   "k": "OU::O|1.5",
   "p": 0.7748,
   "registradoEl": "2026-09-10T19:56:31.836Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 565796,
@@ -2452,9 +2452,9 @@
   "k": "AA::S",
   "p": 0.5575,
   "registradoEl": "2026-09-10T19:56:31.836Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 565796,
@@ -2465,9 +2465,9 @@
   "k": "PA::NL",
   "p": 0.8107,
   "registradoEl": "2026-09-10T19:56:31.836Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 565802,
@@ -2478,9 +2478,9 @@
   "k": "1X2::H",
   "p": 0.4781,
   "registradoEl": "2026-09-10T19:56:31.836Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 5,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 565802,
@@ -2491,9 +2491,9 @@
   "k": "DO::12",
   "p": 0.7428,
   "registradoEl": "2026-09-10T19:56:31.836Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 5,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 565802,
@@ -2504,9 +2504,9 @@
   "k": "OU::O|1.5",
   "p": 0.7548,
   "registradoEl": "2026-09-10T19:56:31.836Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 5,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 565802,
@@ -2517,9 +2517,9 @@
   "k": "AA::S",
   "p": 0.538,
   "registradoEl": "2026-09-10T19:56:31.836Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 5,
+  "gv": 0,
+  "ok": false
  },
  {
   "fixId": 565802,
@@ -2530,9 +2530,9 @@
   "k": "PA::NV",
   "p": 0.7947,
   "registradoEl": "2026-09-10T19:56:31.836Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 5,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 575337,

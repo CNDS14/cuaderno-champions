@@ -2,17 +2,17 @@
  {
   "id": 559687,
   "utc": "2026-09-12T15:15:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Eric Wattellier",
   "local": "Strasbourg",
   "visita": "Monaco",
   "idLocal": 576,
   "idVisita": 548,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  },
  {
