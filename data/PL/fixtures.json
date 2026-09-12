@@ -82,7 +82,7 @@
  {
   "id": 560575,
   "utc": "2026-09-12T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -98,7 +98,7 @@
  {
   "id": 560577,
   "utc": "2026-09-12T19:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -107,8 +107,8 @@
   "visita": "Arsenal",
   "idLocal": 71,
   "idVisita": 57,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "PL"
  }
 ]

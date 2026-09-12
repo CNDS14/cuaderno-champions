@@ -18,7 +18,7 @@
  {
   "id": 559684,
   "utc": "2026-09-12T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Toulouse",
   "idLocal": 525,
   "idVisita": 511,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 2,
   "comp": "FL1"
  },
  {
   "id": 559688,
   "utc": "2026-09-12T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Nice",
   "idLocal": 519,
   "idVisita": 522,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559690,
   "utc": "2026-09-12T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -59,14 +59,14 @@
   "visita": "Angers SCO",
   "idLocal": 533,
   "idVisita": 532,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559692,
   "utc": "2026-09-12T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -75,8 +75,8 @@
   "visita": "Olympique Lyon",
   "idLocal": 1045,
   "idVisita": 523,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

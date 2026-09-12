@@ -40,6 +40,19 @@
  },
  {
   "pos": 4,
+  "equipo": "Cagliari",
+  "escudo": "https://crests.football-data.org/104.png",
+  "pj": 4,
+  "g": 3,
+  "e": 0,
+  "p": 1,
+  "gf": 4,
+  "gc": 2,
+  "pts": 9,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Milan",
   "escudo": "https://crests.football-data.org/98.png",
   "pj": 4,
@@ -52,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
   "pj": 3,
@@ -65,7 +78,7 @@
   "forma": ""
  },
  {
-  "pos": 6,
+  "pos": 7,
   "equipo": "Frosinone",
   "escudo": "https://crests.football-data.org/470.png",
   "pj": 4,
@@ -78,7 +91,7 @@
   "forma": ""
  },
  {
-  "pos": 7,
+  "pos": 8,
   "equipo": "Juventus",
   "escudo": "https://crests.football-data.org/109.png",
   "pj": 3,
@@ -91,28 +104,15 @@
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 9,
   "equipo": "Atalanta",
   "escudo": "https://crests.football-data.org/102.png",
-  "pj": 3,
+  "pj": 4,
   "g": 2,
   "e": 0,
-  "p": 1,
-  "gf": 4,
-  "gc": 3,
-  "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 9,
-  "equipo": "Cagliari",
-  "escudo": "https://crests.football-data.org/104.png",
-  "pj": 3,
-  "g": 2,
-  "e": 0,
-  "p": 1,
-  "gf": 2,
-  "gc": 1,
+  "p": 2,
+  "gf": 5,
+  "gc": 5,
   "pts": 6,
   "forma": ""
  },

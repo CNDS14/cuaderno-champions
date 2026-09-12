@@ -34,7 +34,7 @@
  {
   "id": 558607,
   "utc": "2026-09-12T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Cagliari",
   "idLocal": 102,
   "idVisita": 104,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "SA"
  }
 ]
