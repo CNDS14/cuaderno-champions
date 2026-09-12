@@ -1,11 +1,11 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 25/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 27/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "Sin calificacion para Santander o Alavés: no registro picks de ese partido.",
+  "1 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
   "Sin calificacion para Osasuna o Espanyol: no registro picks de ese partido.",
   "Sin calificacion para Athletic o Elche: no registro picks de ese partido.",
   "Sin calificacion para Real Madrid o Rayo Vallecano: no registro picks de ese partido.",
