@@ -4,6 +4,10 @@
   "cuotas": "the-odds-api.com · 31/450 créditos este mes",
   "estadisticas": "API-Football"
  },
- "avisos": [],
+ "avisos": [
+  "Sin calificacion para Dortmund o SC Paderborn: no registro picks de ese partido.",
+  "Sin calificacion para Mainz o Frankfurt: no registro picks de ese partido.",
+  "Sin calificacion para 1. FC Köln o Bremen: no registro picks de ese partido."
+ ],
  "errores": []
 }

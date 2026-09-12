@@ -98,7 +98,7 @@
  {
   "id": 560577,
   "utc": "2026-09-12T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -108,7 +108,7 @@
   "idLocal": 71,
   "idVisita": 57,
   "golesLocal": 0,
-  "golesVisita": 1,
+  "golesVisita": 2,
   "comp": "PL"
  }
 ]
