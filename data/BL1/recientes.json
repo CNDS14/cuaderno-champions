@@ -142,5 +142,21 @@
   "golesLocal": 1,
   "golesVisita": 4,
   "comp": "BL1"
+ },
+ {
+  "id": 565797,
+  "utc": "2026-09-11T18:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 3,
+  "sede": "",
+  "arbitro": "Timo Gerach",
+  "local": "Union Berlin",
+  "visita": "Schalke",
+  "idLocal": 28,
+  "idVisita": 6,
+  "golesLocal": 1,
+  "golesVisita": 3,
+  "comp": "BL1"
  }
 ]

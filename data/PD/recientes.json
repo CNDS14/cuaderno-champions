@@ -1,21 +1,5 @@
 [
  {
-  "id": 564682,
-  "utc": "2026-09-03T19:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 6,
-  "sede": "",
-  "arbitro": "Víctor García Verdura",
-  "local": "Real Sociedad",
-  "visita": "Celta",
-  "idLocal": 92,
-  "idVisita": 558,
-  "golesLocal": 0,
-  "golesVisita": 0,
-  "comp": "PD"
- },
- {
   "id": 564667,
   "utc": "2026-09-04T19:00:00Z",
   "estado": "FT",
@@ -173,6 +157,22 @@
   "idVisita": 92,
   "golesLocal": 2,
   "golesVisita": 3,
+  "comp": "PD"
+ },
+ {
+  "id": 564669,
+  "utc": "2026-09-11T19:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 5,
+  "sede": "",
+  "arbitro": "Mateo Busquets Ferrer",
+  "local": "Sevilla FC",
+  "visita": "Valencia",
+  "idLocal": 559,
+  "idVisita": 95,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "PD"
  }
 ]

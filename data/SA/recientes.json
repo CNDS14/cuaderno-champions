@@ -158,5 +158,21 @@
   "golesLocal": 1,
   "golesVisita": 2,
   "comp": "SA"
+ },
+ {
+  "id": 558606,
+  "utc": "2026-09-11T18:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 4,
+  "sede": "",
+  "arbitro": "Francesco Fourneau",
+  "local": "Venezia FC",
+  "visita": "Fiorentina",
+  "idLocal": 454,
+  "idVisita": 99,
+  "golesLocal": 2,
+  "golesVisita": 4,
+  "comp": "SA"
  }
 ]

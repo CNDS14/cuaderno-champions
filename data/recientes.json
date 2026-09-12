@@ -288,22 +288,6 @@
   "comp": "CL"
  },
  {
-  "id": 564682,
-  "utc": "2026-09-03T19:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 6,
-  "sede": "",
-  "arbitro": "Víctor García Verdura",
-  "local": "Real Sociedad",
-  "visita": "Celta",
-  "idLocal": 92,
-  "idVisita": 558,
-  "golesLocal": 0,
-  "golesVisita": 0,
-  "comp": "PD"
- },
- {
   "id": 564667,
   "utc": "2026-09-04T19:00:00Z",
   "estado": "FT",
@@ -461,6 +445,22 @@
   "idVisita": 92,
   "golesLocal": 2,
   "golesVisita": 3,
+  "comp": "PD"
+ },
+ {
+  "id": 564669,
+  "utc": "2026-09-11T19:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 5,
+  "sede": "",
+  "arbitro": "Mateo Busquets Ferrer",
+  "local": "Sevilla FC",
+  "visita": "Valencia",
+  "idLocal": 559,
+  "idVisita": 95,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -784,6 +784,22 @@
   "comp": "SA"
  },
  {
+  "id": 558606,
+  "utc": "2026-09-11T18:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 4,
+  "sede": "",
+  "arbitro": "Francesco Fourneau",
+  "local": "Venezia FC",
+  "visita": "Fiorentina",
+  "idLocal": 454,
+  "idVisita": 99,
+  "golesLocal": 2,
+  "golesVisita": 4,
+  "comp": "SA"
+ },
+ {
   "id": 565791,
   "utc": "2026-09-04T18:30:00Z",
   "estado": "FT",
@@ -928,20 +944,20 @@
   "comp": "BL1"
  },
  {
-  "id": 559696,
-  "utc": "2026-09-03T18:45:00Z",
+  "id": 565797,
+  "utc": "2026-09-11T18:30:00Z",
   "estado": "FT",
   "minuto": null,
   "jornada": 3,
   "sede": "",
-  "arbitro": "Mathieu Vernice",
-  "local": "Toulouse",
-  "visita": "Lille",
-  "idLocal": 511,
-  "idVisita": 521,
-  "golesLocal": 0,
-  "golesVisita": 1,
-  "comp": "FL1"
+  "arbitro": "Timo Gerach",
+  "local": "Union Berlin",
+  "visita": "Schalke",
+  "idLocal": 28,
+  "idVisita": 6,
+  "golesLocal": 1,
+  "golesVisita": 3,
+  "comp": "BL1"
  },
  {
   "id": 559699,
@@ -1069,6 +1085,22 @@
   "idVisita": 1045,
   "golesLocal": 2,
   "golesVisita": 3,
+  "comp": "FL1"
+ },
+ {
+  "id": 559689,
+  "utc": "2026-09-11T18:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 4,
+  "sede": "",
+  "arbitro": "Jeremy Stinat",
+  "local": "Stade Rennais",
+  "visita": "Marseille",
+  "idLocal": 529,
+  "idVisita": 516,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]
