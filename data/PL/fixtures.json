@@ -2,7 +2,7 @@
  {
   "id": 560578,
   "utc": "2026-09-13T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -12,13 +12,13 @@
   "idLocal": 1076,
   "idVisita": 397,
   "golesLocal": 0,
-  "golesVisita": 3,
+  "golesVisita": 5,
   "comp": "PL"
  },
  {
   "id": 560580,
   "utc": "2026-09-13T15:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "Man City",
   "idLocal": 66,
   "idVisita": 65,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PL"
  }
 ]

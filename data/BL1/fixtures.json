@@ -2,7 +2,7 @@
  {
   "id": 565799,
   "utc": "2026-09-13T13:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 3,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "HSV",
   "idLocal": 721,
   "idVisita": 7,
-  "golesLocal": 2,
+  "golesLocal": 5,
   "golesVisita": 0,
   "comp": "BL1"
  },
  {
   "id": 565800,
   "utc": "2026-09-13T15:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 3,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "Bayern",
   "idLocal": 719,
   "idVisita": 5,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "BL1"
  }
 ]

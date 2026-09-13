@@ -2,7 +2,7 @@
  {
   "id": 559685,
   "utc": "2026-09-13T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Troyes",
   "idLocal": 521,
   "idVisita": 531,
-  "golesLocal": 1,
+  "golesLocal": 2,
   "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559686,
   "utc": "2026-09-13T15:15:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "RC Lens",
   "idLocal": 535,
   "idVisita": 546,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 2,
   "comp": "FL1"
  },
  {
@@ -38,7 +38,7 @@
   "minuto": null,
   "jornada": 4,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Willy Delajod",
   "local": "Brest",
   "visita": "PSG",
   "idLocal": 512,

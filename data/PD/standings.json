@@ -7,8 +7,8 @@
   "g": 5,
   "e": 0,
   "p": 0,
-  "gf": 19,
-  "gc": 2,
+  "gf": 21,
+  "gc": 4,
   "pts": 15,
   "forma": ""
  },
@@ -53,6 +53,19 @@
  },
  {
   "pos": 5,
+  "equipo": "Deportivo",
+  "escudo": "https://crests.football-data.org/560.png",
+  "pj": 5,
+  "g": 2,
+  "e": 3,
+  "p": 0,
+  "gf": 8,
+  "gc": 5,
+  "pts": 9,
+  "forma": ""
+ },
+ {
+  "pos": 6,
   "equipo": "Real Betis",
   "escudo": "https://crests.football-data.org/90.png",
   "pj": 4,
@@ -62,19 +75,6 @@
   "gf": 5,
   "gc": 5,
   "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 6,
-  "equipo": "Deportivo",
-  "escudo": "https://crests.football-data.org/560.png",
-  "pj": 4,
-  "g": 2,
-  "e": 2,
-  "p": 0,
-  "gf": 8,
-  "gc": 5,
-  "pts": 8,
   "forma": ""
  },
  {
@@ -163,13 +163,26 @@
   "g": 1,
   "e": 2,
   "p": 2,
-  "gf": 5,
-  "gc": 7,
+  "gf": 7,
+  "gc": 9,
   "pts": 5,
   "forma": ""
  },
  {
   "pos": 14,
+  "equipo": "Getafe",
+  "escudo": "https://crests.football-data.org/82.png",
+  "pj": 5,
+  "g": 1,
+  "e": 2,
+  "p": 2,
+  "gf": 2,
+  "gc": 5,
+  "pts": 5,
+  "forma": ""
+ },
+ {
+  "pos": 15,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 6,
@@ -178,19 +191,6 @@
   "p": 2,
   "gf": 3,
   "gc": 6,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 15,
-  "equipo": "Getafe",
-  "escudo": "https://crests.football-data.org/82.png",
-  "pj": 4,
-  "g": 1,
-  "e": 1,
-  "p": 2,
-  "gf": 2,
-  "gc": 5,
   "pts": 4,
   "forma": ""
  },

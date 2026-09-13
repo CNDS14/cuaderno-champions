@@ -40,41 +40,41 @@
  },
  {
   "pos": 4,
+  "equipo": "Bayern",
+  "escudo": "https://crests.football-data.org/5.png",
+  "pj": 3,
+  "g": 2,
+  "e": 1,
+  "p": 0,
+  "gf": 6,
+  "gc": 1,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "RB Leipzig",
   "escudo": "https://crests.football-data.org/721.png",
   "pj": 3,
   "g": 2,
   "e": 0,
   "p": 1,
-  "gf": 6,
+  "gf": 9,
   "gc": 3,
   "pts": 6,
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Elversberg",
   "escudo": "https://crests.football-data.org/719.png",
-  "pj": 2,
+  "pj": 3,
   "g": 2,
   "e": 0,
-  "p": 0,
+  "p": 1,
   "gf": 7,
-  "gc": 5,
+  "gc": 6,
   "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 6,
-  "equipo": "Bayern",
-  "escudo": "https://crests.football-data.org/5.png",
-  "pj": 2,
-  "g": 1,
-  "e": 1,
-  "p": 0,
-  "gf": 5,
-  "gc": 1,
-  "pts": 4,
   "forma": ""
  },
  {
@@ -229,7 +229,7 @@
   "e": 0,
   "p": 3,
   "gf": 0,
-  "gc": 9,
+  "gc": 12,
   "pts": 0,
   "forma": ""
  }

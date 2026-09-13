@@ -125,8 +125,21 @@
   "e": 0,
   "p": 2,
   "gf": 5,
-  "gc": 6,
+  "gc": 7,
   "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 11,
+  "equipo": "Napoli",
+  "escudo": "https://crests.football-data.org/113.png",
+  "pj": 4,
+  "g": 1,
+  "e": 1,
+  "p": 2,
+  "gf": 5,
+  "gc": 5,
+  "pts": 4,
   "forma": ""
  },
  {
@@ -153,19 +166,6 @@
   "gf": 5,
   "gc": 5,
   "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 13,
-  "equipo": "Napoli",
-  "escudo": "https://crests.football-data.org/113.png",
-  "pj": 3,
-  "g": 1,
-  "e": 0,
-  "p": 2,
-  "gf": 5,
-  "gc": 5,
-  "pts": 3,
   "forma": ""
  },
  {
@@ -198,13 +198,13 @@
   "pos": 16,
   "equipo": "Bologna",
   "escudo": "https://crests.football-data.org/103.png",
-  "pj": 3,
+  "pj": 4,
   "g": 0,
-  "e": 1,
+  "e": 2,
   "p": 2,
   "gf": 2,
   "gc": 4,
-  "pts": 1,
+  "pts": 2,
   "forma": ""
  },
  {
@@ -228,7 +228,7 @@
   "g": 0,
   "e": 1,
   "p": 3,
-  "gf": 5,
+  "gf": 6,
   "gc": 11,
   "pts": 1,
   "forma": ""
