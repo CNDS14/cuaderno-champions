@@ -2,11 +2,11 @@
  {
   "id": 564672,
   "utc": "2026-09-13T12:00:00Z",
-  "estado": "NS",
+  "estado": "2026-09-13 12:00:00Z",
   "minuto": null,
   "jornada": 5,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Carlos Muñiz Muñoz",
   "local": "Celta",
   "visita": "Málaga",
   "idLocal": 558,
@@ -18,7 +18,7 @@
  {
   "id": 564675,
   "utc": "2026-09-13T14:15:00Z",
-  "estado": "NS",
+  "estado": "2026-09-13 14:15:00Z",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 564668,
   "utc": "2026-09-13T16:30:00Z",
-  "estado": "NS",
+  "estado": "2026-09-13 16:30:00Z",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -50,7 +50,7 @@
  {
   "id": 564674,
   "utc": "2026-09-13T19:00:00Z",
-  "estado": "NS",
+  "estado": "2026-09-13 19:00:00Z",
   "minuto": null,
   "jornada": 5,
   "sede": "",

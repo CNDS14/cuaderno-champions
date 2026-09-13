@@ -1,11 +1,10 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 35/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 36/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
   "Sin calificacion para Celta o Málaga: no registro picks de ese partido.",
   "Sin calificacion para Getafe o Deportivo: no registro picks de ese partido.",
   "Sin calificacion para Real Sociedad o Atlético de Madrid: no registro picks de ese partido.",
