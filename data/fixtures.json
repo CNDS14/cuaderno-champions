@@ -34,7 +34,7 @@
  {
   "id": 564668,
   "utc": "2026-09-13T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Deportivo",
   "idLocal": 82,
   "idVisita": 560,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 564674,
   "utc": "2026-09-13T19:00:00Z",
-  "estado": "2026-09-13 19:00:00Z",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Atleti",
   "idLocal": 92,
   "idVisita": 78,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -114,7 +114,7 @@
  {
   "id": 558599,
   "utc": "2026-09-13T16:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -130,7 +130,7 @@
  {
   "id": 558608,
   "utc": "2026-09-13T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -139,8 +139,8 @@
   "visita": "Juventus",
   "idLocal": 471,
   "idVisita": 109,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  },
  {
@@ -210,7 +210,7 @@
  {
   "id": 559691,
   "utc": "2026-09-13T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -219,8 +219,8 @@
   "visita": "PSG",
   "idLocal": 512,
   "idVisita": 524,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "FL1"
  }
 ]

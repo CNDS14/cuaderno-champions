@@ -66,6 +66,19 @@
  },
  {
   "pos": 6,
+  "equipo": "Juventus",
+  "escudo": "https://crests.football-data.org/109.png",
+  "pj": 4,
+  "g": 2,
+  "e": 2,
+  "p": 0,
+  "gf": 4,
+  "gc": 1,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 7,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
   "pj": 3,
@@ -78,7 +91,7 @@
   "forma": ""
  },
  {
-  "pos": 7,
+  "pos": 8,
   "equipo": "Frosinone",
   "escudo": "https://crests.football-data.org/470.png",
   "pj": 4,
@@ -87,19 +100,6 @@
   "p": 1,
   "gf": 7,
   "gc": 4,
-  "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 8,
-  "equipo": "Juventus",
-  "escudo": "https://crests.football-data.org/109.png",
-  "pj": 3,
-  "g": 2,
-  "e": 1,
-  "p": 0,
-  "gf": 4,
-  "gc": 1,
   "pts": 7,
   "forma": ""
  },
@@ -144,21 +144,21 @@
  },
  {
   "pos": 12,
-  "equipo": "Udinese",
-  "escudo": "https://crests.football-data.org/115.png",
-  "pj": 3,
+  "equipo": "Sassuolo",
+  "escudo": "https://crests.football-data.org/471.png",
+  "pj": 4,
   "g": 1,
-  "e": 1,
+  "e": 2,
   "p": 1,
   "gf": 5,
   "gc": 5,
-  "pts": 4,
+  "pts": 5,
   "forma": ""
  },
  {
-  "pos": 12,
-  "equipo": "Sassuolo",
-  "escudo": "https://crests.football-data.org/471.png",
+  "pos": 13,
+  "equipo": "Udinese",
+  "escudo": "https://crests.football-data.org/115.png",
   "pj": 3,
   "g": 1,
   "e": 1,

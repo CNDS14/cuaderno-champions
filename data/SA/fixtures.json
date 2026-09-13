@@ -18,7 +18,7 @@
  {
   "id": 558599,
   "utc": "2026-09-13T16:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 558608,
   "utc": "2026-09-13T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Juventus",
   "idLocal": 471,
   "idVisita": 109,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  }
 ]

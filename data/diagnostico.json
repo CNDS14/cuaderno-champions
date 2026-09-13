@@ -4,8 +4,6 @@
   "cuotas": "the-odds-api.com · 38/450 créditos este mes",
   "estadisticas": "API-Football"
  },
- "avisos": [
-  "Sin calificacion para Real Sociedad o Atlético de Madrid: no registro picks de ese partido."
- ],
+ "avisos": [],
  "errores": []
 }

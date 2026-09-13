@@ -34,7 +34,7 @@
  {
   "id": 559691,
   "utc": "2026-09-13T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "PSG",
   "idLocal": 512,
   "idVisita": 524,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "FL1"
  }
 ]

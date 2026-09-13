@@ -34,7 +34,7 @@
  {
   "id": 564668,
   "utc": "2026-09-13T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Deportivo",
   "idLocal": 82,
   "idVisita": 560,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 564674,
   "utc": "2026-09-13T19:00:00Z",
-  "estado": "2026-09-13 19:00:00Z",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Atleti",
   "idLocal": 92,
   "idVisita": 78,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  }
 ]
