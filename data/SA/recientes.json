@@ -1,21 +1,5 @@
 [
  {
-  "id": 558609,
-  "utc": "2026-09-04T18:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 3,
-  "sede": "",
-  "arbitro": "Marco Guida",
-  "local": "Genoa",
-  "visita": "Como 1907",
-  "idLocal": 107,
-  "idVisita": 7397,
-  "golesLocal": 1,
-  "golesVisita": 4,
-  "comp": "SA"
- },
- {
   "id": 558616,
   "utc": "2026-09-05T13:00:00Z",
   "estado": "FT",
@@ -173,6 +157,54 @@
   "idVisita": 99,
   "golesLocal": 2,
   "golesVisita": 4,
+  "comp": "SA"
+ },
+ {
+  "id": 558604,
+  "utc": "2026-09-12T13:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 4,
+  "sede": "",
+  "arbitro": "Antonio Rapuano",
+  "local": "Genoa",
+  "visita": "Frosinone",
+  "idLocal": 107,
+  "idVisita": 470,
+  "golesLocal": 1,
+  "golesVisita": 1,
+  "comp": "SA"
+ },
+ {
+  "id": 558600,
+  "utc": "2026-09-12T16:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 4,
+  "sede": "",
+  "arbitro": "Matteo Marcenaro",
+  "local": "Lazio",
+  "visita": "Milan",
+  "idLocal": 110,
+  "idVisita": 98,
+  "golesLocal": 2,
+  "golesVisita": 2,
+  "comp": "SA"
+ },
+ {
+  "id": 558607,
+  "utc": "2026-09-12T18:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 4,
+  "sede": "",
+  "arbitro": "Alberto Arena",
+  "local": "Atalanta",
+  "visita": "Cagliari",
+  "idLocal": 102,
+  "idVisita": 104,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "SA"
  }
 ]

@@ -1,13 +1,19 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 31/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 33/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "Sin calificacion para Dortmund o SC Paderborn: no registro picks de ese partido.",
-  "Sin calificacion para Mainz o Frankfurt: no registro picks de ese partido.",
-  "Sin calificacion para 1. FC Köln o Bremen: no registro picks de ese partido."
+  "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
+  "Sin calificacion para Celta o Málaga: no registro picks de ese partido.",
+  "Sin calificacion para Getafe o Deportivo: no registro picks de ese partido.",
+  "Sin calificacion para Real Sociedad o Atlético de Madrid: no registro picks de ese partido.",
+  "Sin calificacion para Coventry City o Brighton Hove: no registro picks de ese partido.",
+  "Sin calificacion para Leipzig o HSV: no registro picks de ese partido.",
+  "Sin calificacion para Elversberg o Bayern München: no registro picks de ese partido.",
+  "Sin calificacion para Lille o Troyes: no registro picks de ese partido.",
+  "Sin calificacion para Le Mans o Lens: no registro picks de ese partido."
  ],
  "errores": []
 }
