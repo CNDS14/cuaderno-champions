@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-13T00:32:49.896Z",
+ "actualizado": "2026-09-13T05:33:58.020Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -64,7 +64,7 @@
  ],
  "partidosTotales": 14,
  "creditosCuotas": {
-  "gastados": 33,
+  "gastados": 35,
   "tope": 450,
   "mes": "2026-09"
  },
