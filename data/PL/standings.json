@@ -40,6 +40,19 @@
  },
  {
   "pos": 4,
+  "equipo": "Brighton Hove",
+  "escudo": "https://crests.football-data.org/397.png",
+  "pj": 4,
+  "g": 2,
+  "e": 1,
+  "p": 1,
+  "gf": 11,
+  "gc": 5,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Chelsea",
   "escudo": "https://crests.football-data.org/61.png",
   "pj": 4,
@@ -52,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Brentford",
   "escudo": "https://crests.football-data.org/402.png",
   "pj": 4,
@@ -65,7 +78,7 @@
   "forma": ""
  },
  {
-  "pos": 6,
+  "pos": 7,
   "equipo": "Liverpool",
   "escudo": "https://crests.football-data.org/64.png",
   "pj": 4,
@@ -78,7 +91,7 @@
   "forma": ""
  },
  {
-  "pos": 7,
+  "pos": 8,
   "equipo": "Everton",
   "escudo": "https://crests.football-data.org/62.png",
   "pj": 4,
@@ -91,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 9,
   "equipo": "Ipswich Town",
   "escudo": "https://crests.football-data.org/349.png",
   "pj": 4,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Newcastle",
   "escudo": "https://crests.football-data.org/67.png",
   "pj": 3,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Leeds United",
   "escudo": "https://crests.football-data.org/341.png",
   "pj": 3,
@@ -130,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Nottingham",
   "escudo": "https://crests.football-data.org/351.png",
   "pj": 4,
@@ -140,19 +153,6 @@
   "gf": 4,
   "gc": 4,
   "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 12,
-  "equipo": "Brighton Hove",
-  "escudo": "https://crests.football-data.org/397.png",
-  "pj": 3,
-  "g": 1,
-  "e": 1,
-  "p": 1,
-  "gf": 8,
-  "gc": 5,
-  "pts": 4,
   "forma": ""
  },
  {
@@ -250,12 +250,12 @@
   "pos": 20,
   "equipo": "Coventry City",
   "escudo": "https://crests.football-data.org/1076.png",
-  "pj": 3,
+  "pj": 4,
   "g": 0,
   "e": 0,
-  "p": 3,
+  "p": 4,
   "gf": 0,
-  "gc": 5,
+  "gc": 8,
   "pts": 0,
   "forma": ""
  }
