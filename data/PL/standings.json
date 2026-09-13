@@ -17,12 +17,12 @@
   "equipo": "Man City",
   "escudo": "https://crests.football-data.org/65.png",
   "pj": 4,
-  "g": 3,
-  "e": 1,
+  "g": 4,
+  "e": 0,
   "p": 0,
-  "gf": 7,
+  "gf": 8,
   "gc": 2,
-  "pts": 10,
+  "pts": 12,
   "forma": ""
  },
  {
@@ -131,19 +131,6 @@
  },
  {
   "pos": 11,
-  "equipo": "Man United",
-  "escudo": "https://crests.football-data.org/66.png",
-  "pj": 4,
-  "g": 1,
-  "e": 2,
-  "p": 1,
-  "gf": 7,
-  "gc": 6,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 12,
   "equipo": "Leeds United",
   "escudo": "https://crests.football-data.org/341.png",
   "pj": 3,
@@ -156,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 12,
   "equipo": "Nottingham",
   "escudo": "https://crests.football-data.org/351.png",
   "pj": 4,
@@ -166,6 +153,19 @@
   "gf": 4,
   "gc": 4,
   "pts": 5,
+  "forma": ""
+ },
+ {
+  "pos": 13,
+  "equipo": "Man United",
+  "escudo": "https://crests.football-data.org/66.png",
+  "pj": 4,
+  "g": 1,
+  "e": 1,
+  "p": 2,
+  "gf": 7,
+  "gc": 7,
+  "pts": 4,
   "forma": ""
  },
  {

@@ -54,7 +54,7 @@
   "minuto": null,
   "jornada": 5,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Juan Martínez Munuera",
   "local": "Real Sociedad",
   "visita": "Atleti",
   "idLocal": 92,
@@ -82,7 +82,7 @@
  {
   "id": 560580,
   "utc": "2026-09-13T15:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -92,7 +92,7 @@
   "idLocal": 66,
   "idVisita": 65,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "PL"
  },
  {
@@ -123,7 +123,7 @@
   "visita": "Bologna",
   "idLocal": 113,
   "idVisita": 103,
-  "golesLocal": 0,
+  "golesLocal": 1,
   "golesVisita": 0,
   "comp": "SA"
  },
@@ -162,7 +162,7 @@
  {
   "id": 565800,
   "utc": "2026-09-13T15:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 3,
   "sede": "",
@@ -171,8 +171,8 @@
   "visita": "Bayern",
   "idLocal": 719,
   "idVisita": 5,
-  "golesLocal": 0,
-  "golesVisita": 1,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "BL1"
  },
  {
@@ -194,7 +194,7 @@
  {
   "id": 559686,
   "utc": "2026-09-13T15:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",

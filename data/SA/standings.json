@@ -105,6 +105,19 @@
  },
  {
   "pos": 9,
+  "equipo": "Napoli",
+  "escudo": "https://crests.football-data.org/113.png",
+  "pj": 4,
+  "g": 2,
+  "e": 0,
+  "p": 2,
+  "gf": 6,
+  "gc": 5,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 10,
   "equipo": "Atalanta",
   "escudo": "https://crests.football-data.org/102.png",
   "pj": 4,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Lecce",
   "escudo": "https://crests.football-data.org/5890.png",
   "pj": 4,
@@ -130,20 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
-  "equipo": "Napoli",
-  "escudo": "https://crests.football-data.org/113.png",
-  "pj": 4,
-  "g": 1,
-  "e": 1,
-  "p": 2,
-  "gf": 5,
-  "gc": 5,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Udinese",
   "escudo": "https://crests.football-data.org/115.png",
   "pj": 3,
@@ -156,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Sassuolo",
   "escudo": "https://crests.football-data.org/471.png",
   "pj": 3,
@@ -200,11 +200,11 @@
   "escudo": "https://crests.football-data.org/103.png",
   "pj": 4,
   "g": 0,
-  "e": 2,
-  "p": 2,
+  "e": 1,
+  "p": 3,
   "gf": 2,
-  "gc": 4,
-  "pts": 2,
+  "gc": 5,
+  "pts": 1,
   "forma": ""
  },
  {

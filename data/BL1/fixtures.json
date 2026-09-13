@@ -18,7 +18,7 @@
  {
   "id": 565800,
   "utc": "2026-09-13T15:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 3,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "Bayern",
   "idLocal": 719,
   "idVisita": 5,
-  "golesLocal": 0,
-  "golesVisita": 1,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "BL1"
  }
 ]
