@@ -6,7 +6,7 @@
   "minuto": null,
   "jornada": 5,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Francisco Hernández Maeso",
   "local": "Villarreal",
   "visita": "Real Betis",
   "idLocal": 94,
@@ -22,7 +22,7 @@
   "minuto": null,
   "jornada": 4,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Michael Salisbury",
   "local": "Leeds United",
   "visita": "Newcastle",
   "idLocal": 341,
@@ -43,7 +43,7 @@
   "visita": "Parma",
   "idLocal": 7397,
   "idVisita": 112,
-  "golesLocal": 0,
+  "golesLocal": 2,
   "golesVisita": 0,
   "comp": "SA"
  },
@@ -60,7 +60,7 @@
   "idLocal": 586,
   "idVisita": 100,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
