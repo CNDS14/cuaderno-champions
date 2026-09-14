@@ -2,7 +2,7 @@
  {
   "id": 558602,
   "utc": "2026-09-14T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -12,13 +12,13 @@
   "idLocal": 7397,
   "idVisita": 112,
   "golesLocal": 2,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
   "id": 558603,
   "utc": "2026-09-14T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -28,13 +28,13 @@
   "idLocal": 586,
   "idVisita": 100,
   "golesLocal": 0,
-  "golesVisita": 1,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {
   "id": 558601,
   "utc": "2026-09-14T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Udinese",
   "idLocal": 108,
   "idVisita": 115,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 5,
+  "golesVisita": 3,
   "comp": "SA"
  }
 ]

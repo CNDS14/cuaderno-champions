@@ -27,6 +27,19 @@
  },
  {
   "pos": 3,
+  "equipo": "Real Betis",
+  "escudo": "https://crests.football-data.org/90.png",
+  "pj": 5,
+  "g": 4,
+  "e": 0,
+  "p": 1,
+  "gf": 7,
+  "gc": 6,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 4,
   "equipo": "Alavés",
   "escudo": "https://crests.football-data.org/263.png",
   "pj": 5,
@@ -39,7 +52,7 @@
   "forma": ""
  },
  {
-  "pos": 4,
+  "pos": 5,
   "equipo": "Atleti",
   "escudo": "https://crests.football-data.org/78.png",
   "pj": 5,
@@ -52,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Sevilla FC",
   "escudo": "https://crests.football-data.org/559.png",
   "pj": 5,
@@ -65,7 +78,7 @@
   "forma": ""
  },
  {
-  "pos": 6,
+  "pos": 7,
   "equipo": "Deportivo",
   "escudo": "https://crests.football-data.org/560.png",
   "pj": 5,
@@ -74,19 +87,6 @@
   "p": 0,
   "gf": 9,
   "gc": 6,
-  "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 7,
-  "equipo": "Real Betis",
-  "escudo": "https://crests.football-data.org/90.png",
-  "pj": 4,
-  "g": 3,
-  "e": 0,
-  "p": 1,
-  "gf": 5,
-  "gc": 5,
   "pts": 9,
   "forma": ""
  },
@@ -224,12 +224,12 @@
   "pos": 18,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
-  "pj": 4,
+  "pj": 5,
   "g": 0,
   "e": 2,
-  "p": 2,
-  "gf": 6,
-  "gc": 8,
+  "p": 3,
+  "gf": 7,
+  "gc": 10,
   "pts": 2,
   "forma": ""
  },
