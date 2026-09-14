@@ -1,12 +1,11 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 44/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 46/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
   "Sin calificacion para Leeds United o Newcastle: no registro picks de ese partido.",
-  "Sin calificacion para Como 1907 o Parma: no registro picks de ese partido.",
   "Sin calificacion para HSV o 1. FC Köln: no registro picks de ese partido.",
   "Sin calificacion para Bremen o Augsburg: no registro picks de ese partido.",
   "Sin calificacion para Frankfurt o Freiburg: no registro picks de ese partido.",
