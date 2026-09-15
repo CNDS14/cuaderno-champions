@@ -94,12 +94,12 @@
   "pos": 8,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
-  "pj": 5,
+  "pj": 6,
   "g": 2,
   "e": 1,
-  "p": 2,
+  "p": 3,
   "gf": 8,
-  "gc": 5,
+  "gc": 7,
   "pts": 7,
   "forma": ""
  },
@@ -144,6 +144,19 @@
  },
  {
   "pos": 12,
+  "equipo": "Rayo Vallecano",
+  "escudo": "https://crests.football-data.org/87.png",
+  "pj": 6,
+  "g": 2,
+  "e": 1,
+  "p": 3,
+  "gf": 10,
+  "gc": 14,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 13,
   "equipo": "Real Sociedad",
   "escudo": "https://crests.football-data.org/92.png",
   "pj": 6,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
   "pj": 5,
@@ -169,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Getafe",
   "escudo": "https://crests.football-data.org/82.png",
   "pj": 5,
@@ -182,7 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 15,
+  "pos": 16,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 6,
@@ -191,19 +204,6 @@
   "p": 2,
   "gf": 3,
   "gc": 6,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 16,
-  "equipo": "Rayo Vallecano",
-  "escudo": "https://crests.football-data.org/87.png",
-  "pj": 5,
-  "g": 1,
-  "e": 1,
-  "p": 3,
-  "gf": 8,
-  "gc": 14,
   "pts": 4,
   "forma": ""
  },
