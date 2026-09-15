@@ -1,37 +1,5 @@
 [
  {
-  "id": 560567,
-  "utc": "2026-09-06T13:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 3,
-  "sede": "",
-  "arbitro": "John Brooks",
-  "local": "Everton",
-  "visita": "Man United",
-  "idLocal": 62,
-  "idVisita": 66,
-  "golesLocal": 2,
-  "golesVisita": 2,
-  "comp": "PL"
- },
- {
-  "id": 560570,
-  "utc": "2026-09-06T15:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 3,
-  "sede": "",
-  "arbitro": "Chris Kavanagh",
-  "local": "Arsenal",
-  "visita": "Chelsea",
-  "idLocal": 57,
-  "idVisita": 61,
-  "golesLocal": 2,
-  "golesVisita": 1,
-  "comp": "PL"
- },
- {
   "id": 560572,
   "utc": "2026-09-12T14:00:00Z",
   "estado": "FT",
@@ -172,6 +140,22 @@
   "idLocal": 66,
   "idVisita": 65,
   "golesLocal": 0,
+  "golesVisita": 1,
+  "comp": "PL"
+ },
+ {
+  "id": 560579,
+  "utc": "2026-09-14T19:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 4,
+  "sede": "",
+  "arbitro": "Michael Salisbury",
+  "local": "Leeds United",
+  "visita": "Newcastle",
+  "idLocal": 341,
+  "idVisita": 67,
+  "golesLocal": 4,
   "golesVisita": 1,
   "comp": "PL"
  }

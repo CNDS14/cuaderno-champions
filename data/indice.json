@@ -13,31 +13,31 @@
   "fd": "PD",
   "nombre": "LaLiga",
   "pais": "España",
-  "partidos": 1,
-  "hoy": 1,
+  "partidos": 3,
+  "hoy": 3,
   "enTabla": 20,
-  "conCuotas": 1,
-  "resultados": 15
+  "conCuotas": 3,
+  "resultados": 12
  },
  {
   "fd": "PL",
   "nombre": "Premier League",
   "pais": "Inglaterra",
-  "partidos": 1,
-  "hoy": 1,
+  "partidos": 10,
+  "hoy": 0,
   "enTabla": 20,
   "conCuotas": 1,
-  "resultados": 11
+  "resultados": 10
  },
  {
   "fd": "SA",
   "nombre": "Serie A",
   "pais": "Italia",
-  "partidos": 3,
-  "hoy": 3,
+  "partidos": 10,
+  "hoy": 0,
   "enTabla": 20,
   "conCuotas": 0,
-  "resultados": 13
+  "resultados": 12
  },
  {
   "fd": "BL1",
@@ -47,7 +47,7 @@
   "hoy": 0,
   "enTabla": 18,
   "conCuotas": 0,
-  "resultados": 11
+  "resultados": 9
  },
  {
   "fd": "FL1",
@@ -57,6 +57,6 @@
   "hoy": 0,
   "enTabla": 18,
   "conCuotas": 0,
-  "resultados": 12
+  "resultados": 9
  }
 ]
