@@ -18,7 +18,7 @@
  {
   "id": 564680,
   "utc": "2026-09-15T18:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -28,13 +28,13 @@
   "idLocal": 263,
   "idVisita": 95,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 564681,
   "utc": "2026-09-15T19:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Real Madrid",
   "idLocal": 285,
   "idVisita": 86,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 2,
   "comp": "PD"
  }
 ]
