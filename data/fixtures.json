@@ -2,7 +2,7 @@
  {
   "id": 564678,
   "utc": "2026-09-15T17:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -12,13 +12,13 @@
   "idLocal": 87,
   "idVisita": 80,
   "golesLocal": 2,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 564680,
   "utc": "2026-09-15T18:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "Valencia",
   "idLocal": 263,
   "idVisita": 95,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {

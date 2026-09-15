@@ -42,13 +42,13 @@
   "pos": 4,
   "equipo": "Alavés",
   "escudo": "https://crests.football-data.org/263.png",
-  "pj": 5,
+  "pj": 6,
   "g": 3,
-  "e": 1,
+  "e": 2,
   "p": 1,
   "gf": 11,
   "gc": 5,
-  "pts": 10,
+  "pts": 11,
   "forma": ""
  },
  {
@@ -98,7 +98,7 @@
   "g": 2,
   "e": 1,
   "p": 3,
-  "gf": 8,
+  "gf": 9,
   "gc": 7,
   "pts": 7,
   "forma": ""
@@ -151,7 +151,7 @@
   "e": 1,
   "p": 3,
   "gf": 10,
-  "gc": 14,
+  "gc": 15,
   "pts": 7,
   "forma": ""
  },
@@ -250,13 +250,13 @@
   "pos": 20,
   "equipo": "Valencia",
   "escudo": "https://crests.football-data.org/95.png",
-  "pj": 5,
+  "pj": 6,
   "g": 0,
-  "e": 1,
+  "e": 2,
   "p": 4,
   "gf": 1,
   "gc": 10,
-  "pts": 1,
+  "pts": 2,
   "forma": ""
  }
 ]
