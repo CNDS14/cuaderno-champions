@@ -34,7 +34,7 @@
  {
   "id": 564681,
   "utc": "2026-09-15T19:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Real Madrid",
   "idLocal": 285,
   "idVisita": 86,
-  "golesLocal": 0,
-  "golesVisita": 2,
+  "golesLocal": 2,
+  "golesVisita": 3,
   "comp": "PD"
  }
 ]
