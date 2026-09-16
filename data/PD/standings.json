@@ -27,6 +27,19 @@
  },
  {
   "pos": 3,
+  "equipo": "Atleti",
+  "escudo": "https://crests.football-data.org/78.png",
+  "pj": 6,
+  "g": 4,
+  "e": 1,
+  "p": 1,
+  "gf": 11,
+  "gc": 6,
+  "pts": 13,
+  "forma": ""
+ },
+ {
+  "pos": 4,
   "equipo": "Real Betis",
   "escudo": "https://crests.football-data.org/90.png",
   "pj": 5,
@@ -36,19 +49,6 @@
   "gf": 7,
   "gc": 6,
   "pts": 12,
-  "forma": ""
- },
- {
-  "pos": 4,
-  "equipo": "Atleti",
-  "escudo": "https://crests.football-data.org/78.png",
-  "pj": 6,
-  "g": 3,
-  "e": 2,
-  "p": 1,
-  "gf": 10,
-  "gc": 6,
-  "pts": 11,
   "forma": ""
  },
  {
@@ -92,19 +92,6 @@
  },
  {
   "pos": 8,
-  "equipo": "Osasuna",
-  "escudo": "https://crests.football-data.org/79.png",
-  "pj": 6,
-  "g": 2,
-  "e": 2,
-  "p": 2,
-  "gf": 5,
-  "gc": 8,
-  "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 9,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 6,
@@ -117,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 9,
   "equipo": "Athletic",
   "escudo": "https://crests.football-data.org/77.png",
   "pj": 5,
@@ -130,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 10,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 5,
@@ -138,6 +125,19 @@
   "e": 1,
   "p": 2,
   "gf": 9,
+  "gc": 9,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 11,
+  "equipo": "Osasuna",
+  "escudo": "https://crests.football-data.org/79.png",
+  "pj": 6,
+  "g": 2,
+  "e": 1,
+  "p": 3,
+  "gf": 5,
   "gc": 9,
   "pts": 7,
   "forma": ""
