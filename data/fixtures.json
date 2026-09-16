@@ -50,7 +50,7 @@
  {
   "id": 564687,
   "utc": "2026-09-16T19:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Santander",
   "idLocal": 81,
   "idVisita": 5335,
-  "golesLocal": 3,
-  "golesVisita": 1,
+  "golesLocal": 7,
+  "golesVisita": 2,
   "comp": "PD"
  },
  {
