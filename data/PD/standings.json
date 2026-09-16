@@ -40,6 +40,32 @@
  },
  {
   "pos": 4,
+  "equipo": "Atleti",
+  "escudo": "https://crests.football-data.org/78.png",
+  "pj": 6,
+  "g": 3,
+  "e": 2,
+  "p": 1,
+  "gf": 10,
+  "gc": 6,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 5,
+  "equipo": "Sevilla FC",
+  "escudo": "https://crests.football-data.org/559.png",
+  "pj": 6,
+  "g": 3,
+  "e": 2,
+  "p": 1,
+  "gf": 8,
+  "gc": 6,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 6,
   "equipo": "Alavés",
   "escudo": "https://crests.football-data.org/263.png",
   "pj": 6,
@@ -52,46 +78,33 @@
   "forma": ""
  },
  {
-  "pos": 5,
-  "equipo": "Atleti",
-  "escudo": "https://crests.football-data.org/78.png",
-  "pj": 5,
-  "g": 3,
-  "e": 1,
-  "p": 1,
-  "gf": 10,
-  "gc": 6,
-  "pts": 10,
-  "forma": ""
- },
- {
-  "pos": 6,
-  "equipo": "Sevilla FC",
-  "escudo": "https://crests.football-data.org/559.png",
-  "pj": 5,
-  "g": 3,
-  "e": 1,
-  "p": 1,
-  "gf": 8,
-  "gc": 6,
-  "pts": 10,
-  "forma": ""
- },
- {
   "pos": 7,
   "equipo": "Deportivo",
   "escudo": "https://crests.football-data.org/560.png",
-  "pj": 5,
+  "pj": 6,
   "g": 2,
-  "e": 3,
+  "e": 4,
   "p": 0,
   "gf": 9,
   "gc": 6,
-  "pts": 9,
+  "pts": 10,
   "forma": ""
  },
  {
   "pos": 8,
+  "equipo": "Osasuna",
+  "escudo": "https://crests.football-data.org/79.png",
+  "pj": 6,
+  "g": 2,
+  "e": 2,
+  "p": 2,
+  "gf": 5,
+  "gc": 8,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 9,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 6,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Athletic",
   "escudo": "https://crests.football-data.org/77.png",
   "pj": 5,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 5,
@@ -126,19 +139,6 @@
   "p": 2,
   "gf": 9,
   "gc": 9,
-  "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 11,
-  "equipo": "Osasuna",
-  "escudo": "https://crests.football-data.org/79.png",
-  "pj": 5,
-  "g": 2,
-  "e": 1,
-  "p": 2,
-  "gf": 5,
-  "gc": 8,
   "pts": 7,
   "forma": ""
  },
