@@ -2,7 +2,7 @@
  {
   "id": 564679,
   "utc": "2026-09-16T17:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -12,13 +12,13 @@
   "idLocal": 560,
   "idVisita": 559,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 564684,
   "utc": "2026-09-16T17:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -27,7 +27,7 @@
   "visita": "Osasuna",
   "idLocal": 78,
   "idVisita": 79,
-  "golesLocal": 0,
+  "golesLocal": 4,
   "golesVisita": 0,
   "comp": "PD"
  },

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-16T17:33:30.143Z",
+ "actualizado": "2026-09-16T19:22:43.942Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -64,16 +64,16 @@
  ],
  "partidosTotales": 42,
  "creditosCuotas": {
-  "gastados": 57,
+  "gastados": 58,
   "tope": 450,
   "mes": "2026-09"
  },
  "picksModelo": {
   "total": 285,
   "nuevos": 0,
-  "calificados": 160,
-  "aciertos": 117,
-  "brier": 0.1721,
+  "calificados": 165,
+  "aciertos": 121,
+  "brier": 0.17,
   "equiposAjustados": 21,
   "ajuste": {
    "partidos": 3650,
