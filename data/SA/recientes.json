@@ -1,37 +1,5 @@
 [
  {
-  "id": 558610,
-  "utc": "2026-09-07T16:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 3,
-  "sede": "",
-  "arbitro": "Juan Luca Sacchi",
-  "local": "Cagliari",
-  "visita": "Lecce",
-  "idLocal": 104,
-  "idVisita": 5890,
-  "golesLocal": 1,
-  "golesVisita": 0,
-  "comp": "SA"
- },
- {
-  "id": 558617,
-  "utc": "2026-09-07T18:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 3,
-  "sede": "",
-  "arbitro": "Paride Tremolada",
-  "local": "Udinese",
-  "visita": "Lazio",
-  "idLocal": 115,
-  "idVisita": 110,
-  "golesLocal": 1,
-  "golesVisita": 2,
-  "comp": "SA"
- },
- {
   "id": 558606,
   "utc": "2026-09-11T18:45:00Z",
   "estado": "FT",

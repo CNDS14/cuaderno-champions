@@ -13,11 +13,11 @@
   "fd": "PD",
   "nombre": "LaLiga",
   "pais": "España",
-  "partidos": 3,
-  "hoy": 3,
+  "partidos": 4,
+  "hoy": 4,
   "enTabla": 20,
-  "conCuotas": 1,
-  "resultados": 12
+  "conCuotas": 3,
+  "resultados": 13
  },
  {
   "fd": "PL",
@@ -37,7 +37,7 @@
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 0,
-  "resultados": 12
+  "resultados": 10
  },
  {
   "fd": "BL1",
