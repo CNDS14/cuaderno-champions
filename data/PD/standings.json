@@ -92,19 +92,6 @@
  },
  {
   "pos": 8,
-  "equipo": "Athletic",
-  "escudo": "https://crests.football-data.org/77.png",
-  "pj": 6,
-  "g": 2,
-  "e": 2,
-  "p": 2,
-  "gf": 7,
-  "gc": 6,
-  "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 9,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 6,
@@ -113,6 +100,19 @@
   "p": 3,
   "gf": 9,
   "gc": 7,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 9,
+  "equipo": "Athletic",
+  "escudo": "https://crests.football-data.org/77.png",
+  "pj": 5,
+  "g": 2,
+  "e": 1,
+  "p": 2,
+  "gf": 7,
+  "gc": 6,
   "pts": 7,
   "forma": ""
  },
@@ -172,13 +172,13 @@
   "pos": 14,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
-  "pj": 6,
+  "pj": 5,
   "g": 1,
-  "e": 3,
+  "e": 2,
   "p": 2,
   "gf": 7,
   "gc": 9,
-  "pts": 6,
+  "pts": 5,
   "forma": ""
  },
  {
