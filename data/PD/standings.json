@@ -55,13 +55,13 @@
   "pos": 5,
   "equipo": "Real Betis",
   "escudo": "https://crests.football-data.org/90.png",
-  "pj": 5,
+  "pj": 6,
   "g": 4,
-  "e": 0,
+  "e": 1,
   "p": 1,
   "gf": 7,
   "gc": 6,
-  "pts": 12,
+  "pts": 13,
   "forma": ""
  },
  {
@@ -170,6 +170,19 @@
  },
  {
   "pos": 14,
+  "equipo": "Getafe",
+  "escudo": "https://crests.football-data.org/82.png",
+  "pj": 6,
+  "g": 1,
+  "e": 3,
+  "p": 2,
+  "gf": 3,
+  "gc": 6,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 15,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
   "pj": 5,
@@ -178,19 +191,6 @@
   "p": 2,
   "gf": 7,
   "gc": 9,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 15,
-  "equipo": "Getafe",
-  "escudo": "https://crests.football-data.org/82.png",
-  "pj": 5,
-  "g": 1,
-  "e": 2,
-  "p": 2,
-  "gf": 3,
-  "gc": 6,
   "pts": 5,
   "forma": ""
  },

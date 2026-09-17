@@ -1,10 +1,11 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 61/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 62/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
+  "1 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
   "Sin calificacion para Málaga o Villarreal: no registro picks de ese partido.",
   "Sin calificacion para Everton o Ipswich Town: no registro picks de ese partido.",
   "Sin calificacion para Brighton Hove o Arsenal: no registro picks de ese partido.",
