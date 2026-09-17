@@ -2,7 +2,7 @@
  {
   "id": 564686,
   "utc": "2026-09-17T17:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -11,24 +11,24 @@
   "visita": "Getafe",
   "idLocal": 90,
   "idVisita": 82,
-  "golesLocal": 0,
+  "golesLocal": 1,
   "golesVisita": 0,
   "comp": "PD"
  },
  {
   "id": 564683,
   "utc": "2026-09-17T19:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 6,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Miguel Chua",
   "local": "Málaga",
   "visita": "Villarreal",
   "idLocal": 84,
   "idVisita": 94,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "PD"
  }
 ]

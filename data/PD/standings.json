@@ -27,6 +27,19 @@
  },
  {
   "pos": 3,
+  "equipo": "Real Betis",
+  "escudo": "https://crests.football-data.org/90.png",
+  "pj": 6,
+  "g": 5,
+  "e": 0,
+  "p": 1,
+  "gf": 8,
+  "gc": 6,
+  "pts": 15,
+  "forma": ""
+ },
+ {
+  "pos": 4,
   "equipo": "Atleti",
   "escudo": "https://crests.football-data.org/78.png",
   "pj": 6,
@@ -39,7 +52,7 @@
   "forma": ""
  },
  {
-  "pos": 4,
+  "pos": 5,
   "equipo": "Sevilla FC",
   "escudo": "https://crests.football-data.org/559.png",
   "pj": 6,
@@ -47,19 +60,6 @@
   "e": 1,
   "p": 1,
   "gf": 9,
-  "gc": 6,
-  "pts": 13,
-  "forma": ""
- },
- {
-  "pos": 5,
-  "equipo": "Real Betis",
-  "escudo": "https://crests.football-data.org/90.png",
-  "pj": 6,
-  "g": 4,
-  "e": 1,
-  "p": 1,
-  "gf": 7,
   "gc": 6,
   "pts": 13,
   "forma": ""
@@ -170,15 +170,15 @@
  },
  {
   "pos": 14,
-  "equipo": "Getafe",
-  "escudo": "https://crests.football-data.org/82.png",
+  "equipo": "Villarreal",
+  "escudo": "https://crests.football-data.org/94.png",
   "pj": 6,
   "g": 1,
-  "e": 3,
-  "p": 2,
-  "gf": 3,
-  "gc": 6,
-  "pts": 6,
+  "e": 2,
+  "p": 3,
+  "gf": 9,
+  "gc": 11,
+  "pts": 5,
   "forma": ""
  },
  {
@@ -196,6 +196,19 @@
  },
  {
   "pos": 16,
+  "equipo": "Getafe",
+  "escudo": "https://crests.football-data.org/82.png",
+  "pj": 6,
+  "g": 1,
+  "e": 2,
+  "p": 3,
+  "gf": 3,
+  "gc": 7,
+  "pts": 5,
+  "forma": ""
+ },
+ {
+  "pos": 17,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 6,
@@ -208,7 +221,7 @@
   "forma": ""
  },
  {
-  "pos": 17,
+  "pos": 18,
   "equipo": "Valencia",
   "escudo": "https://crests.football-data.org/95.png",
   "pj": 6,
@@ -221,29 +234,16 @@
   "forma": ""
  },
  {
-  "pos": 18,
+  "pos": 19,
   "equipo": "Málaga",
   "escudo": "https://crests.football-data.org/84.png",
-  "pj": 5,
+  "pj": 6,
   "g": 0,
   "e": 3,
-  "p": 2,
-  "gf": 2,
-  "gc": 8,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 19,
-  "equipo": "Villarreal",
-  "escudo": "https://crests.football-data.org/94.png",
-  "pj": 5,
-  "g": 0,
-  "e": 2,
   "p": 3,
-  "gf": 7,
+  "gf": 3,
   "gc": 10,
-  "pts": 2,
+  "pts": 3,
   "forma": ""
  },
  {
