@@ -7,17 +7,17 @@
   "hoy": 0,
   "enTabla": 36,
   "conCuotas": 4,
-  "resultados": 18
+  "resultados": 12
  },
  {
   "fd": "PD",
   "nombre": "LaLiga",
   "pais": "España",
-  "partidos": 4,
-  "hoy": 4,
+  "partidos": 2,
+  "hoy": 2,
   "enTabla": 20,
-  "conCuotas": 1,
-  "resultados": 13
+  "conCuotas": 2,
+  "resultados": 16
  },
  {
   "fd": "PL",

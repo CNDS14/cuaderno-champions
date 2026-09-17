@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-16T23:07:26.435Z",
+ "actualizado": "2026-09-17T00:36:25.246Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -9,17 +9,17 @@
    "hoy": 0,
    "enTabla": 36,
    "conCuotas": 4,
-   "resultados": 18
+   "resultados": 12
   },
   {
    "fd": "PD",
    "nombre": "LaLiga",
    "pais": "España",
-   "partidos": 4,
-   "hoy": 4,
+   "partidos": 2,
+   "hoy": 2,
    "enTabla": 20,
-   "conCuotas": 1,
-   "resultados": 13
+   "conCuotas": 2,
+   "resultados": 16
   },
   {
    "fd": "PL",
@@ -62,9 +62,9 @@
    "resultados": 9
   }
  ],
- "partidosTotales": 42,
+ "partidosTotales": 40,
  "creditosCuotas": {
-  "gastados": 58,
+  "gastados": 59,
   "tope": 450,
   "mes": "2026-09"
  },
