@@ -2,7 +2,7 @@
  {
   "id": 565804,
   "utc": "2026-09-18T18:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Union Berlin",
   "idLocal": 5,
   "idVisita": 28,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "BL1"
  }
 ]

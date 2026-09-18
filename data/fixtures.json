@@ -6,7 +6,7 @@
   "minuto": null,
   "jornada": 7,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Jon González Esteban",
   "local": "Espanyol",
   "visita": "Elche",
   "idLocal": 80,
@@ -22,7 +22,7 @@
   "minuto": null,
   "jornada": 5,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Andy Madley",
   "local": "Brentford",
   "visita": "Chelsea",
   "idLocal": 402,
@@ -50,7 +50,7 @@
  {
   "id": 565804,
   "utc": "2026-09-18T18:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Union Berlin",
   "idLocal": 5,
   "idVisita": 28,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "BL1"
  },
  {
