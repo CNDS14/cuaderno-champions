@@ -2,7 +2,7 @@
  {
   "id": 560591,
   "utc": "2026-09-18T19:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Chelsea",
   "idLocal": 402,
   "idVisita": 61,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 0,
   "comp": "PL"
  }
 ]

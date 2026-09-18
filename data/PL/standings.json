@@ -27,6 +27,19 @@
  },
  {
   "pos": 3,
+  "equipo": "Brentford",
+  "escudo": "https://crests.football-data.org/402.png",
+  "pj": 5,
+  "g": 2,
+  "e": 3,
+  "p": 0,
+  "gf": 10,
+  "gc": 4,
+  "pts": 9,
+  "forma": ""
+ },
+ {
+  "pos": 4,
   "equipo": "Leeds United",
   "escudo": "https://crests.football-data.org/341.png",
   "pj": 4,
@@ -39,7 +52,7 @@
   "forma": ""
  },
  {
-  "pos": 4,
+  "pos": 5,
   "equipo": "Hull City",
   "escudo": "https://crests.football-data.org/322.png",
   "pj": 4,
@@ -52,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Brighton Hove",
   "escudo": "https://crests.football-data.org/397.png",
   "pj": 4,
@@ -65,29 +78,16 @@
   "forma": ""
  },
  {
-  "pos": 6,
+  "pos": 7,
   "equipo": "Chelsea",
   "escudo": "https://crests.football-data.org/61.png",
-  "pj": 4,
+  "pj": 5,
   "g": 2,
   "e": 1,
-  "p": 1,
+  "p": 2,
   "gf": 10,
-  "gc": 9,
+  "gc": 12,
   "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 7,
-  "equipo": "Brentford",
-  "escudo": "https://crests.football-data.org/402.png",
-  "pj": 4,
-  "g": 1,
-  "e": 3,
-  "p": 0,
-  "gf": 7,
-  "gc": 4,
-  "pts": 6,
   "forma": ""
  },
  {

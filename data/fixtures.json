@@ -2,7 +2,7 @@
  {
   "id": 564692,
   "utc": "2026-09-18T19:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Elche",
   "idLocal": 80,
   "idVisita": 285,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 3,
   "comp": "PD"
  },
  {
   "id": 560591,
   "utc": "2026-09-18T19:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Chelsea",
   "idLocal": 402,
   "idVisita": 61,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 0,
   "comp": "PL"
  },
  {
   "id": 558596,
   "utc": "2026-09-18T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Sassuolo",
   "idLocal": 5911,
   "idVisita": 471,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
   "id": 565804,
   "utc": "2026-09-18T18:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -59,14 +59,14 @@
   "visita": "Union Berlin",
   "idLocal": 5,
   "idVisita": 28,
-  "golesLocal": 0,
+  "golesLocal": 7,
   "golesVisita": 0,
   "comp": "BL1"
  },
  {
   "id": 559682,
   "utc": "2026-09-18T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -75,8 +75,8 @@
   "visita": "RC Lens",
   "idLocal": 548,
   "idVisita": 546,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "FL1"
  }
 ]

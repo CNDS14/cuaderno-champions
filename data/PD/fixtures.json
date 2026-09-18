@@ -2,7 +2,7 @@
  {
   "id": 564692,
   "utc": "2026-09-18T19:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Elche",
   "idLocal": 80,
   "idVisita": 285,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 3,
   "comp": "PD"
  }
 ]

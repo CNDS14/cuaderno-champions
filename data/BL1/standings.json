@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "Bayern",
+  "escudo": "https://crests.football-data.org/5.png",
+  "pj": 4,
+  "g": 3,
+  "e": 1,
+  "p": 0,
+  "gf": 14,
+  "gc": 2,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Freiburg",
   "escudo": "https://crests.football-data.org/17.png",
   "pj": 3,
@@ -13,7 +26,7 @@
   "forma": ""
  },
  {
-  "pos": 2,
+  "pos": 3,
   "equipo": "Dortmund",
   "escudo": "https://crests.football-data.org/4.png",
   "pj": 3,
@@ -23,19 +36,6 @@
   "gf": 8,
   "gc": 2,
   "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 3,
-  "equipo": "Bayern",
-  "escudo": "https://crests.football-data.org/5.png",
-  "pj": 4,
-  "g": 2,
-  "e": 2,
-  "p": 0,
-  "gf": 7,
-  "gc": 2,
-  "pts": 8,
   "forma": ""
  },
  {
@@ -183,19 +183,6 @@
  },
  {
   "pos": 15,
-  "equipo": "Union Berlin",
-  "escudo": "https://crests.football-data.org/28.png",
-  "pj": 4,
-  "g": 0,
-  "e": 2,
-  "p": 2,
-  "gf": 4,
-  "gc": 10,
-  "pts": 2,
-  "forma": ""
- },
- {
-  "pos": 16,
   "equipo": "SC Paderborn",
   "escudo": "https://crests.football-data.org/29.png",
   "pj": 3,
@@ -204,6 +191,19 @@
   "p": 2,
   "gf": 0,
   "gc": 4,
+  "pts": 1,
+  "forma": ""
+ },
+ {
+  "pos": 16,
+  "equipo": "Union Berlin",
+  "escudo": "https://crests.football-data.org/28.png",
+  "pj": 4,
+  "g": 0,
+  "e": 1,
+  "p": 3,
+  "gf": 4,
+  "gc": 17,
   "pts": 1,
   "forma": ""
  },

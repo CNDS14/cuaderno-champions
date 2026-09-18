@@ -2,7 +2,7 @@
  {
   "id": 559682,
   "utc": "2026-09-18T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "RC Lens",
   "idLocal": 548,
   "idVisita": 546,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "FL1"
  }
 ]
