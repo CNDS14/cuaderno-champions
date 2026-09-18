@@ -254,5 +254,37 @@
   "golesLocal": 7,
   "golesVisita": 2,
   "comp": "PD"
+ },
+ {
+  "id": 564686,
+  "utc": "2026-09-17T17:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": "José Sánchez Martínez",
+  "local": "Real Betis",
+  "visita": "Getafe",
+  "idLocal": 90,
+  "idVisita": 82,
+  "golesLocal": 1,
+  "golesVisita": 0,
+  "comp": "PD"
+ },
+ {
+  "id": 564683,
+  "utc": "2026-09-17T19:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": "Miguel Chua",
+  "local": "Málaga",
+  "visita": "Villarreal",
+  "idLocal": 84,
+  "idVisita": 94,
+  "golesLocal": 1,
+  "golesVisita": 3,
+  "comp": "PD"
  }
 ]
