@@ -158,5 +158,21 @@
   "golesLocal": 4,
   "golesVisita": 1,
   "comp": "PL"
+ },
+ {
+  "id": 560591,
+  "utc": "2026-09-18T19:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 5,
+  "sede": "",
+  "arbitro": "Andy Madley",
+  "local": "Brentford",
+  "visita": "Chelsea",
+  "idLocal": 402,
+  "idVisita": 61,
+  "golesLocal": 3,
+  "golesVisita": 0,
+  "comp": "PL"
  }
 ]

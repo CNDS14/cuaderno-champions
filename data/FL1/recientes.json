@@ -142,5 +142,21 @@
   "golesLocal": 0,
   "golesVisita": 1,
   "comp": "FL1"
+ },
+ {
+  "id": 559682,
+  "utc": "2026-09-18T18:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 5,
+  "sede": "",
+  "arbitro": "Clément Turpin",
+  "local": "Monaco",
+  "visita": "RC Lens",
+  "idLocal": 548,
+  "idVisita": 546,
+  "golesLocal": 2,
+  "golesVisita": 1,
+  "comp": "FL1"
  }
 ]
