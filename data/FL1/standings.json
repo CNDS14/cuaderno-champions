@@ -14,6 +14,19 @@
  },
  {
   "pos": 2,
+  "equipo": "Paris FC",
+  "escudo": "https://crests.football-data.org/1045.png",
+  "pj": 5,
+  "g": 3,
+  "e": 2,
+  "p": 0,
+  "gf": 7,
+  "gc": 2,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 3,
   "equipo": "Lille",
   "escudo": "https://crests.football-data.org/521.png",
   "pj": 4,
@@ -26,7 +39,7 @@
   "forma": ""
  },
  {
-  "pos": 3,
+  "pos": 4,
   "equipo": "Stade Rennais",
   "escudo": "https://crests.football-data.org/529.png",
   "pj": 4,
@@ -39,22 +52,9 @@
   "forma": ""
  },
  {
-  "pos": 4,
+  "pos": 5,
   "equipo": "Olympique Lyon",
   "escudo": "https://crests.football-data.org/523.png",
-  "pj": 4,
-  "g": 2,
-  "e": 2,
-  "p": 0,
-  "gf": 6,
-  "gc": 2,
-  "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 4,
-  "equipo": "Paris FC",
-  "escudo": "https://crests.football-data.org/1045.png",
   "pj": 4,
   "g": 2,
   "e": 2,
@@ -68,12 +68,12 @@
   "pos": 6,
   "equipo": "Strasbourg",
   "escudo": "https://crests.football-data.org/576.png",
-  "pj": 4,
+  "pj": 5,
   "g": 2,
   "e": 1,
-  "p": 1,
+  "p": 2,
   "gf": 9,
-  "gc": 8,
+  "gc": 9,
   "pts": 7,
   "forma": ""
  },

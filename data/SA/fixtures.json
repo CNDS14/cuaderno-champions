@@ -2,7 +2,7 @@
  {
   "id": 558598,
   "utc": "2026-09-19T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -12,13 +12,13 @@
   "idLocal": 103,
   "idVisita": 586,
   "golesLocal": 1,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
   "id": 558589,
   "utc": "2026-09-19T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 558593,
   "utc": "2026-09-19T16:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Inter",
   "idLocal": 100,
   "idVisita": 108,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "SA"
  },
  {

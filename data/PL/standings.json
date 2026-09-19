@@ -1,19 +1,6 @@
 [
  {
   "pos": 1,
-  "equipo": "Arsenal",
-  "escudo": "https://crests.football-data.org/57.png",
-  "pj": 5,
-  "g": 4,
-  "e": 1,
-  "p": 0,
-  "gf": 8,
-  "gc": 1,
-  "pts": 13,
-  "forma": ""
- },
- {
-  "pos": 2,
   "equipo": "Man City",
   "escudo": "https://crests.football-data.org/65.png",
   "pj": 4,
@@ -26,7 +13,33 @@
   "forma": ""
  },
  {
+  "pos": 2,
+  "equipo": "Arsenal",
+  "escudo": "https://crests.football-data.org/57.png",
+  "pj": 5,
+  "g": 4,
+  "e": 0,
+  "p": 1,
+  "gf": 8,
+  "gc": 4,
+  "pts": 12,
+  "forma": ""
+ },
+ {
   "pos": 3,
+  "equipo": "Brighton Hove",
+  "escudo": "https://crests.football-data.org/397.png",
+  "pj": 5,
+  "g": 3,
+  "e": 1,
+  "p": 1,
+  "gf": 16,
+  "gc": 5,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 4,
   "equipo": "Brentford",
   "escudo": "https://crests.football-data.org/402.png",
   "pj": 5,
@@ -39,7 +52,7 @@
   "forma": ""
  },
  {
-  "pos": 4,
+  "pos": 5,
   "equipo": "Everton",
   "escudo": "https://crests.football-data.org/62.png",
   "pj": 5,
@@ -49,19 +62,6 @@
   "gf": 6,
   "gc": 3,
   "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 5,
-  "equipo": "Brighton Hove",
-  "escudo": "https://crests.football-data.org/397.png",
-  "pj": 5,
-  "g": 2,
-  "e": 2,
-  "p": 1,
-  "gf": 13,
-  "gc": 5,
-  "pts": 8,
   "forma": ""
  },
  {
@@ -79,6 +79,19 @@
  },
  {
   "pos": 7,
+  "equipo": "Hull City",
+  "escudo": "https://crests.football-data.org/322.png",
+  "pj": 5,
+  "g": 2,
+  "e": 2,
+  "p": 1,
+  "gf": 6,
+  "gc": 4,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Newcastle",
   "escudo": "https://crests.football-data.org/67.png",
   "pj": 5,
@@ -86,20 +99,7 @@
   "e": 2,
   "p": 1,
   "gf": 9,
-  "gc": 8,
-  "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 8,
-  "equipo": "Hull City",
-  "escudo": "https://crests.football-data.org/322.png",
-  "pj": 5,
-  "g": 2,
-  "e": 2,
-  "p": 1,
-  "gf": 5,
-  "gc": 4,
+  "gc": 9,
   "pts": 8,
   "forma": ""
  },

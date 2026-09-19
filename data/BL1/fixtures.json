@@ -2,7 +2,7 @@
  {
   "id": 565808,
   "utc": "2026-09-19T13:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "1. FC Köln",
   "idLocal": 7,
   "idVisita": 1,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "BL1"
  },
  {
   "id": 565809,
   "utc": "2026-09-19T13:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Mainz",
   "idLocal": 18,
   "idVisita": 15,
-  "golesLocal": 1,
-  "golesVisita": 2,
+  "golesLocal": 3,
+  "golesVisita": 4,
   "comp": "BL1"
  },
  {
   "id": 565810,
   "utc": "2026-09-19T13:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Augsburg",
   "idLocal": 12,
   "idVisita": 16,
-  "golesLocal": 0,
-  "golesVisita": 1,
+  "golesLocal": 3,
+  "golesVisita": 2,
   "comp": "BL1"
  },
  {
   "id": 565811,
   "utc": "2026-09-19T13:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -60,7 +60,7 @@
   "idLocal": 19,
   "idVisita": 17,
   "golesLocal": 2,
-  "golesVisita": 1,
+  "golesVisita": 2,
   "comp": "BL1"
  },
  {
