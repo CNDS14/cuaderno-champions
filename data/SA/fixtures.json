@@ -43,8 +43,8 @@
   "visita": "Inter",
   "idLocal": 100,
   "idVisita": 108,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
@@ -54,7 +54,7 @@
   "minuto": null,
   "jornada": 5,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Simone Sozza",
   "local": "Venezia FC",
   "visita": "Lazio",
   "idLocal": 454,

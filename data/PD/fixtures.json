@@ -34,7 +34,7 @@
  {
   "id": 564694,
   "utc": "2026-09-19T16:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Santander",
   "idLocal": 558,
   "idVisita": 5335,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -54,7 +54,7 @@
   "minuto": null,
   "jornada": 7,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Juan Martínez Munuera",
   "local": "Sevilla FC",
   "visita": "Barça",
   "idLocal": 559,

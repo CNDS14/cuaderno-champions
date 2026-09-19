@@ -66,7 +66,7 @@
  {
   "id": 560589,
   "utc": "2026-09-19T16:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -75,8 +75,8 @@
   "visita": "Coventry City",
   "idLocal": 351,
   "idVisita": 1076,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PL"
  }
 ]

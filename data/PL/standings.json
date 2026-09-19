@@ -131,6 +131,19 @@
  },
  {
   "pos": 11,
+  "equipo": "Nottingham",
+  "escudo": "https://crests.football-data.org/351.png",
+  "pj": 5,
+  "g": 1,
+  "e": 3,
+  "p": 1,
+  "gf": 4,
+  "gc": 4,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 12,
   "equipo": "Ipswich Town",
   "escudo": "https://crests.football-data.org/349.png",
   "pj": 5,
@@ -140,19 +153,6 @@
   "gf": 7,
   "gc": 11,
   "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 12,
-  "equipo": "Nottingham",
-  "escudo": "https://crests.football-data.org/351.png",
-  "pj": 4,
-  "g": 1,
-  "e": 2,
-  "p": 1,
-  "gf": 4,
-  "gc": 4,
-  "pts": 5,
   "forma": ""
  },
  {
@@ -250,13 +250,13 @@
   "pos": 20,
   "equipo": "Coventry City",
   "escudo": "https://crests.football-data.org/1076.png",
-  "pj": 4,
+  "pj": 5,
   "g": 0,
-  "e": 0,
+  "e": 1,
   "p": 4,
   "gf": 0,
   "gc": 10,
-  "pts": 0,
+  "pts": 1,
   "forma": ""
  }
 ]
