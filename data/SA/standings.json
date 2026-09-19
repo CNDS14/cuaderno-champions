@@ -4,12 +4,12 @@
   "equipo": "Roma",
   "escudo": "https://crests.football-data.org/100.png",
   "pj": 5,
-  "g": 5,
-  "e": 0,
+  "g": 4,
+  "e": 1,
   "p": 0,
   "gf": 14,
-  "gc": 2,
-  "pts": 15,
+  "gc": 3,
+  "pts": 13,
   "forma": ""
  },
  {
@@ -18,11 +18,11 @@
   "escudo": "https://crests.football-data.org/108.png",
   "pj": 5,
   "g": 4,
-  "e": 0,
-  "p": 1,
-  "gf": 14,
+  "e": 1,
+  "p": 0,
+  "gf": 15,
   "gc": 8,
-  "pts": 12,
+  "pts": 13,
   "forma": ""
  },
  {
@@ -40,6 +40,19 @@
  },
  {
   "pos": 4,
+  "equipo": "Lazio",
+  "escudo": "https://crests.football-data.org/110.png",
+  "pj": 5,
+  "g": 3,
+  "e": 2,
+  "p": 0,
+  "gf": 6,
+  "gc": 3,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
   "pj": 4,
@@ -48,19 +61,6 @@
   "p": 0,
   "gf": 9,
   "gc": 4,
-  "pts": 10,
-  "forma": ""
- },
- {
-  "pos": 5,
-  "equipo": "Lazio",
-  "escudo": "https://crests.football-data.org/110.png",
-  "pj": 4,
-  "g": 3,
-  "e": 1,
-  "p": 0,
-  "gf": 6,
-  "gc": 3,
   "pts": 10,
   "forma": ""
  },
@@ -250,13 +250,13 @@
   "pos": 20,
   "equipo": "Venezia FC",
   "escudo": "https://crests.football-data.org/454.png",
-  "pj": 4,
+  "pj": 5,
   "g": 0,
-  "e": 0,
+  "e": 1,
   "p": 4,
   "gf": 4,
   "gc": 11,
-  "pts": 0,
+  "pts": 1,
   "forma": ""
  }
 ]

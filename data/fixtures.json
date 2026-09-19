@@ -34,7 +34,7 @@
  {
   "id": 564694,
   "utc": "2026-09-19T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Santander",
   "idLocal": 558,
   "idVisita": 5335,
-  "golesLocal": 2,
+  "golesLocal": 5,
   "golesVisita": 0,
   "comp": "PD"
  },
  {
   "id": 564690,
   "utc": "2026-09-19T19:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Barça",
   "idLocal": 559,
   "idVisita": 81,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
@@ -130,7 +130,7 @@
  {
   "id": 560589,
   "utc": "2026-09-19T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -140,7 +140,7 @@
   "idLocal": 351,
   "idVisita": 1076,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "PL"
  },
  {
@@ -178,7 +178,7 @@
  {
   "id": 558593,
   "utc": "2026-09-19T16:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -188,13 +188,13 @@
   "idLocal": 100,
   "idVisita": 108,
   "golesLocal": 2,
-  "golesVisita": 1,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {
   "id": 558594,
   "utc": "2026-09-19T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -203,8 +203,8 @@
   "visita": "Lazio",
   "idLocal": 454,
   "idVisita": 110,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  },
  {
@@ -274,7 +274,7 @@
  {
   "id": 565806,
   "utc": "2026-09-19T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -284,7 +284,7 @@
   "idLocal": 10,
   "idVisita": 4,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "BL1"
  },
  {
@@ -306,7 +306,7 @@
  {
   "id": 559677,
   "utc": "2026-09-19T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -315,14 +315,14 @@
   "visita": "Lorient",
   "idLocal": 535,
   "idVisita": 525,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559680,
   "utc": "2026-09-19T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -331,14 +331,14 @@
   "visita": "Le Havre",
   "idLocal": 511,
   "idVisita": 533,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559681,
   "utc": "2026-09-19T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -347,14 +347,14 @@
   "visita": "Troyes",
   "idLocal": 532,
   "idVisita": 531,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559683,
   "utc": "2026-09-19T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -363,8 +363,8 @@
   "visita": "Stade Rennais",
   "idLocal": 523,
   "idVisita": 529,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

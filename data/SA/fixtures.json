@@ -34,7 +34,7 @@
  {
   "id": 558593,
   "utc": "2026-09-19T16:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -44,13 +44,13 @@
   "idLocal": 100,
   "idVisita": 108,
   "golesLocal": 2,
-  "golesVisita": 1,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {
   "id": 558594,
   "utc": "2026-09-19T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Lazio",
   "idLocal": 454,
   "idVisita": 110,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  }
 ]

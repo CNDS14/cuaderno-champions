@@ -34,7 +34,7 @@
  {
   "id": 564694,
   "utc": "2026-09-19T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Santander",
   "idLocal": 558,
   "idVisita": 5335,
-  "golesLocal": 2,
+  "golesLocal": 5,
   "golesVisita": 0,
   "comp": "PD"
  },
  {
   "id": 564690,
   "utc": "2026-09-19T19:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Barça",
   "idLocal": 559,
   "idVisita": 81,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  }
 ]

@@ -788,9 +788,9 @@
   "k": "1X2::A",
   "p": 0.4114,
   "registradoEl": "2026-09-10T19:56:31.837Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 565806,
@@ -801,9 +801,9 @@
   "k": "DO::12",
   "p": 0.7564,
   "registradoEl": "2026-09-10T19:56:31.837Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 565806,
@@ -814,9 +814,9 @@
   "k": "OU::O|1.5",
   "p": 0.8204,
   "registradoEl": "2026-09-10T19:56:31.837Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 565806,
@@ -827,9 +827,9 @@
   "k": "AA::S",
   "p": 0.6248,
   "registradoEl": "2026-09-10T19:56:31.837Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 565806,
@@ -840,9 +840,9 @@
   "k": "PA::NL",
   "p": 0.8048,
   "registradoEl": "2026-09-10T19:56:31.837Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 558593,
@@ -853,9 +853,9 @@
   "k": "1X2::H",
   "p": 0.3716,
   "registradoEl": "2026-09-10T19:56:31.835Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 2,
+  "ok": false
  },
  {
   "fixId": 558593,
@@ -866,9 +866,9 @@
   "k": "DO::12",
   "p": 0.7426,
   "registradoEl": "2026-09-10T19:56:31.835Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 2,
+  "ok": false
  },
  {
   "fixId": 558593,
@@ -879,9 +879,9 @@
   "k": "OU::O|1.5",
   "p": 0.7806,
   "registradoEl": "2026-09-10T19:56:31.835Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 558593,
@@ -892,9 +892,9 @@
   "k": "AA::S",
   "p": 0.5801,
   "registradoEl": "2026-09-10T19:56:31.835Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 558593,
@@ -905,9 +905,9 @@
   "k": "PA::NV",
   "p": 0.7595,
   "registradoEl": "2026-09-10T19:56:31.835Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 559679,

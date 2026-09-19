@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "Dortmund",
+  "escudo": "https://crests.football-data.org/4.png",
+  "pj": 4,
+  "g": 4,
+  "e": 0,
+  "p": 0,
+  "gf": 9,
+  "gc": 2,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Bayern",
   "escudo": "https://crests.football-data.org/5.png",
   "pj": 4,
@@ -13,7 +26,7 @@
   "forma": ""
  },
  {
-  "pos": 2,
+  "pos": 3,
   "equipo": "Freiburg",
   "escudo": "https://crests.football-data.org/17.png",
   "pj": 4,
@@ -22,19 +35,6 @@
   "p": 0,
   "gf": 12,
   "gc": 3,
-  "pts": 10,
-  "forma": ""
- },
- {
-  "pos": 3,
-  "equipo": "Dortmund",
-  "escudo": "https://crests.football-data.org/4.png",
-  "pj": 4,
-  "g": 3,
-  "e": 1,
-  "p": 0,
-  "gf": 8,
-  "gc": 2,
   "pts": 10,
   "forma": ""
  },
@@ -144,19 +144,6 @@
  },
  {
   "pos": 12,
-  "equipo": "Stuttgart",
-  "escudo": "https://crests.football-data.org/10.png",
-  "pj": 4,
-  "g": 1,
-  "e": 1,
-  "p": 2,
-  "gf": 6,
-  "gc": 8,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 13,
   "equipo": "1. FC Köln",
   "escudo": "https://crests.football-data.org/1.png",
   "pj": 4,
@@ -169,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 13,
   "equipo": "Hoffenheim",
   "escudo": "https://crests.football-data.org/2.png",
   "pj": 3,
@@ -178,6 +165,19 @@
   "p": 2,
   "gf": 6,
   "gc": 7,
+  "pts": 3,
+  "forma": ""
+ },
+ {
+  "pos": 14,
+  "equipo": "Stuttgart",
+  "escudo": "https://crests.football-data.org/10.png",
+  "pj": 4,
+  "g": 1,
+  "e": 0,
+  "p": 3,
+  "gf": 6,
+  "gc": 9,
   "pts": 3,
   "forma": ""
  },

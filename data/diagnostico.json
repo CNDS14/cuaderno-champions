@@ -4,14 +4,6 @@
   "cuotas": "the-odds-api.com · 87/450 créditos este mes",
   "estadisticas": "API-Football"
  },
- "avisos": [
-  "3 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
-  "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
-  "Sin calificacion para Sevilla FC o Barcelona: no registro picks de ese partido.",
-  "Sin calificacion para Venezia FC o Lazio: no registro picks de ese partido.",
-  "Sin calificacion para Le Mans o Lorient: no registro picks de ese partido.",
-  "Sin calificacion para Angers SCO o Troyes: no registro picks de ese partido.",
-  "Sin calificacion para Olympique Lyon o Stade Rennais: no registro picks de ese partido."
- ],
+ "avisos": [],
  "errores": []
 }
