@@ -1178,9 +1178,9 @@
   "k": "1X2::A",
   "p": 0.4259,
   "registradoEl": "2026-09-10T19:56:31.833Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 3,
+  "ok": true
  },
  {
   "fixId": 560587,
@@ -1191,9 +1191,9 @@
   "k": "DO::12",
   "p": 0.7442,
   "registradoEl": "2026-09-10T19:56:31.833Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 3,
+  "ok": true
  },
  {
   "fixId": 560587,
@@ -1204,9 +1204,9 @@
   "k": "OU::O|1.5",
   "p": 0.7791,
   "registradoEl": "2026-09-10T19:56:31.833Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 3,
+  "ok": true
  },
  {
   "fixId": 560587,
@@ -1217,9 +1217,9 @@
   "k": "AA::S",
   "p": 0.575,
   "registradoEl": "2026-09-10T19:56:31.833Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 3,
+  "ok": true
  },
  {
   "fixId": 560587,
@@ -1230,9 +1230,9 @@
   "k": "PA::NL",
   "p": 0.7855,
   "registradoEl": "2026-09-10T19:56:31.833Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 3,
+  "ok": true
  },
  {
   "fixId": 560591,
