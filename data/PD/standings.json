@@ -4,12 +4,12 @@
   "equipo": "Barça",
   "escudo": "https://crests.football-data.org/81.png",
   "pj": 7,
-  "g": 6,
-  "e": 1,
+  "g": 7,
+  "e": 0,
   "p": 0,
-  "gf": 29,
+  "gf": 31,
   "gc": 7,
-  "pts": 19,
+  "pts": 21,
   "forma": ""
  },
  {
@@ -40,19 +40,6 @@
  },
  {
   "pos": 4,
-  "equipo": "Sevilla FC",
-  "escudo": "https://crests.football-data.org/559.png",
-  "pj": 7,
-  "g": 4,
-  "e": 2,
-  "p": 1,
-  "gf": 10,
-  "gc": 7,
-  "pts": 14,
-  "forma": ""
- },
- {
-  "pos": 5,
   "equipo": "Atleti",
   "escudo": "https://crests.football-data.org/78.png",
   "pj": 6,
@@ -61,6 +48,19 @@
   "p": 1,
   "gf": 14,
   "gc": 6,
+  "pts": 13,
+  "forma": ""
+ },
+ {
+  "pos": 5,
+  "equipo": "Sevilla FC",
+  "escudo": "https://crests.football-data.org/559.png",
+  "pj": 7,
+  "g": 4,
+  "e": 1,
+  "p": 2,
+  "gf": 10,
+  "gc": 9,
   "pts": 13,
   "forma": ""
  },

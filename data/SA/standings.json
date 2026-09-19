@@ -27,6 +27,19 @@
  },
  {
   "pos": 3,
+  "equipo": "Lazio",
+  "escudo": "https://crests.football-data.org/110.png",
+  "pj": 5,
+  "g": 4,
+  "e": 1,
+  "p": 0,
+  "gf": 8,
+  "gc": 3,
+  "pts": 13,
+  "forma": ""
+ },
+ {
+  "pos": 4,
   "equipo": "Cagliari",
   "escudo": "https://crests.football-data.org/104.png",
   "pj": 5,
@@ -36,19 +49,6 @@
   "gf": 5,
   "gc": 2,
   "pts": 12,
-  "forma": ""
- },
- {
-  "pos": 4,
-  "equipo": "Lazio",
-  "escudo": "https://crests.football-data.org/110.png",
-  "pj": 5,
-  "g": 3,
-  "e": 2,
-  "p": 0,
-  "gf": 6,
-  "gc": 3,
-  "pts": 11,
   "forma": ""
  },
  {
@@ -252,11 +252,11 @@
   "escudo": "https://crests.football-data.org/454.png",
   "pj": 5,
   "g": 0,
-  "e": 1,
-  "p": 4,
+  "e": 0,
+  "p": 5,
   "gf": 4,
-  "gc": 11,
-  "pts": 1,
+  "gc": 13,
+  "pts": 0,
   "forma": ""
  }
 ]

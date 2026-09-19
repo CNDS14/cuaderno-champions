@@ -20,7 +20,7 @@
   "g": 3,
   "e": 2,
   "p": 0,
-  "gf": 8,
+  "gf": 10,
   "gc": 2,
   "pts": 11,
   "forma": ""
@@ -60,12 +60,25 @@
   "e": 1,
   "p": 1,
   "gf": 8,
-  "gc": 7,
+  "gc": 9,
   "pts": 10,
   "forma": ""
  },
  {
   "pos": 6,
+  "equipo": "Angers SCO",
+  "escudo": "https://crests.football-data.org/532.png",
+  "pj": 5,
+  "g": 2,
+  "e": 1,
+  "p": 2,
+  "gf": 6,
+  "gc": 5,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 7,
   "equipo": "Strasbourg",
   "escudo": "https://crests.football-data.org/576.png",
   "pj": 5,
@@ -78,19 +91,6 @@
   "forma": ""
  },
  {
-  "pos": 7,
-  "equipo": "Angers SCO",
-  "escudo": "https://crests.football-data.org/532.png",
-  "pj": 5,
-  "g": 2,
-  "e": 1,
-  "p": 2,
-  "gf": 5,
-  "gc": 5,
-  "pts": 7,
-  "forma": ""
- },
- {
   "pos": 8,
   "equipo": "Le Mans",
   "escudo": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
@@ -98,8 +98,8 @@
   "g": 1,
   "e": 3,
   "p": 1,
-  "gf": 8,
-  "gc": 8,
+  "gf": 9,
+  "gc": 9,
   "pts": 6,
   "forma": ""
  },
@@ -137,8 +137,8 @@
   "g": 1,
   "e": 2,
   "p": 2,
-  "gf": 4,
-  "gc": 5,
+  "gf": 5,
+  "gc": 6,
   "pts": 5,
   "forma": ""
  },
@@ -150,8 +150,8 @@
   "g": 1,
   "e": 2,
   "p": 2,
-  "gf": 5,
-  "gc": 7,
+  "gf": 7,
+  "gc": 9,
   "pts": 5,
   "forma": ""
  },
@@ -177,7 +177,7 @@
   "e": 1,
   "p": 3,
   "gf": 4,
-  "gc": 10,
+  "gc": 11,
   "pts": 4,
   "forma": ""
  },
@@ -215,8 +215,8 @@
   "g": 0,
   "e": 2,
   "p": 3,
-  "gf": 2,
-  "gc": 5,
+  "gf": 4,
+  "gc": 7,
   "pts": 2,
   "forma": ""
  },
