@@ -33,8 +33,8 @@
   "g": 5,
   "e": 1,
   "p": 1,
-  "gf": 8,
-  "gc": 6,
+  "gf": 9,
+  "gc": 7,
   "pts": 16,
   "forma": ""
  },
@@ -85,13 +85,26 @@
   "g": 2,
   "e": 4,
   "p": 1,
-  "gf": 9,
-  "gc": 7,
+  "gf": 10,
+  "gc": 8,
   "pts": 10,
   "forma": ""
  },
  {
   "pos": 8,
+  "equipo": "Villarreal",
+  "escudo": "https://crests.football-data.org/94.png",
+  "pj": 7,
+  "g": 2,
+  "e": 2,
+  "p": 3,
+  "gf": 13,
+  "gc": 12,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 9,
   "equipo": "Athletic",
   "escudo": "https://crests.football-data.org/77.png",
   "pj": 6,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Getafe",
   "escudo": "https://crests.football-data.org/82.png",
   "pj": 7,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Rayo Vallecano",
   "escudo": "https://crests.football-data.org/87.png",
   "pj": 7,
@@ -130,7 +143,20 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
+  "equipo": "Real Sociedad",
+  "escudo": "https://crests.football-data.org/92.png",
+  "pj": 7,
+  "g": 2,
+  "e": 2,
+  "p": 3,
+  "gf": 6,
+  "gc": 11,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 13,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
   "pj": 7,
@@ -143,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 14,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 7,
@@ -156,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 15,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 7,
@@ -169,20 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
-  "equipo": "Real Sociedad",
-  "escudo": "https://crests.football-data.org/92.png",
-  "pj": 6,
-  "g": 2,
-  "e": 1,
-  "p": 3,
-  "gf": 6,
-  "gc": 11,
-  "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 15,
+  "pos": 16,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 7,
@@ -195,29 +208,16 @@
   "forma": ""
  },
  {
-  "pos": 16,
-  "equipo": "Villarreal",
-  "escudo": "https://crests.football-data.org/94.png",
-  "pj": 7,
-  "g": 1,
-  "e": 3,
-  "p": 3,
-  "gf": 10,
-  "gc": 11,
-  "pts": 6,
-  "forma": ""
- },
- {
   "pos": 17,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
   "pj": 6,
   "g": 1,
-  "e": 3,
-  "p": 2,
-  "gf": 7,
-  "gc": 9,
-  "pts": 6,
+  "e": 2,
+  "p": 3,
+  "gf": 8,
+  "gc": 12,
+  "pts": 5,
   "forma": ""
  },
  {
@@ -237,13 +237,13 @@
   "pos": 19,
   "equipo": "Valencia",
   "escudo": "https://crests.football-data.org/95.png",
-  "pj": 6,
+  "pj": 7,
   "g": 1,
-  "e": 1,
+  "e": 2,
   "p": 4,
   "gf": 2,
   "gc": 10,
-  "pts": 4,
+  "pts": 5,
   "forma": ""
  },
  {

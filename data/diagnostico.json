@@ -4,9 +4,6 @@
   "cuotas": "the-odds-api.com · 94/450 créditos este mes",
   "estadisticas": "API-Football"
  },
- "avisos": [
-  "Sin calificacion para Valencia o Real Sociedad: no registro picks de ese partido.",
-  "Sin calificacion para SC Paderborn o Hoffenheim: no registro picks de ese partido."
- ],
+ "avisos": [],
  "errores": []
 }

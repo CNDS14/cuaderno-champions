@@ -18,7 +18,7 @@
  {
   "id": 565805,
   "utc": "2026-09-20T15:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 565803,
   "utc": "2026-09-20T17:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 4,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Hoffenheim",
   "idLocal": 29,
   "idVisita": 2,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "BL1"
  }
 ]

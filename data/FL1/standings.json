@@ -46,7 +46,7 @@
   "g": 3,
   "e": 1,
   "p": 1,
-  "gf": 7,
+  "gf": 8,
   "gc": 4,
   "pts": 10,
   "forma": ""
@@ -105,6 +105,19 @@
  },
  {
   "pos": 9,
+  "equipo": "PSG",
+  "escudo": "https://crests.football-data.org/524.png",
+  "pj": 5,
+  "g": 1,
+  "e": 3,
+  "p": 1,
+  "gf": 6,
+  "gc": 6,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 10,
   "equipo": "Auxerre",
   "escudo": "https://crests.football-data.org/519.png",
   "pj": 5,
@@ -114,19 +127,6 @@
   "gf": 7,
   "gc": 12,
   "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 10,
-  "equipo": "PSG",
-  "escudo": "https://crests.football-data.org/524.png",
-  "pj": 4,
-  "g": 1,
-  "e": 2,
-  "p": 1,
-  "gf": 6,
-  "gc": 6,
-  "pts": 5,
   "forma": ""
  },
  {
@@ -177,7 +177,7 @@
   "e": 2,
   "p": 2,
   "gf": 3,
-  "gc": 5,
+  "gc": 6,
   "pts": 5,
   "forma": ""
  },
@@ -196,6 +196,19 @@
  },
  {
   "pos": 16,
+  "equipo": "Marseille",
+  "escudo": "https://crests.football-data.org/516.png",
+  "pj": 5,
+  "g": 1,
+  "e": 1,
+  "p": 3,
+  "gf": 6,
+  "gc": 6,
+  "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 17,
   "equipo": "Troyes",
   "escudo": "https://crests.football-data.org/531.png",
   "pj": 5,
@@ -205,19 +218,6 @@
   "gf": 4,
   "gc": 11,
   "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 17,
-  "equipo": "Marseille",
-  "escudo": "https://crests.football-data.org/516.png",
-  "pj": 4,
-  "g": 1,
-  "e": 0,
-  "p": 3,
-  "gf": 6,
-  "gc": 6,
-  "pts": 3,
   "forma": ""
  },
  {

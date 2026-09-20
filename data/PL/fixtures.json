@@ -50,7 +50,7 @@
  {
   "id": 560583,
   "utc": "2026-09-20T15:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Man United",
   "idLocal": 63,
   "idVisita": 66,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PL"
  }
 ]

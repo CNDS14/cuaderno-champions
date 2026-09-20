@@ -138,9 +138,9 @@
   "k": "1X2::H",
   "p": 0.6665,
   "registradoEl": "2026-09-20T03:31:02.204Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 3,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 564696,
@@ -151,9 +151,9 @@
   "k": "DO::1X",
   "p": 0.851,
   "registradoEl": "2026-09-20T03:31:02.204Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 3,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 564696,
@@ -164,9 +164,9 @@
   "k": "OU::O|1.5",
   "p": 0.8613,
   "registradoEl": "2026-09-20T03:31:02.204Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 3,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 564696,
@@ -177,9 +177,9 @@
   "k": "AA::S",
   "p": 0.5957,
   "registradoEl": "2026-09-20T03:31:02.204Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 3,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 564696,
@@ -190,9 +190,9 @@
   "k": "PA::NV",
   "p": 0.9086,
   "registradoEl": "2026-09-20T03:31:02.204Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 3,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 558595,
@@ -203,9 +203,9 @@
   "k": "1X2::H",
   "p": 0.4034,
   "registradoEl": "2026-09-15T02:46:59.695Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 558595,
@@ -216,9 +216,9 @@
   "k": "DO::1X",
   "p": 0.7035,
   "registradoEl": "2026-09-15T02:46:59.695Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 558595,
@@ -229,9 +229,9 @@
   "k": "OU::U|3.5",
   "p": 0.8265,
   "registradoEl": "2026-09-15T02:46:59.695Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 558595,
@@ -242,9 +242,9 @@
   "k": "AA::N",
   "p": 0.5629,
   "registradoEl": "2026-09-15T02:46:59.695Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 558595,
@@ -255,9 +255,9 @@
   "k": "PA::NV",
   "p": 0.6949,
   "registradoEl": "2026-09-15T02:46:59.695Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 560583,
@@ -268,9 +268,9 @@
   "k": "1X2::A",
   "p": 0.4363,
   "registradoEl": "2026-09-11T00:20:31.942Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 560583,
@@ -281,9 +281,9 @@
   "k": "DO::12",
   "p": 0.76,
   "registradoEl": "2026-09-11T00:20:31.942Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 560583,
@@ -294,9 +294,9 @@
   "k": "OU::O|1.5",
   "p": 0.827,
   "registradoEl": "2026-09-11T00:20:31.942Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 560583,
@@ -307,9 +307,9 @@
   "k": "AA::S",
   "p": 0.6304,
   "registradoEl": "2026-09-11T00:20:31.942Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 560583,
@@ -320,9 +320,9 @@
   "k": "PA::NL",
   "p": 0.8196,
   "registradoEl": "2026-09-11T00:20:31.942Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559678,
@@ -333,9 +333,9 @@
   "k": "1X2::A",
   "p": 0.5029,
   "registradoEl": "2026-09-14T00:35:39.099Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 559678,
@@ -346,9 +346,9 @@
   "k": "DO::X2",
   "p": 0.7815,
   "registradoEl": "2026-09-14T00:35:39.099Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 559678,
@@ -359,9 +359,9 @@
   "k": "OU::U|3.5",
   "p": 0.8074,
   "registradoEl": "2026-09-14T00:35:39.099Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559678,
@@ -372,9 +372,9 @@
   "k": "AA::N",
   "p": 0.5653,
   "registradoEl": "2026-09-14T00:35:39.099Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 559678,
@@ -385,9 +385,9 @@
   "k": "PA::NL",
   "p": 0.7584,
   "registradoEl": "2026-09-14T00:35:39.099Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 564688,

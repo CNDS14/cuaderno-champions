@@ -18,7 +18,7 @@
  {
   "id": 559678,
   "utc": "2026-09-20T15:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -28,13 +28,13 @@
   "idLocal": 522,
   "idVisita": 521,
   "golesLocal": 2,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559675,
   "utc": "2026-09-20T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "PSG",
   "idLocal": 516,
   "idVisita": 524,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]
