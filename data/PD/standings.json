@@ -183,6 +183,19 @@
  },
  {
   "pos": 15,
+  "equipo": "Getafe",
+  "escudo": "https://crests.football-data.org/82.png",
+  "pj": 7,
+  "g": 1,
+  "e": 3,
+  "p": 3,
+  "gf": 3,
+  "gc": 7,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 16,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 6,
@@ -195,7 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
   "pj": 5,
@@ -204,19 +217,6 @@
   "p": 2,
   "gf": 7,
   "gc": 9,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 17,
-  "equipo": "Getafe",
-  "escudo": "https://crests.football-data.org/82.png",
-  "pj": 6,
-  "g": 1,
-  "e": 2,
-  "p": 3,
-  "gf": 3,
-  "gc": 7,
   "pts": 5,
   "forma": ""
  },
@@ -235,6 +235,19 @@
  },
  {
   "pos": 19,
+  "equipo": "Málaga",
+  "escudo": "https://crests.football-data.org/84.png",
+  "pj": 7,
+  "g": 0,
+  "e": 4,
+  "p": 3,
+  "gf": 3,
+  "gc": 11,
+  "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 20,
   "equipo": "Valencia",
   "escudo": "https://crests.football-data.org/95.png",
   "pj": 6,
@@ -244,19 +257,6 @@
   "gf": 2,
   "gc": 10,
   "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 20,
-  "equipo": "Málaga",
-  "escudo": "https://crests.football-data.org/84.png",
-  "pj": 6,
-  "g": 0,
-  "e": 3,
-  "p": 3,
-  "gf": 3,
-  "gc": 11,
-  "pts": 3,
   "forma": ""
  }
 ]
