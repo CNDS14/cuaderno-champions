@@ -144,19 +144,6 @@
  },
  {
   "pos": 12,
-  "equipo": "Man United",
-  "escudo": "https://crests.football-data.org/66.png",
-  "pj": 5,
-  "g": 1,
-  "e": 2,
-  "p": 2,
-  "gf": 7,
-  "gc": 7,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 13,
   "equipo": "Nottingham",
   "escudo": "https://crests.football-data.org/351.png",
   "pj": 5,
@@ -169,7 +156,33 @@
   "forma": ""
  },
  {
+  "pos": 13,
+  "equipo": "Man United",
+  "escudo": "https://crests.football-data.org/66.png",
+  "pj": 5,
+  "g": 1,
+  "e": 1,
+  "p": 3,
+  "gf": 7,
+  "gc": 8,
+  "pts": 4,
+  "forma": ""
+ },
+ {
   "pos": 14,
+  "equipo": "Fulham",
+  "escudo": "https://crests.football-data.org/63.png",
+  "pj": 5,
+  "g": 1,
+  "e": 1,
+  "p": 3,
+  "gf": 5,
+  "gc": 7,
+  "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 15,
   "equipo": "Sunderland",
   "escudo": "https://crests.football-data.org/71.png",
   "pj": 5,
@@ -182,7 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 15,
+  "pos": 16,
   "equipo": "Crystal Palace",
   "escudo": "https://crests.football-data.org/354.png",
   "pj": 5,
@@ -195,7 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Aston Villa",
   "escudo": "https://crests.football-data.org/58.png",
   "pj": 5,
@@ -208,7 +221,7 @@
   "forma": ""
  },
  {
-  "pos": 17,
+  "pos": 18,
   "equipo": "Bournemouth",
   "escudo": "https://crests.football-data.org/bournemouth.png",
   "pj": 5,
@@ -221,7 +234,7 @@
   "forma": ""
  },
  {
-  "pos": 18,
+  "pos": 19,
   "equipo": "Coventry City",
   "escudo": "https://crests.football-data.org/1076.png",
   "pj": 5,
@@ -231,19 +244,6 @@
   "gf": 1,
   "gc": 10,
   "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 19,
-  "equipo": "Fulham",
-  "escudo": "https://crests.football-data.org/63.png",
-  "pj": 5,
-  "g": 0,
-  "e": 2,
-  "p": 3,
-  "gf": 4,
-  "gc": 7,
-  "pts": 2,
   "forma": ""
  },
  {
