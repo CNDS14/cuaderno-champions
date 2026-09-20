@@ -14,41 +14,41 @@
  },
  {
   "pos": 2,
-  "equipo": "Real Madrid",
-  "escudo": "https://crests.football-data.org/86.png",
-  "pj": 6,
+  "equipo": "Atleti",
+  "escudo": "https://crests.football-data.org/78.png",
+  "pj": 7,
   "g": 5,
-  "e": 0,
+  "e": 1,
   "p": 1,
-  "gf": 17,
-  "gc": 6,
-  "pts": 15,
+  "gf": 16,
+  "gc": 7,
+  "pts": 16,
   "forma": ""
  },
  {
   "pos": 3,
   "equipo": "Real Betis",
   "escudo": "https://crests.football-data.org/90.png",
-  "pj": 6,
+  "pj": 7,
   "g": 5,
-  "e": 0,
+  "e": 1,
   "p": 1,
   "gf": 8,
   "gc": 6,
-  "pts": 15,
+  "pts": 16,
   "forma": ""
  },
  {
   "pos": 4,
-  "equipo": "Atleti",
-  "escudo": "https://crests.football-data.org/78.png",
-  "pj": 6,
-  "g": 4,
-  "e": 1,
-  "p": 1,
-  "gf": 14,
-  "gc": 6,
-  "pts": 13,
+  "equipo": "Real Madrid",
+  "escudo": "https://crests.football-data.org/86.png",
+  "pj": 7,
+  "g": 5,
+  "e": 0,
+  "p": 2,
+  "gf": 18,
+  "gc": 8,
+  "pts": 15,
   "forma": ""
  },
  {
@@ -81,13 +81,13 @@
   "pos": 7,
   "equipo": "Deportivo",
   "escudo": "https://crests.football-data.org/560.png",
-  "pj": 6,
+  "pj": 7,
   "g": 2,
-  "e": 3,
+  "e": 4,
   "p": 1,
   "gf": 9,
   "gc": 7,
-  "pts": 9,
+  "pts": 10,
   "forma": ""
  },
  {
@@ -105,6 +105,19 @@
  },
  {
   "pos": 9,
+  "equipo": "Getafe",
+  "escudo": "https://crests.football-data.org/82.png",
+  "pj": 7,
+  "g": 2,
+  "e": 2,
+  "p": 3,
+  "gf": 4,
+  "gc": 7,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 10,
   "equipo": "Rayo Vallecano",
   "escudo": "https://crests.football-data.org/87.png",
   "pj": 7,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
   "pj": 7,
@@ -130,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 7,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 7,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Real Sociedad",
   "escudo": "https://crests.football-data.org/92.png",
   "pj": 6,
@@ -169,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 7,
@@ -182,42 +195,29 @@
   "forma": ""
  },
  {
-  "pos": 15,
-  "equipo": "Getafe",
-  "escudo": "https://crests.football-data.org/82.png",
+  "pos": 16,
+  "equipo": "Villarreal",
+  "escudo": "https://crests.football-data.org/94.png",
   "pj": 7,
   "g": 1,
   "e": 3,
   "p": 3,
-  "gf": 3,
-  "gc": 7,
-  "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 16,
-  "equipo": "Villarreal",
-  "escudo": "https://crests.football-data.org/94.png",
-  "pj": 6,
-  "g": 1,
-  "e": 2,
-  "p": 3,
   "gf": 10,
   "gc": 11,
-  "pts": 5,
+  "pts": 6,
   "forma": ""
  },
  {
   "pos": 17,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
-  "pj": 5,
+  "pj": 6,
   "g": 1,
-  "e": 2,
+  "e": 3,
   "p": 2,
   "gf": 7,
   "gc": 9,
-  "pts": 5,
+  "pts": 6,
   "forma": ""
  },
  {
@@ -235,19 +235,6 @@
  },
  {
   "pos": 19,
-  "equipo": "Málaga",
-  "escudo": "https://crests.football-data.org/84.png",
-  "pj": 7,
-  "g": 0,
-  "e": 4,
-  "p": 3,
-  "gf": 3,
-  "gc": 11,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 20,
   "equipo": "Valencia",
   "escudo": "https://crests.football-data.org/95.png",
   "pj": 6,
@@ -257,6 +244,19 @@
   "gf": 2,
   "gc": 10,
   "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 20,
+  "equipo": "Málaga",
+  "escudo": "https://crests.football-data.org/84.png",
+  "pj": 7,
+  "g": 0,
+  "e": 3,
+  "p": 4,
+  "gf": 3,
+  "gc": 12,
+  "pts": 3,
   "forma": ""
  }
 ]

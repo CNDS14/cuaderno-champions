@@ -1,15 +1,12 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 93/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 94/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "1 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
-  "3 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
-  "Sin calificacion para Deportivo o Real Betis: no registro picks de ese partido.",
+  "4 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
   "Sin calificacion para Valencia o Real Sociedad: no registro picks de ese partido.",
-  "Sin calificacion para Schalke o Elversberg: no registro picks de ese partido.",
   "Sin calificacion para SC Paderborn o Hoffenheim: no registro picks de ese partido."
  ],
  "errores": []

@@ -2,7 +2,7 @@
  {
   "id": 560582,
   "utc": "2026-09-20T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -12,13 +12,13 @@
   "idLocal": 1044,
   "idVisita": 64,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "PL"
  },
  {
   "id": 560585,
   "utc": "2026-09-20T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 560590,
   "utc": "2026-09-20T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -43,24 +43,24 @@
   "visita": "Sunderland",
   "idLocal": 65,
   "idVisita": 71,
-  "golesLocal": 1,
-  "golesVisita": 1,
+  "golesLocal": 5,
+  "golesVisita": 3,
   "comp": "PL"
  },
  {
   "id": 560583,
   "utc": "2026-09-20T15:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 5,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Peter Bankes",
   "local": "Fulham",
   "visita": "Man United",
   "idLocal": 63,
   "idVisita": 66,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PL"
  }
 ]

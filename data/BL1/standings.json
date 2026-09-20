@@ -53,6 +53,19 @@
  },
  {
   "pos": 5,
+  "equipo": "Leverkusen",
+  "escudo": "https://crests.football-data.org/3.png",
+  "pj": 4,
+  "g": 2,
+  "e": 1,
+  "p": 1,
+  "gf": 10,
+  "gc": 5,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 6,
   "equipo": "Mainz",
   "escudo": "https://crests.football-data.org/15.png",
   "pj": 4,
@@ -65,7 +78,20 @@
   "forma": ""
  },
  {
-  "pos": 6,
+  "pos": 7,
+  "equipo": "Elversberg",
+  "escudo": "https://crests.football-data.org/719.png",
+  "pj": 4,
+  "g": 2,
+  "e": 1,
+  "p": 1,
+  "gf": 8,
+  "gc": 7,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Bremen",
   "escudo": "https://crests.football-data.org/12.png",
   "pj": 4,
@@ -78,33 +104,20 @@
   "forma": ""
  },
  {
-  "pos": 7,
+  "pos": 9,
   "equipo": "RB Leipzig",
   "escudo": "https://crests.football-data.org/721.png",
-  "pj": 3,
+  "pj": 4,
   "g": 2,
   "e": 0,
-  "p": 1,
+  "p": 2,
   "gf": 9,
-  "gc": 3,
+  "gc": 5,
   "pts": 6,
   "forma": ""
  },
  {
-  "pos": 8,
-  "equipo": "Elversberg",
-  "escudo": "https://crests.football-data.org/719.png",
-  "pj": 3,
-  "g": 2,
-  "e": 0,
-  "p": 1,
-  "gf": 8,
-  "gc": 7,
-  "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Frankfurt",
   "escudo": "https://crests.football-data.org/19.png",
   "pj": 4,
@@ -117,29 +130,16 @@
   "forma": ""
  },
  {
-  "pos": 10,
-  "equipo": "Leverkusen",
-  "escudo": "https://crests.football-data.org/3.png",
-  "pj": 3,
-  "g": 1,
-  "e": 1,
-  "p": 1,
-  "gf": 8,
-  "gc": 5,
-  "pts": 4,
-  "forma": ""
- },
- {
   "pos": 11,
   "equipo": "Schalke",
   "escudo": "https://crests.football-data.org/6.png",
-  "pj": 3,
+  "pj": 4,
   "g": 1,
-  "e": 1,
+  "e": 2,
   "p": 1,
   "gf": 3,
   "gc": 4,
-  "pts": 4,
+  "pts": 5,
   "forma": ""
  },
  {
