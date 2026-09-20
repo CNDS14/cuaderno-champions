@@ -66,6 +66,19 @@
  },
  {
   "pos": 6,
+  "equipo": "PSG",
+  "escudo": "https://crests.football-data.org/524.png",
+  "pj": 5,
+  "g": 2,
+  "e": 2,
+  "p": 1,
+  "gf": 8,
+  "gc": 7,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 7,
   "equipo": "Angers SCO",
   "escudo": "https://crests.football-data.org/532.png",
   "pj": 5,
@@ -78,7 +91,7 @@
   "forma": ""
  },
  {
-  "pos": 7,
+  "pos": 8,
   "equipo": "Strasbourg",
   "escudo": "https://crests.football-data.org/576.png",
   "pj": 5,
@@ -91,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 9,
   "equipo": "Le Mans",
   "escudo": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
   "pj": 5,
@@ -100,19 +113,6 @@
   "p": 1,
   "gf": 9,
   "gc": 9,
-  "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 9,
-  "equipo": "PSG",
-  "escudo": "https://crests.football-data.org/524.png",
-  "pj": 5,
-  "g": 1,
-  "e": 3,
-  "p": 1,
-  "gf": 6,
-  "gc": 6,
   "pts": 6,
   "forma": ""
  },
@@ -196,19 +196,6 @@
  },
  {
   "pos": 16,
-  "equipo": "Marseille",
-  "escudo": "https://crests.football-data.org/516.png",
-  "pj": 5,
-  "g": 1,
-  "e": 1,
-  "p": 3,
-  "gf": 6,
-  "gc": 6,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 17,
   "equipo": "Troyes",
   "escudo": "https://crests.football-data.org/531.png",
   "pj": 5,
@@ -218,6 +205,19 @@
   "gf": 4,
   "gc": 11,
   "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 17,
+  "equipo": "Marseille",
+  "escudo": "https://crests.football-data.org/516.png",
+  "pj": 5,
+  "g": 1,
+  "e": 0,
+  "p": 4,
+  "gf": 7,
+  "gc": 8,
+  "pts": 3,
   "forma": ""
  },
  {
