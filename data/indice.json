@@ -17,7 +17,7 @@
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 1,
-  "resultados": 23
+  "resultados": 19
  },
  {
   "fd": "PL",
@@ -27,7 +27,7 @@
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 1,
-  "resultados": 13
+  "resultados": 11
  },
  {
   "fd": "SA",
@@ -37,7 +37,7 @@
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 0,
-  "resultados": 16
+  "resultados": 13
  },
  {
   "fd": "BL1",
@@ -47,7 +47,7 @@
   "hoy": 0,
   "enTabla": 18,
   "conCuotas": 0,
-  "resultados": 11
+  "resultados": 9
  },
  {
   "fd": "FL1",
@@ -57,6 +57,6 @@
   "hoy": 0,
   "enTabla": 18,
   "conCuotas": 0,
-  "resultados": 12
+  "resultados": 9
  }
 ]
