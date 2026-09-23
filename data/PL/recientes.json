@@ -1,21 +1,5 @@
 [
  {
-  "id": 560579,
-  "utc": "2026-09-14T19:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 4,
-  "sede": "",
-  "arbitro": "Michael Salisbury",
-  "local": "Leeds United",
-  "visita": "Newcastle",
-  "idLocal": 341,
-  "idVisita": 67,
-  "golesLocal": 4,
-  "golesVisita": 1,
-  "comp": "PL"
- },
- {
   "id": 560591,
   "utc": "2026-09-18T19:00:00Z",
   "estado": "FT",
