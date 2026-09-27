@@ -1,21 +1,5 @@
 [
  {
-  "id": 564692,
-  "utc": "2026-09-18T19:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 7,
-  "sede": "",
-  "arbitro": "Jon González Esteban",
-  "local": "Espanyol",
-  "visita": "Elche",
-  "idLocal": 80,
-  "idVisita": 285,
-  "golesLocal": 1,
-  "golesVisita": 3,
-  "comp": "PD"
- },
- {
   "id": 564693,
   "utc": "2026-09-19T12:00:00Z",
   "estado": "FT",
@@ -158,22 +142,6 @@
   "golesLocal": 2,
   "golesVisita": 3,
   "comp": "PD"
- },
- {
-  "id": 560591,
-  "utc": "2026-09-18T19:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 5,
-  "sede": "",
-  "arbitro": "Andy Madley",
-  "local": "Brentford",
-  "visita": "Chelsea",
-  "idLocal": 402,
-  "idVisita": 61,
-  "golesLocal": 3,
-  "golesVisita": 0,
-  "comp": "PL"
  },
  {
   "id": 560587,
@@ -320,22 +288,6 @@
   "comp": "PL"
  },
  {
-  "id": 558596,
-  "utc": "2026-09-18T18:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 5,
-  "sede": "",
-  "arbitro": "Daniele Perenzoni",
-  "local": "Monza",
-  "visita": "Sassuolo",
-  "idLocal": 5911,
-  "idVisita": 471,
-  "golesLocal": 2,
-  "golesVisita": 1,
-  "comp": "SA"
- },
- {
   "id": 558598,
   "utc": "2026-09-19T13:00:00Z",
   "estado": "FT",
@@ -480,22 +432,6 @@
   "comp": "SA"
  },
  {
-  "id": 565804,
-  "utc": "2026-09-18T18:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 4,
-  "sede": "",
-  "arbitro": "Benjamin Brand",
-  "local": "Bayern",
-  "visita": "Union Berlin",
-  "idLocal": 5,
-  "idVisita": 28,
-  "golesLocal": 7,
-  "golesVisita": 0,
-  "comp": "BL1"
- },
- {
   "id": 565808,
   "utc": "2026-09-19T13:30:00Z",
   "estado": "FT",
@@ -622,22 +558,6 @@
   "golesLocal": 3,
   "golesVisita": 1,
   "comp": "BL1"
- },
- {
-  "id": 559682,
-  "utc": "2026-09-18T18:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 5,
-  "sede": "",
-  "arbitro": "Clément Turpin",
-  "local": "Monaco",
-  "visita": "RC Lens",
-  "idLocal": 548,
-  "idVisita": 546,
-  "golesLocal": 2,
-  "golesVisita": 1,
-  "comp": "FL1"
  },
  {
   "id": 559679,
