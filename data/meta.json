@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-28T20:03:12.696Z",
+ "actualizado": "2026-09-29T00:08:46.233Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -19,7 +19,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 1,
-   "resultados": 5
+   "resultados": 0
   },
   {
    "fd": "PL",
@@ -29,7 +29,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 1,
-   "resultados": 4
+   "resultados": 0
   },
   {
    "fd": "SA",
@@ -39,7 +39,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 5
+   "resultados": 0
   },
   {
    "fd": "BL1",
@@ -49,7 +49,7 @@
    "hoy": 0,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 3
+   "resultados": 0
   },
   {
    "fd": "FL1",
@@ -59,7 +59,7 @@
    "hoy": 0,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 3
+   "resultados": 0
   }
  ],
  "partidosTotales": 0,
