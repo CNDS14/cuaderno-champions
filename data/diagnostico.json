@@ -4,6 +4,10 @@
   "cuotas": "the-odds-api.com · 94/450 créditos este mes",
   "estadisticas": "API-Football"
  },
- "avisos": [],
+ "avisos": [
+  "Sin calificacion para Málaga o Espanyol: no registro picks de ese partido.",
+  "Sin calificacion para Dortmund o Bremen: no registro picks de ese partido.",
+  "Sin calificacion para Lens o Olympique Lyon: no registro picks de ese partido."
+ ],
  "errores": []
 }
