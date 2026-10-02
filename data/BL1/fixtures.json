@@ -110,5 +110,37 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "BL1"
+ },
+ {
+  "id": 565814,
+  "utc": "2026-10-11T13:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 5,
+  "sede": "",
+  "arbitro": null,
+  "local": "1. FC Köln",
+  "visita": "M'gladbach",
+  "idLocal": 1,
+  "idVisita": 18,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "BL1"
+ },
+ {
+  "id": 565816,
+  "utc": "2026-10-11T15:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 5,
+  "sede": "",
+  "arbitro": null,
+  "local": "Freiburg",
+  "visita": "Schalke",
+  "idLocal": 17,
+  "idVisita": 6,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "BL1"
  }
 ]

@@ -94,5 +94,53 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "FL1"
+ },
+ {
+  "id": 559670,
+  "utc": "2026-10-11T13:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": null,
+  "local": "Nice",
+  "visita": "Strasbourg",
+  "idLocal": 522,
+  "idVisita": 576,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
+ },
+ {
+  "id": 559667,
+  "utc": "2026-10-11T15:15:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": null,
+  "local": "Stade Rennais",
+  "visita": "Auxerre",
+  "idLocal": 529,
+  "idVisita": 519,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
+ },
+ {
+  "id": 559671,
+  "utc": "2026-10-11T18:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": null,
+  "local": "Troyes",
+  "visita": "Marseille",
+  "idLocal": 531,
+  "idVisita": 516,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
  }
 ]
