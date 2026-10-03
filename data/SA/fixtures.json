@@ -126,5 +126,37 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "SA"
+ },
+ {
+  "id": 558579,
+  "utc": "2026-10-12T16:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": null,
+  "local": "Atalanta",
+  "visita": "Venezia FC",
+  "idLocal": 102,
+  "idVisita": 454,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
+ },
+ {
+  "id": 558587,
+  "utc": "2026-10-12T18:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": null,
+  "local": "Torino",
+  "visita": "Udinese",
+  "idLocal": 586,
+  "idVisita": 115,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
  }
 ]

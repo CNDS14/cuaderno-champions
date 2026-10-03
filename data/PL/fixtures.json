@@ -142,5 +142,21 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "PL"
+ },
+ {
+  "id": 560597,
+  "utc": "2026-10-12T19:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": null,
+  "local": "Coventry City",
+  "visita": "Newcastle",
+  "idLocal": 1076,
+  "idVisita": 67,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "PL"
  }
 ]
