@@ -1,11 +1,11 @@
 {
- "actualizado": "2026-10-03T21:58:17.150Z",
+ "actualizado": "2026-10-04T00:21:54.596Z",
  "competiciones": [
   {
    "fd": "CL",
    "nombre": "Champions League",
    "pais": "Europa",
-   "partidos": 0,
+   "partidos": 9,
    "hoy": 0,
    "enTabla": 36,
    "conCuotas": 4,
@@ -62,15 +62,15 @@
    "resultados": 0
   }
  ],
- "partidosTotales": 48,
+ "partidosTotales": 57,
  "creditosCuotas": {
   "gastados": 0,
   "tope": 450,
   "mes": "2026-10"
  },
  "picksModelo": {
-  "total": 400,
-  "nuevos": 0,
+  "total": 445,
+  "nuevos": 45,
   "calificados": 295,
   "aciertos": 218,
   "brier": 0.1717,
