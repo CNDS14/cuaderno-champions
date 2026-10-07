@@ -158,5 +158,21 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "SA"
+ },
+ {
+  "id": 558573,
+  "utc": "2026-10-16T18:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": null,
+  "local": "Frosinone",
+  "visita": "Sassuolo",
+  "idLocal": 470,
+  "idVisita": 471,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
  }
 ]
