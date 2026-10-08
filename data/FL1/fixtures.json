@@ -158,5 +158,53 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "FL1"
+ },
+ {
+  "id": 559662,
+  "utc": "2026-10-17T15:15:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": null,
+  "local": "Strasbourg",
+  "visita": "PSG",
+  "idLocal": 576,
+  "idVisita": 524,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
+ },
+ {
+  "id": 559659,
+  "utc": "2026-10-17T18:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": null,
+  "local": "Troyes",
+  "visita": "RC Lens",
+  "idLocal": 531,
+  "idVisita": 546,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
+ },
+ {
+  "id": 559660,
+  "utc": "2026-10-17T18:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": null,
+  "local": "Lille",
+  "visita": "Brest",
+  "idLocal": 521,
+  "idVisita": 512,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
  }
 ]

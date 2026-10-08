@@ -174,5 +174,53 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "SA"
+ },
+ {
+  "id": 558575,
+  "utc": "2026-10-17T13:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": null,
+  "local": "Venezia FC",
+  "visita": "Napoli",
+  "idLocal": 454,
+  "idVisita": 113,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
+ },
+ {
+  "id": 558571,
+  "utc": "2026-10-17T16:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": null,
+  "local": "Bologna",
+  "visita": "Inter",
+  "idLocal": 103,
+  "idVisita": 108,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
+ },
+ {
+  "id": 558572,
+  "utc": "2026-10-17T18:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": null,
+  "local": "Roma",
+  "visita": "Genoa",
+  "idLocal": 100,
+  "idVisita": 107,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
  }
 ]
