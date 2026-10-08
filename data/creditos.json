@@ -1,6 +1,8 @@
 {
  "mes": "2026-10",
- "gastados": 0,
+ "gastados": 1,
  "tope": 450,
- "ultima": {}
+ "ultima": {
+  "PD": "2026-10-08T19:10:37.543Z"
+ }
 }
