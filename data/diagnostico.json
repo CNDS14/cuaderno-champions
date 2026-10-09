@@ -1,7 +1,7 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 6/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 8/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
@@ -25,7 +25,6 @@
   "Sin calificacion para Frosinone o Sassuolo: no registro picks de ese partido.",
   "Sin calificacion para Venezia FC o Napoli: no registro picks de ese partido.",
   "Sin calificacion para Fiorentina o Como 1907: no registro picks de ese partido.",
-  "Sin calificacion para Dortmund o Bremen: no registro picks de ese partido.",
   "Sin calificacion para Lens o Olympique Lyon: no registro picks de ese partido."
  ],
  "errores": []
