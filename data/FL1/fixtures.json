@@ -2,7 +2,7 @@
  {
   "id": 559669,
   "utc": "2026-10-09T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Olympique Lyon",
   "idLocal": 546,
   "idVisita": 523,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

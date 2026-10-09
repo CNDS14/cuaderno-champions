@@ -2,7 +2,7 @@
  {
   "id": 564706,
   "utc": "2026-10-09T19:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Espanyol",
   "idLocal": 84,
   "idVisita": 80,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "PD"
  }
 ]
