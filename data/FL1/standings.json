@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "Lille",
+  "escudo": "https://crests.football-data.org/521.png",
+  "pj": 6,
+  "g": 4,
+  "e": 1,
+  "p": 1,
+  "gf": 9,
+  "gc": 4,
+  "pts": 13,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Monaco",
   "escudo": "https://crests.football-data.org/548.png",
   "pj": 5,
@@ -13,7 +26,7 @@
   "forma": ""
  },
  {
-  "pos": 2,
+  "pos": 3,
   "equipo": "Olympique Lyon",
   "escudo": "https://crests.football-data.org/523.png",
   "pj": 6,
@@ -26,7 +39,7 @@
   "forma": ""
  },
  {
-  "pos": 3,
+  "pos": 4,
   "equipo": "Paris FC",
   "escudo": "https://crests.football-data.org/1045.png",
   "pj": 5,
@@ -36,19 +49,6 @@
   "gf": 8,
   "gc": 3,
   "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 4,
-  "equipo": "Lille",
-  "escudo": "https://crests.football-data.org/521.png",
-  "pj": 5,
-  "g": 3,
-  "e": 1,
-  "p": 1,
-  "gf": 8,
-  "gc": 4,
-  "pts": 10,
   "forma": ""
  },
  {
@@ -224,12 +224,12 @@
   "pos": 18,
   "equipo": "Le Havre",
   "escudo": "https://crests.football-data.org/533.png",
-  "pj": 5,
+  "pj": 6,
   "g": 0,
   "e": 2,
-  "p": 3,
+  "p": 4,
   "gf": 4,
-  "gc": 7,
+  "gc": 8,
   "pts": 2,
   "forma": ""
  }
