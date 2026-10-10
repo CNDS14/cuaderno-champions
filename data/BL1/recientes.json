@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": 565820,
+  "utc": "2026-10-09T18:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 5,
+  "sede": "",
+  "arbitro": "Christian Dingert",
+  "local": "Dortmund",
+  "visita": "Bremen",
+  "idLocal": 4,
+  "idVisita": 12,
+  "golesLocal": 2,
+  "golesVisita": 2,
+  "comp": "BL1"
+ }
+]

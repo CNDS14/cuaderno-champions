@@ -1,29 +1,25 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 8/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 10/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
+  "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
   "Sin calificacion para Feyenoord o Como 1907: no registro picks de ese partido.",
   "Sin calificacion para Shaktar o AEK Atenas: no registro picks de ese partido.",
+  "Sin calificacion para Rayo Vallecano o Athletic: no registro picks de ese partido.",
+  "Sin calificacion para Alavés o Atlético de Madrid: no registro picks de ese partido.",
   "Sin calificacion para Arsenal o Leeds United: no registro picks de ese partido.",
   "Sin calificacion para Sunderland o Brighton Hove: no registro picks de ese partido.",
   "Sin calificacion para Ipswich Town o Fulham: no registro picks de ese partido.",
-  "Sin calificacion para Hull City o Everton: no registro picks de ese partido.",
-  "Sin calificacion para Crystal Palace o Nottingham: no registro picks de ese partido.",
-  "Sin calificacion para Coventry City o Newcastle: no registro picks de ese partido.",
-  "Sin calificacion para Fulham o Hull City: no registro picks de ese partido.",
-  "Sin calificacion para Man City o Ipswich Town: no registro picks de ese partido.",
-  "Sin calificacion para Leeds United o Manchester United: no registro picks de ese partido.",
-  "Sin calificacion para Brighton Hove o Crystal Palace: no registro picks de ese partido.",
-  "Sin calificacion para Nottingham o Arsenal: no registro picks de ese partido.",
   "Sin calificacion para Napoli o Frosinone: no registro picks de ese partido.",
-  "Sin calificacion para Como 1907 o Roma: no registro picks de ese partido.",
-  "Sin calificacion para Atalanta o Venezia FC: no registro picks de ese partido.",
-  "Sin calificacion para Frosinone o Sassuolo: no registro picks de ese partido.",
-  "Sin calificacion para Venezia FC o Napoli: no registro picks de ese partido.",
-  "Sin calificacion para Fiorentina o Como 1907: no registro picks de ese partido."
+  "Sin calificacion para SC Paderborn o Stuttgart: no registro picks de ese partido.",
+  "Sin calificacion para Union Berlin o Elversberg: no registro picks de ese partido.",
+  "Sin calificacion para Hoffenheim o HSV: no registro picks de ese partido.",
+  "Sin calificacion para Leipzig o Frankfurt: no registro picks de ese partido.",
+  "Sin calificacion para Brest o Angers SCO: no registro picks de ese partido.",
+  "Sin calificacion para Paris Saint-Germain o Le Mans: no registro picks de ese partido."
  ],
  "errores": []
 }

@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": 564706,
+  "utc": "2026-10-09T19:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 8,
+  "sede": "",
+  "arbitro": "Francisco Hernández Maeso",
+  "local": "Málaga",
+  "visita": "Espanyol",
+  "idLocal": 84,
+  "idVisita": 80,
+  "golesLocal": 1,
+  "golesVisita": 1,
+  "comp": "PD"
+ }
+]
