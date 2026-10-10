@@ -82,7 +82,7 @@
  {
   "id": 565815,
   "utc": "2026-10-10T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -91,7 +91,7 @@
   "visita": "Frankfurt",
   "idLocal": 721,
   "idVisita": 19,
-  "golesLocal": 4,
+  "golesLocal": 6,
   "golesVisita": 0,
   "comp": "BL1"
  }

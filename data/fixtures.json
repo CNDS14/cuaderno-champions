@@ -322,7 +322,7 @@
  {
   "id": 564700,
   "utc": "2026-10-10T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -331,14 +331,14 @@
   "visita": "Getafe",
   "idLocal": 81,
   "idVisita": 82,
-  "golesLocal": 2,
+  "golesLocal": 3,
   "golesVisita": 0,
   "comp": "PD"
  },
  {
   "id": 564702,
   "utc": "2026-10-10T19:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -347,8 +347,8 @@
   "visita": "Villarreal",
   "idLocal": 86,
   "idVisita": 94,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -434,7 +434,7 @@
  {
   "id": 560600,
   "utc": "2026-10-10T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -443,8 +443,8 @@
   "visita": "Tottenham",
   "idLocal": 66,
   "idVisita": 73,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PL"
  },
  {
@@ -466,7 +466,7 @@
  {
   "id": 558582,
   "utc": "2026-10-10T16:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -482,7 +482,7 @@
  {
   "id": 558586,
   "utc": "2026-10-10T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -491,8 +491,8 @@
   "visita": "Frosinone",
   "idLocal": 113,
   "idVisita": 470,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 0,
   "comp": "SA"
  },
  {
@@ -578,7 +578,7 @@
  {
   "id": 565815,
   "utc": "2026-10-10T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -587,7 +587,7 @@
   "visita": "Frankfurt",
   "idLocal": 721,
   "idVisita": 19,
-  "golesLocal": 4,
+  "golesLocal": 6,
   "golesVisita": 0,
   "comp": "BL1"
  },
@@ -610,7 +610,7 @@
  {
   "id": 559666,
   "utc": "2026-10-10T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -619,14 +619,14 @@
   "visita": "Angers SCO",
   "idLocal": 512,
   "idVisita": 532,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 5,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559668,
   "utc": "2026-10-10T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -635,14 +635,14 @@
   "visita": "Paris FC",
   "idLocal": 525,
   "idVisita": 1045,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559672,
   "utc": "2026-10-10T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -651,14 +651,14 @@
   "visita": "Le Mans",
   "idLocal": 524,
   "idVisita": 535,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559673,
   "utc": "2026-10-10T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -667,8 +667,8 @@
   "visita": "Toulouse",
   "idLocal": 548,
   "idVisita": 511,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 2,
   "comp": "FL1"
  }
 ]

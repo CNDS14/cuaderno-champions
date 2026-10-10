@@ -18,7 +18,7 @@
  {
   "id": 558582,
   "utc": "2026-10-10T16:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 558586,
   "utc": "2026-10-10T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Frosinone",
   "idLocal": 113,
   "idVisita": 470,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 0,
   "comp": "SA"
  }
 ]

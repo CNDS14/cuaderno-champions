@@ -34,7 +34,7 @@
  {
   "id": 564700,
   "utc": "2026-10-10T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Getafe",
   "idLocal": 81,
   "idVisita": 82,
-  "golesLocal": 2,
+  "golesLocal": 3,
   "golesVisita": 0,
   "comp": "PD"
  },
  {
   "id": 564702,
   "utc": "2026-10-10T19:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Villarreal",
   "idLocal": 86,
   "idVisita": 94,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 0,
   "comp": "PD"
  }
 ]
