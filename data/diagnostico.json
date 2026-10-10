@@ -1,16 +1,17 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 12/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 14/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
+  "1 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
   "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
+  "1 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
   "Sin calificacion para Feyenoord o Como 1907: no registro picks de ese partido.",
   "Sin calificacion para Shaktar o AEK Atenas: no registro picks de ese partido.",
   "Sin calificacion para Rayo Vallecano o Athletic: no registro picks de ese partido.",
   "Sin calificacion para Alavés o Atlético de Madrid: no registro picks de ese partido.",
-  "Sin calificacion para Arsenal o Leeds United: no registro picks de ese partido.",
   "Sin calificacion para Sunderland o Brighton Hove: no registro picks de ese partido.",
   "Sin calificacion para Ipswich Town o Fulham: no registro picks de ese partido.",
   "Sin calificacion para Napoli o Frosinone: no registro picks de ese partido.",

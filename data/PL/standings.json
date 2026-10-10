@@ -16,13 +16,13 @@
   "pos": 2,
   "equipo": "Arsenal",
   "escudo": "https://crests.football-data.org/57.png",
-  "pj": 5,
+  "pj": 6,
   "g": 4,
-  "e": 0,
+  "e": 1,
   "p": 1,
   "gf": 8,
   "gc": 4,
-  "pts": 12,
+  "pts": 13,
   "forma": ""
  },
  {
@@ -40,6 +40,19 @@
  },
  {
   "pos": 4,
+  "equipo": "Leeds United",
+  "escudo": "https://crests.football-data.org/341.png",
+  "pj": 6,
+  "g": 2,
+  "e": 4,
+  "p": 0,
+  "gf": 7,
+  "gc": 3,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Brentford",
   "escudo": "https://crests.football-data.org/402.png",
   "pj": 5,
@@ -48,19 +61,6 @@
   "p": 0,
   "gf": 10,
   "gc": 4,
-  "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 5,
-  "equipo": "Leeds United",
-  "escudo": "https://crests.football-data.org/341.png",
-  "pj": 5,
-  "g": 2,
-  "e": 3,
-  "p": 0,
-  "gf": 7,
-  "gc": 3,
   "pts": 9,
   "forma": ""
  },
