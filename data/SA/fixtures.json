@@ -66,7 +66,7 @@
  {
   "id": 558584,
   "utc": "2026-10-11T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -75,8 +75,8 @@
   "visita": "Juventus",
   "idLocal": 104,
   "idVisita": 109,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "SA"
  }
 ]
