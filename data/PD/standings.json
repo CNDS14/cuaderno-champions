@@ -105,6 +105,19 @@
  },
  {
   "pos": 9,
+  "equipo": "Celta",
+  "escudo": "https://crests.football-data.org/558.png",
+  "pj": 8,
+  "g": 1,
+  "e": 5,
+  "p": 2,
+  "gf": 8,
+  "gc": 6,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 10,
   "equipo": "Athletic",
   "escudo": "https://crests.football-data.org/77.png",
   "pj": 6,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 8,
@@ -130,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 8,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "Rayo Vallecano",
   "escudo": "https://crests.football-data.org/87.png",
   "pj": 7,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Getafe",
   "escudo": "https://crests.football-data.org/82.png",
   "pj": 8,
@@ -169,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
   "pj": 7,
@@ -179,19 +192,6 @@
   "gf": 6,
   "gc": 13,
   "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 15,
-  "equipo": "Celta",
-  "escudo": "https://crests.football-data.org/558.png",
-  "pj": 7,
-  "g": 1,
-  "e": 4,
-  "p": 2,
-  "gf": 8,
-  "gc": 6,
-  "pts": 7,
   "forma": ""
  },
  {
@@ -209,6 +209,19 @@
  },
  {
   "pos": 17,
+  "equipo": "Elche",
+  "escudo": "https://crests.football-data.org/285.png",
+  "pj": 8,
+  "g": 1,
+  "e": 3,
+  "p": 4,
+  "gf": 11,
+  "gc": 17,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 18,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
   "pj": 6,
@@ -217,19 +230,6 @@
   "p": 3,
   "gf": 8,
   "gc": 12,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 18,
-  "equipo": "Elche",
-  "escudo": "https://crests.football-data.org/285.png",
-  "pj": 7,
-  "g": 1,
-  "e": 2,
-  "p": 4,
-  "gf": 11,
-  "gc": 17,
   "pts": 5,
   "forma": ""
  },
