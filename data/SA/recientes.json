@@ -1,1 +1,50 @@
-[]
+[
+ {
+  "id": 558588,
+  "utc": "2026-10-10T13:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": "Fabio Maresca",
+  "local": "Genoa",
+  "visita": "Fiorentina",
+  "idLocal": 107,
+  "idVisita": 99,
+  "golesLocal": 2,
+  "golesVisita": 1,
+  "comp": "SA"
+ },
+ {
+  "id": 558582,
+  "utc": "2026-10-10T16:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": "Kevin Bonacina",
+  "local": "Inter",
+  "visita": "Parma",
+  "idLocal": 108,
+  "idVisita": 112,
+  "golesLocal": 3,
+  "golesVisita": 0,
+  "comp": "SA"
+ },
+ {
+  "id": 558586,
+  "utc": "2026-10-10T18:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 6,
+  "sede": "",
+  "arbitro": "Ermanno Feliciani",
+  "local": "Napoli",
+  "visita": "Frosinone",
+  "idLocal": 113,
+  "idVisita": 470,
+  "golesLocal": 3,
+  "golesVisita": 0,
+  "comp": "SA"
+ }
+]

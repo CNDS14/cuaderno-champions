@@ -286,5 +286,37 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "CL"
+ },
+ {
+  "id": 575359,
+  "utc": "2026-10-20T16:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 3,
+  "sede": "",
+  "arbitro": null,
+  "local": "Sabah FK",
+  "visita": "Dortmund",
+  "idLocal": 10233,
+  "idVisita": 4,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "CL"
+ },
+ {
+  "id": 575360,
+  "utc": "2026-10-20T16:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 3,
+  "sede": "",
+  "arbitro": null,
+  "local": "Fenerbahçe",
+  "visita": "Slavia Praha",
+  "idLocal": 613,
+  "idVisita": 930,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "CL"
  }
 ]
