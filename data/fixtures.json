@@ -363,8 +363,8 @@
   "visita": "Osasuna",
   "idLocal": 90,
   "idVisita": 79,
-  "golesLocal": 3,
-  "golesVisita": 1,
+  "golesLocal": 4,
+  "golesVisita": 2,
   "comp": "PD"
  },
  {
@@ -482,7 +482,7 @@
  {
   "id": 558580,
   "utc": "2026-10-11T16:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
