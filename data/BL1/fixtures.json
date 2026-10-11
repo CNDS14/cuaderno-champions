@@ -2,7 +2,7 @@
  {
   "id": 565814,
   "utc": "2026-10-11T13:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
@@ -11,24 +11,24 @@
   "visita": "M'gladbach",
   "idLocal": 1,
   "idVisita": 18,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "BL1"
  },
  {
   "id": 565816,
   "utc": "2026-10-11T15:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 5,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Martin Petersen",
   "local": "Freiburg",
   "visita": "Schalke",
   "idLocal": 17,
   "idVisita": 6,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "BL1"
  }
 ]

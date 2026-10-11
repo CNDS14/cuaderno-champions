@@ -2,7 +2,7 @@
  {
   "id": 560594,
   "utc": "2026-10-11T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Everton",
   "idLocal": 322,
   "idVisita": 62,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 2,
   "comp": "PL"
  },
  {
   "id": 560596,
   "utc": "2026-10-11T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -27,24 +27,24 @@
   "visita": "Nottingham",
   "idLocal": 354,
   "idVisita": 351,
-  "golesLocal": 0,
+  "golesLocal": 3,
   "golesVisita": 1,
   "comp": "PL"
  },
  {
   "id": 560598,
   "utc": "2026-10-11T15:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Chris Kavanagh",
   "local": "Liverpool",
   "visita": "Man City",
   "idLocal": 64,
   "idVisita": 65,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 3,
   "comp": "PL"
  }
 ]
