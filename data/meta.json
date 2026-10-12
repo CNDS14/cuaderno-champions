@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-12T21:39:04.888Z",
+ "actualizado": "2026-10-12T23:43:28.189Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -39,7 +39,7 @@
    "hoy": 2,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 8
+   "resultados": 3
   },
   {
    "fd": "BL1",
@@ -59,12 +59,12 @@
    "hoy": 0,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 9
+   "resultados": 6
   }
  ],
  "partidosTotales": 42,
  "creditosCuotas": {
-  "gastados": 30,
+  "gastados": 31,
   "tope": 450,
   "mes": "2026-10"
  },
