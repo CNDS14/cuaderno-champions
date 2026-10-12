@@ -55,13 +55,13 @@
   "pos": 5,
   "equipo": "Sevilla FC",
   "escudo": "https://crests.football-data.org/559.png",
-  "pj": 7,
+  "pj": 8,
   "g": 4,
-  "e": 1,
+  "e": 2,
   "p": 2,
-  "gf": 10,
-  "gc": 9,
-  "pts": 13,
+  "gf": 13,
+  "gc": 12,
+  "pts": 14,
   "forma": ""
  },
  {
@@ -209,6 +209,19 @@
  },
  {
   "pos": 17,
+  "equipo": "Levante",
+  "escudo": "https://crests.football-data.org/88.png",
+  "pj": 7,
+  "g": 1,
+  "e": 3,
+  "p": 3,
+  "gf": 11,
+  "gc": 15,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 18,
   "equipo": "Elche",
   "escudo": "https://crests.football-data.org/285.png",
   "pj": 8,
@@ -218,19 +231,6 @@
   "gf": 11,
   "gc": 17,
   "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 18,
-  "equipo": "Levante",
-  "escudo": "https://crests.football-data.org/88.png",
-  "pj": 6,
-  "g": 1,
-  "e": 2,
-  "p": 3,
-  "gf": 8,
-  "gc": 12,
-  "pts": 5,
   "forma": ""
  },
  {

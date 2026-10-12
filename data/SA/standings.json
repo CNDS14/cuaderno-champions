@@ -144,6 +144,19 @@
  },
  {
   "pos": 12,
+  "equipo": "Torino",
+  "escudo": "https://crests.football-data.org/586.png",
+  "pj": 6,
+  "g": 2,
+  "e": 1,
+  "p": 3,
+  "gf": 7,
+  "gc": 9,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 13,
   "equipo": "Lecce",
   "escudo": "https://crests.football-data.org/5890.png",
   "pj": 6,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Bologna",
   "escudo": "https://crests.football-data.org/103.png",
   "pj": 6,
@@ -169,28 +182,15 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Udinese",
   "escudo": "https://crests.football-data.org/115.png",
-  "pj": 5,
+  "pj": 6,
   "g": 1,
   "e": 1,
-  "p": 3,
-  "gf": 8,
-  "gc": 11,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 15,
-  "equipo": "Torino",
-  "escudo": "https://crests.football-data.org/586.png",
-  "pj": 5,
-  "g": 1,
-  "e": 1,
-  "p": 3,
-  "gf": 5,
-  "gc": 8,
+  "p": 4,
+  "gf": 9,
+  "gc": 13,
   "pts": 4,
   "forma": ""
  },
