@@ -43,8 +43,8 @@
   "visita": "Club Brugge",
   "idLocal": 108,
   "idVisita": 851,
-  "golesLocal": 0,
-  "golesVisita": 1,
+  "golesLocal": 3,
+  "golesVisita": 4,
   "comp": "CL"
  },
  {
@@ -59,8 +59,8 @@
   "visita": "Barça",
   "idLocal": 610,
   "idVisita": 81,
-  "golesLocal": 2,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 4,
   "comp": "CL"
  },
  {
@@ -75,14 +75,14 @@
   "visita": "Man United",
   "idLocal": 78,
   "idVisita": 66,
-  "golesLocal": 1,
+  "golesLocal": 2,
   "golesVisita": 0,
   "comp": "CL"
  },
  {
   "id": 575346,
   "utc": "2026-10-13T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 2,
   "sede": "",
@@ -91,7 +91,7 @@
   "visita": "Lille",
   "idLocal": 57,
   "idVisita": 521,
-  "golesLocal": 0,
+  "golesLocal": 3,
   "golesVisita": 0,
   "comp": "CL"
  },
@@ -107,8 +107,8 @@
   "visita": "Bayern",
   "idLocal": 5720,
   "idVisita": 5,
-  "golesLocal": 2,
-  "golesVisita": 0,
+  "golesLocal": 3,
+  "golesVisita": 3,
   "comp": "CL"
  },
  {
@@ -123,14 +123,14 @@
   "visita": "PSV",
   "idLocal": 721,
   "idVisita": 674,
-  "golesLocal": 0,
+  "golesLocal": 1,
   "golesVisita": 0,
   "comp": "CL"
  },
  {
   "id": 575349,
   "utc": "2026-10-13T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 2,
   "sede": "",
@@ -139,7 +139,7 @@
   "visita": "Napoli",
   "idLocal": 94,
   "idVisita": 113,
-  "golesLocal": 2,
+  "golesLocal": 3,
   "golesVisita": 1,
   "comp": "CL"
  }
