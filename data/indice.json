@@ -17,7 +17,7 @@
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 1,
-  "resultados": 4
+  "resultados": 9
  },
  {
   "fd": "PL",
@@ -27,7 +27,7 @@
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 1,
-  "resultados": 10
+  "resultados": 6
  },
  {
   "fd": "SA",
@@ -57,6 +57,6 @@
   "hoy": 0,
   "enTabla": 18,
   "conCuotas": 0,
-  "resultados": 6
+  "resultados": 9
  }
 ]
