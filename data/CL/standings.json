@@ -118,19 +118,6 @@
  },
  {
   "pos": 10,
-  "equipo": "Club Brugge",
-  "escudo": "https://crests.football-data.org/851.png",
-  "pj": 2,
-  "g": 1,
-  "e": 0,
-  "p": 1,
-  "gf": 6,
-  "gc": 5,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 11,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 2,
@@ -143,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 11,
   "equipo": "Aston Villa",
   "escudo": "https://crests.football-data.org/58.png",
   "pj": 1,
@@ -156,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 11,
   "equipo": "Real Betis",
   "escudo": "https://crests.football-data.org/90.png",
   "pj": 1,
@@ -169,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 13,
   "equipo": "Atleti",
   "escudo": "https://crests.football-data.org/78.png",
   "pj": 2,
@@ -182,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 15,
+  "pos": 14,
   "equipo": "Dortmund",
   "escudo": "https://crests.football-data.org/4.png",
   "pj": 1,
@@ -195,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 15,
   "equipo": "Liverpool",
   "escudo": "https://crests.football-data.org/64.png",
   "pj": 1,
@@ -208,7 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 15,
   "equipo": "Real Madrid",
   "escudo": "https://crests.football-data.org/86.png",
   "pj": 1,
@@ -221,7 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 18,
+  "pos": 17,
   "equipo": "PAE AEK",
   "escudo": "https://crests.football-data.org/1899.png",
   "pj": 1,
@@ -230,6 +217,19 @@
   "p": 0,
   "gf": 1,
   "gc": 0,
+  "pts": 3,
+  "forma": ""
+ },
+ {
+  "pos": 18,
+  "equipo": "Club Brugge",
+  "escudo": "https://crests.football-data.org/851.png",
+  "pj": 2,
+  "g": 1,
+  "e": 0,
+  "p": 1,
+  "gf": 6,
+  "gc": 6,
   "pts": 3,
   "forma": ""
  },
@@ -352,6 +352,19 @@
  },
  {
   "pos": 28,
+  "equipo": "Inter",
+  "escudo": "https://crests.football-data.org/108.png",
+  "pj": 2,
+  "g": 0,
+  "e": 0,
+  "p": 2,
+  "gf": 4,
+  "gc": 6,
+  "pts": 0,
+  "forma": ""
+ },
+ {
+  "pos": 29,
   "equipo": "Porto",
   "escudo": "https://crests.football-data.org/503.png",
   "pj": 1,
@@ -360,19 +373,6 @@
   "p": 1,
   "gf": 0,
   "gc": 2,
-  "pts": 0,
-  "forma": ""
- },
- {
-  "pos": 29,
-  "equipo": "Inter",
-  "escudo": "https://crests.football-data.org/108.png",
-  "pj": 2,
-  "g": 0,
-  "e": 0,
-  "p": 2,
-  "gf": 3,
-  "gc": 6,
   "pts": 0,
   "forma": ""
  },
