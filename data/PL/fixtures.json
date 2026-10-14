@@ -158,5 +158,21 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "PL"
+ },
+ {
+  "id": 560620,
+  "utc": "2026-10-23T19:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 8,
+  "sede": "",
+  "arbitro": null,
+  "local": "Ipswich Town",
+  "visita": "Nottingham",
+  "idLocal": 349,
+  "idVisita": 351,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "PL"
  }
 ]

@@ -174,5 +174,21 @@
   "golesLocal": 0,
   "golesVisita": 0,
   "comp": "PD"
+ },
+ {
+  "id": 564719,
+  "utc": "2026-10-23T19:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": null,
+  "local": "Alavés",
+  "visita": "Málaga",
+  "idLocal": 263,
+  "idVisita": 84,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "PD"
  }
 ]
