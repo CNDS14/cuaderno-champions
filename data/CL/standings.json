@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "PSG",
+  "escudo": "https://crests.football-data.org/524.png",
+  "pj": 2,
+  "g": 2,
+  "e": 0,
+  "p": 0,
+  "gf": 9,
+  "gc": 1,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Barça",
   "escudo": "https://crests.football-data.org/81.png",
   "pj": 2,
@@ -13,20 +26,33 @@
   "forma": ""
  },
  {
-  "pos": 2,
+  "pos": 3,
   "equipo": "Liverpool",
   "escudo": "https://crests.football-data.org/64.png",
   "pj": 2,
   "g": 2,
   "e": 0,
   "p": 0,
-  "gf": 6,
-  "gc": 1,
+  "gf": 8,
+  "gc": 4,
   "pts": 6,
   "forma": ""
  },
  {
-  "pos": 3,
+  "pos": 4,
+  "equipo": "Aston Villa",
+  "escudo": "https://crests.football-data.org/58.png",
+  "pj": 2,
+  "g": 2,
+  "e": 0,
+  "p": 0,
+  "gf": 6,
+  "gc": 2,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Sporting CP",
   "escudo": "https://crests.football-data.org/498.png",
   "pj": 2,
@@ -39,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 4,
+  "pos": 6,
   "equipo": "Arsenal",
   "escudo": "https://crests.football-data.org/57.png",
   "pj": 2,
@@ -52,7 +78,20 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 7,
+  "equipo": "Stuttgart",
+  "escudo": "https://crests.football-data.org/10.png",
+  "pj": 2,
+  "g": 2,
+  "e": 0,
+  "p": 0,
+  "gf": 4,
+  "gc": 1,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Bayern",
   "escudo": "https://crests.football-data.org/5.png",
   "pj": 2,
@@ -65,33 +104,72 @@
   "forma": ""
  },
  {
-  "pos": 6,
-  "equipo": "PSG",
-  "escudo": "https://crests.football-data.org/524.png",
-  "pj": 1,
+  "pos": 9,
+  "equipo": "Real Betis",
+  "escudo": "https://crests.football-data.org/90.png",
+  "pj": 2,
   "g": 1,
-  "e": 0,
+  "e": 1,
   "p": 0,
-  "gf": 6,
-  "gc": 1,
-  "pts": 3,
+  "gf": 3,
+  "gc": 2,
+  "pts": 4,
   "forma": ""
  },
  {
-  "pos": 7,
+  "pos": 10,
+  "equipo": "Real Madrid",
+  "escudo": "https://crests.football-data.org/86.png",
+  "pj": 2,
+  "g": 1,
+  "e": 1,
+  "p": 0,
+  "gf": 3,
+  "gc": 2,
+  "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 11,
+  "equipo": "Dortmund",
+  "escudo": "https://crests.football-data.org/4.png",
+  "pj": 2,
+  "g": 1,
+  "e": 1,
+  "p": 0,
+  "gf": 3,
+  "gc": 2,
+  "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 12,
+  "equipo": "PAE AEK",
+  "escudo": "https://crests.football-data.org/1899.png",
+  "pj": 2,
+  "g": 1,
+  "e": 1,
+  "p": 0,
+  "gf": 2,
+  "gc": 1,
+  "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 13,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
   "pj": 2,
   "g": 1,
   "e": 0,
   "p": 1,
-  "gf": 5,
-  "gc": 3,
+  "gf": 6,
+  "gc": 4,
   "pts": 3,
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 14,
   "equipo": "Man United",
   "escudo": "https://crests.football-data.org/66.png",
   "pj": 2,
@@ -104,33 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
-  "equipo": "Stuttgart",
-  "escudo": "https://crests.football-data.org/10.png",
-  "pj": 1,
-  "g": 1,
-  "e": 0,
-  "p": 0,
-  "gf": 3,
-  "gc": 1,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 10,
-  "equipo": "Man City",
-  "escudo": "https://crests.football-data.org/65.png",
-  "pj": 1,
-  "g": 1,
-  "e": 0,
-  "p": 0,
-  "gf": 2,
-  "gc": 0,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 11,
+  "pos": 15,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 2,
@@ -143,33 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
-  "equipo": "Aston Villa",
-  "escudo": "https://crests.football-data.org/58.png",
-  "pj": 1,
-  "g": 1,
-  "e": 0,
-  "p": 0,
-  "gf": 3,
-  "gc": 2,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 12,
-  "equipo": "Real Betis",
-  "escudo": "https://crests.football-data.org/90.png",
-  "pj": 1,
-  "g": 1,
-  "e": 0,
-  "p": 0,
-  "gf": 3,
-  "gc": 2,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 14,
+  "pos": 16,
   "equipo": "Atleti",
   "escudo": "https://crests.football-data.org/78.png",
   "pj": 2,
@@ -182,46 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 15,
-  "equipo": "Dortmund",
-  "escudo": "https://crests.football-data.org/4.png",
-  "pj": 1,
-  "g": 1,
-  "e": 0,
-  "p": 0,
-  "gf": 3,
-  "gc": 2,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 16,
-  "equipo": "Real Madrid",
-  "escudo": "https://crests.football-data.org/86.png",
-  "pj": 1,
-  "g": 1,
-  "e": 0,
-  "p": 0,
-  "gf": 2,
-  "gc": 1,
-  "pts": 3,
-  "forma": ""
- },
- {
   "pos": 17,
-  "equipo": "PAE AEK",
-  "escudo": "https://crests.football-data.org/1899.png",
-  "pj": 1,
-  "g": 1,
-  "e": 0,
-  "p": 0,
-  "gf": 1,
-  "gc": 0,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 18,
   "equipo": "Club Brugge",
   "escudo": "https://crests.football-data.org/851.png",
   "pj": 2,
@@ -234,7 +221,7 @@
   "forma": ""
  },
  {
-  "pos": 19,
+  "pos": 18,
   "equipo": "RC Lens",
   "escudo": "https://crests.football-data.org/546.png",
   "pj": 2,
@@ -243,6 +230,19 @@
   "p": 1,
   "gf": 3,
   "gc": 4,
+  "pts": 3,
+  "forma": ""
+ },
+ {
+  "pos": 19,
+  "equipo": "Man City",
+  "escudo": "https://crests.football-data.org/65.png",
+  "pj": 2,
+  "g": 1,
+  "e": 0,
+  "p": 1,
+  "gf": 2,
+  "gc": 3,
   "pts": 3,
   "forma": ""
  },
@@ -280,8 +280,8 @@
   "g": 1,
   "e": 0,
   "p": 1,
-  "gf": 3,
-  "gc": 6,
+  "gf": 4,
+  "gc": 7,
   "pts": 3,
   "forma": ""
  },
@@ -289,43 +289,30 @@
   "pos": 23,
   "equipo": "Roma",
   "escudo": "https://crests.football-data.org/100.png",
-  "pj": 1,
+  "pj": 2,
   "g": 0,
-  "e": 1,
+  "e": 2,
   "p": 0,
-  "gf": 1,
-  "gc": 1,
-  "pts": 1,
+  "gf": 2,
+  "gc": 2,
+  "pts": 2,
   "forma": ""
  },
  {
   "pos": 23,
   "equipo": "Shaktar",
   "escudo": "https://crests.football-data.org/1887.png",
-  "pj": 1,
+  "pj": 2,
   "g": 0,
-  "e": 1,
+  "e": 2,
   "p": 0,
-  "gf": 1,
-  "gc": 1,
-  "pts": 1,
+  "gf": 2,
+  "gc": 2,
+  "pts": 2,
   "forma": ""
  },
  {
   "pos": 25,
-  "equipo": "Fenerbahçe",
-  "escudo": "https://crests.football-data.org/613.png",
-  "pj": 1,
-  "g": 0,
-  "e": 1,
-  "p": 0,
-  "gf": 1,
-  "gc": 1,
-  "pts": 1,
-  "forma": ""
- },
- {
-  "pos": 26,
   "equipo": "PSV",
   "escudo": "https://crests.football-data.org/674.png",
   "pj": 2,
@@ -338,7 +325,7 @@
   "forma": ""
  },
  {
-  "pos": 27,
+  "pos": 26,
   "equipo": "Viking",
   "escudo": "https://crests.football-data.org/5720.png",
   "pj": 2,
@@ -351,7 +338,46 @@
   "forma": ""
  },
  {
+  "pos": 27,
+  "equipo": "Porto",
+  "escudo": "https://crests.football-data.org/503.png",
+  "pj": 2,
+  "g": 0,
+  "e": 1,
+  "p": 1,
+  "gf": 0,
+  "gc": 2,
+  "pts": 1,
+  "forma": ""
+ },
+ {
   "pos": 28,
+  "equipo": "Fenerbahçe",
+  "escudo": "https://crests.football-data.org/613.png",
+  "pj": 2,
+  "g": 0,
+  "e": 1,
+  "p": 1,
+  "gf": 1,
+  "gc": 4,
+  "pts": 1,
+  "forma": ""
+ },
+ {
+  "pos": 29,
+  "equipo": "Bodø/Glimt",
+  "escudo": "https://crests.football-data.org/5721.png",
+  "pj": 2,
+  "g": 0,
+  "e": 1,
+  "p": 1,
+  "gf": 0,
+  "gc": 5,
+  "pts": 1,
+  "forma": ""
+ },
+ {
+  "pos": 30,
   "equipo": "Inter",
   "escudo": "https://crests.football-data.org/108.png",
   "pj": 2,
@@ -364,20 +390,7 @@
   "forma": ""
  },
  {
-  "pos": 29,
-  "equipo": "Porto",
-  "escudo": "https://crests.football-data.org/503.png",
-  "pj": 1,
-  "g": 0,
-  "e": 0,
-  "p": 1,
-  "gf": 0,
-  "gc": 2,
-  "pts": 0,
-  "forma": ""
- },
- {
-  "pos": 30,
+  "pos": 31,
   "equipo": "Slavia Praha",
   "escudo": "https://crests.football-data.org/930.png",
   "pj": 2,
@@ -390,7 +403,7 @@
   "forma": ""
  },
  {
-  "pos": 31,
+  "pos": 32,
   "equipo": "Napoli",
   "escudo": "https://crests.football-data.org/113.png",
   "pj": 2,
@@ -403,7 +416,20 @@
   "forma": ""
  },
  {
-  "pos": 32,
+  "pos": 33,
+  "equipo": "LASK",
+  "escudo": "https://crests.football-data.org/2016.png",
+  "pj": 2,
+  "g": 0,
+  "e": 0,
+  "p": 2,
+  "gf": 3,
+  "gc": 7,
+  "pts": 0,
+  "forma": ""
+ },
+ {
+  "pos": 34,
   "equipo": "Lille",
   "escudo": "https://crests.football-data.org/521.png",
   "pj": 2,
@@ -416,7 +442,7 @@
   "forma": ""
  },
  {
-  "pos": 33,
+  "pos": 35,
   "equipo": "Galatasaray",
   "escudo": "https://crests.football-data.org/610.png",
   "pj": 2,
@@ -429,41 +455,15 @@
   "forma": ""
  },
  {
-  "pos": 34,
+  "pos": 36,
   "equipo": "Sl. Bratislava",
   "escudo": "https://crests.football-data.org/7509.png",
-  "pj": 1,
-  "g": 0,
-  "e": 0,
-  "p": 1,
-  "gf": 1,
-  "gc": 6,
-  "pts": 0,
-  "forma": ""
- },
- {
-  "pos": 35,
-  "equipo": "Bodø/Glimt",
-  "escudo": "https://crests.football-data.org/5721.png",
-  "pj": 1,
-  "g": 0,
-  "e": 0,
-  "p": 1,
-  "gf": 0,
-  "gc": 5,
-  "pts": 0,
-  "forma": ""
- },
- {
-  "pos": 35,
-  "equipo": "LASK",
-  "escudo": "https://crests.football-data.org/2016.png",
   "pj": 2,
   "g": 0,
   "e": 0,
   "p": 2,
-  "gf": 0,
-  "gc": 5,
+  "gf": 1,
+  "gc": 7,
   "pts": 0,
   "forma": ""
  }
