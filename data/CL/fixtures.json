@@ -34,7 +34,7 @@
  {
   "id": 575352,
   "utc": "2026-10-14T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 2,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Real Madrid",
   "idLocal": 100,
   "idVisita": 86,
-  "golesLocal": 1,
-  "golesVisita": 1,
+  "golesLocal": 3,
+  "golesVisita": 4,
   "comp": "CL"
  },
  {
   "id": 575353,
   "utc": "2026-10-14T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 2,
   "sede": "",
@@ -59,14 +59,14 @@
   "visita": "PSG",
   "idLocal": 65,
   "idVisita": 524,
-  "golesLocal": 0,
-  "golesVisita": 3,
+  "golesLocal": 2,
+  "golesVisita": 4,
   "comp": "CL"
  },
  {
   "id": 575354,
   "utc": "2026-10-14T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 2,
   "sede": "",
@@ -75,14 +75,14 @@
   "visita": "Dortmund",
   "idLocal": 5721,
   "idVisita": 4,
-  "golesLocal": 0,
+  "golesLocal": 1,
   "golesVisita": 0,
   "comp": "CL"
  },
  {
   "id": 575355,
   "utc": "2026-10-14T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 2,
   "sede": "",
@@ -91,14 +91,14 @@
   "visita": "Fenerbahçe",
   "idLocal": 58,
   "idVisita": 613,
-  "golesLocal": 3,
+  "golesLocal": 6,
   "golesVisita": 0,
   "comp": "CL"
  },
  {
   "id": 575356,
   "utc": "2026-10-14T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 2,
   "sede": "",
@@ -107,14 +107,14 @@
   "visita": "Porto",
   "idLocal": 90,
   "idVisita": 503,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 3,
+  "golesVisita": 2,
   "comp": "CL"
  },
  {
   "id": 575357,
   "utc": "2026-10-14T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 2,
   "sede": "",
@@ -123,14 +123,14 @@
   "visita": "PAE AEK",
   "idLocal": 1887,
   "idVisita": 1899,
-  "golesLocal": 1,
+  "golesLocal": 3,
   "golesVisita": 1,
   "comp": "CL"
  },
  {
   "id": 575358,
   "utc": "2026-10-14T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 2,
   "sede": "",
@@ -140,7 +140,7 @@
   "idLocal": 7509,
   "idVisita": 10,
   "golesLocal": 0,
-  "golesVisita": 1,
+  "golesVisita": 3,
   "comp": "CL"
  }
 ]
