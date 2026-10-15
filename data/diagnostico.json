@@ -1,10 +1,11 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 37/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 38/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
+  "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
   "Sin calificacion para Como 1907 o Manchester United: no registro picks de ese partido.",
   "Sin calificacion para Inter o Shaktar: no registro picks de ese partido.",
   "Sin calificacion para Deportivo o Levante: no registro picks de ese partido.",
