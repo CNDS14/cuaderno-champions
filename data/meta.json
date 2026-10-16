@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-16T03:55:48.472Z",
+ "actualizado": "2026-10-16T08:40:39.730Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -49,7 +49,7 @@
    "hoy": 1,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 9
+   "resultados": 7
   },
   {
    "fd": "FL1",
@@ -64,13 +64,13 @@
  ],
  "partidosTotales": 42,
  "creditosCuotas": {
-  "gastados": 40,
+  "gastados": 41,
   "tope": 450,
   "mes": "2026-10"
  },
  "picksModelo": {
   "total": 735,
-  "nuevos": 10,
+  "nuevos": 0,
   "calificados": 480,
   "aciertos": 356,
   "brier": 0.1674,
