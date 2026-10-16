@@ -290,7 +290,7 @@
  {
   "id": 564716,
   "utc": "2026-10-16T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -299,8 +299,8 @@
   "visita": "Levante",
   "idLocal": 560,
   "idVisita": 88,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
@@ -626,7 +626,7 @@
  {
   "id": 558573,
   "utc": "2026-10-16T18:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -642,7 +642,7 @@
  {
   "id": 565828,
   "utc": "2026-10-16T18:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -658,7 +658,7 @@
  {
   "id": 559661,
   "utc": "2026-10-16T18:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -668,7 +668,7 @@
   "idLocal": 535,
   "idVisita": 511,
   "golesLocal": 0,
-  "golesVisita": 2,
+  "golesVisita": 3,
   "comp": "FL1"
  }
 ]

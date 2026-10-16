@@ -2,7 +2,7 @@
  {
   "id": 559661,
   "utc": "2026-10-16T18:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -12,7 +12,7 @@
   "idLocal": 535,
   "idVisita": 511,
   "golesLocal": 0,
-  "golesVisita": 2,
+  "golesVisita": 3,
   "comp": "FL1"
  }
 ]
