@@ -290,7 +290,7 @@
  {
   "id": 564716,
   "utc": "2026-10-16T19:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -299,8 +299,8 @@
   "visita": "Levante",
   "idLocal": 560,
   "idVisita": 88,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -626,7 +626,7 @@
  {
   "id": 558573,
   "utc": "2026-10-16T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -635,14 +635,14 @@
   "visita": "Sassuolo",
   "idLocal": 470,
   "idVisita": 471,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 4,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {
   "id": 565828,
   "utc": "2026-10-16T18:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -651,14 +651,14 @@
   "visita": "1. FC Köln",
   "idLocal": 19,
   "idVisita": 1,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "BL1"
  },
  {
   "id": 559661,
   "utc": "2026-10-16T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -667,8 +667,8 @@
   "visita": "Toulouse",
   "idLocal": 535,
   "idVisita": 511,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 2,
   "comp": "FL1"
  }
 ]

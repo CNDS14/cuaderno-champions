@@ -94,13 +94,13 @@
   "pos": 8,
   "equipo": "Deportivo",
   "escudo": "https://crests.football-data.org/560.png",
-  "pj": 8,
+  "pj": 9,
   "g": 2,
-  "e": 4,
+  "e": 5,
   "p": 2,
   "gf": 12,
   "gc": 11,
-  "pts": 10,
+  "pts": 11,
   "forma": ""
  },
  {
@@ -211,13 +211,13 @@
   "pos": 17,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
-  "pj": 7,
+  "pj": 8,
   "g": 1,
-  "e": 3,
+  "e": 4,
   "p": 3,
   "gf": 11,
   "gc": 15,
-  "pts": 6,
+  "pts": 7,
   "forma": ""
  },
  {

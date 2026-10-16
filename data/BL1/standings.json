@@ -92,6 +92,19 @@
  },
  {
   "pos": 8,
+  "equipo": "Frankfurt",
+  "escudo": "https://crests.football-data.org/19.png",
+  "pj": 6,
+  "g": 2,
+  "e": 2,
+  "p": 2,
+  "gf": 10,
+  "gc": 16,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 9,
   "equipo": "Mainz",
   "escudo": "https://crests.football-data.org/15.png",
   "pj": 5,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Elversberg",
   "escudo": "https://crests.football-data.org/719.png",
   "pj": 5,
@@ -117,20 +130,20 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "1. FC Köln",
   "escudo": "https://crests.football-data.org/1.png",
-  "pj": 5,
+  "pj": 6,
   "g": 2,
   "e": 1,
-  "p": 2,
+  "p": 3,
   "gf": 8,
-  "gc": 10,
+  "gc": 11,
   "pts": 7,
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Stuttgart",
   "escudo": "https://crests.football-data.org/10.png",
   "pj": 5,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "HSV",
   "escudo": "https://crests.football-data.org/7.png",
   "pj": 5,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Schalke",
   "escudo": "https://crests.football-data.org/6.png",
   "pj": 5,
@@ -165,19 +178,6 @@
   "p": 2,
   "gf": 4,
   "gc": 6,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 14,
-  "equipo": "Frankfurt",
-  "escudo": "https://crests.football-data.org/19.png",
-  "pj": 5,
-  "g": 1,
-  "e": 2,
-  "p": 2,
-  "gf": 9,
-  "gc": 16,
   "pts": 5,
   "forma": ""
  },

@@ -1,13 +1,12 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 46/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 47/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
   "Sin calificacion para Como 1907 o Manchester United: no registro picks de ese partido.",
   "Sin calificacion para Inter o Shaktar: no registro picks de ese partido.",
-  "Sin calificacion para Deportivo o Levante: no registro picks de ese partido.",
   "Sin calificacion para Fulham o Hull City: no registro picks de ese partido.",
   "Sin calificacion para Man City o Ipswich Town: no registro picks de ese partido.",
   "Sin calificacion para Leeds United o Manchester United: no registro picks de ese partido.",
@@ -18,10 +17,7 @@
   "Sin calificacion para Coventry City o Fulham: no registro picks de ese partido.",
   "Sin calificacion para Liverpool o Brighton Hove: no registro picks de ese partido.",
   "Sin calificacion para Hull City o Brentford: no registro picks de ese partido.",
-  "Sin calificacion para Sunderland o Leeds United: no registro picks de ese partido.",
-  "Sin calificacion para Frosinone o Sassuolo: no registro picks de ese partido.",
-  "Sin calificacion para Frankfurt o 1. FC Köln: no registro picks de ese partido.",
-  "Sin calificacion para Le Mans o Toulouse: no registro picks de ese partido."
+  "Sin calificacion para Sunderland o Leeds United: no registro picks de ese partido."
  ],
  "errores": []
 }
