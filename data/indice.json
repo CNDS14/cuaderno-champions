@@ -26,7 +26,7 @@
   "partidos": 20,
   "hoy": 0,
   "enTabla": 20,
-  "conCuotas": 1,
+  "conCuotas": 20,
   "resultados": 10
  },
  {
@@ -37,7 +37,7 @@
   "hoy": 1,
   "enTabla": 20,
   "conCuotas": 0,
-  "resultados": 10
+  "resultados": 3
  },
  {
   "fd": "BL1",
@@ -47,7 +47,7 @@
   "hoy": 1,
   "enTabla": 18,
   "conCuotas": 0,
-  "resultados": 7
+  "resultados": 9
  },
  {
   "fd": "FL1",
