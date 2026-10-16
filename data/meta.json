@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-16T00:01:32.240Z",
+ "actualizado": "2026-10-16T03:55:48.472Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -15,17 +15,17 @@
    "fd": "PD",
    "nombre": "LaLiga",
    "pais": "España",
-   "partidos": 16,
-   "hoy": 0,
+   "partidos": 1,
+   "hoy": 1,
    "enTabla": 20,
-   "conCuotas": 15,
+   "conCuotas": 1,
    "resultados": 9
   },
   {
    "fd": "PL",
    "nombre": "Premier League",
    "pais": "Inglaterra",
-   "partidos": 15,
+   "partidos": 20,
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 1,
@@ -62,15 +62,15 @@
    "resultados": 9
   }
  ],
- "partidosTotales": 52,
+ "partidosTotales": 42,
  "creditosCuotas": {
-  "gastados": 39,
+  "gastados": 40,
   "tope": 450,
   "mes": "2026-10"
  },
  "picksModelo": {
-  "total": 725,
-  "nuevos": 0,
+  "total": 735,
+  "nuevos": 10,
   "calificados": 480,
   "aciertos": 356,
   "brier": 0.1674,
