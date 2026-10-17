@@ -34,7 +34,7 @@
  {
   "id": 564713,
   "utc": "2026-10-17T16:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Barça",
   "idLocal": 90,
   "idVisita": 81,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 5,
   "comp": "PD"
  },
  {
@@ -54,7 +54,7 @@
   "minuto": null,
   "jornada": 9,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Adrián Cordero Vega",
   "local": "Valencia",
   "visita": "Athletic",
   "idLocal": 95,

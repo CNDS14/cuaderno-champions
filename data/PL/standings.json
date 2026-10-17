@@ -118,19 +118,6 @@
  },
  {
   "pos": 10,
-  "equipo": "Newcastle",
-  "escudo": "https://crests.football-data.org/67.png",
-  "pj": 7,
-  "g": 2,
-  "e": 3,
-  "p": 2,
-  "gf": 10,
-  "gc": 13,
-  "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 11,
   "equipo": "Ipswich Town",
   "escudo": "https://crests.football-data.org/349.png",
   "pj": 7,
@@ -143,7 +130,33 @@
   "forma": ""
  },
  {
+  "pos": 11,
+  "equipo": "Newcastle",
+  "escudo": "https://crests.football-data.org/67.png",
+  "pj": 7,
+  "g": 2,
+  "e": 2,
+  "p": 3,
+  "gf": 10,
+  "gc": 14,
+  "pts": 8,
+  "forma": ""
+ },
+ {
   "pos": 12,
+  "equipo": "Aston Villa",
+  "escudo": "https://crests.football-data.org/58.png",
+  "pj": 7,
+  "g": 2,
+  "e": 2,
+  "p": 3,
+  "gf": 7,
+  "gc": 11,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 13,
   "equipo": "Crystal Palace",
   "escudo": "https://crests.football-data.org/354.png",
   "pj": 6,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Man United",
   "escudo": "https://crests.football-data.org/66.png",
   "pj": 6,
@@ -165,19 +178,6 @@
   "p": 2,
   "gf": 9,
   "gc": 9,
-  "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 14,
-  "equipo": "Aston Villa",
-  "escudo": "https://crests.football-data.org/58.png",
-  "pj": 7,
-  "g": 1,
-  "e": 3,
-  "p": 3,
-  "gf": 6,
-  "gc": 11,
   "pts": 6,
   "forma": ""
  },

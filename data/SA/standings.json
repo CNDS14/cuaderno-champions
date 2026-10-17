@@ -4,12 +4,12 @@
   "equipo": "Inter",
   "escudo": "https://crests.football-data.org/108.png",
   "pj": 7,
-  "g": 5,
+  "g": 6,
   "e": 1,
-  "p": 1,
-  "gf": 18,
+  "p": 0,
+  "gf": 21,
   "gc": 9,
-  "pts": 16,
+  "pts": 19,
   "forma": ""
  },
  {
@@ -29,13 +29,13 @@
   "pos": 3,
   "equipo": "Roma",
   "escudo": "https://crests.football-data.org/100.png",
-  "pj": 6,
+  "pj": 7,
   "g": 4,
-  "e": 2,
+  "e": 3,
   "p": 0,
   "gf": 14,
   "gc": 3,
-  "pts": 14,
+  "pts": 15,
   "forma": ""
  },
  {
@@ -131,19 +131,6 @@
  },
  {
   "pos": 11,
-  "equipo": "Bologna",
-  "escudo": "https://crests.football-data.org/103.png",
-  "pj": 7,
-  "g": 2,
-  "e": 2,
-  "p": 3,
-  "gf": 6,
-  "gc": 7,
-  "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 12,
   "equipo": "Sassuolo",
   "escudo": "https://crests.football-data.org/471.png",
   "pj": 7,
@@ -156,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 12,
   "equipo": "Torino",
   "escudo": "https://crests.football-data.org/586.png",
   "pj": 6,
@@ -169,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 13,
   "equipo": "Lecce",
   "escudo": "https://crests.football-data.org/5890.png",
   "pj": 6,
@@ -182,7 +169,33 @@
   "forma": ""
  },
  {
+  "pos": 14,
+  "equipo": "Bologna",
+  "escudo": "https://crests.football-data.org/103.png",
+  "pj": 7,
+  "g": 1,
+  "e": 2,
+  "p": 4,
+  "gf": 6,
+  "gc": 10,
+  "pts": 5,
+  "forma": ""
+ },
+ {
   "pos": 15,
+  "equipo": "Genoa",
+  "escudo": "https://crests.football-data.org/107.png",
+  "pj": 7,
+  "g": 1,
+  "e": 2,
+  "p": 4,
+  "gf": 5,
+  "gc": 11,
+  "pts": 5,
+  "forma": ""
+ },
+ {
+  "pos": 16,
   "equipo": "Udinese",
   "escudo": "https://crests.football-data.org/115.png",
   "pj": 6,
@@ -195,7 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Monza",
   "escudo": "https://crests.football-data.org/5911.png",
   "pj": 6,
@@ -204,19 +217,6 @@
   "p": 4,
   "gf": 9,
   "gc": 15,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 17,
-  "equipo": "Genoa",
-  "escudo": "https://crests.football-data.org/107.png",
-  "pj": 6,
-  "g": 1,
-  "e": 1,
-  "p": 4,
-  "gf": 5,
-  "gc": 11,
   "pts": 4,
   "forma": ""
  },

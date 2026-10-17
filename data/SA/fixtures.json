@@ -18,7 +18,7 @@
  {
   "id": 558571,
   "utc": "2026-10-17T16:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -28,23 +28,23 @@
   "idLocal": 103,
   "idVisita": 108,
   "golesLocal": 1,
-  "golesVisita": 0,
+  "golesVisita": 3,
   "comp": "SA"
  },
  {
   "id": 558572,
   "utc": "2026-10-17T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Rosario Abisso",
   "local": "Roma",
   "visita": "Genoa",
   "idLocal": 100,
   "idVisita": 107,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  }
 ]

@@ -66,7 +66,7 @@
  {
   "id": 560607,
   "utc": "2026-10-17T16:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -75,8 +75,8 @@
   "visita": "Aston Villa",
   "idLocal": 67,
   "idVisita": 58,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "PL"
  }
 ]
