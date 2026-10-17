@@ -40,6 +40,19 @@
  },
  {
   "pos": 4,
+  "equipo": "Chelsea",
+  "escudo": "https://crests.football-data.org/61.png",
+  "pj": 7,
+  "g": 4,
+  "e": 1,
+  "p": 2,
+  "gf": 16,
+  "gc": 13,
+  "pts": 13,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Brentford",
   "escudo": "https://crests.football-data.org/402.png",
   "pj": 6,
@@ -52,28 +65,15 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Everton",
   "escudo": "https://crests.football-data.org/62.png",
-  "pj": 6,
+  "pj": 7,
   "g": 2,
   "e": 4,
-  "p": 0,
+  "p": 1,
   "gf": 8,
-  "gc": 5,
-  "pts": 10,
-  "forma": ""
- },
- {
-  "pos": 6,
-  "equipo": "Chelsea",
-  "escudo": "https://crests.football-data.org/61.png",
-  "pj": 6,
-  "g": 3,
-  "e": 1,
-  "p": 2,
-  "gf": 15,
-  "gc": 13,
+  "gc": 6,
   "pts": 10,
   "forma": ""
  },
