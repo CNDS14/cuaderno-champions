@@ -50,7 +50,7 @@
  {
   "id": 564711,
   "utc": "2026-10-17T19:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Athletic",
   "idLocal": 95,
   "idVisita": 77,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  }
 ]

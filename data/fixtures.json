@@ -338,7 +338,7 @@
  {
   "id": 564711,
   "utc": "2026-10-17T19:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -347,8 +347,8 @@
   "visita": "Athletic",
   "idLocal": 95,
   "idVisita": 77,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -466,7 +466,7 @@
  {
   "id": 558572,
   "utc": "2026-10-17T18:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -475,7 +475,7 @@
   "visita": "Genoa",
   "idLocal": 100,
   "idVisita": 107,
-  "golesLocal": 0,
+  "golesLocal": 2,
   "golesVisita": 0,
   "comp": "SA"
  },
@@ -594,7 +594,7 @@
  {
   "id": 559659,
   "utc": "2026-10-17T18:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -603,14 +603,14 @@
   "visita": "RC Lens",
   "idLocal": 531,
   "idVisita": 546,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 3,
   "comp": "FL1"
  },
  {
   "id": 559660,
   "utc": "2026-10-17T18:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -619,7 +619,7 @@
   "visita": "Brest",
   "idLocal": 521,
   "idVisita": 512,
-  "golesLocal": 0,
+  "golesLocal": 1,
   "golesVisita": 1,
   "comp": "FL1"
  }

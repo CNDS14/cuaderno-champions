@@ -34,7 +34,7 @@
  {
   "id": 558572,
   "utc": "2026-10-17T18:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -43,7 +43,7 @@
   "visita": "Genoa",
   "idLocal": 100,
   "idVisita": 107,
-  "golesLocal": 0,
+  "golesLocal": 2,
   "golesVisita": 0,
   "comp": "SA"
  }

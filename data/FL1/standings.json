@@ -26,15 +26,15 @@
   "forma": ""
  },
  {
-  "pos": 3,
+  "pos": 2,
   "equipo": "Lille",
   "escudo": "https://crests.football-data.org/521.png",
   "pj": 7,
   "g": 4,
   "e": 2,
   "p": 1,
-  "gf": 9,
-  "gc": 4,
+  "gf": 10,
+  "gc": 5,
   "pts": 14,
   "forma": ""
  },
@@ -79,19 +79,32 @@
  },
  {
   "pos": 7,
+  "equipo": "RC Lens",
+  "escudo": "https://crests.football-data.org/546.png",
+  "pj": 7,
+  "g": 3,
+  "e": 1,
+  "p": 3,
+  "gf": 14,
+  "gc": 11,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Brest",
   "escudo": "https://crests.football-data.org/512.png",
   "pj": 7,
   "g": 2,
   "e": 3,
   "p": 2,
-  "gf": 12,
-  "gc": 9,
+  "gf": 13,
+  "gc": 10,
   "pts": 9,
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 9,
   "equipo": "Toulouse",
   "escudo": "https://crests.football-data.org/511.png",
   "pj": 7,
@@ -101,19 +114,6 @@
   "gf": 12,
   "gc": 11,
   "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 9,
-  "equipo": "RC Lens",
-  "escudo": "https://crests.football-data.org/546.png",
-  "pj": 7,
-  "g": 2,
-  "e": 2,
-  "p": 3,
-  "gf": 11,
-  "gc": 10,
-  "pts": 8,
   "forma": ""
  },
  {
@@ -213,11 +213,11 @@
   "escudo": "https://crests.football-data.org/531.png",
   "pj": 7,
   "g": 1,
-  "e": 2,
-  "p": 4,
-  "gf": 4,
-  "gc": 13,
-  "pts": 5,
+  "e": 1,
+  "p": 5,
+  "gf": 5,
+  "gc": 16,
+  "pts": 4,
   "forma": ""
  },
  {
