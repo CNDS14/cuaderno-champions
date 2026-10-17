@@ -16,7 +16,7 @@
   "partidos": 4,
   "hoy": 4,
   "enTabla": 20,
-  "conCuotas": 2,
+  "conCuotas": 1,
   "resultados": 10
  },
  {
@@ -26,8 +26,8 @@
   "partidos": 5,
   "hoy": 5,
   "enTabla": 20,
-  "conCuotas": 4,
-  "resultados": 10
+  "conCuotas": 1,
+  "resultados": 6
  },
  {
   "fd": "SA",
@@ -37,7 +37,7 @@
   "hoy": 3,
   "enTabla": 20,
   "conCuotas": 0,
-  "resultados": 11
+  "resultados": 3
  },
  {
   "fd": "BL1",
@@ -47,7 +47,7 @@
   "hoy": 6,
   "enTabla": 18,
   "conCuotas": 0,
-  "resultados": 10
+  "resultados": 7
  },
  {
   "fd": "FL1",

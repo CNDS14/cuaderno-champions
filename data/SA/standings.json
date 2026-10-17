@@ -3,13 +3,13 @@
   "pos": 1,
   "equipo": "Inter",
   "escudo": "https://crests.football-data.org/108.png",
-  "pj": 6,
+  "pj": 7,
   "g": 5,
-  "e": 1,
+  "e": 2,
   "p": 0,
   "gf": 18,
   "gc": 8,
-  "pts": 16,
+  "pts": 17,
   "forma": ""
  },
  {
@@ -79,19 +79,6 @@
  },
  {
   "pos": 7,
-  "equipo": "Napoli",
-  "escudo": "https://crests.football-data.org/113.png",
-  "pj": 7,
-  "g": 3,
-  "e": 2,
-  "p": 2,
-  "gf": 10,
-  "gc": 6,
-  "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 8,
   "equipo": "Juventus",
   "escudo": "https://crests.football-data.org/109.png",
   "pj": 6,
@@ -104,7 +91,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 8,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
   "pj": 6,
@@ -114,6 +101,19 @@
   "gf": 9,
   "gc": 6,
   "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 9,
+  "equipo": "Napoli",
+  "escudo": "https://crests.football-data.org/113.png",
+  "pj": 7,
+  "g": 3,
+  "e": 1,
+  "p": 3,
+  "gf": 10,
+  "gc": 7,
+  "pts": 10,
   "forma": ""
  },
  {
@@ -157,6 +157,19 @@
  },
  {
   "pos": 13,
+  "equipo": "Bologna",
+  "escudo": "https://crests.football-data.org/103.png",
+  "pj": 7,
+  "g": 1,
+  "e": 3,
+  "p": 3,
+  "gf": 5,
+  "gc": 7,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 14,
   "equipo": "Lecce",
   "escudo": "https://crests.football-data.org/5890.png",
   "pj": 6,
@@ -166,19 +179,6 @@
   "gf": 6,
   "gc": 12,
   "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 14,
-  "equipo": "Bologna",
-  "escudo": "https://crests.football-data.org/103.png",
-  "pj": 6,
-  "g": 1,
-  "e": 2,
-  "p": 3,
-  "gf": 5,
-  "gc": 7,
-  "pts": 5,
   "forma": ""
  },
  {
@@ -251,12 +251,12 @@
   "equipo": "Venezia FC",
   "escudo": "https://crests.football-data.org/454.png",
   "pj": 7,
-  "g": 0,
-  "e": 1,
+  "g": 1,
+  "e": 0,
   "p": 6,
-  "gf": 5,
+  "gf": 6,
   "gc": 16,
-  "pts": 1,
+  "pts": 3,
   "forma": ""
  }
 ]

@@ -68,17 +68,30 @@
   "pos": 6,
   "equipo": "PSG",
   "escudo": "https://crests.football-data.org/524.png",
-  "pj": 6,
+  "pj": 7,
   "g": 3,
   "e": 2,
-  "p": 1,
+  "p": 2,
   "gf": 11,
-  "gc": 8,
+  "gc": 9,
   "pts": 11,
   "forma": ""
  },
  {
   "pos": 7,
+  "equipo": "Strasbourg",
+  "escudo": "https://crests.football-data.org/576.png",
+  "pj": 7,
+  "g": 3,
+  "e": 1,
+  "p": 3,
+  "gf": 12,
+  "gc": 12,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Toulouse",
   "escudo": "https://crests.football-data.org/511.png",
   "pj": 7,
@@ -91,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 9,
   "equipo": "Brest",
   "escudo": "https://crests.football-data.org/512.png",
   "pj": 6,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Lorient",
   "escudo": "https://crests.football-data.org/525.png",
   "pj": 6,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Nice",
   "escudo": "https://crests.football-data.org/522.png",
   "pj": 6,
@@ -130,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "RC Lens",
   "escudo": "https://crests.football-data.org/546.png",
   "pj": 6,
@@ -139,19 +152,6 @@
   "p": 3,
   "gf": 11,
   "gc": 10,
-  "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 12,
-  "equipo": "Strasbourg",
-  "escudo": "https://crests.football-data.org/576.png",
-  "pj": 6,
-  "g": 2,
-  "e": 1,
-  "p": 3,
-  "gf": 11,
-  "gc": 12,
   "pts": 7,
   "forma": ""
  },
