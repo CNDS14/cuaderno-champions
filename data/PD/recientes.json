@@ -142,5 +142,21 @@
   "golesLocal": 3,
   "golesVisita": 3,
   "comp": "PD"
+ },
+ {
+  "id": 564716,
+  "utc": "2026-10-16T19:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 9,
+  "sede": "",
+  "arbitro": "Manuel Orellana Cid",
+  "local": "Deportivo",
+  "visita": "Levante",
+  "idLocal": 560,
+  "idVisita": 88,
+  "golesLocal": 1,
+  "golesVisita": 1,
+  "comp": "PD"
  }
 ]
