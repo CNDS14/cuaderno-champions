@@ -3,13 +3,13 @@
   "pos": 1,
   "equipo": "Barça",
   "escudo": "https://crests.football-data.org/81.png",
-  "pj": 8,
+  "pj": 9,
   "g": 8,
-  "e": 0,
+  "e": 1,
   "p": 0,
   "gf": 34,
   "gc": 7,
-  "pts": 24,
+  "pts": 25,
   "forma": ""
  },
  {
@@ -29,13 +29,13 @@
   "pos": 3,
   "equipo": "Real Betis",
   "escudo": "https://crests.football-data.org/90.png",
-  "pj": 8,
+  "pj": 9,
   "g": 6,
-  "e": 1,
+  "e": 2,
   "p": 1,
   "gf": 14,
   "gc": 9,
-  "pts": 19,
+  "pts": 20,
   "forma": ""
  },
  {

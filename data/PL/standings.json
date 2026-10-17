@@ -118,6 +118,19 @@
  },
  {
   "pos": 10,
+  "equipo": "Newcastle",
+  "escudo": "https://crests.football-data.org/67.png",
+  "pj": 7,
+  "g": 2,
+  "e": 3,
+  "p": 2,
+  "gf": 10,
+  "gc": 13,
+  "pts": 9,
+  "forma": ""
+ },
+ {
+  "pos": 11,
   "equipo": "Ipswich Town",
   "escudo": "https://crests.football-data.org/349.png",
   "pj": 7,
@@ -127,19 +140,6 @@
   "gf": 11,
   "gc": 15,
   "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 11,
-  "equipo": "Newcastle",
-  "escudo": "https://crests.football-data.org/67.png",
-  "pj": 6,
-  "g": 2,
-  "e": 2,
-  "p": 2,
-  "gf": 10,
-  "gc": 13,
-  "pts": 8,
   "forma": ""
  },
  {
@@ -170,6 +170,19 @@
  },
  {
   "pos": 14,
+  "equipo": "Aston Villa",
+  "escudo": "https://crests.football-data.org/58.png",
+  "pj": 7,
+  "g": 1,
+  "e": 3,
+  "p": 3,
+  "gf": 6,
+  "gc": 11,
+  "pts": 6,
+  "forma": ""
+ },
+ {
+  "pos": 15,
   "equipo": "Coventry City",
   "escudo": "https://crests.football-data.org/1076.png",
   "pj": 6,
@@ -182,7 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 15,
+  "pos": 16,
   "equipo": "Fulham",
   "escudo": "https://crests.football-data.org/63.png",
   "pj": 7,
@@ -195,7 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Nottingham",
   "escudo": "https://crests.football-data.org/351.png",
   "pj": 6,
@@ -204,19 +217,6 @@
   "p": 3,
   "gf": 5,
   "gc": 8,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 17,
-  "equipo": "Aston Villa",
-  "escudo": "https://crests.football-data.org/58.png",
-  "pj": 6,
-  "g": 1,
-  "e": 2,
-  "p": 3,
-  "gf": 6,
-  "gc": 11,
   "pts": 5,
   "forma": ""
  },

@@ -306,7 +306,7 @@
  {
   "id": 564708,
   "utc": "2026-10-17T14:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -402,7 +402,7 @@
  {
   "id": 560611,
   "utc": "2026-10-17T14:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -459,7 +459,7 @@
   "visita": "Inter",
   "idLocal": 103,
   "idVisita": 108,
-  "golesLocal": 0,
+  "golesLocal": 1,
   "golesVisita": 0,
   "comp": "SA"
  },
