@@ -27,6 +27,19 @@
  },
  {
   "pos": 3,
+  "equipo": "Real Madrid",
+  "escudo": "https://crests.football-data.org/86.png",
+  "pj": 9,
+  "g": 7,
+  "e": 0,
+  "p": 2,
+  "gf": 21,
+  "gc": 8,
+  "pts": 21,
+  "forma": ""
+ },
+ {
+  "pos": 4,
   "equipo": "Real Betis",
   "escudo": "https://crests.football-data.org/90.png",
   "pj": 9,
@@ -39,19 +52,6 @@
   "forma": ""
  },
  {
-  "pos": 4,
-  "equipo": "Real Madrid",
-  "escudo": "https://crests.football-data.org/86.png",
-  "pj": 8,
-  "g": 6,
-  "e": 0,
-  "p": 2,
-  "gf": 19,
-  "gc": 8,
-  "pts": 18,
-  "forma": ""
- },
- {
   "pos": 5,
   "equipo": "Real Sociedad",
   "escudo": "https://crests.football-data.org/92.png",
@@ -59,8 +59,8 @@
   "g": 5,
   "e": 1,
   "p": 3,
-  "gf": 14,
-  "gc": 15,
+  "gf": 17,
+  "gc": 17,
   "pts": 16,
   "forma": ""
  },
@@ -68,12 +68,12 @@
   "pos": 6,
   "equipo": "Sevilla FC",
   "escudo": "https://crests.football-data.org/559.png",
-  "pj": 8,
+  "pj": 9,
   "g": 4,
   "e": 2,
-  "p": 2,
+  "p": 3,
   "gf": 13,
-  "gc": 12,
+  "gc": 14,
   "pts": 14,
   "forma": ""
  },
@@ -254,8 +254,8 @@
   "g": 0,
   "e": 4,
   "p": 5,
-  "gf": 4,
-  "gc": 15,
+  "gf": 6,
+  "gc": 18,
   "pts": 4,
   "forma": ""
  }
