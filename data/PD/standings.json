@@ -53,6 +53,19 @@
  },
  {
   "pos": 5,
+  "equipo": "Real Sociedad",
+  "escudo": "https://crests.football-data.org/92.png",
+  "pj": 9,
+  "g": 5,
+  "e": 1,
+  "p": 3,
+  "gf": 14,
+  "gc": 15,
+  "pts": 16,
+  "forma": ""
+ },
+ {
+  "pos": 6,
   "equipo": "Sevilla FC",
   "escudo": "https://crests.football-data.org/559.png",
   "pj": 8,
@@ -62,19 +75,6 @@
   "gf": 13,
   "gc": 12,
   "pts": 14,
-  "forma": ""
- },
- {
-  "pos": 6,
-  "equipo": "Real Sociedad",
-  "escudo": "https://crests.football-data.org/92.png",
-  "pj": 8,
-  "g": 4,
-  "e": 1,
-  "p": 3,
-  "gf": 12,
-  "gc": 15,
-  "pts": 13,
   "forma": ""
  },
  {
@@ -250,12 +250,12 @@
   "pos": 20,
   "equipo": "Málaga",
   "escudo": "https://crests.football-data.org/84.png",
-  "pj": 8,
+  "pj": 9,
   "g": 0,
   "e": 4,
-  "p": 4,
+  "p": 5,
   "gf": 4,
-  "gc": 13,
+  "gc": 15,
   "pts": 4,
   "forma": ""
  }

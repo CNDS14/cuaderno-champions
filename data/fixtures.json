@@ -322,7 +322,7 @@
  {
   "id": 564714,
   "utc": "2026-10-18T16:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -331,8 +331,8 @@
   "visita": "Real Sociedad",
   "idLocal": 84,
   "idVisita": 92,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 2,
   "comp": "PD"
  },
  {
@@ -342,7 +342,7 @@
   "minuto": null,
   "jornada": 9,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Mateo Busquets Ferrer",
   "local": "Real Madrid",
   "visita": "Sevilla FC",
   "idLocal": 86,
@@ -450,7 +450,7 @@
  {
   "id": 558569,
   "utc": "2026-10-18T16:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -459,8 +459,8 @@
   "visita": "Atalanta",
   "idLocal": 98,
   "idVisita": 102,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
@@ -470,7 +470,7 @@
   "minuto": null,
   "jornada": 7,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Davide Massa",
   "local": "Juventus",
   "visita": "Lazio",
   "idLocal": 109,
@@ -498,7 +498,7 @@
  {
   "id": 565826,
   "utc": "2026-10-18T15:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -507,8 +507,8 @@
   "visita": "Hoffenheim",
   "idLocal": 18,
   "idVisita": 2,
-  "golesLocal": 0,
-  "golesVisita": 1,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "BL1"
  },
  {
@@ -530,7 +530,7 @@
  {
   "id": 559657,
   "utc": "2026-10-18T15:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -539,14 +539,14 @@
   "visita": "Monaco",
   "idLocal": 525,
   "idVisita": 548,
-  "golesLocal": 0,
+  "golesLocal": 1,
   "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559658,
   "utc": "2026-10-18T15:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -555,14 +555,14 @@
   "visita": "Stade Rennais",
   "idLocal": 1045,
   "idVisita": 529,
-  "golesLocal": 2,
-  "golesVisita": 1,
+  "golesLocal": 4,
+  "golesVisita": 3,
   "comp": "FL1"
  },
  {
   "id": 559663,
   "utc": "2026-10-18T15:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -571,8 +571,8 @@
   "visita": "Auxerre",
   "idLocal": 533,
   "idVisita": 519,
-  "golesLocal": 0,
-  "golesVisita": 1,
+  "golesLocal": 1,
+  "golesVisita": 3,
   "comp": "FL1"
  },
  {
@@ -582,7 +582,7 @@
   "minuto": null,
   "jornada": 7,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "François Letexier",
   "local": "Olympique Lyon",
   "visita": "Nice",
   "idLocal": 523,

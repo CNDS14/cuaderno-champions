@@ -1,19 +1,6 @@
 [
  {
   "pos": 1,
-  "equipo": "Monaco",
-  "escudo": "https://crests.football-data.org/548.png",
-  "pj": 7,
-  "g": 4,
-  "e": 3,
-  "p": 0,
-  "gf": 10,
-  "gc": 5,
-  "pts": 15,
-  "forma": ""
- },
- {
-  "pos": 2,
   "equipo": "PSG",
   "escudo": "https://crests.football-data.org/524.png",
   "pj": 7,
@@ -22,6 +9,19 @@
   "p": 1,
   "gf": 14,
   "gc": 9,
+  "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 2,
+  "equipo": "Paris FC",
+  "escudo": "https://crests.football-data.org/1045.png",
+  "pj": 7,
+  "g": 4,
+  "e": 2,
+  "p": 1,
+  "gf": 12,
+  "gc": 7,
   "pts": 14,
   "forma": ""
  },
@@ -39,15 +39,15 @@
   "forma": ""
  },
  {
-  "pos": 3,
-  "equipo": "Paris FC",
-  "escudo": "https://crests.football-data.org/1045.png",
+  "pos": 4,
+  "equipo": "Monaco",
+  "escudo": "https://crests.football-data.org/548.png",
   "pj": 7,
   "g": 4,
   "e": 2,
   "p": 1,
   "gf": 10,
-  "gc": 5,
+  "gc": 6,
   "pts": 14,
   "forma": ""
  },
@@ -59,8 +59,8 @@
   "g": 4,
   "e": 1,
   "p": 2,
-  "gf": 13,
-  "gc": 12,
+  "gf": 15,
+  "gc": 14,
   "pts": 13,
   "forma": ""
  },
@@ -79,6 +79,19 @@
  },
  {
   "pos": 7,
+  "equipo": "Lorient",
+  "escudo": "https://crests.football-data.org/525.png",
+  "pj": 7,
+  "g": 3,
+  "e": 2,
+  "p": 2,
+  "gf": 7,
+  "gc": 6,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "RC Lens",
   "escudo": "https://crests.football-data.org/546.png",
   "pj": 7,
@@ -91,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 9,
   "equipo": "Marseille",
   "escudo": "https://crests.football-data.org/516.png",
   "pj": 7,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Brest",
   "escudo": "https://crests.football-data.org/512.png",
   "pj": 7,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Toulouse",
   "escudo": "https://crests.football-data.org/511.png",
   "pj": 7,
@@ -130,19 +143,6 @@
   "forma": ""
  },
  {
-  "pos": 11,
-  "equipo": "Lorient",
-  "escudo": "https://crests.football-data.org/525.png",
-  "pj": 7,
-  "g": 2,
-  "e": 3,
-  "p": 2,
-  "gf": 6,
-  "gc": 6,
-  "pts": 9,
-  "forma": ""
- },
- {
   "pos": 12,
   "equipo": "Auxerre",
   "escudo": "https://crests.football-data.org/519.png",
@@ -150,8 +150,8 @@
   "g": 3,
   "e": 0,
   "p": 4,
-  "gf": 9,
-  "gc": 16,
+  "gf": 11,
+  "gc": 17,
   "pts": 9,
   "forma": ""
  },
@@ -228,8 +228,8 @@
   "g": 0,
   "e": 2,
   "p": 5,
-  "gf": 4,
-  "gc": 9,
+  "gf": 5,
+  "gc": 11,
   "pts": 2,
   "forma": ""
  }

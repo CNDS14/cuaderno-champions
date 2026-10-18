@@ -34,7 +34,7 @@
  {
   "id": 558569,
   "utc": "2026-10-18T16:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Atalanta",
   "idLocal": 98,
   "idVisita": 102,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
@@ -54,7 +54,7 @@
   "minuto": null,
   "jornada": 7,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Davide Massa",
   "local": "Juventus",
   "visita": "Lazio",
   "idLocal": 109,

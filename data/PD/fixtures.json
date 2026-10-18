@@ -34,7 +34,7 @@
  {
   "id": 564714,
   "utc": "2026-10-18T16:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Real Sociedad",
   "idLocal": 84,
   "idVisita": 92,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 2,
   "comp": "PD"
  },
  {
@@ -54,7 +54,7 @@
   "minuto": null,
   "jornada": 9,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Mateo Busquets Ferrer",
   "local": "Real Madrid",
   "visita": "Sevilla FC",
   "idLocal": 86,

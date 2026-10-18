@@ -40,6 +40,19 @@
  },
  {
   "pos": 4,
+  "equipo": "Milan",
+  "escudo": "https://crests.football-data.org/98.png",
+  "pj": 7,
+  "g": 4,
+  "e": 3,
+  "p": 0,
+  "gf": 14,
+  "gc": 6,
+  "pts": 15,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
   "pj": 7,
@@ -49,19 +62,6 @@
   "gf": 12,
   "gc": 7,
   "pts": 14,
-  "forma": ""
- },
- {
-  "pos": 5,
-  "equipo": "Milan",
-  "escudo": "https://crests.football-data.org/98.png",
-  "pj": 7,
-  "g": 3,
-  "e": 4,
-  "p": 0,
-  "gf": 11,
-  "gc": 5,
-  "pts": 13,
   "forma": ""
  },
  {
@@ -122,11 +122,11 @@
   "escudo": "https://crests.football-data.org/102.png",
   "pj": 7,
   "g": 3,
-  "e": 1,
-  "p": 3,
-  "gf": 8,
-  "gc": 8,
-  "pts": 10,
+  "e": 0,
+  "p": 4,
+  "gf": 9,
+  "gc": 11,
+  "pts": 9,
   "forma": ""
  },
  {
