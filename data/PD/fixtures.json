@@ -50,7 +50,7 @@
  {
   "id": 564709,
   "utc": "2026-10-18T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Sevilla FC",
   "idLocal": 86,
   "idVisita": 559,
-  "golesLocal": 2,
-  "golesVisita": 0,
+  "golesLocal": 4,
+  "golesVisita": 1,
   "comp": "PD"
  }
 ]
