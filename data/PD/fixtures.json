@@ -18,7 +18,7 @@
  {
   "id": 564712,
   "utc": "2026-10-18T14:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "Alavés",
   "idLocal": 558,
   "idVisita": 263,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {

@@ -83,15 +83,28 @@
   "escudo": "https://crests.football-data.org/263.png",
   "pj": 9,
   "g": 3,
-  "e": 3,
-  "p": 3,
-  "gf": 12,
-  "gc": 8,
-  "pts": 12,
+  "e": 2,
+  "p": 4,
+  "gf": 13,
+  "gc": 10,
+  "pts": 11,
   "forma": ""
  },
  {
   "pos": 8,
+  "equipo": "Celta",
+  "escudo": "https://crests.football-data.org/558.png",
+  "pj": 9,
+  "g": 2,
+  "e": 5,
+  "p": 2,
+  "gf": 10,
+  "gc": 7,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 9,
   "equipo": "Deportivo",
   "escudo": "https://crests.football-data.org/560.png",
   "pj": 9,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
   "pj": 9,
@@ -114,19 +127,6 @@
   "gf": 10,
   "gc": 18,
   "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 10,
-  "equipo": "Celta",
-  "escudo": "https://crests.football-data.org/558.png",
-  "pj": 9,
-  "g": 1,
-  "e": 6,
-  "p": 2,
-  "gf": 8,
-  "gc": 6,
-  "pts": 9,
   "forma": ""
  },
  {

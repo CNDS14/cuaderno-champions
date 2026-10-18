@@ -306,7 +306,7 @@
  {
   "id": 564712,
   "utc": "2026-10-18T14:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -315,8 +315,8 @@
   "visita": "Alavés",
   "idLocal": 558,
   "idVisita": 263,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
@@ -354,7 +354,7 @@
  {
   "id": 560604,
   "utc": "2026-10-18T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -370,7 +370,7 @@
  {
   "id": 560605,
   "utc": "2026-10-18T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -386,7 +386,7 @@
  {
   "id": 560609,
   "utc": "2026-10-18T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -395,14 +395,14 @@
   "visita": "Crystal Palace",
   "idLocal": 397,
   "idVisita": 354,
-  "golesLocal": 4,
+  "golesLocal": 5,
   "golesVisita": 0,
   "comp": "PL"
  },
  {
   "id": 560608,
   "utc": "2026-10-18T15:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -411,8 +411,8 @@
   "visita": "Arsenal",
   "idLocal": 351,
   "idVisita": 57,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PL"
  },
  {
@@ -434,7 +434,7 @@
  {
   "id": 558577,
   "utc": "2026-10-18T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -482,7 +482,7 @@
  {
   "id": 565827,
   "utc": "2026-10-18T13:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -491,14 +491,14 @@
   "visita": "Freiburg",
   "idLocal": 3,
   "idVisita": 17,
-  "golesLocal": 1,
+  "golesLocal": 2,
   "golesVisita": 1,
   "comp": "BL1"
  },
  {
   "id": 565826,
   "utc": "2026-10-18T15:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -507,14 +507,14 @@
   "visita": "Hoffenheim",
   "idLocal": 18,
   "idVisita": 2,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "BL1"
  },
  {
   "id": 559664,
   "utc": "2026-10-18T13:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -524,13 +524,13 @@
   "idLocal": 532,
   "idVisita": 516,
   "golesLocal": 2,
-  "golesVisita": 4,
+  "golesVisita": 5,
   "comp": "FL1"
  },
  {
   "id": 559657,
   "utc": "2026-10-18T15:15:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -539,14 +539,14 @@
   "visita": "Monaco",
   "idLocal": 525,
   "idVisita": 548,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559658,
   "utc": "2026-10-18T15:15:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -555,14 +555,14 @@
   "visita": "Stade Rennais",
   "idLocal": 1045,
   "idVisita": 529,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559663,
   "utc": "2026-10-18T15:15:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -571,8 +571,8 @@
   "visita": "Auxerre",
   "idLocal": 533,
   "idVisita": 519,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
