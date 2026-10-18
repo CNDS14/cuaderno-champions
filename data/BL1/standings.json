@@ -14,6 +14,19 @@
  },
  {
   "pos": 2,
+  "equipo": "Freiburg",
+  "escudo": "https://crests.football-data.org/17.png",
+  "pj": 6,
+  "g": 4,
+  "e": 2,
+  "p": 0,
+  "gf": 15,
+  "gc": 5,
+  "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 3,
   "equipo": "Dortmund",
   "escudo": "https://crests.football-data.org/4.png",
   "pj": 6,
@@ -26,29 +39,16 @@
   "forma": ""
  },
  {
-  "pos": 3,
-  "equipo": "Freiburg",
-  "escudo": "https://crests.football-data.org/17.png",
-  "pj": 5,
-  "g": 4,
-  "e": 1,
-  "p": 0,
-  "gf": 14,
-  "gc": 4,
-  "pts": 13,
-  "forma": ""
- },
- {
   "pos": 4,
   "equipo": "Leverkusen",
   "escudo": "https://crests.football-data.org/3.png",
-  "pj": 5,
+  "pj": 6,
   "g": 3,
-  "e": 1,
+  "e": 2,
   "p": 1,
-  "gf": 14,
-  "gc": 8,
-  "pts": 10,
+  "gf": 15,
+  "gc": 9,
+  "pts": 11,
   "forma": ""
  },
  {

@@ -92,6 +92,19 @@
  },
  {
   "pos": 8,
+  "equipo": "Marseille",
+  "escudo": "https://crests.football-data.org/516.png",
+  "pj": 7,
+  "g": 3,
+  "e": 0,
+  "p": 4,
+  "gf": 13,
+  "gc": 10,
+  "pts": 9,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Brest",
   "escudo": "https://crests.football-data.org/512.png",
   "pj": 7,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Toulouse",
   "escudo": "https://crests.football-data.org/511.png",
   "pj": 7,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Lorient",
   "escudo": "https://crests.football-data.org/525.png",
   "pj": 6,
@@ -130,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Nice",
   "escudo": "https://crests.football-data.org/522.png",
   "pj": 6,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "Strasbourg",
   "escudo": "https://crests.football-data.org/576.png",
   "pj": 7,
@@ -156,29 +169,16 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Angers SCO",
   "escudo": "https://crests.football-data.org/532.png",
-  "pj": 6,
+  "pj": 7,
   "g": 2,
   "e": 1,
-  "p": 3,
-  "gf": 7,
-  "gc": 10,
-  "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 14,
-  "equipo": "Marseille",
-  "escudo": "https://crests.football-data.org/516.png",
-  "pj": 6,
-  "g": 2,
-  "e": 0,
   "p": 4,
   "gf": 9,
-  "gc": 8,
-  "pts": 6,
+  "gc": 14,
+  "pts": 7,
   "forma": ""
  },
  {

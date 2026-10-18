@@ -2,7 +2,7 @@
  {
   "id": 558574,
   "utc": "2026-10-18T10:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -12,13 +12,13 @@
   "idLocal": 115,
   "idVisita": 5890,
   "golesLocal": 0,
-  "golesVisita": 2,
+  "golesVisita": 3,
   "comp": "SA"
  },
  {
   "id": 558577,
   "utc": "2026-10-18T13:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "Como 1907",
   "idLocal": 99,
   "idVisita": 7397,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 3,
   "comp": "SA"
  },
  {
@@ -38,7 +38,7 @@
   "minuto": null,
   "jornada": 7,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Daniele Chiffi",
   "local": "Milan",
   "visita": "Atalanta",
   "idLocal": 98,

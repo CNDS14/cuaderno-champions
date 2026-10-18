@@ -40,6 +40,19 @@
  },
  {
   "pos": 4,
+  "equipo": "Como 1907",
+  "escudo": "https://crests.football-data.org/7397.png",
+  "pj": 7,
+  "g": 4,
+  "e": 2,
+  "p": 1,
+  "gf": 12,
+  "gc": 7,
+  "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Frosinone",
   "escudo": "https://crests.football-data.org/470.png",
   "pj": 7,
@@ -52,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Cagliari",
   "escudo": "https://crests.football-data.org/104.png",
   "pj": 6,
@@ -65,7 +78,7 @@
   "forma": ""
  },
  {
-  "pos": 6,
+  "pos": 7,
   "equipo": "Milan",
   "escudo": "https://crests.football-data.org/98.png",
   "pj": 6,
@@ -78,7 +91,7 @@
   "forma": ""
  },
  {
-  "pos": 7,
+  "pos": 8,
   "equipo": "Juventus",
   "escudo": "https://crests.football-data.org/109.png",
   "pj": 6,
@@ -87,19 +100,6 @@
   "p": 1,
   "gf": 9,
   "gc": 5,
-  "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 8,
-  "equipo": "Como 1907",
-  "escudo": "https://crests.football-data.org/7397.png",
-  "pj": 6,
-  "g": 3,
-  "e": 2,
-  "p": 1,
-  "gf": 9,
-  "gc": 6,
   "pts": 11,
   "forma": ""
  },
@@ -137,7 +137,7 @@
   "g": 3,
   "e": 0,
   "p": 4,
-  "gf": 8,
+  "gf": 9,
   "gc": 12,
   "pts": 9,
   "forma": ""
@@ -195,20 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 15,
-  "equipo": "Udinese",
-  "escudo": "https://crests.football-data.org/115.png",
-  "pj": 7,
-  "g": 1,
-  "e": 1,
-  "p": 5,
-  "gf": 9,
-  "gc": 15,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 17,
+  "pos": 16,
   "equipo": "Parma",
   "escudo": "https://crests.football-data.org/112.png",
   "pj": 6,
@@ -221,20 +208,20 @@
   "forma": ""
  },
  {
-  "pos": 18,
-  "equipo": "Fiorentina",
-  "escudo": "https://crests.football-data.org/99.png",
-  "pj": 6,
+  "pos": 17,
+  "equipo": "Udinese",
+  "escudo": "https://crests.football-data.org/115.png",
+  "pj": 7,
   "g": 1,
   "e": 1,
-  "p": 4,
-  "gf": 7,
-  "gc": 14,
+  "p": 5,
+  "gf": 9,
+  "gc": 16,
   "pts": 4,
   "forma": ""
  },
  {
-  "pos": 19,
+  "pos": 18,
   "equipo": "Genoa",
   "escudo": "https://crests.football-data.org/107.png",
   "pj": 7,
@@ -243,6 +230,19 @@
   "p": 5,
   "gf": 5,
   "gc": 13,
+  "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 19,
+  "equipo": "Fiorentina",
+  "escudo": "https://crests.football-data.org/99.png",
+  "pj": 7,
+  "g": 1,
+  "e": 1,
+  "p": 5,
+  "gf": 8,
+  "gc": 17,
   "pts": 4,
   "forma": ""
  },
