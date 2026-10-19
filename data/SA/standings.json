@@ -81,12 +81,12 @@
   "pos": 7,
   "equipo": "Cagliari",
   "escudo": "https://crests.football-data.org/104.png",
-  "pj": 6,
+  "pj": 7,
   "g": 4,
   "e": 1,
-  "p": 1,
+  "p": 2,
   "gf": 6,
-  "gc": 3,
+  "gc": 4,
   "pts": 13,
   "forma": ""
  },
@@ -170,6 +170,19 @@
  },
  {
   "pos": 14,
+  "equipo": "Monza",
+  "escudo": "https://crests.football-data.org/5911.png",
+  "pj": 7,
+  "g": 2,
+  "e": 1,
+  "p": 4,
+  "gf": 10,
+  "gc": 15,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 15,
   "equipo": "Bologna",
   "escudo": "https://crests.football-data.org/103.png",
   "pj": 7,
@@ -179,19 +192,6 @@
   "gf": 6,
   "gc": 10,
   "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 15,
-  "equipo": "Monza",
-  "escudo": "https://crests.football-data.org/5911.png",
-  "pj": 6,
-  "g": 1,
-  "e": 1,
-  "p": 4,
-  "gf": 9,
-  "gc": 15,
-  "pts": 4,
   "forma": ""
  },
  {
