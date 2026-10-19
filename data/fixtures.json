@@ -290,7 +290,7 @@
  {
   "id": 564717,
   "utc": "2026-10-19T19:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -299,14 +299,14 @@
   "visita": "Rayo Vallecano",
   "idLocal": 82,
   "idVisita": 87,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 560606,
   "utc": "2026-10-19T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -315,14 +315,14 @@
   "visita": "Coventry City",
   "idLocal": 73,
   "idVisita": 1076,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "PL"
  },
  {
   "id": 558576,
   "utc": "2026-10-19T16:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -331,14 +331,14 @@
   "visita": "Cagliari",
   "idLocal": 5911,
   "idVisita": 104,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 4,
+  "golesVisita": 0,
   "comp": "SA"
  },
  {
   "id": 558578,
   "utc": "2026-10-19T18:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -347,8 +347,8 @@
   "visita": "Torino",
   "idLocal": 112,
   "idVisita": 586,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 3,
   "comp": "SA"
  },
  {

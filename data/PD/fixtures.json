@@ -2,7 +2,7 @@
  {
   "id": 564717,
   "utc": "2026-10-19T19:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Rayo Vallecano",
   "idLocal": 82,
   "idVisita": 87,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  }
 ]
