@@ -15,15 +15,15 @@
   "pais": "España",
   "partidos": 11,
   "hoy": 0,
-  "enTabla": 0,
+  "enTabla": 20,
   "conCuotas": 10,
-  "resultados": 0
+  "resultados": 11
  },
  {
   "fd": "PL",
   "nombre": "Premier League",
   "pais": "Inglaterra",
-  "partidos": 0,
+  "partidos": 10,
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 1,
