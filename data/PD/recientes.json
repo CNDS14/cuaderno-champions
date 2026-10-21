@@ -1,21 +1,5 @@
 [
  {
-  "id": 564704,
-  "utc": "2026-10-12T19:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 8,
-  "sede": "",
-  "arbitro": "Adrián Cordero Vega",
-  "local": "Levante",
-  "visita": "Sevilla FC",
-  "idLocal": 88,
-  "idVisita": 559,
-  "golesLocal": 3,
-  "golesVisita": 3,
-  "comp": "PD"
- },
- {
   "id": 564716,
   "utc": "2026-10-16T19:00:00Z",
   "estado": "FT",

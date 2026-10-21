@@ -6,18 +6,18 @@
   "partidos": 9,
   "hoy": 9,
   "enTabla": 36,
-  "conCuotas": 6,
-  "resultados": 0
+  "conCuotas": 8,
+  "resultados": 24
  },
  {
   "fd": "PD",
   "nombre": "LaLiga",
   "pais": "España",
-  "partidos": 11,
-  "hoy": 0,
+  "partidos": 1,
+  "hoy": 1,
   "enTabla": 20,
-  "conCuotas": 10,
-  "resultados": 11
+  "conCuotas": 1,
+  "resultados": 10
  },
  {
   "fd": "PL",
@@ -27,7 +27,7 @@
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 1,
-  "resultados": 11
+  "resultados": 10
  },
  {
   "fd": "SA",
@@ -37,13 +37,13 @@
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 0,
-  "resultados": 12
+  "resultados": 10
  },
  {
   "fd": "BL1",
   "nombre": "Bundesliga",
   "pais": "Alemania",
-  "partidos": 9,
+  "partidos": 10,
   "hoy": 0,
   "enTabla": 18,
   "conCuotas": 0,
@@ -53,7 +53,7 @@
   "fd": "FL1",
   "nombre": "Ligue 1",
   "pais": "Francia",
-  "partidos": 9,
+  "partidos": 11,
   "hoy": 0,
   "enTabla": 18,
   "conCuotas": 0,

@@ -142,5 +142,21 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "BL1"
+ },
+ {
+  "id": 565846,
+  "utc": "2026-10-30T19:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 8,
+  "sede": "",
+  "arbitro": null,
+  "local": "Elversberg",
+  "visita": "Mainz",
+  "idLocal": 719,
+  "idVisita": 15,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "BL1"
  }
 ]
