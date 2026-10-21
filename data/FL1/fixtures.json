@@ -16,22 +16,6 @@
   "comp": "FL1"
  },
  {
-  "id": 559655,
-  "utc": "2026-10-24T15:15:00Z",
-  "estado": "NS",
-  "minuto": null,
-  "jornada": 8,
-  "sede": "",
-  "arbitro": null,
-  "local": "Toulouse",
-  "visita": "Troyes",
-  "idLocal": 511,
-  "idVisita": 531,
-  "golesLocal": null,
-  "golesVisita": null,
-  "comp": "FL1"
- },
- {
   "id": 559652,
   "utc": "2026-10-24T18:45:00Z",
   "estado": "NS",
@@ -107,6 +91,22 @@
   "visita": "Lorient",
   "idLocal": 532,
   "idVisita": 525,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
+ },
+ {
+  "id": 559655,
+  "utc": "2026-10-25T16:15:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 8,
+  "sede": "",
+  "arbitro": null,
+  "local": "Toulouse",
+  "visita": "Troyes",
+  "idLocal": 511,
+  "idVisita": 531,
   "golesLocal": null,
   "golesVisita": null,
   "comp": "FL1"
