@@ -131,15 +131,15 @@
  },
  {
   "pos": 11,
-  "equipo": "Athletic",
-  "escudo": "https://crests.football-data.org/77.png",
-  "pj": 7,
+  "equipo": "Levante",
+  "escudo": "https://crests.football-data.org/88.png",
+  "pj": 9,
   "g": 2,
-  "e": 3,
-  "p": 2,
-  "gf": 7,
-  "gc": 6,
-  "pts": 9,
+  "e": 4,
+  "p": 3,
+  "gf": 14,
+  "gc": 17,
+  "pts": 10,
   "forma": ""
  },
  {
@@ -157,6 +157,19 @@
  },
  {
   "pos": 13,
+  "equipo": "Athletic",
+  "escudo": "https://crests.football-data.org/77.png",
+  "pj": 8,
+  "g": 2,
+  "e": 3,
+  "p": 3,
+  "gf": 8,
+  "gc": 8,
+  "pts": 9,
+  "forma": ""
+ },
+ {
+  "pos": 14,
   "equipo": "Rayo Vallecano",
   "escudo": "https://crests.football-data.org/87.png",
   "pj": 8,
@@ -169,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Getafe",
   "escudo": "https://crests.football-data.org/82.png",
   "pj": 9,
@@ -182,7 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 15,
+  "pos": 16,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 9,
@@ -195,7 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 9,
@@ -205,19 +218,6 @@
   "gf": 13,
   "gc": 25,
   "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 17,
-  "equipo": "Levante",
-  "escudo": "https://crests.football-data.org/88.png",
-  "pj": 8,
-  "g": 1,
-  "e": 4,
-  "p": 3,
-  "gf": 12,
-  "gc": 16,
-  "pts": 7,
   "forma": ""
  },
  {
