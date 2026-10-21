@@ -2,7 +2,7 @@
  {
   "id": 564685,
   "utc": "2026-10-21T18:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 6,
   "sede": "",
@@ -11,7 +11,7 @@
   "visita": "Athletic",
   "idLocal": 88,
   "idVisita": 77,
-  "golesLocal": 2,
+  "golesLocal": 3,
   "golesVisita": 1,
   "comp": "PD"
  }
