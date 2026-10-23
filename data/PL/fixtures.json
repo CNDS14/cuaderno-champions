@@ -2,7 +2,7 @@
  {
   "id": 560620,
   "utc": "2026-10-23T19:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -11,7 +11,7 @@
   "visita": "Nottingham",
   "idLocal": 349,
   "idVisita": 351,
-  "golesLocal": 0,
+  "golesLocal": 1,
   "golesVisita": 1,
   "comp": "PL"
  }

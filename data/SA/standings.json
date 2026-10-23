@@ -79,6 +79,19 @@
  },
  {
   "pos": 7,
+  "equipo": "Torino",
+  "escudo": "https://crests.football-data.org/586.png",
+  "pj": 8,
+  "g": 4,
+  "e": 1,
+  "p": 3,
+  "gf": 13,
+  "gc": 11,
+  "pts": 13,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Cagliari",
   "escudo": "https://crests.football-data.org/104.png",
   "pj": 7,
@@ -88,19 +101,6 @@
   "gf": 6,
   "gc": 7,
   "pts": 13,
-  "forma": ""
- },
- {
-  "pos": 8,
-  "equipo": "Torino",
-  "escudo": "https://crests.football-data.org/586.png",
-  "pj": 8,
-  "g": 3,
-  "e": 2,
-  "p": 3,
-  "gf": 10,
-  "gc": 9,
-  "pts": 11,
   "forma": ""
  },
  {
@@ -157,19 +157,6 @@
  },
  {
   "pos": 13,
-  "equipo": "Monza",
-  "escudo": "https://crests.football-data.org/5911.png",
-  "pj": 8,
-  "g": 2,
-  "e": 2,
-  "p": 4,
-  "gf": 13,
-  "gc": 15,
-  "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 14,
   "equipo": "Sassuolo",
   "escudo": "https://crests.football-data.org/471.png",
   "pj": 7,
@@ -179,6 +166,19 @@
   "gf": 12,
   "gc": 14,
   "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 14,
+  "equipo": "Monza",
+  "escudo": "https://crests.football-data.org/5911.png",
+  "pj": 8,
+  "g": 2,
+  "e": 1,
+  "p": 5,
+  "gf": 15,
+  "gc": 18,
+  "pts": 7,
   "forma": ""
  },
  {

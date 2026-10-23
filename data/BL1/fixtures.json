@@ -2,7 +2,7 @@
  {
   "id": 565833,
   "utc": "2026-10-23T18:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "M'gladbach",
   "idLocal": 10,
   "idVisita": 18,
-  "golesLocal": 1,
-  "golesVisita": 1,
+  "golesLocal": 2,
+  "golesVisita": 3,
   "comp": "BL1"
  }
 ]

@@ -79,19 +79,6 @@
  },
  {
   "pos": 7,
-  "equipo": "Brest",
-  "escudo": "https://crests.football-data.org/512.png",
-  "pj": 8,
-  "g": 3,
-  "e": 3,
-  "p": 2,
-  "gf": 14,
-  "gc": 10,
-  "pts": 12,
-  "forma": ""
- },
- {
-  "pos": 8,
   "equipo": "Lorient",
   "escudo": "https://crests.football-data.org/525.png",
   "pj": 7,
@@ -100,6 +87,19 @@
   "p": 2,
   "gf": 7,
   "gc": 6,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 8,
+  "equipo": "Nice",
+  "escudo": "https://crests.football-data.org/522.png",
+  "pj": 8,
+  "g": 3,
+  "e": 2,
+  "p": 3,
+  "gf": 8,
+  "gc": 10,
   "pts": 11,
   "forma": ""
  },
@@ -131,6 +131,19 @@
  },
  {
   "pos": 11,
+  "equipo": "Brest",
+  "escudo": "https://crests.football-data.org/512.png",
+  "pj": 8,
+  "g": 2,
+  "e": 3,
+  "p": 3,
+  "gf": 14,
+  "gc": 12,
+  "pts": 9,
+  "forma": ""
+ },
+ {
+  "pos": 12,
   "equipo": "Toulouse",
   "escudo": "https://crests.football-data.org/511.png",
   "pj": 7,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "Auxerre",
   "escudo": "https://crests.football-data.org/519.png",
   "pj": 7,
@@ -153,19 +166,6 @@
   "gf": 11,
   "gc": 17,
   "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 13,
-  "equipo": "Nice",
-  "escudo": "https://crests.football-data.org/522.png",
-  "pj": 8,
-  "g": 2,
-  "e": 2,
-  "p": 4,
-  "gf": 6,
-  "gc": 10,
-  "pts": 8,
   "forma": ""
  },
  {
