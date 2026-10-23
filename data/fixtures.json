@@ -2,7 +2,7 @@
  {
   "id": 564719,
   "utc": "2026-10-23T19:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Málaga",
   "idLocal": 263,
   "idVisita": 84,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
   "id": 560620,
   "utc": "2026-10-23T19:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Nottingham",
   "idLocal": 349,
   "idVisita": 351,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "PL"
  },
  {
   "id": 558567,
   "utc": "2026-10-23T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Monza",
   "idLocal": 586,
   "idVisita": 5911,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  },
  {
   "id": 565833,
   "utc": "2026-10-23T18:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -59,14 +59,14 @@
   "visita": "M'gladbach",
   "idLocal": 10,
   "idVisita": 18,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "BL1"
  },
  {
   "id": 559654,
   "utc": "2026-10-23T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -75,8 +75,8 @@
   "visita": "Nice",
   "idLocal": 512,
   "idVisita": 522,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

@@ -4,9 +4,6 @@
   "cuotas": "the-odds-api.com · 106/450 créditos este mes",
   "estadisticas": "API-Football"
  },
- "avisos": [
-  "Sin calificacion para Alavés o Málaga: no registro picks de ese partido.",
-  "Sin calificacion para Ipswich Town o Nottingham: no registro picks de ese partido."
- ],
+ "avisos": [],
  "errores": []
 }

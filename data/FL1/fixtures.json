@@ -2,7 +2,7 @@
  {
   "id": 559654,
   "utc": "2026-10-23T18:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Nice",
   "idLocal": 512,
   "idVisita": 522,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

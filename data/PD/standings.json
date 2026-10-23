@@ -81,13 +81,13 @@
   "pos": 7,
   "equipo": "Alavés",
   "escudo": "https://crests.football-data.org/263.png",
-  "pj": 9,
+  "pj": 10,
   "g": 3,
-  "e": 2,
+  "e": 3,
   "p": 4,
   "gf": 13,
   "gc": 10,
-  "pts": 11,
+  "pts": 12,
   "forma": ""
  },
  {
@@ -250,13 +250,13 @@
   "pos": 20,
   "equipo": "Málaga",
   "escudo": "https://crests.football-data.org/84.png",
-  "pj": 9,
+  "pj": 10,
   "g": 0,
-  "e": 4,
+  "e": 5,
   "p": 5,
   "gf": 6,
   "gc": 18,
-  "pts": 4,
+  "pts": 5,
   "forma": ""
  }
 ]

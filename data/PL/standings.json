@@ -120,17 +120,30 @@
   "pos": 10,
   "equipo": "Ipswich Town",
   "escudo": "https://crests.football-data.org/349.png",
-  "pj": 7,
+  "pj": 8,
   "g": 3,
   "e": 0,
-  "p": 4,
+  "p": 5,
   "gf": 11,
-  "gc": 15,
+  "gc": 16,
   "pts": 9,
   "forma": ""
  },
  {
   "pos": 11,
+  "equipo": "Nottingham",
+  "escudo": "https://crests.football-data.org/351.png",
+  "pj": 8,
+  "g": 2,
+  "e": 2,
+  "p": 4,
+  "gf": 6,
+  "gc": 9,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 12,
   "equipo": "Newcastle",
   "escudo": "https://crests.football-data.org/67.png",
   "pj": 7,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "Aston Villa",
   "escudo": "https://crests.football-data.org/58.png",
   "pj": 7,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Man United",
   "escudo": "https://crests.football-data.org/66.png",
   "pj": 7,
@@ -169,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Crystal Palace",
   "escudo": "https://crests.football-data.org/354.png",
   "pj": 7,
@@ -182,7 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 15,
+  "pos": 16,
   "equipo": "Bournemouth",
   "escudo": "https://crests.football-data.org/bournemouth.png",
   "pj": 7,
@@ -195,7 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Tottenham",
   "escudo": "https://crests.football-data.org/73.png",
   "pj": 7,
@@ -208,7 +221,7 @@
   "forma": ""
  },
  {
-  "pos": 17,
+  "pos": 18,
   "equipo": "Coventry City",
   "escudo": "https://crests.football-data.org/1076.png",
   "pj": 7,
@@ -221,7 +234,7 @@
   "forma": ""
  },
  {
-  "pos": 18,
+  "pos": 19,
   "equipo": "Fulham",
   "escudo": "https://crests.football-data.org/63.png",
   "pj": 7,
@@ -230,19 +243,6 @@
   "p": 4,
   "gf": 7,
   "gc": 10,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 19,
-  "equipo": "Nottingham",
-  "escudo": "https://crests.football-data.org/351.png",
-  "pj": 7,
-  "g": 1,
-  "e": 2,
-  "p": 4,
-  "gf": 5,
-  "gc": 9,
   "pts": 5,
   "forma": ""
  },
