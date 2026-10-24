@@ -144,6 +144,19 @@
  },
  {
   "pos": 12,
+  "equipo": "Elche",
+  "escudo": "https://crests.football-data.org/285.png",
+  "pj": 10,
+  "g": 2,
+  "e": 4,
+  "p": 4,
+  "gf": 14,
+  "gc": 17,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 13,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 9,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Athletic",
   "escudo": "https://crests.football-data.org/77.png",
   "pj": 8,
@@ -165,19 +178,6 @@
   "p": 3,
   "gf": 8,
   "gc": 9,
-  "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 14,
-  "equipo": "Rayo Vallecano",
-  "escudo": "https://crests.football-data.org/87.png",
-  "pj": 8,
-  "g": 2,
-  "e": 3,
-  "p": 3,
-  "gf": 12,
-  "gc": 17,
   "pts": 9,
   "forma": ""
  },
@@ -196,6 +196,19 @@
  },
  {
   "pos": 16,
+  "equipo": "Rayo Vallecano",
+  "escudo": "https://crests.football-data.org/87.png",
+  "pj": 9,
+  "g": 2,
+  "e": 3,
+  "p": 4,
+  "gf": 12,
+  "gc": 20,
+  "pts": 9,
+  "forma": ""
+ },
+ {
+  "pos": 17,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 9,
@@ -208,7 +221,7 @@
   "forma": ""
  },
  {
-  "pos": 17,
+  "pos": 18,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 9,
@@ -218,19 +231,6 @@
   "gf": 13,
   "gc": 25,
   "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 18,
-  "equipo": "Elche",
-  "escudo": "https://crests.football-data.org/285.png",
-  "pj": 9,
-  "g": 1,
-  "e": 4,
-  "p": 4,
-  "gf": 11,
-  "gc": 17,
-  "pts": 7,
   "forma": ""
  },
  {
