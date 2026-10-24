@@ -174,5 +174,21 @@
   "golesLocal": 3,
   "golesVisita": 1,
   "comp": "PD"
+ },
+ {
+  "id": 564719,
+  "utc": "2026-10-23T19:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": "Carlos Muñiz Muñoz",
+  "local": "Alavés",
+  "visita": "Málaga",
+  "idLocal": 263,
+  "idVisita": 84,
+  "golesLocal": 1,
+  "golesVisita": 1,
+  "comp": "PD"
  }
 ]

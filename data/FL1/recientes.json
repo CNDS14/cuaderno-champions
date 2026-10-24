@@ -142,5 +142,21 @@
   "golesLocal": 2,
   "golesVisita": 1,
   "comp": "FL1"
+ },
+ {
+  "id": 559654,
+  "utc": "2026-10-23T18:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 8,
+  "sede": "",
+  "arbitro": "Guillaume Paradis",
+  "local": "Brest",
+  "visita": "Nice",
+  "idLocal": 512,
+  "idVisita": 522,
+  "golesLocal": 1,
+  "golesVisita": 2,
+  "comp": "FL1"
  }
 ]

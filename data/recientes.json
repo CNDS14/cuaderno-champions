@@ -464,6 +464,22 @@
   "comp": "PD"
  },
  {
+  "id": 564719,
+  "utc": "2026-10-23T19:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": "Carlos Muñiz Muñoz",
+  "local": "Alavés",
+  "visita": "Málaga",
+  "idLocal": 263,
+  "idVisita": 84,
+  "golesLocal": 1,
+  "golesVisita": 1,
+  "comp": "PD"
+ },
+ {
   "id": 560603,
   "utc": "2026-10-17T11:30:00Z",
   "estado": "FT",
@@ -620,6 +636,22 @@
   "idLocal": 73,
   "idVisita": 1076,
   "golesLocal": 3,
+  "golesVisita": 1,
+  "comp": "PL"
+ },
+ {
+  "id": 560620,
+  "utc": "2026-10-23T19:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 8,
+  "sede": "",
+  "arbitro": "Thomas Bramall",
+  "local": "Ipswich Town",
+  "visita": "Nottingham",
+  "idLocal": 349,
+  "idVisita": 351,
+  "golesLocal": 1,
   "golesVisita": 1,
   "comp": "PL"
  },
@@ -784,6 +816,22 @@
   "comp": "SA"
  },
  {
+  "id": 558567,
+  "utc": "2026-10-23T18:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 8,
+  "sede": "",
+  "arbitro": "Andrea Zanotti",
+  "local": "Torino",
+  "visita": "Monza",
+  "idLocal": 586,
+  "idVisita": 5911,
+  "golesLocal": 3,
+  "golesVisita": 2,
+  "comp": "SA"
+ },
+ {
   "id": 565828,
   "utc": "2026-10-16T18:30:00Z",
   "estado": "FT",
@@ -928,6 +976,22 @@
   "comp": "BL1"
  },
  {
+  "id": 565833,
+  "utc": "2026-10-23T18:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": "Matthias Jöllenbeck",
+  "local": "Stuttgart",
+  "visita": "M'gladbach",
+  "idLocal": 10,
+  "idVisita": 18,
+  "golesLocal": 2,
+  "golesVisita": 3,
+  "comp": "BL1"
+ },
+ {
   "id": 559661,
   "utc": "2026-10-16T18:45:00Z",
   "estado": "FT",
@@ -1069,6 +1133,22 @@
   "idVisita": 522,
   "golesLocal": 2,
   "golesVisita": 1,
+  "comp": "FL1"
+ },
+ {
+  "id": 559654,
+  "utc": "2026-10-23T18:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 8,
+  "sede": "",
+  "arbitro": "Guillaume Paradis",
+  "local": "Brest",
+  "visita": "Nice",
+  "idLocal": 512,
+  "idVisita": 522,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "FL1"
  }
 ]

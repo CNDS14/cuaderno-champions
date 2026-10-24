@@ -158,5 +158,21 @@
   "golesLocal": 3,
   "golesVisita": 1,
   "comp": "PL"
+ },
+ {
+  "id": 560620,
+  "utc": "2026-10-23T19:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 8,
+  "sede": "",
+  "arbitro": "Thomas Bramall",
+  "local": "Ipswich Town",
+  "visita": "Nottingham",
+  "idLocal": 349,
+  "idVisita": 351,
+  "golesLocal": 1,
+  "golesVisita": 1,
+  "comp": "PL"
  }
 ]

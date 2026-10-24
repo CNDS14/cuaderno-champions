@@ -142,5 +142,21 @@
   "golesLocal": 1,
   "golesVisita": 2,
   "comp": "BL1"
+ },
+ {
+  "id": 565833,
+  "utc": "2026-10-23T18:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": "Matthias Jöllenbeck",
+  "local": "Stuttgart",
+  "visita": "M'gladbach",
+  "idLocal": 10,
+  "idVisita": 18,
+  "golesLocal": 2,
+  "golesVisita": 3,
+  "comp": "BL1"
  }
 ]
