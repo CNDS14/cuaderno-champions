@@ -29,17 +29,30 @@
   "pos": 3,
   "equipo": "Roma",
   "escudo": "https://crests.football-data.org/100.png",
-  "pj": 7,
+  "pj": 8,
   "g": 5,
-  "e": 2,
+  "e": 3,
   "p": 0,
   "gf": 16,
   "gc": 3,
-  "pts": 17,
+  "pts": 18,
   "forma": ""
  },
  {
   "pos": 4,
+  "equipo": "Como 1907",
+  "escudo": "https://crests.football-data.org/7397.png",
+  "pj": 8,
+  "g": 5,
+  "e": 2,
+  "p": 1,
+  "gf": 14,
+  "gc": 7,
+  "pts": 17,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Milan",
   "escudo": "https://crests.football-data.org/98.png",
   "pj": 7,
@@ -52,33 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
-  "equipo": "Como 1907",
-  "escudo": "https://crests.football-data.org/7397.png",
-  "pj": 8,
-  "g": 4,
-  "e": 3,
-  "p": 1,
-  "gf": 12,
-  "gc": 7,
-  "pts": 15,
-  "forma": ""
- },
- {
   "pos": 6,
-  "equipo": "Cagliari",
-  "escudo": "https://crests.football-data.org/104.png",
-  "pj": 8,
-  "g": 4,
-  "e": 2,
-  "p": 2,
-  "gf": 6,
-  "gc": 7,
-  "pts": 14,
-  "forma": ""
- },
- {
-  "pos": 7,
   "equipo": "Frosinone",
   "escudo": "https://crests.football-data.org/470.png",
   "pj": 7,
@@ -91,7 +78,7 @@
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 7,
   "equipo": "Torino",
   "escudo": "https://crests.football-data.org/586.png",
   "pj": 8,
@@ -104,7 +91,33 @@
   "forma": ""
  },
  {
+  "pos": 8,
+  "equipo": "Cagliari",
+  "escudo": "https://crests.football-data.org/104.png",
+  "pj": 8,
+  "g": 4,
+  "e": 1,
+  "p": 3,
+  "gf": 6,
+  "gc": 9,
+  "pts": 13,
+  "forma": ""
+ },
+ {
   "pos": 9,
+  "equipo": "Napoli",
+  "escudo": "https://crests.football-data.org/113.png",
+  "pj": 8,
+  "g": 3,
+  "e": 2,
+  "p": 3,
+  "gf": 10,
+  "gc": 7,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 10,
   "equipo": "Juventus",
   "escudo": "https://crests.football-data.org/109.png",
   "pj": 7,
@@ -114,19 +127,6 @@
   "gf": 9,
   "gc": 8,
   "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 10,
-  "equipo": "Napoli",
-  "escudo": "https://crests.football-data.org/113.png",
-  "pj": 7,
-  "g": 3,
-  "e": 1,
-  "p": 3,
-  "gf": 10,
-  "gc": 7,
-  "pts": 10,
   "forma": ""
  },
  {
@@ -144,19 +144,6 @@
  },
  {
   "pos": 12,
-  "equipo": "Sassuolo",
-  "escudo": "https://crests.football-data.org/471.png",
-  "pj": 8,
-  "g": 2,
-  "e": 3,
-  "p": 3,
-  "gf": 12,
-  "gc": 14,
-  "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 13,
   "equipo": "Lecce",
   "escudo": "https://crests.football-data.org/5890.png",
   "pj": 7,
@@ -169,7 +156,33 @@
   "forma": ""
  },
  {
+  "pos": 13,
+  "equipo": "Bologna",
+  "escudo": "https://crests.football-data.org/103.png",
+  "pj": 8,
+  "g": 2,
+  "e": 2,
+  "p": 4,
+  "gf": 8,
+  "gc": 10,
+  "pts": 8,
+  "forma": ""
+ },
+ {
   "pos": 14,
+  "equipo": "Sassuolo",
+  "escudo": "https://crests.football-data.org/471.png",
+  "pj": 8,
+  "g": 2,
+  "e": 2,
+  "p": 4,
+  "gf": 12,
+  "gc": 16,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 15,
   "equipo": "Monza",
   "escudo": "https://crests.football-data.org/5911.png",
   "pj": 8,
@@ -179,19 +192,6 @@
   "gf": 15,
   "gc": 18,
   "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 15,
-  "equipo": "Bologna",
-  "escudo": "https://crests.football-data.org/103.png",
-  "pj": 8,
-  "g": 1,
-  "e": 3,
-  "p": 4,
-  "gf": 6,
-  "gc": 10,
-  "pts": 6,
   "forma": ""
  },
  {
