@@ -1,12 +1,11 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 116/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 117/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
   "2 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
-  "3 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
   "Sin calificacion para Rayo Vallecano o Elche: no registro picks de ese partido.",
   "Sin calificacion para Santander o Espanyol: no registro picks de ese partido.",
   "Sin calificacion para Atlético de Madrid o Deportivo: no registro picks de ese partido.",

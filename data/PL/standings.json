@@ -42,13 +42,13 @@
   "pos": 4,
   "equipo": "Chelsea",
   "escudo": "https://crests.football-data.org/61.png",
-  "pj": 7,
+  "pj": 8,
   "g": 4,
-  "e": 1,
+  "e": 2,
   "p": 2,
   "gf": 17,
   "gc": 13,
-  "pts": 13,
+  "pts": 14,
   "forma": ""
  },
  {
@@ -183,6 +183,19 @@
  },
  {
   "pos": 15,
+  "equipo": "Tottenham",
+  "escudo": "https://crests.football-data.org/73.png",
+  "pj": 8,
+  "g": 1,
+  "e": 4,
+  "p": 3,
+  "gf": 6,
+  "gc": 10,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 16,
   "equipo": "Crystal Palace",
   "escudo": "https://crests.football-data.org/354.png",
   "pj": 7,
@@ -195,7 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Bournemouth",
   "escudo": "https://crests.football-data.org/bournemouth.png",
   "pj": 7,
@@ -208,26 +221,13 @@
   "forma": ""
  },
  {
-  "pos": 17,
+  "pos": 18,
   "equipo": "Nottingham",
   "escudo": "https://crests.football-data.org/351.png",
   "pj": 8,
   "g": 1,
   "e": 3,
   "p": 4,
-  "gf": 6,
-  "gc": 10,
-  "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 17,
-  "equipo": "Tottenham",
-  "escudo": "https://crests.football-data.org/73.png",
-  "pj": 7,
-  "g": 1,
-  "e": 3,
-  "p": 3,
   "gf": 6,
   "gc": 10,
   "pts": 6,
