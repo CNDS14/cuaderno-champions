@@ -16,13 +16,13 @@
   "pos": 2,
   "equipo": "Atleti",
   "escudo": "https://crests.football-data.org/78.png",
-  "pj": 9,
+  "pj": 10,
   "g": 7,
-  "e": 1,
+  "e": 2,
   "p": 1,
   "gf": 19,
   "gc": 8,
-  "pts": 22,
+  "pts": 23,
   "forma": ""
  },
  {
@@ -92,6 +92,32 @@
  },
  {
   "pos": 8,
+  "equipo": "Villarreal",
+  "escudo": "https://crests.football-data.org/94.png",
+  "pj": 10,
+  "g": 3,
+  "e": 3,
+  "p": 4,
+  "gf": 15,
+  "gc": 14,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 9,
+  "equipo": "Deportivo",
+  "escudo": "https://crests.football-data.org/560.png",
+  "pj": 10,
+  "g": 2,
+  "e": 6,
+  "p": 2,
+  "gf": 13,
+  "gc": 12,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 10,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 9,
@@ -104,20 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
-  "equipo": "Deportivo",
-  "escudo": "https://crests.football-data.org/560.png",
-  "pj": 9,
-  "g": 2,
-  "e": 5,
-  "p": 2,
-  "gf": 13,
-  "gc": 12,
-  "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
   "pj": 9,
@@ -130,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 10,
@@ -140,19 +153,6 @@
   "gf": 15,
   "gc": 26,
   "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 12,
-  "equipo": "Villarreal",
-  "escudo": "https://crests.football-data.org/94.png",
-  "pj": 10,
-  "g": 2,
-  "e": 4,
-  "p": 4,
-  "gf": 13,
-  "gc": 13,
-  "pts": 10,
   "forma": ""
  },
  {
@@ -239,11 +239,11 @@
   "escudo": "https://crests.football-data.org/95.png",
   "pj": 10,
   "g": 1,
-  "e": 4,
-  "p": 5,
-  "gf": 6,
-  "gc": 15,
-  "pts": 7,
+  "e": 3,
+  "p": 6,
+  "gf": 7,
+  "gc": 17,
+  "pts": 6,
   "forma": ""
  },
  {

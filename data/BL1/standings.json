@@ -4,12 +4,12 @@
   "equipo": "Dortmund",
   "escudo": "https://crests.football-data.org/4.png",
   "pj": 7,
-  "g": 4,
-  "e": 3,
+  "g": 5,
+  "e": 2,
   "p": 0,
-  "gf": 11,
+  "gf": 12,
   "gc": 4,
-  "pts": 15,
+  "pts": 17,
   "forma": ""
  },
  {
@@ -118,19 +118,6 @@
  },
  {
   "pos": 10,
-  "equipo": "Frankfurt",
-  "escudo": "https://crests.football-data.org/19.png",
-  "pj": 7,
-  "g": 2,
-  "e": 3,
-  "p": 2,
-  "gf": 10,
-  "gc": 16,
-  "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 11,
   "equipo": "HSV",
   "escudo": "https://crests.football-data.org/7.png",
   "pj": 7,
@@ -143,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 11,
   "equipo": "1. FC Köln",
   "escudo": "https://crests.football-data.org/1.png",
   "pj": 7,
@@ -156,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 12,
   "equipo": "SC Paderborn",
   "escudo": "https://crests.football-data.org/29.png",
   "pj": 7,
@@ -165,6 +152,19 @@
   "p": 3,
   "gf": 6,
   "gc": 9,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 13,
+  "equipo": "Frankfurt",
+  "escudo": "https://crests.football-data.org/19.png",
+  "pj": 7,
+  "g": 2,
+  "e": 2,
+  "p": 3,
+  "gf": 10,
+  "gc": 17,
   "pts": 8,
   "forma": ""
  },

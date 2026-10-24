@@ -44,11 +44,11 @@
   "escudo": "https://crests.football-data.org/61.png",
   "pj": 8,
   "g": 4,
-  "e": 2,
-  "p": 2,
+  "e": 1,
+  "p": 3,
   "gf": 17,
-  "gc": 13,
-  "pts": 14,
+  "gc": 15,
+  "pts": 13,
   "forma": ""
  },
  {
@@ -144,6 +144,19 @@
  },
  {
   "pos": 12,
+  "equipo": "Tottenham",
+  "escudo": "https://crests.football-data.org/73.png",
+  "pj": 8,
+  "g": 2,
+  "e": 3,
+  "p": 3,
+  "gf": 8,
+  "gc": 10,
+  "pts": 9,
+  "forma": ""
+ },
+ {
+  "pos": 13,
   "equipo": "Fulham",
   "escudo": "https://crests.football-data.org/63.png",
   "pj": 8,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Newcastle",
   "escudo": "https://crests.football-data.org/67.png",
   "pj": 7,
@@ -169,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Man United",
   "escudo": "https://crests.football-data.org/66.png",
   "pj": 7,
@@ -177,19 +190,6 @@
   "e": 4,
   "p": 2,
   "gf": 10,
-  "gc": 10,
-  "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 15,
-  "equipo": "Tottenham",
-  "escudo": "https://crests.football-data.org/73.png",
-  "pj": 8,
-  "g": 1,
-  "e": 4,
-  "p": 3,
-  "gf": 6,
   "gc": 10,
   "pts": 7,
   "forma": ""
