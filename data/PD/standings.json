@@ -17,12 +17,12 @@
   "equipo": "Atleti",
   "escudo": "https://crests.football-data.org/78.png",
   "pj": 10,
-  "g": 7,
-  "e": 2,
+  "g": 8,
+  "e": 1,
   "p": 1,
-  "gf": 19,
+  "gf": 20,
   "gc": 8,
-  "pts": 23,
+  "pts": 25,
   "forma": ""
  },
  {
@@ -105,19 +105,6 @@
  },
  {
   "pos": 9,
-  "equipo": "Deportivo",
-  "escudo": "https://crests.football-data.org/560.png",
-  "pj": 10,
-  "g": 2,
-  "e": 6,
-  "p": 2,
-  "gf": 13,
-  "gc": 12,
-  "pts": 12,
-  "forma": ""
- },
- {
-  "pos": 10,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 9,
@@ -126,6 +113,19 @@
   "p": 2,
   "gf": 10,
   "gc": 7,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 10,
+  "equipo": "Deportivo",
+  "escudo": "https://crests.football-data.org/560.png",
+  "pj": 10,
+  "g": 2,
+  "e": 5,
+  "p": 3,
+  "gf": 13,
+  "gc": 13,
   "pts": 11,
   "forma": ""
  },
