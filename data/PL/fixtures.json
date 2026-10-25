@@ -2,7 +2,7 @@
  {
   "id": 560612,
   "utc": "2026-10-25T14:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Brighton Hove",
   "idLocal": 64,
   "idVisita": 397,
-  "golesLocal": 0,
+  "golesLocal": 2,
   "golesVisita": 0,
   "comp": "PL"
  },
  {
   "id": 560613,
   "utc": "2026-10-25T14:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -28,13 +28,13 @@
   "idLocal": 354,
   "idVisita": 67,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 2,
   "comp": "PL"
  },
  {
   "id": 560615,
   "utc": "2026-10-25T14:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -44,13 +44,13 @@
   "idLocal": 66,
   "idVisita": 1044,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 3,
   "comp": "PL"
  },
  {
   "id": 560619,
   "utc": "2026-10-25T14:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -59,24 +59,24 @@
   "visita": "Brentford",
   "idLocal": 322,
   "idVisita": 402,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PL"
  },
  {
   "id": 560621,
   "utc": "2026-10-25T16:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 8,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Stuart Attwell",
   "local": "Sunderland",
   "visita": "Leeds United",
   "idLocal": 71,
   "idVisita": 341,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PL"
  }
 ]

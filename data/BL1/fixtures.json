@@ -2,7 +2,7 @@
  {
   "id": 565835,
   "utc": "2026-10-25T14:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -11,24 +11,24 @@
   "visita": "Leverkusen",
   "idLocal": 2,
   "idVisita": 3,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 0,
   "comp": "BL1"
  },
  {
   "id": 565836,
   "utc": "2026-10-25T16:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 7,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Felix Zwayer",
   "local": "Freiburg",
   "visita": "Bayern",
   "idLocal": 17,
   "idVisita": 5,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "BL1"
  }
 ]
