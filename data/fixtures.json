@@ -178,7 +178,7 @@
  {
   "id": 564726,
   "utc": "2026-10-25T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -187,24 +187,24 @@
   "visita": "Levante",
   "idLocal": 92,
   "idVisita": 88,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 564723,
   "utc": "2026-10-25T20:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 10,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Juan Martínez Munuera",
   "local": "Barça",
   "visita": "Real Madrid",
   "idLocal": 81,
   "idVisita": 86,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -274,7 +274,7 @@
  {
   "id": 560621,
   "utc": "2026-10-25T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -338,7 +338,7 @@
  {
   "id": 558566,
   "utc": "2026-10-25T17:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -348,23 +348,23 @@
   "idLocal": 5890,
   "idVisita": 109,
   "golesLocal": 0,
-  "golesVisita": 1,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {
   "id": 558559,
   "utc": "2026-10-25T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 8,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Matteo Marcenaro",
   "local": "Udinese",
   "visita": "Milan",
   "idLocal": 115,
   "idVisita": 98,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
@@ -386,7 +386,7 @@
  {
   "id": 565836,
   "utc": "2026-10-25T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 7,
   "sede": "",
@@ -395,8 +395,8 @@
   "visita": "Bayern",
   "idLocal": 17,
   "idVisita": 5,
-  "golesLocal": 0,
-  "golesVisita": 2,
+  "golesLocal": 1,
+  "golesVisita": 3,
   "comp": "BL1"
  },
  {
@@ -418,7 +418,7 @@
  {
   "id": 559649,
   "utc": "2026-10-25T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -428,13 +428,13 @@
   "idLocal": 516,
   "idVisita": 533,
   "golesLocal": 4,
-  "golesVisita": 0,
+  "golesVisita": 3,
   "comp": "FL1"
  },
  {
   "id": 559651,
   "utc": "2026-10-25T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -450,7 +450,7 @@
  {
   "id": 559653,
   "utc": "2026-10-25T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -466,7 +466,7 @@
  {
   "id": 559655,
   "utc": "2026-10-25T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -482,7 +482,7 @@
  {
   "id": 559656,
   "utc": "2026-10-25T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",

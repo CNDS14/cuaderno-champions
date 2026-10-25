@@ -18,7 +18,7 @@
  {
   "id": 559649,
   "utc": "2026-10-25T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -28,13 +28,13 @@
   "idLocal": 516,
   "idVisita": 533,
   "golesLocal": 4,
-  "golesVisita": 0,
+  "golesVisita": 3,
   "comp": "FL1"
  },
  {
   "id": 559651,
   "utc": "2026-10-25T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -50,7 +50,7 @@
  {
   "id": 559653,
   "utc": "2026-10-25T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -66,7 +66,7 @@
  {
   "id": 559655,
   "utc": "2026-10-25T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -82,7 +82,7 @@
  {
   "id": 559656,
   "utc": "2026-10-25T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",

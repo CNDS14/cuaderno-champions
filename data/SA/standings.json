@@ -40,6 +40,19 @@
  },
  {
   "pos": 4,
+  "equipo": "Milan",
+  "escudo": "https://crests.football-data.org/98.png",
+  "pj": 8,
+  "g": 5,
+  "e": 3,
+  "p": 0,
+  "gf": 15,
+  "gc": 7,
+  "pts": 18,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
   "pj": 8,
@@ -49,19 +62,6 @@
   "gf": 14,
   "gc": 7,
   "pts": 17,
-  "forma": ""
- },
- {
-  "pos": 5,
-  "equipo": "Milan",
-  "escudo": "https://crests.football-data.org/98.png",
-  "pj": 7,
-  "g": 4,
-  "e": 3,
-  "p": 0,
-  "gf": 14,
-  "gc": 7,
-  "pts": 15,
   "forma": ""
  },
  {
@@ -85,7 +85,7 @@
   "g": 4,
   "e": 2,
   "p": 2,
-  "gf": 10,
+  "gf": 11,
   "gc": 8,
   "pts": 14,
   "forma": ""
@@ -151,7 +151,7 @@
   "e": 0,
   "p": 5,
   "gf": 9,
-  "gc": 13,
+  "gc": 14,
   "pts": 9,
   "forma": ""
  },
@@ -211,12 +211,12 @@
   "pos": 17,
   "equipo": "Udinese",
   "escudo": "https://crests.football-data.org/115.png",
-  "pj": 7,
+  "pj": 8,
   "g": 1,
   "e": 1,
-  "p": 5,
+  "p": 6,
   "gf": 9,
-  "gc": 16,
+  "gc": 17,
   "pts": 4,
   "forma": ""
  },
