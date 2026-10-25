@@ -1,21 +1,5 @@
 [
  {
-  "id": 565828,
-  "utc": "2026-10-16T18:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 6,
-  "sede": "",
-  "arbitro": "Benjamin Brand",
-  "local": "Frankfurt",
-  "visita": "1. FC Köln",
-  "idLocal": 19,
-  "idVisita": 1,
-  "golesLocal": 1,
-  "golesVisita": 0,
-  "comp": "BL1"
- },
- {
   "id": 565821,
   "utc": "2026-10-17T13:30:00Z",
   "estado": "FT",

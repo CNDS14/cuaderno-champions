@@ -1,21 +1,5 @@
 [
  {
-  "id": 559661,
-  "utc": "2026-10-16T18:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 7,
-  "sede": "",
-  "arbitro": "Aurélien Petit",
-  "local": "Le Mans",
-  "visita": "Toulouse",
-  "idLocal": 535,
-  "idVisita": 511,
-  "golesLocal": 0,
-  "golesVisita": 3,
-  "comp": "FL1"
- },
- {
   "id": 559662,
   "utc": "2026-10-17T15:15:00Z",
   "estado": "FT",

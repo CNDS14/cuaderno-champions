@@ -1,5 +1,525 @@
 [
  {
+  "fixId": 575379,
+  "partido": "Feyenoord vs Inter",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Inter gana",
+  "k": "1X2::A",
+  "p": 0.4516,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575379,
+  "partido": "Feyenoord vs Inter",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Cualquiera gana",
+  "k": "DO::12",
+  "p": 0.7748,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575379,
+  "partido": "Feyenoord vs Inter",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.8683,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575379,
+  "partido": "Feyenoord vs Inter",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.6831,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575379,
+  "partido": "Feyenoord vs Inter",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Feyenoord recibe gol",
+  "k": "PA::NL",
+  "p": 0.8525,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575380,
+  "partido": "Barcelona vs Aston Villa",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Barcelona gana",
+  "k": "1X2::H",
+  "p": 0.7758,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575380,
+  "partido": "Barcelona vs Aston Villa",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Barcelona o empate",
+  "k": "DO::1X",
+  "p": 0.9154,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575380,
+  "partido": "Barcelona vs Aston Villa",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.8814,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575380,
+  "partido": "Barcelona vs Aston Villa",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.5404,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575380,
+  "partido": "Barcelona vs Aston Villa",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Aston Villa recibe gol",
+  "k": "PA::NV",
+  "p": 0.9393,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575381,
+  "partido": "Atlético de Madrid vs Bayern München",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Bayern München gana",
+  "k": "1X2::A",
+  "p": 0.5716,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575381,
+  "partido": "Atlético de Madrid vs Bayern München",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Cualquiera gana",
+  "k": "DO::12",
+  "p": 0.7889,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575381,
+  "partido": "Atlético de Madrid vs Bayern München",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.8561,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575381,
+  "partido": "Atlético de Madrid vs Bayern München",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.6355,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575381,
+  "partido": "Atlético de Madrid vs Bayern München",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Atlético de Madrid recibe gol",
+  "k": "PA::NL",
+  "p": 0.8823,
+  "registradoEl": "2026-10-25T00:27:33.019Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575382,
+  "partido": "Villarreal vs Paris Saint-Germain",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Paris Saint-Germain gana",
+  "k": "1X2::A",
+  "p": 0.4623,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575382,
+  "partido": "Villarreal vs Paris Saint-Germain",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Cualquiera gana",
+  "k": "DO::12",
+  "p": 0.7657,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575382,
+  "partido": "Villarreal vs Paris Saint-Germain",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.8376,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575382,
+  "partido": "Villarreal vs Paris Saint-Germain",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.6402,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575382,
+  "partido": "Villarreal vs Paris Saint-Germain",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Villarreal recibe gol",
+  "k": "PA::NL",
+  "p": 0.8364,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575383,
+  "partido": "Manchester United vs Roma",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Roma gana",
+  "k": "1X2::A",
+  "p": 0.4815,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575383,
+  "partido": "Manchester United vs Roma",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Cualquiera gana",
+  "k": "DO::12",
+  "p": 0.7563,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575383,
+  "partido": "Manchester United vs Roma",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.7997,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575383,
+  "partido": "Manchester United vs Roma",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.589,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575383,
+  "partido": "Manchester United vs Roma",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Manchester United recibe gol",
+  "k": "PA::NL",
+  "p": 0.8211,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575384,
+  "partido": "Bodø/Glimt vs Lille",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Bodø/Glimt gana",
+  "k": "1X2::H",
+  "p": 0.3858,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575384,
+  "partido": "Bodø/Glimt vs Lille",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Cualquiera gana",
+  "k": "DO::12",
+  "p": 0.7159,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575384,
+  "partido": "Bodø/Glimt vs Lille",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Menos de 3.5",
+  "k": "OU::U|3.5",
+  "p": 0.7793,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575384,
+  "partido": "Bodø/Glimt vs Lille",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — No",
+  "k": "AA::N",
+  "p": 0.5094,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575384,
+  "partido": "Bodø/Glimt vs Lille",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Lille recibe gol",
+  "k": "PA::NV",
+  "p": 0.7152,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575385,
+  "partido": "LASK vs Slovan Bratislava",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "LASK gana",
+  "k": "1X2::H",
+  "p": 0.4499,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575385,
+  "partido": "LASK vs Slovan Bratislava",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Cualquiera gana",
+  "k": "DO::12",
+  "p": 0.7386,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575385,
+  "partido": "LASK vs Slovan Bratislava",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.753,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575385,
+  "partido": "LASK vs Slovan Bratislava",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.5423,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575385,
+  "partido": "LASK vs Slovan Bratislava",
+  "utc": "2026-11-03T20:00:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Slovan Bratislava recibe gol",
+  "k": "PA::NV",
+  "p": 0.7813,
+  "registradoEl": "2026-10-25T00:27:33.020Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575378,
+  "partido": "Galatasaray vs Stuttgart",
+  "utc": "2026-11-03T17:45:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Galatasaray gana",
+  "k": "1X2::H",
+  "p": 0.5076,
+  "registradoEl": "2026-10-25T00:27:33.018Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575378,
+  "partido": "Galatasaray vs Stuttgart",
+  "utc": "2026-11-03T17:45:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Cualquiera gana",
+  "k": "DO::12",
+  "p": 0.7716,
+  "registradoEl": "2026-10-25T00:27:33.018Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575378,
+  "partido": "Galatasaray vs Stuttgart",
+  "utc": "2026-11-03T17:45:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.838,
+  "registradoEl": "2026-10-25T00:27:33.018Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575378,
+  "partido": "Galatasaray vs Stuttgart",
+  "utc": "2026-11-03T17:45:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.631,
+  "registradoEl": "2026-10-25T00:27:33.018Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 575378,
+  "partido": "Galatasaray vs Stuttgart",
+  "utc": "2026-11-03T17:45:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Stuttgart recibe gol",
+  "k": "PA::NV",
+  "p": 0.8526,
+  "registradoEl": "2026-10-25T00:27:33.018Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
   "fixId": 560628,
   "partido": "Aston Villa vs Fulham",
   "utc": "2026-10-31T20:00:00Z",
@@ -1958,9 +2478,9 @@
   "k": "1X2::A",
   "p": 0.4506,
   "registradoEl": "2026-10-15T00:14:20.608Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 564722,
@@ -1971,9 +2491,9 @@
   "k": "DO::12",
   "p": 0.7492,
   "registradoEl": "2026-10-15T00:14:20.608Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 564722,
@@ -1984,9 +2504,9 @@
   "k": "OU::O|1.5",
   "p": 0.7881,
   "registradoEl": "2026-10-15T00:14:20.608Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 564722,
@@ -1997,9 +2517,9 @@
   "k": "AA::S",
   "p": 0.5816,
   "registradoEl": "2026-10-15T00:14:20.608Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 564722,
@@ -2010,9 +2530,9 @@
   "k": "PA::NL",
   "p": 0.8018,
   "registradoEl": "2026-10-15T00:14:20.608Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 560617,
@@ -2023,9 +2543,9 @@
   "k": "1X2::H",
   "p": 0.591,
   "registradoEl": "2026-10-15T00:14:20.609Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 2,
+  "ok": false
  },
  {
   "fixId": 560617,
@@ -2036,9 +2556,9 @@
   "k": "DO::1X",
   "p": 0.8026,
   "registradoEl": "2026-10-15T00:14:20.609Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 2,
+  "ok": false
  },
  {
   "fixId": 560617,
@@ -2049,9 +2569,9 @@
   "k": "OU::O|1.5",
   "p": 0.8386,
   "registradoEl": "2026-10-15T00:14:20.609Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 2,
+  "ok": true
  },
  {
   "fixId": 560617,
@@ -2062,9 +2582,9 @@
   "k": "AA::S",
   "p": 0.6023,
   "registradoEl": "2026-10-15T00:14:20.609Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 2,
+  "ok": false
  },
  {
   "fixId": 560617,
@@ -2075,9 +2595,9 @@
   "k": "PA::NV",
   "p": 0.8784,
   "registradoEl": "2026-10-15T00:14:20.609Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 2,
+  "ok": false
  },
  {
   "fixId": 558564,
@@ -2153,9 +2673,9 @@
   "k": "1X2::H",
   "p": 0.6541,
   "registradoEl": "2026-10-15T00:14:20.609Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 560616,
@@ -2166,9 +2686,9 @@
   "k": "DO::1X",
   "p": 0.8777,
   "registradoEl": "2026-10-15T00:14:20.609Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 560616,
@@ -2179,9 +2699,9 @@
   "k": "OU::U|3.5",
   "p": 0.7637,
   "registradoEl": "2026-10-15T00:14:20.609Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 560616,
@@ -2192,9 +2712,9 @@
   "k": "AA::N",
   "p": 0.5978,
   "registradoEl": "2026-10-15T00:14:20.609Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 560616,
@@ -2205,9 +2725,9 @@
   "k": "PA::NV",
   "p": 0.8389,
   "registradoEl": "2026-10-15T00:14:20.609Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 565838,
@@ -2348,9 +2868,9 @@
   "k": "1X2::A",
   "p": 0.5201,
   "registradoEl": "2026-10-15T00:14:20.608Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 560614,
@@ -2361,9 +2881,9 @@
   "k": "DO::12",
   "p": 0.7618,
   "registradoEl": "2026-10-15T00:14:20.608Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 560614,
@@ -2374,9 +2894,9 @@
   "k": "OU::O|1.5",
   "p": 0.7972,
   "registradoEl": "2026-10-15T00:14:20.608Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 560614,
@@ -2387,9 +2907,9 @@
   "k": "AA::S",
   "p": 0.5754,
   "registradoEl": "2026-10-15T00:14:20.608Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 560614,
@@ -2400,9 +2920,9 @@
   "k": "PA::NL",
   "p": 0.8341,
   "registradoEl": "2026-10-15T00:14:20.608Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 558567,
