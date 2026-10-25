@@ -1,7 +1,7 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 121/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 123/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
@@ -19,5 +19,10 @@
   "Sin calificacion para Toulouse o Troyes: no registro picks de ese partido.",
   "Sin calificacion para Auxerre o Le Mans: no registro picks de ese partido."
  ],
- "errores": []
+ "errores": [
+  {
+   "donde": "FL1/recientes",
+   "error": "HTTP 500 This is my fault. Feel free to file a complain to daniel@football-data.org"
+  }
+ ]
 }
