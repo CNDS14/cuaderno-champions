@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "Stade Rennais",
+  "escudo": "https://crests.football-data.org/529.png",
+  "pj": 8,
+  "g": 5,
+  "e": 1,
+  "p": 2,
+  "gf": 18,
+  "gc": 14,
+  "pts": 16,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Lille",
   "escudo": "https://crests.football-data.org/521.png",
   "pj": 8,
@@ -13,7 +26,7 @@
   "forma": ""
  },
  {
-  "pos": 2,
+  "pos": 3,
   "equipo": "Monaco",
   "escudo": "https://crests.football-data.org/548.png",
   "pj": 8,
@@ -26,7 +39,7 @@
   "forma": ""
  },
  {
-  "pos": 3,
+  "pos": 4,
   "equipo": "Olympique Lyon",
   "escudo": "https://crests.football-data.org/523.png",
   "pj": 7,
@@ -39,7 +52,7 @@
   "forma": ""
  },
  {
-  "pos": 4,
+  "pos": 5,
   "equipo": "PSG",
   "escudo": "https://crests.football-data.org/524.png",
   "pj": 7,
@@ -52,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Paris FC",
   "escudo": "https://crests.football-data.org/1045.png",
   "pj": 8,
@@ -61,19 +74,6 @@
   "p": 2,
   "gf": 13,
   "gc": 9,
-  "pts": 14,
-  "forma": ""
- },
- {
-  "pos": 6,
-  "equipo": "Stade Rennais",
-  "escudo": "https://crests.football-data.org/529.png",
-  "pj": 8,
-  "g": 4,
-  "e": 2,
-  "p": 2,
-  "gf": 15,
-  "gc": 14,
   "pts": 14,
   "forma": ""
  },
@@ -98,7 +98,7 @@
   "g": 4,
   "e": 0,
   "p": 4,
-  "gf": 15,
+  "gf": 18,
   "gc": 10,
   "pts": 12,
   "forma": ""
@@ -150,8 +150,8 @@
   "g": 3,
   "e": 1,
   "p": 4,
-  "gf": 11,
-  "gc": 17,
+  "gf": 12,
+  "gc": 18,
   "pts": 10,
   "forma": ""
  },
@@ -170,19 +170,6 @@
  },
  {
   "pos": 14,
-  "equipo": "Strasbourg",
-  "escudo": "https://crests.football-data.org/576.png",
-  "pj": 8,
-  "g": 2,
-  "e": 2,
-  "p": 4,
-  "gf": 12,
-  "gc": 15,
-  "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 15,
   "equipo": "Angers SCO",
   "escudo": "https://crests.football-data.org/532.png",
   "pj": 8,
@@ -195,15 +182,28 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 15,
   "equipo": "Le Mans",
   "escudo": "https://crests.football-data.org/535.png",
   "pj": 8,
   "g": 1,
   "e": 4,
   "p": 3,
-  "gf": 10,
-  "gc": 15,
+  "gf": 11,
+  "gc": 16,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 16,
+  "equipo": "Strasbourg",
+  "escudo": "https://crests.football-data.org/576.png",
+  "pj": 8,
+  "g": 2,
+  "e": 1,
+  "p": 5,
+  "gf": 12,
+  "gc": 18,
   "pts": 7,
   "forma": ""
  },
@@ -229,7 +229,7 @@
   "e": 2,
   "p": 6,
   "gf": 5,
-  "gc": 12,
+  "gc": 15,
   "pts": 2,
   "forma": ""
  }
