@@ -2,7 +2,7 @@
  {
   "id": 564721,
   "utc": "2026-10-26T20:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Osasuna",
   "idLocal": 559,
   "idVisita": 79,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 0,
   "comp": "PD"
  }
 ]

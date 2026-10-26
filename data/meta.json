@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26T19:05:31.167Z",
+ "actualizado": "2026-10-26T22:51:47.030Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -39,7 +39,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 16
+   "resultados": 11
   },
   {
    "fd": "BL1",
@@ -59,7 +59,7 @@
    "hoy": 1,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 7
+   "resultados": 13
   }
  ],
  "partidosTotales": 59,
