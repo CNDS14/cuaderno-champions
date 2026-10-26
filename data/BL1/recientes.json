@@ -142,5 +142,37 @@
   "golesLocal": 1,
   "golesVisita": 0,
   "comp": "BL1"
+ },
+ {
+  "id": 565835,
+  "utc": "2026-10-25T14:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": "Daniel Siebert",
+  "local": "Hoffenheim",
+  "visita": "Leverkusen",
+  "idLocal": 2,
+  "idVisita": 3,
+  "golesLocal": 3,
+  "golesVisita": 0,
+  "comp": "BL1"
+ },
+ {
+  "id": 565836,
+  "utc": "2026-10-25T16:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 7,
+  "sede": "",
+  "arbitro": "Felix Zwayer",
+  "local": "Freiburg",
+  "visita": "Bayern",
+  "idLocal": 17,
+  "idVisita": 5,
+  "golesLocal": 1,
+  "golesVisita": 3,
+  "comp": "BL1"
  }
 ]
