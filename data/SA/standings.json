@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "Lazio",
+  "escudo": "https://crests.football-data.org/110.png",
+  "pj": 9,
+  "g": 8,
+  "e": 1,
+  "p": 0,
+  "gf": 20,
+  "gc": 7,
+  "pts": 25,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Inter",
   "escudo": "https://crests.football-data.org/108.png",
   "pj": 8,
@@ -9,19 +22,6 @@
   "p": 0,
   "gf": 23,
   "gc": 10,
-  "pts": 22,
-  "forma": ""
- },
- {
-  "pos": 2,
-  "equipo": "Lazio",
-  "escudo": "https://crests.football-data.org/110.png",
-  "pj": 8,
-  "g": 7,
-  "e": 1,
-  "p": 0,
-  "gf": 16,
-  "gc": 5,
   "pts": 22,
   "forma": ""
  },
@@ -172,12 +172,12 @@
   "pos": 14,
   "equipo": "Sassuolo",
   "escudo": "https://crests.football-data.org/471.png",
-  "pj": 8,
+  "pj": 9,
   "g": 2,
   "e": 2,
-  "p": 4,
-  "gf": 12,
-  "gc": 16,
+  "p": 5,
+  "gf": 14,
+  "gc": 20,
   "pts": 8,
   "forma": ""
  },
