@@ -18,7 +18,7 @@
  {
   "id": 558555,
   "utc": "2026-10-27T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Cagliari",
   "idLocal": 100,
   "idVisita": 104,
-  "golesLocal": 2,
-  "golesVisita": 1,
+  "golesLocal": 4,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {
   "id": 558557,
   "utc": "2026-10-27T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -44,7 +44,7 @@
   "idLocal": 586,
   "idVisita": 7397,
   "golesLocal": 1,
-  "golesVisita": 0,
+  "golesVisita": 3,
   "comp": "SA"
  }
 ]
