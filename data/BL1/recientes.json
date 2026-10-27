@@ -1,37 +1,5 @@
 [
  {
-  "id": 565827,
-  "utc": "2026-10-18T13:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 6,
-  "sede": "",
-  "arbitro": "Florian Badstübner",
-  "local": "Leverkusen",
-  "visita": "Freiburg",
-  "idLocal": 3,
-  "idVisita": 17,
-  "golesLocal": 2,
-  "golesVisita": 1,
-  "comp": "BL1"
- },
- {
-  "id": 565826,
-  "utc": "2026-10-18T15:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 6,
-  "sede": "",
-  "arbitro": "Sören Storks",
-  "local": "M'gladbach",
-  "visita": "Hoffenheim",
-  "idLocal": 18,
-  "idVisita": 2,
-  "golesLocal": 1,
-  "golesVisita": 2,
-  "comp": "BL1"
- },
- {
   "id": 565833,
   "utc": "2026-10-23T18:30:00Z",
   "estado": "FT",
