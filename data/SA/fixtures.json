@@ -2,7 +2,7 @@
  {
   "id": 558549,
   "utc": "2026-10-28T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -12,13 +12,13 @@
   "idLocal": 98,
   "idVisita": 103,
   "golesLocal": 2,
-  "golesVisita": 1,
+  "golesVisita": 4,
   "comp": "SA"
  },
  {
   "id": 558550,
   "utc": "2026-10-28T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -28,13 +28,13 @@
   "idLocal": 454,
   "idVisita": 108,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {
   "id": 558553,
   "utc": "2026-10-28T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -50,7 +50,7 @@
  {
   "id": 558552,
   "utc": "2026-10-28T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -59,14 +59,14 @@
   "visita": "Juventus",
   "idLocal": 107,
   "idVisita": 109,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  },
  {
   "id": 558554,
   "utc": "2026-10-28T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -75,8 +75,8 @@
   "visita": "Napoli",
   "idLocal": 5911,
   "idVisita": 113,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  }
 ]
