@@ -158,5 +158,21 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "PL"
+ },
+ {
+  "id": 560634,
+  "utc": "2026-11-06T20:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": null,
+  "local": "Everton",
+  "visita": "Coventry City",
+  "idLocal": 62,
+  "idVisita": 1076,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "PL"
  }
 ]

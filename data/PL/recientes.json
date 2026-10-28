@@ -1,21 +1,5 @@
 [
  {
-  "id": 560606,
-  "utc": "2026-10-19T19:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 7,
-  "sede": "",
-  "arbitro": "Andy Madley",
-  "local": "Tottenham",
-  "visita": "Coventry City",
-  "idLocal": 73,
-  "idVisita": 1076,
-  "golesLocal": 3,
-  "golesVisita": 1,
-  "comp": "PL"
- },
- {
   "id": 560620,
   "utc": "2026-10-23T19:00:00Z",
   "estado": "FT",

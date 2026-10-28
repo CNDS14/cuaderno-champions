@@ -142,5 +142,21 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "FL1"
+ },
+ {
+  "id": 559638,
+  "utc": "2026-11-06T19:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": null,
+  "local": "Toulouse",
+  "visita": "Strasbourg",
+  "idLocal": 511,
+  "idVisita": 576,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
  }
 ]

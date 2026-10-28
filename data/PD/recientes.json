@@ -1,21 +1,5 @@
 [
  {
-  "id": 564717,
-  "utc": "2026-10-19T19:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 9,
-  "sede": "",
-  "arbitro": "Jon González Esteban",
-  "local": "Getafe",
-  "visita": "Rayo Vallecano",
-  "idLocal": 82,
-  "idVisita": 87,
-  "golesLocal": 1,
-  "golesVisita": 1,
-  "comp": "PD"
- },
- {
   "id": 564685,
   "utc": "2026-10-21T18:00:00Z",
   "estado": "FT",

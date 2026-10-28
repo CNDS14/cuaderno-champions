@@ -142,5 +142,21 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "BL1"
+ },
+ {
+  "id": 565852,
+  "utc": "2026-11-06T19:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 9,
+  "sede": "",
+  "arbitro": null,
+  "local": "HSV",
+  "visita": "M'gladbach",
+  "idLocal": 7,
+  "idVisita": 18,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "BL1"
  }
 ]
