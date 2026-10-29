@@ -1,5 +1,330 @@
 [
  {
+  "fixId": 564741,
+  "partido": "Valencia vs Real Madrid",
+  "utc": "2026-11-07T20:00:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Real Madrid gana",
+  "k": "1X2::A",
+  "p": 0.5786,
+  "registradoEl": "2026-10-29T00:09:11.617Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 564741,
+  "partido": "Valencia vs Real Madrid",
+  "utc": "2026-11-07T20:00:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Empate o Real Madrid",
+  "k": "DO::X2",
+  "p": 0.8133,
+  "registradoEl": "2026-10-29T00:09:11.617Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 564741,
+  "partido": "Valencia vs Real Madrid",
+  "utc": "2026-11-07T20:00:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.762,
+  "registradoEl": "2026-10-29T00:09:11.617Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 564741,
+  "partido": "Valencia vs Real Madrid",
+  "utc": "2026-11-07T20:00:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.5094,
+  "registradoEl": "2026-10-29T00:09:11.617Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 564741,
+  "partido": "Valencia vs Real Madrid",
+  "utc": "2026-11-07T20:00:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Valencia recibe gol",
+  "k": "PA::NL",
+  "p": 0.8368,
+  "registradoEl": "2026-10-29T00:09:11.617Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 559637,
+  "partido": "Auxerre vs Paris FC",
+  "utc": "2026-11-07T16:15:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Paris FC gana",
+  "k": "1X2::A",
+  "p": 0.4364,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 559637,
+  "partido": "Auxerre vs Paris FC",
+  "utc": "2026-11-07T16:15:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Cualquiera gana",
+  "k": "DO::12",
+  "p": 0.7276,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 559637,
+  "partido": "Auxerre vs Paris FC",
+  "utc": "2026-11-07T16:15:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Menos de 3.5",
+  "k": "OU::U|3.5",
+  "p": 0.7529,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 559637,
+  "partido": "Auxerre vs Paris FC",
+  "utc": "2026-11-07T16:15:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.5106,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 559637,
+  "partido": "Auxerre vs Paris FC",
+  "utc": "2026-11-07T16:15:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Auxerre recibe gol",
+  "k": "PA::NL",
+  "p": 0.757,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 560633,
+  "partido": "Fulham vs Newcastle",
+  "utc": "2026-11-07T15:00:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Newcastle gana",
+  "k": "1X2::A",
+  "p": 0.3936,
+  "registradoEl": "2026-10-29T00:09:11.618Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 560633,
+  "partido": "Fulham vs Newcastle",
+  "utc": "2026-11-07T15:00:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Cualquiera gana",
+  "k": "DO::12",
+  "p": 0.7483,
+  "registradoEl": "2026-10-29T00:09:11.618Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 560633,
+  "partido": "Fulham vs Newcastle",
+  "utc": "2026-11-07T15:00:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.7975,
+  "registradoEl": "2026-10-29T00:09:11.618Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 560633,
+  "partido": "Fulham vs Newcastle",
+  "utc": "2026-11-07T15:00:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.5987,
+  "registradoEl": "2026-10-29T00:09:11.618Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 560633,
+  "partido": "Fulham vs Newcastle",
+  "utc": "2026-11-07T15:00:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Fulham recibe gol",
+  "k": "PA::NL",
+  "p": 0.7816,
+  "registradoEl": "2026-10-29T00:09:11.618Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 565848,
+  "partido": "Leipzig vs Augsburg",
+  "utc": "2026-11-07T14:30:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Leipzig gana",
+  "k": "1X2::H",
+  "p": 0.5485,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 565848,
+  "partido": "Leipzig vs Augsburg",
+  "utc": "2026-11-07T14:30:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Leipzig o empate",
+  "k": "DO::1X",
+  "p": 0.7833,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 565848,
+  "partido": "Leipzig vs Augsburg",
+  "utc": "2026-11-07T14:30:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.7892,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 565848,
+  "partido": "Leipzig vs Augsburg",
+  "utc": "2026-11-07T14:30:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.5555,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 565848,
+  "partido": "Leipzig vs Augsburg",
+  "utc": "2026-11-07T14:30:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Augsburg recibe gol",
+  "k": "PA::NV",
+  "p": 0.8399,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 565851,
+  "partido": "Mainz vs Bayern München",
+  "utc": "2026-11-07T14:30:00Z",
+  "grupo": "Resultado",
+  "etiqueta": "Bayern München gana",
+  "k": "1X2::A",
+  "p": 0.6557,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 565851,
+  "partido": "Mainz vs Bayern München",
+  "utc": "2026-11-07T14:30:00Z",
+  "grupo": "Doble oportunidad",
+  "etiqueta": "Empate o Bayern München",
+  "k": "DO::X2",
+  "p": 0.8444,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 565851,
+  "partido": "Mainz vs Bayern München",
+  "utc": "2026-11-07T14:30:00Z",
+  "grupo": "Total de goles",
+  "etiqueta": "Más de 1.5",
+  "k": "OU::O|1.5",
+  "p": 0.8575,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 565851,
+  "partido": "Mainz vs Bayern München",
+  "utc": "2026-11-07T14:30:00Z",
+  "grupo": "Ambos anotan",
+  "etiqueta": "Ambos anotan — Sí",
+  "k": "AA::S",
+  "p": 0.5965,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
+  "fixId": 565851,
+  "partido": "Mainz vs Bayern München",
+  "utc": "2026-11-07T14:30:00Z",
+  "grupo": "Portería a cero",
+  "etiqueta": "Mainz recibe gol",
+  "k": "PA::NL",
+  "p": 0.9044,
+  "registradoEl": "2026-10-29T00:09:11.619Z",
+  "gl": null,
+  "gv": null,
+  "ok": null
+ },
+ {
   "fixId": 559638,
   "partido": "Toulouse vs Strasbourg",
   "utc": "2026-11-06T19:45:00Z",
@@ -2738,9 +3063,9 @@
   "k": "1X2::A",
   "p": 0.5819,
   "registradoEl": "2026-10-20T00:52:48.952Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": false
  },
  {
   "fixId": 558552,
@@ -2751,9 +3076,9 @@
   "k": "DO::X2",
   "p": 0.8381,
   "registradoEl": "2026-10-20T00:52:48.952Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": false
  },
  {
   "fixId": 558552,
@@ -2764,9 +3089,9 @@
   "k": "OU::U|3.5",
   "p": 0.7986,
   "registradoEl": "2026-10-20T00:52:48.952Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 558552,
@@ -2777,9 +3102,9 @@
   "k": "AA::N",
   "p": 0.5912,
   "registradoEl": "2026-10-20T00:52:48.952Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": true
  },
  {
   "fixId": 558552,
@@ -2790,9 +3115,9 @@
   "k": "PA::NL",
   "p": 0.7965,
   "registradoEl": "2026-10-20T00:52:48.952Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 2,
+  "gv": 0,
+  "ok": false
  },
  {
   "fixId": 558554,
@@ -2803,9 +3128,9 @@
   "k": "1X2::A",
   "p": 0.7382,
   "registradoEl": "2026-10-20T00:52:48.953Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 4,
+  "ok": true
  },
  {
   "fixId": 558554,
@@ -2816,9 +3141,9 @@
   "k": "DO::X2",
   "p": 0.9068,
   "registradoEl": "2026-10-20T00:52:48.953Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 4,
+  "ok": true
  },
  {
   "fixId": 558554,
@@ -2829,9 +3154,9 @@
   "k": "OU::O|1.5",
   "p": 0.8151,
   "registradoEl": "2026-10-20T00:52:48.953Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 4,
+  "ok": true
  },
  {
   "fixId": 558554,
@@ -2842,9 +3167,9 @@
   "k": "AA::N",
   "p": 0.533,
   "registradoEl": "2026-10-20T00:52:48.953Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 4,
+  "ok": false
  },
  {
   "fixId": 558554,
@@ -2855,9 +3180,9 @@
   "k": "PA::NL",
   "p": 0.9058,
   "registradoEl": "2026-10-20T00:52:48.953Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 4,
+  "ok": true
  },
  {
   "fixId": 558549,
