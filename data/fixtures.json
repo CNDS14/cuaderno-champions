@@ -770,7 +770,7 @@
  {
   "id": 558558,
   "utc": "2026-10-29T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -779,14 +779,14 @@
   "visita": "Lecce",
   "idLocal": 470,
   "idVisita": 5890,
-  "golesLocal": 3,
-  "golesVisita": 0,
+  "golesLocal": 5,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
   "id": 558551,
   "utc": "2026-10-29T19:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -795,8 +795,8 @@
   "visita": "Atalanta",
   "idLocal": 99,
   "idVisita": 102,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {

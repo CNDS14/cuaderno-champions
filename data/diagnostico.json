@@ -1,10 +1,11 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 132/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 133/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
+  "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
   "Sin calificacion para Shaktar o Sporting CP: no registro picks de ese partido.",
   "Sin calificacion para Lens o Como 1907: no registro picks de ese partido.",
   "Sin calificacion para Villarreal o Espanyol: no registro picks de ese partido.",
