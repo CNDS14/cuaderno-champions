@@ -286,5 +286,37 @@
   "golesLocal": 1,
   "golesVisita": 4,
   "comp": "SA"
+ },
+ {
+  "id": 558558,
+  "utc": "2026-10-29T17:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 9,
+  "sede": "",
+  "arbitro": "Rosario Abisso",
+  "local": "Frosinone",
+  "visita": "Lecce",
+  "idLocal": 470,
+  "idVisita": 5890,
+  "golesLocal": 5,
+  "golesVisita": 1,
+  "comp": "SA"
+ },
+ {
+  "id": 558551,
+  "utc": "2026-10-29T19:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 9,
+  "sede": "",
+  "arbitro": "Federico La Penna",
+  "local": "Fiorentina",
+  "visita": "Atalanta",
+  "idLocal": 99,
+  "idVisita": 102,
+  "golesLocal": 2,
+  "golesVisita": 2,
+  "comp": "SA"
  }
 ]
