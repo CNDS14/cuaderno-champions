@@ -2,7 +2,7 @@
  {
   "id": 559644,
   "utc": "2026-10-30T18:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "PSG",
   "idLocal": 533,
   "idVisita": 524,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559646,
   "utc": "2026-10-30T18:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "Stade Rennais",
   "idLocal": 522,
   "idVisita": 529,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
@@ -38,7 +38,7 @@
   "minuto": null,
   "jornada": 9,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Jérôme Brisard",
   "local": "Lille",
   "visita": "RC Lens",
   "idLocal": 521,

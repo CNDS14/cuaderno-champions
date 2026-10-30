@@ -3,12 +3,12 @@
   "pos": 1,
   "equipo": "PSG",
   "escudo": "https://crests.football-data.org/524.png",
-  "pj": 8,
+  "pj": 9,
   "g": 5,
   "e": 2,
-  "p": 1,
+  "p": 2,
   "gf": 16,
-  "gc": 9,
+  "gc": 10,
   "pts": 17,
   "forma": ""
  },
@@ -16,13 +16,13 @@
   "pos": 2,
   "equipo": "Stade Rennais",
   "escudo": "https://crests.football-data.org/529.png",
-  "pj": 8,
+  "pj": 9,
   "g": 5,
-  "e": 1,
+  "e": 2,
   "p": 2,
-  "gf": 18,
-  "gc": 14,
-  "pts": 16,
+  "gf": 19,
+  "gc": 15,
+  "pts": 17,
   "forma": ""
  },
  {
@@ -120,13 +120,13 @@
   "pos": 10,
   "equipo": "Nice",
   "escudo": "https://crests.football-data.org/522.png",
-  "pj": 8,
+  "pj": 9,
   "g": 3,
-  "e": 2,
+  "e": 3,
   "p": 3,
-  "gf": 8,
-  "gc": 10,
-  "pts": 11,
+  "gf": 9,
+  "gc": 11,
+  "pts": 12,
   "forma": ""
  },
  {
@@ -209,6 +209,19 @@
  },
  {
   "pos": 17,
+  "equipo": "Le Havre",
+  "escudo": "https://crests.football-data.org/533.png",
+  "pj": 9,
+  "g": 1,
+  "e": 2,
+  "p": 6,
+  "gf": 9,
+  "gc": 15,
+  "pts": 5,
+  "forma": ""
+ },
+ {
+  "pos": 18,
   "equipo": "Troyes",
   "escudo": "https://crests.football-data.org/531.png",
   "pj": 8,
@@ -218,19 +231,6 @@
   "gf": 5,
   "gc": 16,
   "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 18,
-  "equipo": "Le Havre",
-  "escudo": "https://crests.football-data.org/533.png",
-  "pj": 8,
-  "g": 0,
-  "e": 2,
-  "p": 6,
-  "gf": 8,
-  "gc": 15,
-  "pts": 2,
   "forma": ""
  }
 ]
