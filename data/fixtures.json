@@ -290,7 +290,7 @@
  {
   "id": 564737,
   "utc": "2026-10-30T20:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -299,8 +299,8 @@
   "visita": "Espanyol",
   "idLocal": 94,
   "idVisita": 80,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -946,7 +946,7 @@
  {
   "id": 565846,
   "utc": "2026-10-30T19:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -955,14 +955,14 @@
   "visita": "Mainz",
   "idLocal": 719,
   "idVisita": 15,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 0,
   "comp": "BL1"
  },
  {
   "id": 559644,
   "utc": "2026-10-30T18:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -972,13 +972,13 @@
   "idLocal": 533,
   "idVisita": 524,
   "golesLocal": 1,
-  "golesVisita": 0,
+  "golesVisita": 5,
   "comp": "FL1"
  },
  {
   "id": 559646,
   "utc": "2026-10-30T18:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -987,14 +987,14 @@
   "visita": "Stade Rennais",
   "idLocal": 522,
   "idVisita": 529,
-  "golesLocal": 1,
-  "golesVisita": 1,
+  "golesLocal": 5,
+  "golesVisita": 2,
   "comp": "FL1"
  },
  {
   "id": 559639,
   "utc": "2026-10-30T20:05:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -1003,8 +1003,8 @@
   "visita": "RC Lens",
   "idLocal": 521,
   "idVisita": 546,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]
