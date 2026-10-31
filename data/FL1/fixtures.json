@@ -2,17 +2,17 @@
  {
   "id": 559643,
   "utc": "2026-10-31T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Azzedine Souifi",
   "local": "Troyes",
   "visita": "Le Mans",
   "idLocal": 531,
   "idVisita": 535,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

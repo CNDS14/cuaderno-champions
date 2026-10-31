@@ -1,19 +1,6 @@
 [
  {
   "pos": 1,
-  "equipo": "Inter",
-  "escudo": "https://crests.football-data.org/108.png",
-  "pj": 9,
-  "g": 8,
-  "e": 1,
-  "p": 0,
-  "gf": 25,
-  "gc": 10,
-  "pts": 25,
-  "forma": ""
- },
- {
-  "pos": 2,
   "equipo": "Lazio",
   "escudo": "https://crests.football-data.org/110.png",
   "pj": 9,
@@ -26,6 +13,19 @@
   "forma": ""
  },
  {
+  "pos": 2,
+  "equipo": "Inter",
+  "escudo": "https://crests.football-data.org/108.png",
+  "pj": 10,
+  "g": 8,
+  "e": 1,
+  "p": 1,
+  "gf": 26,
+  "gc": 12,
+  "pts": 25,
+  "forma": ""
+ },
+ {
   "pos": 3,
   "equipo": "Roma",
   "escudo": "https://crests.football-data.org/100.png",
@@ -33,13 +33,26 @@
   "g": 7,
   "e": 3,
   "p": 0,
-  "gf": 24,
-  "gc": 8,
+  "gf": 28,
+  "gc": 10,
   "pts": 24,
   "forma": ""
  },
  {
   "pos": 4,
+  "equipo": "Milan",
+  "escudo": "https://crests.football-data.org/98.png",
+  "pj": 10,
+  "g": 6,
+  "e": 3,
+  "p": 1,
+  "gf": 20,
+  "gc": 12,
+  "pts": 21,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
   "pj": 9,
@@ -49,19 +62,6 @@
   "gf": 17,
   "gc": 8,
   "pts": 20,
-  "forma": ""
- },
- {
-  "pos": 5,
-  "equipo": "Milan",
-  "escudo": "https://crests.football-data.org/98.png",
-  "pj": 9,
-  "g": 5,
-  "e": 3,
-  "p": 1,
-  "gf": 18,
-  "gc": 11,
-  "pts": 18,
   "forma": ""
  },
  {
@@ -222,19 +222,6 @@
  },
  {
   "pos": 18,
-  "equipo": "Udinese",
-  "escudo": "https://crests.football-data.org/115.png",
-  "pj": 10,
-  "g": 1,
-  "e": 2,
-  "p": 7,
-  "gf": 9,
-  "gc": 19,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 19,
   "equipo": "Parma",
   "escudo": "https://crests.football-data.org/112.png",
   "pj": 9,
@@ -243,6 +230,19 @@
   "p": 6,
   "gf": 5,
   "gc": 15,
+  "pts": 5,
+  "forma": ""
+ },
+ {
+  "pos": 19,
+  "equipo": "Udinese",
+  "escudo": "https://crests.football-data.org/115.png",
+  "pj": 10,
+  "g": 1,
+  "e": 2,
+  "p": 7,
+  "gf": 11,
+  "gc": 23,
   "pts": 5,
   "forma": ""
  },

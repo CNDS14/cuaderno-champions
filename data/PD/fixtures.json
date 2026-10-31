@@ -34,7 +34,7 @@
  {
   "id": 564736,
   "utc": "2026-10-31T17:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -43,24 +43,24 @@
   "visita": "Málaga",
   "idLocal": 90,
   "idVisita": 84,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 564732,
   "utc": "2026-10-31T20:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 11,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Adrián Cordero Vega",
   "local": "Barça",
   "visita": "Alavés",
   "idLocal": 81,
   "idVisita": 263,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 0,
   "comp": "PD"
  }
 ]
