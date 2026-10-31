@@ -2,17 +2,17 @@
  {
   "id": 560626,
   "utc": "2026-10-31T12:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Peter Bankes",
   "local": "Chelsea",
   "visita": "Man United",
   "idLocal": 61,
   "idVisita": 66,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PL"
  },
  {

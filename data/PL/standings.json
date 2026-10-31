@@ -55,13 +55,13 @@
   "pos": 5,
   "equipo": "Chelsea",
   "escudo": "https://crests.football-data.org/61.png",
-  "pj": 8,
+  "pj": 9,
   "g": 4,
-  "e": 1,
+  "e": 2,
   "p": 3,
   "gf": 17,
   "gc": 15,
-  "pts": 13,
+  "pts": 14,
   "forma": ""
  },
  {
@@ -198,13 +198,13 @@
   "pos": 16,
   "equipo": "Man United",
   "escudo": "https://crests.football-data.org/66.png",
-  "pj": 8,
+  "pj": 9,
   "g": 1,
-  "e": 4,
+  "e": 5,
   "p": 3,
   "gf": 10,
   "gc": 13,
-  "pts": 7,
+  "pts": 8,
   "forma": ""
  },
  {
