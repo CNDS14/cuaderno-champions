@@ -79,19 +79,6 @@
  },
  {
   "pos": 7,
-  "equipo": "Villarreal",
-  "escudo": "https://crests.football-data.org/94.png",
-  "pj": 11,
-  "g": 3,
-  "e": 4,
-  "p": 4,
-  "gf": 15,
-  "gc": 14,
-  "pts": 13,
-  "forma": ""
- },
- {
-  "pos": 8,
   "equipo": "Alavés",
   "escudo": "https://crests.football-data.org/263.png",
   "pj": 10,
@@ -104,7 +91,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 8,
   "equipo": "Athletic",
   "escudo": "https://crests.football-data.org/77.png",
   "pj": 9,
@@ -117,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 9,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 10,
@@ -126,6 +113,19 @@
   "p": 2,
   "gf": 10,
   "gc": 7,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 10,
+  "equipo": "Villarreal",
+  "escudo": "https://crests.football-data.org/94.png",
+  "pj": 11,
+  "g": 3,
+  "e": 3,
+  "p": 5,
+  "gf": 15,
+  "gc": 15,
   "pts": 12,
   "forma": ""
  },
@@ -144,6 +144,19 @@
  },
  {
   "pos": 12,
+  "equipo": "Espanyol",
+  "escudo": "https://crests.football-data.org/80.png",
+  "pj": 11,
+  "g": 3,
+  "e": 2,
+  "p": 6,
+  "gf": 13,
+  "gc": 14,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 13,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
   "pj": 10,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 10,
@@ -169,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
   "pj": 10,
@@ -182,7 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 15,
+  "pos": 16,
   "equipo": "Elche",
   "escudo": "https://crests.football-data.org/285.png",
   "pj": 10,
@@ -192,19 +205,6 @@
   "gf": 14,
   "gc": 17,
   "pts": 10,
-  "forma": ""
- },
- {
-  "pos": 16,
-  "equipo": "Espanyol",
-  "escudo": "https://crests.football-data.org/80.png",
-  "pj": 11,
-  "g": 2,
-  "e": 3,
-  "p": 6,
-  "gf": 12,
-  "gc": 14,
-  "pts": 9,
   "forma": ""
  },
  {

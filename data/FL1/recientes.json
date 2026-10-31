@@ -142,5 +142,53 @@
   "golesLocal": 2,
   "golesVisita": 0,
   "comp": "FL1"
+ },
+ {
+  "id": 559644,
+  "utc": "2026-10-30T18:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 9,
+  "sede": "",
+  "arbitro": "François Letexier",
+  "local": "Le Havre",
+  "visita": "PSG",
+  "idLocal": 533,
+  "idVisita": 524,
+  "golesLocal": 1,
+  "golesVisita": 5,
+  "comp": "FL1"
+ },
+ {
+  "id": 559646,
+  "utc": "2026-10-30T18:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 9,
+  "sede": "",
+  "arbitro": "Eric Wattellier",
+  "local": "Nice",
+  "visita": "Stade Rennais",
+  "idLocal": 522,
+  "idVisita": 529,
+  "golesLocal": 5,
+  "golesVisita": 2,
+  "comp": "FL1"
+ },
+ {
+  "id": 559639,
+  "utc": "2026-10-30T20:05:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 9,
+  "sede": "",
+  "arbitro": "Jérôme Brisard",
+  "local": "Lille",
+  "visita": "RC Lens",
+  "idLocal": 521,
+  "idVisita": 546,
+  "golesLocal": 1,
+  "golesVisita": 0,
+  "comp": "FL1"
  }
 ]

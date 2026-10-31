@@ -17,12 +17,12 @@
   "equipo": "Lille",
   "escudo": "https://crests.football-data.org/521.png",
   "pj": 9,
-  "g": 4,
-  "e": 4,
+  "g": 5,
+  "e": 3,
   "p": 1,
-  "gf": 11,
+  "gf": 12,
   "gc": 6,
-  "pts": 16,
+  "pts": 18,
   "forma": ""
  },
  {
@@ -66,19 +66,6 @@
  },
  {
   "pos": 6,
-  "equipo": "RC Lens",
-  "escudo": "https://crests.football-data.org/546.png",
-  "pj": 9,
-  "g": 4,
-  "e": 2,
-  "p": 3,
-  "gf": 16,
-  "gc": 12,
-  "pts": 14,
-  "forma": ""
- },
- {
-  "pos": 7,
   "equipo": "Paris FC",
   "escudo": "https://crests.football-data.org/1045.png",
   "pj": 8,
@@ -91,7 +78,7 @@
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 7,
   "equipo": "Nice",
   "escudo": "https://crests.football-data.org/522.png",
   "pj": 9,
@@ -101,6 +88,19 @@
   "gf": 13,
   "gc": 12,
   "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 8,
+  "equipo": "RC Lens",
+  "escudo": "https://crests.football-data.org/546.png",
+  "pj": 9,
+  "g": 4,
+  "e": 1,
+  "p": 4,
+  "gf": 16,
+  "gc": 13,
+  "pts": 13,
   "forma": ""
  },
  {
