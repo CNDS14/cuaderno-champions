@@ -7,8 +7,8 @@
   "g": 10,
   "e": 0,
   "p": 1,
-  "gf": 42,
-  "gc": 11,
+  "gf": 46,
+  "gc": 12,
   "pts": 30,
   "forma": ""
  },
@@ -92,19 +92,6 @@
  },
  {
   "pos": 8,
-  "equipo": "Alavés",
-  "escudo": "https://crests.football-data.org/263.png",
-  "pj": 11,
-  "g": 3,
-  "e": 3,
-  "p": 5,
-  "gf": 14,
-  "gc": 13,
-  "pts": 12,
-  "forma": ""
- },
- {
-  "pos": 9,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 11,
@@ -117,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 9,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 11,
@@ -126,6 +113,19 @@
   "p": 3,
   "gf": 10,
   "gc": 10,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 10,
+  "equipo": "Alavés",
+  "escudo": "https://crests.football-data.org/263.png",
+  "pj": 11,
+  "g": 3,
+  "e": 3,
+  "p": 5,
+  "gf": 15,
+  "gc": 17,
   "pts": 12,
   "forma": ""
  },

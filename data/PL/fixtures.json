@@ -114,7 +114,7 @@
  {
   "id": 560628,
   "utc": "2026-10-31T20:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -123,8 +123,8 @@
   "visita": "Fulham",
   "idLocal": 58,
   "idVisita": 63,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PL"
  }
 ]
