@@ -172,13 +172,13 @@
   "pos": 14,
   "equipo": "Tottenham",
   "escudo": "https://crests.football-data.org/73.png",
-  "pj": 8,
+  "pj": 9,
   "g": 2,
-  "e": 3,
+  "e": 4,
   "p": 3,
   "gf": 8,
   "gc": 10,
-  "pts": 9,
+  "pts": 10,
   "forma": ""
  },
  {
@@ -209,6 +209,19 @@
  },
  {
   "pos": 17,
+  "equipo": "Crystal Palace",
+  "escudo": "https://crests.football-data.org/354.png",
+  "pj": 9,
+  "g": 2,
+  "e": 2,
+  "p": 5,
+  "gf": 9,
+  "gc": 19,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 18,
   "equipo": "Man United",
   "escudo": "https://crests.football-data.org/66.png",
   "pj": 9,
@@ -217,19 +230,6 @@
   "p": 4,
   "gf": 10,
   "gc": 15,
-  "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 18,
-  "equipo": "Crystal Palace",
-  "escudo": "https://crests.football-data.org/354.png",
-  "pj": 8,
-  "g": 2,
-  "e": 1,
-  "p": 5,
-  "gf": 9,
-  "gc": 19,
   "pts": 7,
   "forma": ""
  },

@@ -42,13 +42,13 @@
   "pos": 4,
   "equipo": "Real Betis",
   "escudo": "https://crests.football-data.org/90.png",
-  "pj": 10,
+  "pj": 11,
   "g": 6,
-  "e": 2,
+  "e": 3,
   "p": 2,
   "gf": 16,
   "gc": 14,
-  "pts": 20,
+  "pts": 21,
   "forma": ""
  },
  {
@@ -250,13 +250,13 @@
   "pos": 20,
   "equipo": "Málaga",
   "escudo": "https://crests.football-data.org/84.png",
-  "pj": 10,
+  "pj": 11,
   "g": 0,
-  "e": 5,
+  "e": 6,
   "p": 5,
   "gf": 7,
   "gc": 19,
-  "pts": 5,
+  "pts": 6,
   "forma": ""
  }
 ]

@@ -5,13 +5,13 @@
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "2 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
-  "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
-  "6 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
   "Sin calificacion para Shaktar o Sporting CP: no registro picks de ese partido.",
   "Sin calificacion para Lens o Como 1907: no registro picks de ese partido.",
   "Sin calificacion para Real Betis o Málaga: no registro picks de ese partido.",
   "Sin calificacion para Barcelona o Alavés: no registro picks de ese partido.",
+  "Sin calificacion para M'gladbach o SC Paderborn: no registro picks de ese partido.",
+  "Sin calificacion para Schalke o Leipzig: no registro picks de ese partido.",
+  "Sin calificacion para Bremen o Hoffenheim: no registro picks de ese partido.",
   "Sin calificacion para Troyes o Le Mans: no registro picks de ese partido."
  ],
  "errores": []
