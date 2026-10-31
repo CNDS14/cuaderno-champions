@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "Atleti",
+  "escudo": "https://crests.football-data.org/78.png",
+  "pj": 11,
+  "g": 9,
+  "e": 1,
+  "p": 1,
+  "gf": 22,
+  "gc": 8,
+  "pts": 28,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Barça",
   "escudo": "https://crests.football-data.org/81.png",
   "pj": 10,
@@ -10,19 +23,6 @@
   "gf": 40,
   "gc": 11,
   "pts": 27,
-  "forma": ""
- },
- {
-  "pos": 2,
-  "equipo": "Atleti",
-  "escudo": "https://crests.football-data.org/78.png",
-  "pj": 10,
-  "g": 8,
-  "e": 1,
-  "p": 1,
-  "gf": 20,
-  "gc": 8,
-  "pts": 25,
   "forma": ""
  },
  {
@@ -105,19 +105,6 @@
  },
  {
   "pos": 9,
-  "equipo": "Celta",
-  "escudo": "https://crests.football-data.org/558.png",
-  "pj": 10,
-  "g": 2,
-  "e": 6,
-  "p": 2,
-  "gf": 10,
-  "gc": 7,
-  "pts": 12,
-  "forma": ""
- },
- {
-  "pos": 10,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 11,
@@ -130,7 +117,33 @@
   "forma": ""
  },
  {
+  "pos": 10,
+  "equipo": "Celta",
+  "escudo": "https://crests.football-data.org/558.png",
+  "pj": 11,
+  "g": 2,
+  "e": 6,
+  "p": 3,
+  "gf": 10,
+  "gc": 10,
+  "pts": 12,
+  "forma": ""
+ },
+ {
   "pos": 11,
+  "equipo": "Rayo Vallecano",
+  "escudo": "https://crests.football-data.org/87.png",
+  "pj": 10,
+  "g": 3,
+  "e": 3,
+  "p": 4,
+  "gf": 15,
+  "gc": 20,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 12,
   "equipo": "Deportivo",
   "escudo": "https://crests.football-data.org/560.png",
   "pj": 10,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 11,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
   "pj": 10,
@@ -169,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 10,
@@ -179,19 +192,6 @@
   "gf": 15,
   "gc": 26,
   "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 15,
-  "equipo": "Levante",
-  "escudo": "https://crests.football-data.org/88.png",
-  "pj": 10,
-  "g": 2,
-  "e": 4,
-  "p": 4,
-  "gf": 16,
-  "gc": 19,
-  "pts": 10,
   "forma": ""
  },
  {
@@ -209,15 +209,15 @@
  },
  {
   "pos": 17,
-  "equipo": "Rayo Vallecano",
-  "escudo": "https://crests.football-data.org/87.png",
-  "pj": 9,
+  "equipo": "Levante",
+  "escudo": "https://crests.football-data.org/88.png",
+  "pj": 11,
   "g": 2,
-  "e": 3,
-  "p": 4,
-  "gf": 12,
-  "gc": 20,
-  "pts": 9,
+  "e": 4,
+  "p": 5,
+  "gf": 16,
+  "gc": 21,
+  "pts": 10,
   "forma": ""
  },
  {

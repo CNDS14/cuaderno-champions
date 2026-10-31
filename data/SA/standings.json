@@ -29,13 +29,13 @@
   "pos": 3,
   "equipo": "Roma",
   "escudo": "https://crests.football-data.org/100.png",
-  "pj": 9,
-  "g": 6,
+  "pj": 10,
+  "g": 7,
   "e": 3,
   "p": 0,
-  "gf": 23,
+  "gf": 24,
   "gc": 8,
-  "pts": 21,
+  "pts": 24,
   "forma": ""
  },
  {
@@ -92,6 +92,19 @@
  },
  {
   "pos": 8,
+  "equipo": "Bologna",
+  "escudo": "https://crests.football-data.org/103.png",
+  "pj": 10,
+  "g": 4,
+  "e": 2,
+  "p": 4,
+  "gf": 14,
+  "gc": 13,
+  "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 9,
   "equipo": "Juventus",
   "escudo": "https://crests.football-data.org/109.png",
   "pj": 9,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Torino",
   "escudo": "https://crests.football-data.org/586.png",
   "pj": 9,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Cagliari",
   "escudo": "https://crests.football-data.org/104.png",
   "pj": 9,
@@ -127,19 +140,6 @@
   "gf": 8,
   "gc": 13,
   "pts": 13,
-  "forma": ""
- },
- {
-  "pos": 11,
-  "equipo": "Bologna",
-  "escudo": "https://crests.football-data.org/103.png",
-  "pj": 9,
-  "g": 3,
-  "e": 2,
-  "p": 4,
-  "gf": 12,
-  "gc": 12,
-  "pts": 11,
   "forma": ""
  },
  {
@@ -198,30 +198,17 @@
   "pos": 16,
   "equipo": "Monza",
   "escudo": "https://crests.football-data.org/5911.png",
-  "pj": 9,
+  "pj": 10,
   "g": 2,
   "e": 1,
-  "p": 6,
-  "gf": 16,
-  "gc": 22,
+  "p": 7,
+  "gf": 17,
+  "gc": 24,
   "pts": 7,
   "forma": ""
  },
  {
   "pos": 17,
-  "equipo": "Udinese",
-  "escudo": "https://crests.football-data.org/115.png",
-  "pj": 9,
-  "g": 1,
-  "e": 2,
-  "p": 6,
-  "gf": 9,
-  "gc": 18,
-  "pts": 5,
-  "forma": ""
- },
- {
-  "pos": 18,
   "equipo": "Fiorentina",
   "escudo": "https://crests.football-data.org/99.png",
   "pj": 9,
@@ -230,6 +217,19 @@
   "p": 6,
   "gf": 11,
   "gc": 21,
+  "pts": 5,
+  "forma": ""
+ },
+ {
+  "pos": 18,
+  "equipo": "Udinese",
+  "escudo": "https://crests.football-data.org/115.png",
+  "pj": 10,
+  "g": 1,
+  "e": 2,
+  "p": 7,
+  "gf": 9,
+  "gc": 19,
   "pts": 5,
   "forma": ""
  },
