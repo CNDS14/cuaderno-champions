@@ -18,7 +18,7 @@
  {
   "id": 559640,
   "utc": "2026-11-01T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Angers SCO",
   "idLocal": 523,
   "idVisita": 532,
-  "golesLocal": 0,
+  "golesLocal": 2,
   "golesVisita": 0,
   "comp": "FL1"
  },
  {
   "id": 559642,
   "utc": "2026-11-01T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Monaco",
   "idLocal": 1045,
   "idVisita": 548,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
@@ -54,7 +54,7 @@
   "minuto": null,
   "jornada": 9,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Hakim Ben El Hadj Salem",
   "local": "Marseille",
   "visita": "Toulouse",
   "idLocal": 516,

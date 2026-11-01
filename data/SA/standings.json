@@ -131,6 +131,19 @@
  },
  {
   "pos": 11,
+  "equipo": "Genoa",
+  "escudo": "https://crests.football-data.org/107.png",
+  "pj": 10,
+  "g": 4,
+  "e": 1,
+  "p": 5,
+  "gf": 10,
+  "gc": 14,
+  "pts": 13,
+  "forma": ""
+ },
+ {
+  "pos": 12,
   "equipo": "Cagliari",
   "escudo": "https://crests.football-data.org/104.png",
   "pj": 10,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "Atalanta",
   "escudo": "https://crests.football-data.org/102.png",
   "pj": 9,
@@ -156,28 +169,15 @@
   "forma": ""
  },
  {
-  "pos": 13,
-  "equipo": "Genoa",
-  "escudo": "https://crests.football-data.org/107.png",
-  "pj": 9,
-  "g": 3,
-  "e": 1,
-  "p": 5,
-  "gf": 8,
-  "gc": 13,
-  "pts": 10,
-  "forma": ""
- },
- {
   "pos": 14,
   "equipo": "Lecce",
   "escudo": "https://crests.football-data.org/5890.png",
-  "pj": 9,
+  "pj": 10,
   "g": 3,
   "e": 0,
-  "p": 6,
-  "gf": 10,
-  "gc": 19,
+  "p": 7,
+  "gf": 11,
+  "gc": 21,
   "pts": 9,
   "forma": ""
  },

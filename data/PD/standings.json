@@ -183,6 +183,19 @@
  },
  {
   "pos": 15,
+  "equipo": "Elche",
+  "escudo": "https://crests.football-data.org/285.png",
+  "pj": 11,
+  "g": 2,
+  "e": 5,
+  "p": 4,
+  "gf": 14,
+  "gc": 17,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 16,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
   "pj": 10,
@@ -195,7 +208,7 @@
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 11,
@@ -205,19 +218,6 @@
   "gf": 15,
   "gc": 29,
   "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 17,
-  "equipo": "Elche",
-  "escudo": "https://crests.football-data.org/285.png",
-  "pj": 10,
-  "g": 2,
-  "e": 4,
-  "p": 4,
-  "gf": 14,
-  "gc": 17,
-  "pts": 10,
   "forma": ""
  },
  {
@@ -237,13 +237,13 @@
   "pos": 19,
   "equipo": "Valencia",
   "escudo": "https://crests.football-data.org/95.png",
-  "pj": 10,
+  "pj": 11,
   "g": 1,
-  "e": 3,
+  "e": 4,
   "p": 6,
   "gf": 7,
   "gc": 17,
-  "pts": 6,
+  "pts": 7,
   "forma": ""
  },
  {
