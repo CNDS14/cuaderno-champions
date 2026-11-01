@@ -1,21 +1,5 @@
 [
  {
-  "id": 559654,
-  "utc": "2026-10-23T18:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 8,
-  "sede": "",
-  "arbitro": "Guillaume Paradis",
-  "local": "Brest",
-  "visita": "Nice",
-  "idLocal": 512,
-  "idVisita": 522,
-  "golesLocal": 1,
-  "golesVisita": 2,
-  "comp": "FL1"
- },
- {
   "id": 559652,
   "utc": "2026-10-24T18:45:00Z",
   "estado": "FT",
@@ -188,6 +172,22 @@
   "idLocal": 521,
   "idVisita": 546,
   "golesLocal": 1,
+  "golesVisita": 0,
+  "comp": "FL1"
+ },
+ {
+  "id": 559643,
+  "utc": "2026-10-31T19:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 9,
+  "sede": "",
+  "arbitro": "Azzedine Souifi",
+  "local": "Troyes",
+  "visita": "Le Mans",
+  "idLocal": 531,
+  "idVisita": 535,
+  "golesLocal": 2,
   "golesVisita": 0,
   "comp": "FL1"
  }
