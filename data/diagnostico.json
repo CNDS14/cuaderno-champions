@@ -1,20 +1,14 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 4/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 5/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
+  "2 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
   "Sin calificacion para Shaktar o Sporting CP: no registro picks de ese partido.",
   "Sin calificacion para Lens o Como 1907: no registro picks de ese partido.",
-  "Sin calificacion para Getafe o Sevilla FC: no registro picks de ese partido.",
-  "Sin calificacion para Santander o Real Madrid: no registro picks de ese partido.",
-  "Sin calificacion para Athletic o Real Sociedad: no registro picks de ese partido.",
-  "Sin calificacion para Como 1907 o Venezia FC: no registro picks de ese partido.",
-  "Sin calificacion para Frosinone o Torino: no registro picks de ese partido.",
-  "Sin calificacion para Union Berlin o 1. FC Köln: no registro picks de ese partido.",
-  "Sin calificacion para Frankfurt o HSV: no registro picks de ese partido.",
-  "Sin calificacion para Olympique Lyon o Angers SCO: no registro picks de ese partido."
+  "Sin calificacion para Athletic o Real Sociedad: no registro picks de ese partido."
  ],
  "errores": []
 }

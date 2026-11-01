@@ -1,6 +1,19 @@
 [
  {
   "pos": 1,
+  "equipo": "Arsenal",
+  "escudo": "https://crests.football-data.org/57.png",
+  "pj": 9,
+  "g": 8,
+  "e": 0,
+  "p": 1,
+  "gf": 14,
+  "gc": 5,
+  "pts": 24,
+  "forma": ""
+ },
+ {
+  "pos": 2,
   "equipo": "Man City",
   "escudo": "https://crests.football-data.org/65.png",
   "pj": 9,
@@ -9,19 +22,6 @@
   "p": 2,
   "gf": 20,
   "gc": 10,
-  "pts": 21,
-  "forma": ""
- },
- {
-  "pos": 2,
-  "equipo": "Arsenal",
-  "escudo": "https://crests.football-data.org/57.png",
-  "pj": 8,
-  "g": 7,
-  "e": 0,
-  "p": 1,
-  "gf": 13,
-  "gc": 5,
   "pts": 21,
   "forma": ""
  },
@@ -55,12 +55,12 @@
   "pos": 5,
   "equipo": "Liverpool",
   "escudo": "https://crests.football-data.org/64.png",
-  "pj": 8,
+  "pj": 9,
   "g": 4,
   "e": 3,
-  "p": 1,
+  "p": 2,
   "gf": 11,
-  "gc": 8,
+  "gc": 9,
   "pts": 15,
   "forma": ""
  },

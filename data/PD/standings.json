@@ -29,13 +29,13 @@
   "pos": 3,
   "equipo": "Real Madrid",
   "escudo": "https://crests.football-data.org/86.png",
-  "pj": 10,
-  "g": 8,
+  "pj": 11,
+  "g": 9,
   "e": 0,
   "p": 2,
-  "gf": 25,
+  "gf": 28,
   "gc": 10,
-  "pts": 24,
+  "pts": 27,
   "forma": ""
  },
  {
@@ -68,12 +68,12 @@
   "pos": 6,
   "equipo": "Sevilla FC",
   "escudo": "https://crests.football-data.org/559.png",
-  "pj": 10,
+  "pj": 11,
   "g": 5,
   "e": 2,
-  "p": 3,
-  "gf": 16,
-  "gc": 16,
+  "p": 4,
+  "gf": 17,
+  "gc": 19,
   "pts": 17,
   "forma": ""
  },
@@ -144,6 +144,19 @@
  },
  {
   "pos": 12,
+  "equipo": "Getafe",
+  "escudo": "https://crests.football-data.org/82.png",
+  "pj": 11,
+  "g": 3,
+  "e": 3,
+  "p": 5,
+  "gf": 8,
+  "gc": 16,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 13,
   "equipo": "Deportivo",
   "escudo": "https://crests.football-data.org/560.png",
   "pj": 10,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 11,
@@ -169,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
   "pj": 10,
@@ -182,20 +195,20 @@
   "forma": ""
  },
  {
-  "pos": 15,
+  "pos": 16,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
-  "pj": 10,
+  "pj": 11,
   "g": 3,
   "e": 2,
-  "p": 5,
+  "p": 6,
   "gf": 15,
-  "gc": 26,
+  "gc": 29,
   "pts": 11,
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Elche",
   "escudo": "https://crests.football-data.org/285.png",
   "pj": 10,
@@ -208,7 +221,7 @@
   "forma": ""
  },
  {
-  "pos": 17,
+  "pos": 18,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
   "pj": 11,
@@ -218,19 +231,6 @@
   "gf": 16,
   "gc": 21,
   "pts": 10,
-  "forma": ""
- },
- {
-  "pos": 18,
-  "equipo": "Getafe",
-  "escudo": "https://crests.football-data.org/82.png",
-  "pj": 10,
-  "g": 2,
-  "e": 3,
-  "p": 5,
-  "gf": 5,
-  "gc": 15,
-  "pts": 9,
   "forma": ""
  },
  {
