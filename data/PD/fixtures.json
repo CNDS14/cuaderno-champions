@@ -34,7 +34,7 @@
  {
   "id": 564728,
   "utc": "2026-11-01T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -44,13 +44,13 @@
   "idLocal": 285,
   "idVisita": 95,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 564729,
   "utc": "2026-11-01T20:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Real Sociedad",
   "idLocal": 77,
   "idVisita": 92,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  }
 ]

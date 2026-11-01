@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01T18:19:45.366Z",
+ "actualizado": "2026-11-01T20:59:59.337Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -71,9 +71,9 @@
  "picksModelo": {
   "total": 1095,
   "nuevos": 0,
-  "calificados": 890,
-  "aciertos": 644,
-  "brier": 0.1771,
+  "calificados": 905,
+  "aciertos": 652,
+  "brier": 0.1786,
   "equiposAjustados": 21,
   "ajuste": {
    "partidos": 3650,

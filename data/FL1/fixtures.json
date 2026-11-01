@@ -50,7 +50,7 @@
  {
   "id": 559645,
   "utc": "2026-11-01T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Toulouse",
   "idLocal": 516,
   "idVisita": 511,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

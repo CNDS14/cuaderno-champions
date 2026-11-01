@@ -322,7 +322,7 @@
  {
   "id": 564728,
   "utc": "2026-11-01T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -332,13 +332,13 @@
   "idLocal": 285,
   "idVisita": 95,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 564729,
   "utc": "2026-11-01T20:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -347,14 +347,14 @@
   "visita": "Real Sociedad",
   "idLocal": 77,
   "idVisita": 92,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
   "id": 560631,
   "utc": "2026-11-01T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -418,7 +418,7 @@
  {
   "id": 558540,
   "utc": "2026-11-01T17:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -434,7 +434,7 @@
  {
   "id": 558547,
   "utc": "2026-11-01T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -443,8 +443,8 @@
   "visita": "Napoli",
   "idLocal": 109,
   "idVisita": 113,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  },
  {
@@ -466,7 +466,7 @@
  {
   "id": 565844,
   "utc": "2026-11-01T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 8,
   "sede": "",
@@ -530,7 +530,7 @@
  {
   "id": 559645,
   "utc": "2026-11-01T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -539,8 +539,8 @@
   "visita": "Toulouse",
   "idLocal": 516,
   "idVisita": 511,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

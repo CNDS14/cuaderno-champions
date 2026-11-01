@@ -50,7 +50,7 @@
  {
   "id": 558540,
   "utc": "2026-11-01T17:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -66,7 +66,7 @@
  {
   "id": 558547,
   "utc": "2026-11-01T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -75,8 +75,8 @@
   "visita": "Napoli",
   "idLocal": 109,
   "idVisita": 113,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  }
 ]
