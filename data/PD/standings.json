@@ -57,11 +57,11 @@
   "escudo": "https://crests.football-data.org/92.png",
   "pj": 11,
   "g": 6,
-  "e": 2,
-  "p": 3,
+  "e": 1,
+  "p": 4,
   "gf": 20,
-  "gc": 19,
-  "pts": 20,
+  "gc": 20,
+  "pts": 19,
   "forma": ""
  },
  {
@@ -82,12 +82,12 @@
   "equipo": "Athletic",
   "escudo": "https://crests.football-data.org/77.png",
   "pj": 10,
-  "g": 3,
-  "e": 4,
+  "g": 4,
+  "e": 3,
   "p": 3,
-  "gf": 13,
+  "gf": 14,
   "gc": 10,
-  "pts": 13,
+  "pts": 15,
   "forma": ""
  },
  {

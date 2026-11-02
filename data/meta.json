@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01T20:59:59.337Z",
+ "actualizado": "2026-11-02T00:21:23.408Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -15,8 +15,8 @@
    "fd": "PD",
    "nombre": "LaLiga",
    "pais": "España",
-   "partidos": 4,
-   "hoy": 4,
+   "partidos": 1,
+   "hoy": 1,
    "enTabla": 20,
    "conCuotas": 1,
    "resultados": 14
@@ -29,51 +29,51 @@
    "hoy": 1,
    "enTabla": 20,
    "conCuotas": 1,
-   "resultados": 17
+   "resultados": 14
   },
   {
    "fd": "SA",
    "nombre": "Serie A",
    "pais": "Italia",
-   "partidos": 5,
-   "hoy": 5,
+   "partidos": 2,
+   "hoy": 2,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 22
+   "resultados": 23
   },
   {
    "fd": "BL1",
    "nombre": "Bundesliga",
    "pais": "Alemania",
-   "partidos": 2,
-   "hoy": 2,
+   "partidos": 9,
+   "hoy": 0,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 15
+   "resultados": 11
   },
   {
    "fd": "FL1",
    "nombre": "Ligue 1",
    "pais": "Francia",
-   "partidos": 4,
-   "hoy": 4,
+   "partidos": 1,
+   "hoy": 1,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 12
+   "resultados": 15
   }
  ],
- "partidosTotales": 34,
+ "partidosTotales": 32,
  "creditosCuotas": {
-  "gastados": 6,
+  "gastados": 8,
   "tope": 450,
   "mes": "2026-11"
  },
  "picksModelo": {
-  "total": 1095,
-  "nuevos": 0,
-  "calificados": 905,
-  "aciertos": 652,
-  "brier": 0.1786,
+  "total": 1100,
+  "nuevos": 5,
+  "calificados": 915,
+  "aciertos": 661,
+  "brier": 0.1782,
   "equiposAjustados": 21,
   "ajuste": {
    "partidos": 3650,
