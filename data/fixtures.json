@@ -322,7 +322,7 @@
  {
   "id": 558541,
   "utc": "2026-11-02T17:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -331,14 +331,14 @@
   "visita": "Fiorentina",
   "idLocal": 471,
   "idVisita": 99,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 4,
   "comp": "SA"
  },
  {
   "id": 558545,
   "utc": "2026-11-02T19:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -347,8 +347,8 @@
   "visita": "Parma",
   "idLocal": 102,
   "idVisita": 112,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 3,
   "comp": "SA"
  },
  {
