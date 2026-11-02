@@ -2,17 +2,17 @@
  {
   "id": 564731,
   "utc": "2026-11-02T20:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Jon González Esteban",
   "local": "Deportivo",
   "visita": "Osasuna",
   "idLocal": 560,
   "idVisita": 79,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "PD"
  }
 ]

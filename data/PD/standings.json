@@ -92,6 +92,19 @@
  },
  {
   "pos": 8,
+  "equipo": "Deportivo",
+  "escudo": "https://crests.football-data.org/560.png",
+  "pj": 11,
+  "g": 3,
+  "e": 5,
+  "p": 3,
+  "gf": 15,
+  "gc": 14,
+  "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 9,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 11,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 11,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Alavés",
   "escudo": "https://crests.football-data.org/263.png",
   "pj": 11,
@@ -130,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Rayo Vallecano",
   "escudo": "https://crests.football-data.org/87.png",
   "pj": 10,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "Getafe",
   "escudo": "https://crests.football-data.org/82.png",
   "pj": 11,
@@ -153,19 +166,6 @@
   "gf": 8,
   "gc": 16,
   "pts": 12,
-  "forma": ""
- },
- {
-  "pos": 13,
-  "equipo": "Deportivo",
-  "escudo": "https://crests.football-data.org/560.png",
-  "pj": 10,
-  "g": 2,
-  "e": 5,
-  "p": 3,
-  "gf": 13,
-  "gc": 13,
-  "pts": 11,
   "forma": ""
  },
  {
@@ -185,12 +185,12 @@
   "pos": 15,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
-  "pj": 10,
+  "pj": 11,
   "g": 3,
   "e": 2,
-  "p": 5,
-  "gf": 10,
-  "gc": 20,
+  "p": 6,
+  "gf": 11,
+  "gc": 22,
   "pts": 11,
   "forma": ""
  },
