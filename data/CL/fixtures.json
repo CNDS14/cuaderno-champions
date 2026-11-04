@@ -43,8 +43,8 @@
   "visita": "Man City",
   "idLocal": 721,
   "idVisita": 65,
-  "golesLocal": 0,
-  "golesVisita": 1,
+  "golesLocal": 2,
+  "golesVisita": 2,
   "comp": "CL"
  },
  {
@@ -75,8 +75,8 @@
   "visita": "Club Brugge",
   "idLocal": 674,
   "idVisita": 851,
-  "golesLocal": 0,
-  "golesVisita": 1,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "CL"
  },
  {
@@ -91,8 +91,8 @@
   "visita": "Real Betis",
   "idLocal": 4,
   "idVisita": 90,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "CL"
  },
  {
@@ -107,7 +107,7 @@
   "visita": "Napoli",
   "idLocal": 503,
   "idVisita": 113,
-  "golesLocal": 1,
+  "golesLocal": 2,
   "golesVisita": 1,
   "comp": "CL"
  },
@@ -123,8 +123,8 @@
   "visita": "Como 1907",
   "idLocal": 546,
   "idVisita": 7397,
-  "golesLocal": 0,
-  "golesVisita": 3,
+  "golesLocal": 1,
+  "golesVisita": 8,
   "comp": "CL"
  },
  {
@@ -139,7 +139,7 @@
   "visita": "Sabah FK",
   "idLocal": 5720,
   "idVisita": 10233,
-  "golesLocal": 1,
+  "golesLocal": 2,
   "golesVisita": 1,
   "comp": "CL"
  }
