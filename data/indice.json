@@ -6,8 +6,8 @@
   "partidos": 9,
   "hoy": 9,
   "enTabla": 36,
-  "conCuotas": 5,
-  "resultados": 0
+  "conCuotas": 9,
+  "resultados": 9
  },
  {
   "fd": "PD",
@@ -17,7 +17,7 @@
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 1,
-  "resultados": 11
+  "resultados": 10
  },
  {
   "fd": "PL",
@@ -57,6 +57,6 @@
   "hoy": 0,
   "enTabla": 18,
   "conCuotas": 0,
-  "resultados": 10
+  "resultados": 9
  }
 ]
