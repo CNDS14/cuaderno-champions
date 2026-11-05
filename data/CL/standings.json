@@ -34,7 +34,7 @@
   "e": 1,
   "p": 0,
   "gf": 8,
-  "gc": 2,
+  "gc": 3,
   "pts": 10,
   "forma": ""
  },
@@ -46,7 +46,7 @@
   "g": 3,
   "e": 0,
   "p": 1,
-  "gf": 18,
+  "gf": 19,
   "gc": 6,
   "pts": 9,
   "forma": ""
@@ -274,6 +274,19 @@
  },
  {
   "pos": 22,
+  "equipo": "Viking",
+  "escudo": "https://crests.football-data.org/5720.png",
+  "pj": 4,
+  "g": 1,
+  "e": 1,
+  "p": 2,
+  "gf": 9,
+  "gc": 10,
+  "pts": 4,
+  "forma": ""
+ },
+ {
+  "pos": 23,
   "equipo": "Atleti",
   "escudo": "https://crests.football-data.org/78.png",
   "pj": 4,
@@ -286,7 +299,7 @@
   "forma": ""
  },
  {
-  "pos": 23,
+  "pos": 24,
   "equipo": "PSV",
   "escudo": "https://crests.football-data.org/674.png",
   "pj": 4,
@@ -295,19 +308,6 @@
   "p": 2,
   "gf": 3,
   "gc": 4,
-  "pts": 4,
-  "forma": ""
- },
- {
-  "pos": 24,
-  "equipo": "Viking",
-  "escudo": "https://crests.football-data.org/5720.png",
-  "pj": 4,
-  "g": 1,
-  "e": 1,
-  "p": 2,
-  "gf": 7,
-  "gc": 10,
   "pts": 4,
   "forma": ""
  },
@@ -326,6 +326,19 @@
  },
  {
   "pos": 26,
+  "equipo": "Porto",
+  "escudo": "https://crests.football-data.org/503.png",
+  "pj": 4,
+  "g": 1,
+  "e": 0,
+  "p": 3,
+  "gf": 6,
+  "gc": 7,
+  "pts": 3,
+  "forma": ""
+ },
+ {
+  "pos": 27,
   "equipo": "Napoli",
   "escudo": "https://crests.football-data.org/113.png",
   "pj": 4,
@@ -333,38 +346,12 @@
   "e": 0,
   "p": 3,
   "gf": 6,
-  "gc": 9,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 27,
-  "equipo": "Porto",
-  "escudo": "https://crests.football-data.org/503.png",
-  "pj": 4,
-  "g": 1,
-  "e": 0,
-  "p": 3,
-  "gf": 4,
-  "gc": 7,
+  "gc": 11,
   "pts": 3,
   "forma": ""
  },
  {
   "pos": 28,
-  "equipo": "Sabah FK",
-  "escudo": "https://crests.football-data.org/10233.png",
-  "pj": 4,
-  "g": 1,
-  "e": 0,
-  "p": 3,
-  "gf": 4,
-  "gc": 8,
-  "pts": 3,
-  "forma": ""
- },
- {
-  "pos": 29,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 4,
@@ -377,7 +364,7 @@
   "forma": ""
  },
  {
-  "pos": 30,
+  "pos": 29,
   "equipo": "PAE AEK",
   "escudo": "https://crests.football-data.org/1899.png",
   "pj": 4,
@@ -390,7 +377,7 @@
   "forma": ""
  },
  {
-  "pos": 30,
+  "pos": 29,
   "equipo": "RB Leipzig",
   "escudo": "https://crests.football-data.org/721.png",
   "pj": 4,
@@ -399,6 +386,19 @@
   "p": 3,
   "gf": 5,
   "gc": 11,
+  "pts": 3,
+  "forma": ""
+ },
+ {
+  "pos": 31,
+  "equipo": "Sabah FK",
+  "escudo": "https://crests.football-data.org/10233.png",
+  "pj": 4,
+  "g": 1,
+  "e": 0,
+  "p": 3,
+  "gf": 4,
+  "gc": 10,
   "pts": 3,
   "forma": ""
  },
@@ -424,7 +424,7 @@
   "e": 0,
   "p": 3,
   "gf": 4,
-  "gc": 15,
+  "gc": 16,
   "pts": 3,
   "forma": ""
  },
@@ -436,7 +436,7 @@
   "g": 0,
   "e": 1,
   "p": 3,
-  "gf": 4,
+  "gf": 5,
   "gc": 9,
   "pts": 1,
   "forma": ""

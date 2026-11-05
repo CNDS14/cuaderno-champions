@@ -1,15 +1,15 @@
 {
- "actualizado": "2026-11-04T21:44:03.491Z",
+ "actualizado": "2026-11-05T01:36:00.964Z",
  "competiciones": [
   {
    "fd": "CL",
    "nombre": "Champions League",
    "pais": "Europa",
-   "partidos": 9,
-   "hoy": 9,
+   "partidos": 0,
+   "hoy": 0,
    "enTabla": 36,
    "conCuotas": 9,
-   "resultados": 9
+   "resultados": 18
   },
   {
    "fd": "PD",
@@ -39,7 +39,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 20
+   "resultados": 17
   },
   {
    "fd": "BL1",
@@ -62,7 +62,7 @@
    "resultados": 9
   }
  ],
- "partidosTotales": 57,
+ "partidosTotales": 48,
  "creditosCuotas": {
   "gastados": 19,
   "tope": 450,
@@ -71,9 +71,9 @@
  "picksModelo": {
   "total": 1130,
   "nuevos": 0,
-  "calificados": 985,
-  "aciertos": 709,
-  "brier": 0.1792,
+  "calificados": 1015,
+  "aciertos": 737,
+  "brier": 0.1776,
   "equiposAjustados": 21,
   "ajuste": {
    "partidos": 3650,

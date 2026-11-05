@@ -3,11 +3,11 @@
   "fd": "CL",
   "nombre": "Champions League",
   "pais": "Europa",
-  "partidos": 9,
-  "hoy": 9,
+  "partidos": 0,
+  "hoy": 0,
   "enTabla": 36,
   "conCuotas": 9,
-  "resultados": 9
+  "resultados": 18
  },
  {
   "fd": "PD",
@@ -37,7 +37,7 @@
   "hoy": 0,
   "enTabla": 20,
   "conCuotas": 0,
-  "resultados": 20
+  "resultados": 17
  },
  {
   "fd": "BL1",
