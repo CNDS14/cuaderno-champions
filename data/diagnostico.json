@@ -1,14 +1,12 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 29/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 31/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
   "Sin calificacion para Sevilla FC o Alavés: no registro picks de ese partido.",
-  "Sin calificacion para Everton o Coventry City: no registro picks de ese partido.",
-  "Sin calificacion para Venezia FC o Udinese: no registro picks de ese partido.",
-  "Sin calificacion para HSV o M'gladbach: no registro picks de ese partido."
+  "Sin calificacion para Everton o Coventry City: no registro picks de ese partido."
  ],
  "errores": []
 }
