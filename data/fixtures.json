@@ -2,7 +2,7 @@
  {
   "id": 564740,
   "utc": "2026-11-06T20:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Alavés",
   "idLocal": 559,
   "idVisita": 263,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
   "id": 560634,
   "utc": "2026-11-06T20:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Coventry City",
   "idLocal": 62,
   "idVisita": 1076,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "PL"
  },
  {
   "id": 558537,
   "utc": "2026-11-06T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Udinese",
   "idLocal": 454,
   "idVisita": 115,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
   "id": 565852,
   "utc": "2026-11-06T19:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -59,14 +59,14 @@
   "visita": "M'gladbach",
   "idLocal": 7,
   "idVisita": 18,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "BL1"
  },
  {
   "id": 559638,
   "utc": "2026-11-06T19:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -75,8 +75,8 @@
   "visita": "Strasbourg",
   "idLocal": 511,
   "idVisita": 576,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "FL1"
  }
 ]

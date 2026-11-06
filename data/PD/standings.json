@@ -68,13 +68,13 @@
   "pos": 6,
   "equipo": "Sevilla FC",
   "escudo": "https://crests.football-data.org/559.png",
-  "pj": 11,
+  "pj": 12,
   "g": 5,
-  "e": 2,
+  "e": 3,
   "p": 4,
   "gf": 17,
   "gc": 19,
-  "pts": 17,
+  "pts": 18,
   "forma": ""
  },
  {
@@ -105,6 +105,19 @@
  },
  {
   "pos": 9,
+  "equipo": "Alavés",
+  "escudo": "https://crests.football-data.org/263.png",
+  "pj": 12,
+  "g": 3,
+  "e": 4,
+  "p": 5,
+  "gf": 15,
+  "gc": 17,
+  "pts": 13,
+  "forma": ""
+ },
+ {
+  "pos": 10,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 11,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 11,
@@ -126,19 +139,6 @@
   "p": 3,
   "gf": 10,
   "gc": 10,
-  "pts": 12,
-  "forma": ""
- },
- {
-  "pos": 11,
-  "equipo": "Alavés",
-  "escudo": "https://crests.football-data.org/263.png",
-  "pj": 11,
-  "g": 3,
-  "e": 3,
-  "p": 5,
-  "gf": 15,
-  "gc": 17,
   "pts": 12,
   "forma": ""
  },

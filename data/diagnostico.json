@@ -4,9 +4,6 @@
   "cuotas": "the-odds-api.com · 31/450 créditos este mes",
   "estadisticas": "API-Football"
  },
- "avisos": [
-  "Sin calificacion para Sevilla FC o Alavés: no registro picks de ese partido.",
-  "Sin calificacion para Everton o Coventry City: no registro picks de ese partido."
- ],
+ "avisos": [],
  "errores": []
 }
