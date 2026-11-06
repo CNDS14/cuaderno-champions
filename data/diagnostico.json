@@ -1,36 +1,14 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 23/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 25/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
   "Sin calificacion para Sevilla FC o Alavés: no registro picks de ese partido.",
-  "Sin calificacion para Málaga o Santander: no registro picks de ese partido.",
-  "Sin calificacion para Espanyol o Deportivo: no registro picks de ese partido.",
-  "Sin calificacion para Osasuna o Athletic: no registro picks de ese partido.",
-  "Sin calificacion para Real Sociedad o Rayo Vallecano: no registro picks de ese partido.",
   "Sin calificacion para Everton o Coventry City: no registro picks de ese partido.",
-  "Sin calificacion para Leeds United o Tottenham: no registro picks de ese partido.",
-  "Sin calificacion para Arsenal o Hull City: no registro picks de ese partido.",
-  "Sin calificacion para Nottingham o Man City: no registro picks de ese partido.",
-  "Sin calificacion para Ipswich Town o Bournemouth: no registro picks de ese partido.",
-  "Sin calificacion para Brighton Hove o Brentford: no registro picks de ese partido.",
   "Sin calificacion para Venezia FC o Udinese: no registro picks de ese partido.",
-  "Sin calificacion para Cagliari o Frosinone: no registro picks de ese partido.",
-  "Sin calificacion para Inter o Como 1907: no registro picks de ese partido.",
-  "Sin calificacion para HSV o M'gladbach: no registro picks de ese partido.",
-  "Sin calificacion para Dortmund o Elversberg: no registro picks de ese partido.",
-  "Sin calificacion para SC Paderborn o Frankfurt: no registro picks de ese partido.",
-  "Sin calificacion para Stuttgart o Bremen: no registro picks de ese partido.",
-  "Sin calificacion para 1. FC Köln o Leverkusen: no registro picks de ese partido.",
-  "Sin calificacion para Hoffenheim o Schalke: no registro picks de ese partido.",
-  "Sin calificacion para Paris Saint-Germain o Troyes: no registro picks de ese partido.",
-  "Sin calificacion para Stade Rennais o Lille: no registro picks de ese partido.",
-  "Sin calificacion para Le Mans o Monaco: no registro picks de ese partido.",
-  "Sin calificacion para Brest o Olympique Lyon: no registro picks de ese partido.",
-  "Sin calificacion para Angers SCO o Nice: no registro picks de ese partido."
+  "Sin calificacion para HSV o M'gladbach: no registro picks de ese partido."
  ],
  "errores": []
 }
