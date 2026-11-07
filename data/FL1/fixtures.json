@@ -2,7 +2,7 @@
  {
   "id": 559637,
   "utc": "2026-11-07T18:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Paris FC",
   "idLocal": 519,
   "idVisita": 1045,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
@@ -22,7 +22,7 @@
   "minuto": null,
   "jornada": 10,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Ruddy Buquet",
   "local": "PSG",
   "visita": "Troyes",
   "idLocal": 524,

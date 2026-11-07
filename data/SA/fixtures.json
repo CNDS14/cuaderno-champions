@@ -34,7 +34,7 @@
  {
   "id": 558535,
   "utc": "2026-11-07T17:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Bologna",
   "idLocal": 112,
   "idVisita": 103,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {
   "id": 558531,
   "utc": "2026-11-07T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Sassuolo",
   "idLocal": 100,
   "idVisita": 471,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  }
 ]

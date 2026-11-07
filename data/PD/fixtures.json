@@ -34,7 +34,7 @@
  {
   "id": 564739,
   "utc": "2026-11-07T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Athletic",
   "idLocal": 79,
   "idVisita": 77,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
@@ -54,7 +54,7 @@
   "minuto": null,
   "jornada": 12,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Francisco Hernández Maeso",
   "local": "Valencia",
   "visita": "Real Madrid",
   "idLocal": 95,

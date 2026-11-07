@@ -34,7 +34,7 @@
  {
   "id": 564739,
   "utc": "2026-11-07T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Athletic",
   "idLocal": 79,
   "idVisita": 77,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
@@ -54,7 +54,7 @@
   "minuto": null,
   "jornada": 12,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Francisco Hernández Maeso",
   "local": "Valencia",
   "visita": "Real Madrid",
   "idLocal": 95,
@@ -114,7 +114,7 @@
  {
   "id": 560641,
   "utc": "2026-11-07T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -123,8 +123,8 @@
   "visita": "Man City",
   "idLocal": 351,
   "idVisita": 65,
-  "golesLocal": 2,
-  "golesVisita": 0,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "PL"
  },
  {
@@ -162,7 +162,7 @@
  {
   "id": 558535,
   "utc": "2026-11-07T17:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -171,14 +171,14 @@
   "visita": "Bologna",
   "idLocal": 112,
   "idVisita": 103,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 2,
   "comp": "SA"
  },
  {
   "id": 558531,
   "utc": "2026-11-07T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -187,8 +187,8 @@
   "visita": "Sassuolo",
   "idLocal": 100,
   "idVisita": 471,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  },
  {
@@ -258,7 +258,7 @@
  {
   "id": 565849,
   "utc": "2026-11-07T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -274,7 +274,7 @@
  {
   "id": 559637,
   "utc": "2026-11-07T18:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -283,8 +283,8 @@
   "visita": "Paris FC",
   "idLocal": 519,
   "idVisita": 1045,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
@@ -294,7 +294,7 @@
   "minuto": null,
   "jornada": 10,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Ruddy Buquet",
   "local": "PSG",
   "visita": "Troyes",
   "idLocal": 524,
