@@ -94,17 +94,30 @@
   "pos": 8,
   "equipo": "Deportivo",
   "escudo": "https://crests.football-data.org/560.png",
-  "pj": 11,
+  "pj": 12,
   "g": 3,
-  "e": 5,
+  "e": 6,
   "p": 3,
   "gf": 15,
   "gc": 14,
-  "pts": 14,
+  "pts": 15,
   "forma": ""
  },
  {
   "pos": 9,
+  "equipo": "Santander",
+  "escudo": "https://crests.football-data.org/5335.png",
+  "pj": 12,
+  "g": 4,
+  "e": 2,
+  "p": 6,
+  "gf": 17,
+  "gc": 30,
+  "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 10,
   "equipo": "Alavés",
   "escudo": "https://crests.football-data.org/263.png",
   "pj": 12,
@@ -117,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 11,
   "equipo": "Villarreal",
   "escudo": "https://crests.football-data.org/94.png",
   "pj": 11,
@@ -130,7 +143,7 @@
   "forma": ""
  },
  {
-  "pos": 11,
+  "pos": 12,
   "equipo": "Celta",
   "escudo": "https://crests.football-data.org/558.png",
   "pj": 11,
@@ -143,7 +156,20 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
+  "equipo": "Espanyol",
+  "escudo": "https://crests.football-data.org/80.png",
+  "pj": 12,
+  "g": 3,
+  "e": 3,
+  "p": 6,
+  "gf": 13,
+  "gc": 14,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 14,
   "equipo": "Rayo Vallecano",
   "escudo": "https://crests.football-data.org/87.png",
   "pj": 10,
@@ -156,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 15,
   "equipo": "Getafe",
   "escudo": "https://crests.football-data.org/82.png",
   "pj": 11,
@@ -169,20 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
-  "equipo": "Espanyol",
-  "escudo": "https://crests.football-data.org/80.png",
-  "pj": 11,
-  "g": 3,
-  "e": 2,
-  "p": 6,
-  "gf": 13,
-  "gc": 14,
-  "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 15,
+  "pos": 16,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
   "pj": 11,
@@ -191,19 +204,6 @@
   "p": 6,
   "gf": 11,
   "gc": 22,
-  "pts": 11,
-  "forma": ""
- },
- {
-  "pos": 16,
-  "equipo": "Santander",
-  "escudo": "https://crests.football-data.org/5335.png",
-  "pj": 11,
-  "g": 3,
-  "e": 2,
-  "p": 6,
-  "gf": 15,
-  "gc": 29,
   "pts": 11,
   "forma": ""
  },
@@ -250,12 +250,12 @@
   "pos": 20,
   "equipo": "Málaga",
   "escudo": "https://crests.football-data.org/84.png",
-  "pj": 11,
+  "pj": 12,
   "g": 0,
   "e": 5,
-  "p": 6,
-  "gf": 8,
-  "gc": 21,
+  "p": 7,
+  "gf": 9,
+  "gc": 23,
   "pts": 5,
   "forma": ""
  }
