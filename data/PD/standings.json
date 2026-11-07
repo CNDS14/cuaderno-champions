@@ -81,13 +81,13 @@
   "pos": 7,
   "equipo": "Athletic",
   "escudo": "https://crests.football-data.org/77.png",
-  "pj": 10,
+  "pj": 11,
   "g": 4,
-  "e": 3,
+  "e": 4,
   "p": 3,
   "gf": 14,
   "gc": 10,
-  "pts": 15,
+  "pts": 16,
   "forma": ""
  },
  {
@@ -198,13 +198,13 @@
   "pos": 16,
   "equipo": "Osasuna",
   "escudo": "https://crests.football-data.org/79.png",
-  "pj": 11,
+  "pj": 12,
   "g": 3,
-  "e": 2,
+  "e": 3,
   "p": 6,
   "gf": 11,
   "gc": 22,
-  "pts": 11,
+  "pts": 12,
   "forma": ""
  },
  {

@@ -18,7 +18,7 @@
  {
   "id": 564745,
   "utc": "2026-11-07T15:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 564739,
   "utc": "2026-11-07T17:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Athletic",
   "idLocal": 79,
   "idVisita": 77,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {

@@ -1,15 +1,11 @@
 {
  "fuentes": {
   "calendarioYTabla": "football-data.org (gratis, temporada en curso)",
-  "cuotas": "the-odds-api.com · 37/450 créditos este mes",
+  "cuotas": "the-odds-api.com · 38/450 créditos este mes",
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "2 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
   "3 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
-  "Sin calificacion para Osasuna o Athletic: no registro picks de ese partido.",
-  "Sin calificacion para Nottingham o Man City: no registro picks de ese partido.",
-  "Sin calificacion para Stuttgart o Bremen: no registro picks de ese partido.",
   "Sin calificacion para Paris Saint-Germain o Troyes: no registro picks de ese partido."
  ],
  "errores": []

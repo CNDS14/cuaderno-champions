@@ -2,7 +2,7 @@
  {
   "id": 565848,
   "utc": "2026-11-07T14:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Augsburg",
   "idLocal": 721,
   "idVisita": 16,
-  "golesLocal": 4,
-  "golesVisita": 1,
+  "golesLocal": 5,
+  "golesVisita": 2,
   "comp": "BL1"
  },
  {
   "id": 565850,
   "utc": "2026-11-07T14:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Elversberg",
   "idLocal": 4,
   "idVisita": 719,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "BL1"
  },
  {
   "id": 565851,
   "utc": "2026-11-07T14:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Bayern",
   "idLocal": 15,
   "idVisita": 5,
-  "golesLocal": 0,
+  "golesLocal": 1,
   "golesVisita": 2,
   "comp": "BL1"
  },
  {
   "id": 565853,
   "utc": "2026-11-07T14:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -59,14 +59,14 @@
   "visita": "Frankfurt",
   "idLocal": 29,
   "idVisita": 19,
-  "golesLocal": 1,
-  "golesVisita": 1,
+  "golesLocal": 2,
+  "golesVisita": 2,
   "comp": "BL1"
  },
  {
   "id": 565849,
   "utc": "2026-11-07T17:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -75,8 +75,8 @@
   "visita": "Bremen",
   "idLocal": 10,
   "idVisita": 12,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "BL1"
  }
 ]
