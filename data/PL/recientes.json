@@ -158,5 +158,21 @@
   "golesLocal": 0,
   "golesVisita": 1,
   "comp": "PL"
+ },
+ {
+  "id": 560634,
+  "utc": "2026-11-06T20:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": "Stuart Attwell",
+  "local": "Everton",
+  "visita": "Coventry City",
+  "idLocal": 62,
+  "idVisita": 1076,
+  "golesLocal": 3,
+  "golesVisita": 1,
+  "comp": "PL"
  }
 ]

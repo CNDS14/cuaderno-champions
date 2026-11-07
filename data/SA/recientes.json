@@ -1,37 +1,5 @@
 [
  {
-  "id": 558558,
-  "utc": "2026-10-29T17:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 9,
-  "sede": "",
-  "arbitro": "Rosario Abisso",
-  "local": "Frosinone",
-  "visita": "Lecce",
-  "idLocal": 470,
-  "idVisita": 5890,
-  "golesLocal": 5,
-  "golesVisita": 1,
-  "comp": "SA"
- },
- {
-  "id": 558551,
-  "utc": "2026-10-29T19:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 9,
-  "sede": "",
-  "arbitro": "Federico La Penna",
-  "local": "Fiorentina",
-  "visita": "Atalanta",
-  "idLocal": 99,
-  "idVisita": 102,
-  "golesLocal": 2,
-  "golesVisita": 2,
-  "comp": "SA"
- },
- {
   "id": 558539,
   "utc": "2026-10-31T14:00:00Z",
   "estado": "FT",
@@ -189,6 +157,22 @@
   "idVisita": 112,
   "golesLocal": 0,
   "golesVisita": 3,
+  "comp": "SA"
+ },
+ {
+  "id": 558537,
+  "utc": "2026-11-06T19:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 11,
+  "sede": "",
+  "arbitro": "Juan Luca Sacchi",
+  "local": "Venezia FC",
+  "visita": "Udinese",
+  "idLocal": 454,
+  "idVisita": 115,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "SA"
  }
 ]

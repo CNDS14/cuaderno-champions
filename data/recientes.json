@@ -448,6 +448,22 @@
   "comp": "PD"
  },
  {
+  "id": 564740,
+  "utc": "2026-11-06T20:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": "Luis Bestard Servera",
+  "local": "Sevilla FC",
+  "visita": "Alavés",
+  "idLocal": 559,
+  "idVisita": 263,
+  "golesLocal": 0,
+  "golesVisita": 0,
+  "comp": "PD"
+ },
+ {
   "id": 560626,
   "utc": "2026-10-31T12:30:00Z",
   "estado": "FT",
@@ -608,36 +624,20 @@
   "comp": "PL"
  },
  {
-  "id": 558558,
-  "utc": "2026-10-29T17:30:00Z",
+  "id": 560634,
+  "utc": "2026-11-06T20:00:00Z",
   "estado": "FT",
   "minuto": null,
-  "jornada": 9,
+  "jornada": 10,
   "sede": "",
-  "arbitro": "Rosario Abisso",
-  "local": "Frosinone",
-  "visita": "Lecce",
-  "idLocal": 470,
-  "idVisita": 5890,
-  "golesLocal": 5,
+  "arbitro": "Stuart Attwell",
+  "local": "Everton",
+  "visita": "Coventry City",
+  "idLocal": 62,
+  "idVisita": 1076,
+  "golesLocal": 3,
   "golesVisita": 1,
-  "comp": "SA"
- },
- {
-  "id": 558551,
-  "utc": "2026-10-29T19:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 9,
-  "sede": "",
-  "arbitro": "Federico La Penna",
-  "local": "Fiorentina",
-  "visita": "Atalanta",
-  "idLocal": 99,
-  "idVisita": 102,
-  "golesLocal": 2,
-  "golesVisita": 2,
-  "comp": "SA"
+  "comp": "PL"
  },
  {
   "id": 558539,
@@ -800,6 +800,22 @@
   "comp": "SA"
  },
  {
+  "id": 558537,
+  "utc": "2026-11-06T19:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 11,
+  "sede": "",
+  "arbitro": "Juan Luca Sacchi",
+  "local": "Venezia FC",
+  "visita": "Udinese",
+  "idLocal": 454,
+  "idVisita": 115,
+  "golesLocal": 2,
+  "golesVisita": 1,
+  "comp": "SA"
+ },
+ {
   "id": 565846,
   "utc": "2026-10-30T19:30:00Z",
   "estado": "FT",
@@ -939,6 +955,22 @@
   "visita": "HSV",
   "idLocal": 19,
   "idVisita": 7,
+  "golesLocal": 3,
+  "golesVisita": 1,
+  "comp": "BL1"
+ },
+ {
+  "id": 565852,
+  "utc": "2026-11-06T19:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 9,
+  "sede": "",
+  "arbitro": "Sven Jablonski",
+  "local": "HSV",
+  "visita": "M'gladbach",
+  "idLocal": 7,
+  "idVisita": 18,
   "golesLocal": 3,
   "golesVisita": 1,
   "comp": "BL1"
@@ -1085,6 +1117,22 @@
   "idVisita": 512,
   "golesLocal": 0,
   "golesVisita": 2,
+  "comp": "FL1"
+ },
+ {
+  "id": 559638,
+  "utc": "2026-11-06T19:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": "Mathieu Vernice",
+  "local": "Toulouse",
+  "visita": "Strasbourg",
+  "idLocal": 511,
+  "idVisita": 576,
+  "golesLocal": 3,
+  "golesVisita": 1,
   "comp": "FL1"
  }
 ]
