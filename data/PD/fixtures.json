@@ -2,7 +2,7 @@
  {
   "id": 564744,
   "utc": "2026-11-07T13:00:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Santander",
   "idLocal": 84,
   "idVisita": 5335,
-  "golesLocal": 1,
-  "golesVisita": 2,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {
   "id": 564745,
   "utc": "2026-11-07T15:15:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Deportivo",
   "idLocal": 80,
   "idVisita": 560,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {
   "id": 564739,
   "utc": "2026-11-07T17:30:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Athletic",
   "idLocal": 79,
   "idVisita": 77,
-  "golesLocal": 1,
-  "golesVisita": 1,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {

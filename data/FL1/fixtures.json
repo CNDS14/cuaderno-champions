@@ -18,7 +18,7 @@
  {
   "id": 559635,
   "utc": "2026-11-07T20:05:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "Troyes",
   "idLocal": 524,
   "idVisita": 531,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

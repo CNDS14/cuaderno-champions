@@ -5,7 +5,9 @@
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "Sin calificacion para Paris Saint-Germain o Troyes: no registro picks de ese partido."
+  "Sin calificacion para Málaga o Santander: no registro picks de ese partido.",
+  "Sin calificacion para Espanyol o Deportivo: no registro picks de ese partido.",
+  "Sin calificacion para Osasuna o Athletic: no registro picks de ese partido."
  ],
  "errores": []
 }

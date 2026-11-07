@@ -17,12 +17,12 @@
   "equipo": "Roma",
   "escudo": "https://crests.football-data.org/100.png",
   "pj": 11,
-  "g": 7,
-  "e": 4,
+  "g": 8,
+  "e": 3,
   "p": 0,
-  "gf": 28,
+  "gf": 31,
   "gc": 10,
-  "pts": 25,
+  "pts": 27,
   "forma": ""
  },
  {
@@ -183,19 +183,6 @@
  },
  {
   "pos": 15,
-  "equipo": "Sassuolo",
-  "escudo": "https://crests.football-data.org/471.png",
-  "pj": 11,
-  "g": 2,
-  "e": 3,
-  "p": 6,
-  "gf": 16,
-  "gc": 26,
-  "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 16,
   "equipo": "Fiorentina",
   "escudo": "https://crests.football-data.org/99.png",
   "pj": 10,
@@ -208,7 +195,7 @@
   "forma": ""
  },
  {
-  "pos": 17,
+  "pos": 16,
   "equipo": "Parma",
   "escudo": "https://crests.football-data.org/112.png",
   "pj": 11,
@@ -217,6 +204,19 @@
   "p": 7,
   "gf": 9,
   "gc": 17,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 17,
+  "equipo": "Sassuolo",
+  "escudo": "https://crests.football-data.org/471.png",
+  "pj": 11,
+  "g": 2,
+  "e": 2,
+  "p": 7,
+  "gf": 16,
+  "gc": 29,
   "pts": 8,
   "forma": ""
  },

@@ -17,12 +17,12 @@
   "equipo": "Real Madrid",
   "escudo": "https://crests.football-data.org/86.png",
   "pj": 12,
-  "g": 9,
-  "e": 1,
+  "g": 10,
+  "e": 0,
   "p": 2,
-  "gf": 28,
+  "gf": 31,
   "gc": 10,
-  "pts": 28,
+  "pts": 30,
   "forma": ""
  },
  {
@@ -239,11 +239,11 @@
   "escudo": "https://crests.football-data.org/95.png",
   "pj": 12,
   "g": 2,
-  "e": 4,
-  "p": 6,
+  "e": 3,
+  "p": 7,
   "gf": 8,
-  "gc": 17,
-  "pts": 10,
+  "gc": 20,
+  "pts": 9,
   "forma": ""
  },
  {
