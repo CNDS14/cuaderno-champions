@@ -27,6 +27,19 @@
  },
  {
   "pos": 3,
+  "equipo": "Freiburg",
+  "escudo": "https://crests.football-data.org/17.png",
+  "pj": 9,
+  "g": 6,
+  "e": 1,
+  "p": 2,
+  "gf": 20,
+  "gc": 10,
+  "pts": 19,
+  "forma": ""
+ },
+ {
+  "pos": 4,
   "equipo": "RB Leipzig",
   "escudo": "https://crests.football-data.org/721.png",
   "pj": 9,
@@ -36,19 +49,6 @@
   "gf": 27,
   "gc": 13,
   "pts": 18,
-  "forma": ""
- },
- {
-  "pos": 4,
-  "equipo": "Freiburg",
-  "escudo": "https://crests.football-data.org/17.png",
-  "pj": 9,
-  "g": 5,
-  "e": 2,
-  "p": 2,
-  "gf": 18,
-  "gc": 10,
-  "pts": 17,
   "forma": ""
  },
  {
@@ -200,11 +200,11 @@
   "escudo": "https://crests.football-data.org/28.png",
   "pj": 9,
   "g": 1,
-  "e": 5,
-  "p": 3,
+  "e": 4,
+  "p": 4,
   "gf": 7,
-  "gc": 19,
-  "pts": 8,
+  "gc": 21,
+  "pts": 7,
   "forma": ""
  },
  {

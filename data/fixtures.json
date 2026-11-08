@@ -18,7 +18,7 @@
  {
   "id": 564743,
   "utc": "2026-11-08T15:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 564742,
   "utc": "2026-11-08T17:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Levante",
   "idLocal": 558,
   "idVisita": 88,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
   "id": 564747,
   "utc": "2026-11-08T17:30:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Getafe",
   "idLocal": 94,
   "idVisita": 82,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -70,7 +70,7 @@
   "minuto": null,
   "jornada": 12,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Javier Alberola Rojas",
   "local": "Atleti",
   "visita": "Barça",
   "idLocal": 78,
@@ -155,8 +155,8 @@
   "visita": "Aston Villa",
   "idLocal": 66,
   "idVisita": 58,
-  "golesLocal": 1,
-  "golesVisita": 2,
+  "golesLocal": 2,
+  "golesVisita": 4,
   "comp": "PL"
  },
  {
@@ -210,7 +210,7 @@
  {
   "id": 558530,
   "utc": "2026-11-08T17:00:00Z",
-  "estado": "NS",
+  "estado": "HT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -219,8 +219,8 @@
   "visita": "Como 1907",
   "idLocal": 108,
   "idVisita": 7397,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 0,
   "comp": "SA"
  },
  {
@@ -230,7 +230,7 @@
   "minuto": null,
   "jornada": 11,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Andrea Colombo",
   "local": "Fiorentina",
   "visita": "Juventus",
   "idLocal": 99,
@@ -267,7 +267,7 @@
   "visita": "Union Berlin",
   "idLocal": 17,
   "idVisita": 28,
-  "golesLocal": 0,
+  "golesLocal": 2,
   "golesVisita": 0,
   "comp": "BL1"
  },
@@ -315,14 +315,14 @@
   "visita": "Monaco",
   "idLocal": 535,
   "idVisita": 548,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559632,
   "utc": "2026-11-08T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -331,7 +331,7 @@
   "visita": "Olympique Lyon",
   "idLocal": 512,
   "idVisita": 523,
-  "golesLocal": 1,
+  "golesLocal": 2,
   "golesVisita": 0,
   "comp": "FL1"
  },
@@ -348,7 +348,7 @@
   "idLocal": 533,
   "idVisita": 525,
   "golesLocal": 0,
-  "golesVisita": 1,
+  "golesVisita": 2,
   "comp": "FL1"
  },
  {
@@ -364,7 +364,7 @@
   "idLocal": 532,
   "idVisita": 522,
   "golesLocal": 0,
-  "golesVisita": 1,
+  "golesVisita": 2,
   "comp": "FL1"
  },
  {
@@ -374,7 +374,7 @@
   "minuto": null,
   "jornada": 10,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Willy Delajod",
   "local": "RC Lens",
   "visita": "Marseille",
   "idLocal": 546,

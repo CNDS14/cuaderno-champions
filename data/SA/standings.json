@@ -14,6 +14,19 @@
  },
  {
   "pos": 2,
+  "equipo": "Inter",
+  "escudo": "https://crests.football-data.org/108.png",
+  "pj": 11,
+  "g": 9,
+  "e": 1,
+  "p": 1,
+  "gf": 28,
+  "gc": 13,
+  "pts": 28,
+  "forma": ""
+ },
+ {
+  "pos": 3,
   "equipo": "Roma",
   "escudo": "https://crests.football-data.org/100.png",
   "pj": 11,
@@ -23,19 +36,6 @@
   "gf": 31,
   "gc": 10,
   "pts": 27,
-  "forma": ""
- },
- {
-  "pos": 3,
-  "equipo": "Inter",
-  "escudo": "https://crests.football-data.org/108.png",
-  "pj": 10,
-  "g": 8,
-  "e": 1,
-  "p": 1,
-  "gf": 26,
-  "gc": 13,
-  "pts": 25,
   "forma": ""
  },
  {
@@ -55,12 +55,12 @@
   "pos": 5,
   "equipo": "Como 1907",
   "escudo": "https://crests.football-data.org/7397.png",
-  "pj": 10,
+  "pj": 11,
   "g": 7,
   "e": 2,
-  "p": 1,
+  "p": 2,
   "gf": 18,
-  "gc": 8,
+  "gc": 10,
   "pts": 23,
   "forma": ""
  },
