@@ -66,6 +66,19 @@
  },
  {
   "pos": 6,
+  "equipo": "Marseille",
+  "escudo": "https://crests.football-data.org/516.png",
+  "pj": 10,
+  "g": 5,
+  "e": 1,
+  "p": 4,
+  "gf": 21,
+  "gc": 14,
+  "pts": 16,
+  "forma": ""
+ },
+ {
+  "pos": 7,
   "equipo": "Monaco",
   "escudo": "https://crests.football-data.org/548.png",
   "pj": 10,
@@ -78,7 +91,7 @@
   "forma": ""
  },
  {
-  "pos": 7,
+  "pos": 8,
   "equipo": "Stade Rennais",
   "escudo": "https://crests.football-data.org/529.png",
   "pj": 10,
@@ -88,19 +101,6 @@
   "gf": 21,
   "gc": 21,
   "pts": 16,
-  "forma": ""
- },
- {
-  "pos": 8,
-  "equipo": "Marseille",
-  "escudo": "https://crests.football-data.org/516.png",
-  "pj": 9,
-  "g": 5,
-  "e": 0,
-  "p": 4,
-  "gf": 20,
-  "gc": 13,
-  "pts": 15,
   "forma": ""
  },
  {
@@ -124,7 +124,7 @@
   "g": 4,
   "e": 3,
   "p": 3,
-  "gf": 8,
+  "gf": 9,
   "gc": 8,
   "pts": 15,
   "forma": ""
@@ -133,13 +133,13 @@
   "pos": 11,
   "equipo": "RC Lens",
   "escudo": "https://crests.football-data.org/546.png",
-  "pj": 9,
+  "pj": 10,
   "g": 4,
-  "e": 1,
+  "e": 2,
   "p": 4,
-  "gf": 16,
-  "gc": 13,
-  "pts": 13,
+  "gf": 17,
+  "gc": 14,
+  "pts": 14,
   "forma": ""
  },
  {
@@ -229,7 +229,7 @@
   "e": 2,
   "p": 8,
   "gf": 9,
-  "gc": 21,
+  "gc": 22,
   "pts": 2,
   "forma": ""
  }

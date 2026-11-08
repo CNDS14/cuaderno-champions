@@ -18,7 +18,7 @@
  {
   "id": 565854,
   "utc": "2026-11-08T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -34,7 +34,7 @@
  {
   "id": 565856,
   "utc": "2026-11-08T18:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -43,8 +43,8 @@
   "visita": "Schalke",
   "idLocal": 2,
   "idVisita": 6,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "BL1"
  }
 ]

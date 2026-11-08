@@ -5,9 +5,9 @@
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "4 partido(s) ya empezaron: omito sus cuotas (serian en vivo y el modelo es previo).",
-  "1 partido(s) por jugar sin cuotas emparejadas (nombres distintos entre fuentes).",
-  "Sin calificacion para Hoffenheim o Schalke: no registro picks de ese partido."
+  "Sin calificacion para Real Sociedad o Rayo Vallecano: no registro picks de ese partido.",
+  "Sin calificacion para Ipswich Town o Bournemouth: no registro picks de ese partido.",
+  "Sin calificacion para Brighton Hove o Brentford: no registro picks de ese partido."
  ],
  "errores": []
 }

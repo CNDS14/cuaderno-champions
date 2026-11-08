@@ -92,19 +92,6 @@
  },
  {
   "pos": 8,
-  "equipo": "Aston Villa",
-  "escudo": "https://crests.football-data.org/58.png",
-  "pj": 10,
-  "g": 4,
-  "e": 3,
-  "p": 3,
-  "gf": 14,
-  "gc": 15,
-  "pts": 15,
-  "forma": ""
- },
- {
-  "pos": 9,
   "equipo": "Brentford",
   "escudo": "https://crests.football-data.org/402.png",
   "pj": 10,
@@ -117,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 10,
+  "pos": 9,
   "equipo": "Leeds United",
   "escudo": "https://crests.football-data.org/341.png",
   "pj": 10,
@@ -127,6 +114,19 @@
   "gf": 10,
   "gc": 8,
   "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 10,
+  "equipo": "Aston Villa",
+  "escudo": "https://crests.football-data.org/58.png",
+  "pj": 10,
+  "g": 3,
+  "e": 4,
+  "p": 3,
+  "gf": 14,
+  "gc": 17,
+  "pts": 13,
   "forma": ""
  },
  {
@@ -222,6 +222,19 @@
  },
  {
   "pos": 18,
+  "equipo": "Man United",
+  "escudo": "https://crests.football-data.org/66.png",
+  "pj": 10,
+  "g": 1,
+  "e": 5,
+  "p": 4,
+  "gf": 14,
+  "gc": 19,
+  "pts": 8,
+  "forma": ""
+ },
+ {
+  "pos": 19,
   "equipo": "Sunderland",
   "escudo": "https://crests.football-data.org/71.png",
   "pj": 10,
@@ -231,19 +244,6 @@
   "gf": 8,
   "gc": 17,
   "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 19,
-  "equipo": "Man United",
-  "escudo": "https://crests.football-data.org/66.png",
-  "pj": 10,
-  "g": 1,
-  "e": 4,
-  "p": 5,
-  "gf": 12,
-  "gc": 19,
-  "pts": 7,
   "forma": ""
  },
  {

@@ -2,7 +2,7 @@
  {
   "id": 564738,
   "utc": "2026-11-08T13:00:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Real Betis",
   "idLocal": 285,
   "idVisita": 90,
-  "golesLocal": 0,
-  "golesVisita": 2,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {
   "id": 564743,
   "utc": "2026-11-08T15:15:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Rayo Vallecano",
   "idLocal": 92,
   "idVisita": 87,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {
   "id": 564742,
   "utc": "2026-11-08T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Levante",
   "idLocal": 558,
   "idVisita": 88,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {
   "id": 564747,
   "utc": "2026-11-08T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Getafe",
   "idLocal": 94,
   "idVisita": 82,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {
@@ -82,7 +82,7 @@
  {
   "id": 560635,
   "utc": "2026-11-08T14:00:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -91,14 +91,14 @@
   "visita": "Liverpool",
   "idLocal": 354,
   "idVisita": 64,
-  "golesLocal": 1,
-  "golesVisita": 3,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PL"
  },
  {
   "id": 560636,
   "utc": "2026-11-08T14:00:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -107,14 +107,14 @@
   "visita": "Chelsea",
   "idLocal": 71,
   "idVisita": 61,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PL"
  },
  {
   "id": 560637,
   "utc": "2026-11-08T14:00:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -123,14 +123,14 @@
   "visita": "Bournemouth",
   "idLocal": 349,
   "idVisita": 1044,
-  "golesLocal": 1,
-  "golesVisita": 2,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PL"
  },
  {
   "id": 560638,
   "utc": "2026-11-08T14:00:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -139,14 +139,14 @@
   "visita": "Brentford",
   "idLocal": 397,
   "idVisita": 402,
-  "golesLocal": 2,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PL"
  },
  {
   "id": 560639,
   "utc": "2026-11-08T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "NS",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -155,8 +155,8 @@
   "visita": "Aston Villa",
   "idLocal": 66,
   "idVisita": 58,
-  "golesLocal": 2,
-  "golesVisita": 4,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PL"
  },
  {
@@ -210,7 +210,7 @@
  {
   "id": 558530,
   "utc": "2026-11-08T17:00:00Z",
-  "estado": "HT",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -226,7 +226,7 @@
  {
   "id": 558529,
   "utc": "2026-11-08T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -235,8 +235,8 @@
   "visita": "Juventus",
   "idLocal": 99,
   "idVisita": 109,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
@@ -258,7 +258,7 @@
  {
   "id": 565854,
   "utc": "2026-11-08T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -274,7 +274,7 @@
  {
   "id": 565856,
   "utc": "2026-11-08T18:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 9,
   "sede": "",
@@ -283,8 +283,8 @@
   "visita": "Schalke",
   "idLocal": 2,
   "idVisita": 6,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 2,
+  "golesVisita": 1,
   "comp": "BL1"
  },
  {
@@ -306,7 +306,7 @@
  {
   "id": 559631,
   "utc": "2026-11-08T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -338,7 +338,7 @@
  {
   "id": 559633,
   "utc": "2026-11-08T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -354,7 +354,7 @@
  {
   "id": 559634,
   "utc": "2026-11-08T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -370,7 +370,7 @@
  {
   "id": 559630,
   "utc": "2026-11-08T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -379,8 +379,8 @@
   "visita": "Marseille",
   "idLocal": 546,
   "idVisita": 516,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "FL1"
  }
 ]

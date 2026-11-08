@@ -3,13 +3,13 @@
   "pos": 1,
   "equipo": "Barça",
   "escudo": "https://crests.football-data.org/81.png",
-  "pj": 11,
+  "pj": 12,
   "g": 10,
-  "e": 0,
+  "e": 1,
   "p": 1,
-  "gf": 46,
-  "gc": 12,
-  "pts": 30,
+  "gf": 47,
+  "gc": 13,
+  "pts": 31,
   "forma": ""
  },
  {
@@ -29,13 +29,13 @@
   "pos": 3,
   "equipo": "Atleti",
   "escudo": "https://crests.football-data.org/78.png",
-  "pj": 11,
+  "pj": 12,
   "g": 9,
-  "e": 1,
+  "e": 2,
   "p": 1,
-  "gf": 22,
-  "gc": 8,
-  "pts": 28,
+  "gf": 23,
+  "gc": 9,
+  "pts": 29,
   "forma": ""
  },
  {
@@ -92,6 +92,19 @@
  },
  {
   "pos": 8,
+  "equipo": "Villarreal",
+  "escudo": "https://crests.football-data.org/94.png",
+  "pj": 12,
+  "g": 4,
+  "e": 3,
+  "p": 5,
+  "gf": 17,
+  "gc": 15,
+  "pts": 15,
+  "forma": ""
+ },
+ {
+  "pos": 9,
   "equipo": "Deportivo",
   "escudo": "https://crests.football-data.org/560.png",
   "pj": 12,
@@ -104,7 +117,7 @@
   "forma": ""
  },
  {
-  "pos": 9,
+  "pos": 10,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 12,
@@ -114,19 +127,6 @@
   "gf": 17,
   "gc": 30,
   "pts": 14,
-  "forma": ""
- },
- {
-  "pos": 10,
-  "equipo": "Villarreal",
-  "escudo": "https://crests.football-data.org/94.png",
-  "pj": 12,
-  "g": 3,
-  "e": 4,
-  "p": 5,
-  "gf": 15,
-  "gc": 15,
-  "pts": 13,
   "forma": ""
  },
  {
@@ -157,19 +157,6 @@
  },
  {
   "pos": 13,
-  "equipo": "Getafe",
-  "escudo": "https://crests.football-data.org/82.png",
-  "pj": 12,
-  "g": 3,
-  "e": 4,
-  "p": 5,
-  "gf": 8,
-  "gc": 16,
-  "pts": 13,
-  "forma": ""
- },
- {
-  "pos": 14,
   "equipo": "Espanyol",
   "escudo": "https://crests.football-data.org/80.png",
   "pj": 12,
@@ -182,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 15,
+  "pos": 14,
   "equipo": "Rayo Vallecano",
   "escudo": "https://crests.football-data.org/87.png",
   "pj": 11,
@@ -191,6 +178,19 @@
   "p": 5,
   "gf": 15,
   "gc": 21,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 15,
+  "equipo": "Getafe",
+  "escudo": "https://crests.football-data.org/82.png",
+  "pj": 12,
+  "g": 3,
+  "e": 3,
+  "p": 6,
+  "gf": 8,
+  "gc": 18,
   "pts": 12,
   "forma": ""
  },

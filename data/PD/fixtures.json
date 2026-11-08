@@ -2,7 +2,7 @@
  {
   "id": 564738,
   "utc": "2026-11-08T13:00:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Real Betis",
   "idLocal": 285,
   "idVisita": 90,
-  "golesLocal": 0,
-  "golesVisita": 2,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {
   "id": 564743,
   "utc": "2026-11-08T15:15:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Rayo Vallecano",
   "idLocal": 92,
   "idVisita": 87,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {
   "id": 564742,
   "utc": "2026-11-08T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Levante",
   "idLocal": 558,
   "idVisita": 88,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {
   "id": 564747,
   "utc": "2026-11-08T17:30:00Z",
-  "estado": "LIVE",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -59,8 +59,8 @@
   "visita": "Getafe",
   "idLocal": 94,
   "idVisita": 82,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "PD"
  },
  {
