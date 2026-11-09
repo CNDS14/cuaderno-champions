@@ -40,6 +40,19 @@
  },
  {
   "pos": 4,
+  "equipo": "Marseille",
+  "escudo": "https://crests.football-data.org/516.png",
+  "pj": 10,
+  "g": 6,
+  "e": 0,
+  "p": 4,
+  "gf": 22,
+  "gc": 14,
+  "pts": 18,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Olympique Lyon",
   "escudo": "https://crests.football-data.org/523.png",
   "pj": 10,
@@ -52,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Nice",
   "escudo": "https://crests.football-data.org/522.png",
   "pj": 10,
@@ -62,19 +75,6 @@
   "gf": 15,
   "gc": 12,
   "pts": 17,
-  "forma": ""
- },
- {
-  "pos": 6,
-  "equipo": "Marseille",
-  "escudo": "https://crests.football-data.org/516.png",
-  "pj": 10,
-  "g": 5,
-  "e": 1,
-  "p": 4,
-  "gf": 21,
-  "gc": 14,
-  "pts": 16,
   "forma": ""
  },
  {
@@ -135,11 +135,11 @@
   "escudo": "https://crests.football-data.org/546.png",
   "pj": 10,
   "g": 4,
-  "e": 2,
-  "p": 4,
+  "e": 1,
+  "p": 5,
   "gf": 17,
-  "gc": 14,
-  "pts": 14,
+  "gc": 15,
+  "pts": 13,
   "forma": ""
  },
  {

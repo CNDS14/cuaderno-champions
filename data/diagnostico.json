@@ -4,10 +4,6 @@
   "cuotas": "the-odds-api.com · 44/450 créditos este mes",
   "estadisticas": "API-Football"
  },
- "avisos": [
-  "Sin calificacion para Real Sociedad o Rayo Vallecano: no registro picks de ese partido.",
-  "Sin calificacion para Ipswich Town o Bournemouth: no registro picks de ese partido.",
-  "Sin calificacion para Brighton Hove o Brentford: no registro picks de ese partido."
- ],
+ "avisos": [],
  "errores": []
 }

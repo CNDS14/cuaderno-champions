@@ -4,12 +4,12 @@
   "equipo": "Barça",
   "escudo": "https://crests.football-data.org/81.png",
   "pj": 12,
-  "g": 10,
-  "e": 1,
+  "g": 11,
+  "e": 0,
   "p": 1,
-  "gf": 47,
+  "gf": 48,
   "gc": 13,
-  "pts": 31,
+  "pts": 33,
   "forma": ""
  },
  {
@@ -31,11 +31,11 @@
   "escudo": "https://crests.football-data.org/78.png",
   "pj": 12,
   "g": 9,
-  "e": 2,
-  "p": 1,
+  "e": 1,
+  "p": 2,
   "gf": 23,
-  "gc": 9,
-  "pts": 29,
+  "gc": 10,
+  "pts": 28,
   "forma": ""
  },
  {
