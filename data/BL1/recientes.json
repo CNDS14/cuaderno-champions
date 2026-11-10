@@ -1,37 +1,5 @@
 [
  {
-  "id": 565841,
-  "utc": "2026-11-01T14:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 8,
-  "sede": "",
-  "arbitro": "Richard Hempel",
-  "local": "Union Berlin",
-  "visita": "1. FC Köln",
-  "idLocal": 28,
-  "idVisita": 1,
-  "golesLocal": 1,
-  "golesVisita": 1,
-  "comp": "BL1"
- },
- {
-  "id": 565844,
-  "utc": "2026-11-01T16:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 8,
-  "sede": "",
-  "arbitro": "Florian Exner",
-  "local": "Frankfurt",
-  "visita": "HSV",
-  "idLocal": 19,
-  "idVisita": 7,
-  "golesLocal": 3,
-  "golesVisita": 1,
-  "comp": "BL1"
- },
- {
   "id": 565852,
   "utc": "2026-11-06T19:30:00Z",
   "estado": "FT",

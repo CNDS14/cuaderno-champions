@@ -1,21 +1,5 @@
 [
  {
-  "id": 560631,
-  "utc": "2026-11-01T16:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 9,
-  "sede": "",
-  "arbitro": "Andy Madley",
-  "local": "Liverpool",
-  "visita": "Arsenal",
-  "idLocal": 64,
-  "idVisita": 57,
-  "golesLocal": 0,
-  "golesVisita": 1,
-  "comp": "PL"
- },
- {
   "id": 560622,
   "utc": "2026-11-02T20:00:00Z",
   "estado": "FT",
