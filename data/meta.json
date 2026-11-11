@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T21:43:33.324Z",
+ "actualizado": "2026-11-11T01:30:15.779Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -15,11 +15,11 @@
    "fd": "PD",
    "nombre": "LaLiga",
    "pais": "España",
-   "partidos": 0,
+   "partidos": 1,
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 11
+   "resultados": 10
   },
   {
    "fd": "PL",
@@ -29,7 +29,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 5,
-   "resultados": 11
+   "resultados": 10
   },
   {
    "fd": "SA",
@@ -39,13 +39,13 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 12
+   "resultados": 10
   },
   {
    "fd": "BL1",
    "nombre": "Bundesliga",
    "pais": "Alemania",
-   "partidos": 0,
+   "partidos": 1,
    "hoy": 0,
    "enTabla": 18,
    "conCuotas": 0,
@@ -55,14 +55,14 @@
    "fd": "FL1",
    "nombre": "Ligue 1",
    "pais": "Francia",
-   "partidos": 0,
+   "partidos": 1,
    "hoy": 0,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 10
+   "resultados": 9
   }
  ],
- "partidosTotales": 0,
+ "partidosTotales": 3,
  "creditosCuotas": {
   "gastados": 44,
   "tope": 450,

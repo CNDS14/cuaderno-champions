@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": 565859,
+  "utc": "2026-11-20T19:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": null,
+  "local": "Bayern",
+  "visita": "1. FC Köln",
+  "idLocal": 5,
+  "idVisita": 1,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "BL1"
+ }
+]

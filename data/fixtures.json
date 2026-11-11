@@ -1,1 +1,50 @@
-[]
+[
+ {
+  "id": 564748,
+  "utc": "2026-11-20T20:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 13,
+  "sede": "",
+  "arbitro": null,
+  "local": "Athletic",
+  "visita": "Espanyol",
+  "idLocal": 77,
+  "idVisita": 80,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "PD"
+ },
+ {
+  "id": 565859,
+  "utc": "2026-11-20T19:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": null,
+  "local": "Bayern",
+  "visita": "1. FC Köln",
+  "idLocal": 5,
+  "idVisita": 1,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "BL1"
+ },
+ {
+  "id": 559622,
+  "utc": "2026-11-20T19:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 11,
+  "sede": "",
+  "arbitro": null,
+  "local": "Troyes",
+  "visita": "Le Havre",
+  "idLocal": 531,
+  "idVisita": 533,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
+ }
+]

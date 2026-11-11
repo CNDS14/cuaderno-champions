@@ -1,21 +1,5 @@
 [
  {
-  "id": 559641,
-  "utc": "2026-11-02T19:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 9,
-  "sede": "",
-  "arbitro": "Jérémie Pignard",
-  "local": "Lorient",
-  "visita": "Brest",
-  "idLocal": 525,
-  "idVisita": 512,
-  "golesLocal": 0,
-  "golesVisita": 2,
-  "comp": "FL1"
- },
- {
   "id": 559638,
   "utc": "2026-11-06T19:45:00Z",
   "estado": "FT",

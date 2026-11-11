@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": 559622,
+  "utc": "2026-11-20T19:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 11,
+  "sede": "",
+  "arbitro": null,
+  "local": "Troyes",
+  "visita": "Le Havre",
+  "idLocal": 531,
+  "idVisita": 533,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
+ }
+]

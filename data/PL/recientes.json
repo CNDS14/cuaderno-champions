@@ -1,21 +1,5 @@
 [
  {
-  "id": 560622,
-  "utc": "2026-11-02T20:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 9,
-  "sede": "",
-  "arbitro": "John Brooks",
-  "local": "Newcastle",
-  "visita": "Everton",
-  "idLocal": 67,
-  "idVisita": 62,
-  "golesLocal": 0,
-  "golesVisita": 1,
-  "comp": "PL"
- },
- {
   "id": 560634,
   "utc": "2026-11-06T20:00:00Z",
   "estado": "FT",

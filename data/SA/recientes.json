@@ -1,37 +1,5 @@
 [
  {
-  "id": 558541,
-  "utc": "2026-11-02T17:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 10,
-  "sede": "",
-  "arbitro": "Matteo Marcenaro",
-  "local": "Sassuolo",
-  "visita": "Fiorentina",
-  "idLocal": 471,
-  "idVisita": 99,
-  "golesLocal": 2,
-  "golesVisita": 4,
-  "comp": "SA"
- },
- {
-  "id": 558545,
-  "utc": "2026-11-02T19:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 10,
-  "sede": "",
-  "arbitro": "Valerio Crezzini",
-  "local": "Atalanta",
-  "visita": "Parma",
-  "idLocal": 102,
-  "idVisita": 112,
-  "golesLocal": 0,
-  "golesVisita": 3,
-  "comp": "SA"
- },
- {
   "id": 558537,
   "utc": "2026-11-06T19:45:00Z",
   "estado": "FT",

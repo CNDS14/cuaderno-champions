@@ -4,6 +4,10 @@
   "cuotas": "the-odds-api.com · 44/450 créditos este mes",
   "estadisticas": "API-Football"
  },
- "avisos": [],
+ "avisos": [
+  "Sin calificacion para Athletic o Espanyol: no registro picks de ese partido.",
+  "Sin calificacion para Bayern München o 1. FC Köln: no registro picks de ese partido.",
+  "Sin calificacion para Troyes o Le Havre: no registro picks de ese partido."
+ ],
  "errores": []
 }

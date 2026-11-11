@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": 564748,
+  "utc": "2026-11-20T20:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 13,
+  "sede": "",
+  "arbitro": null,
+  "local": "Athletic",
+  "visita": "Espanyol",
+  "idLocal": 77,
+  "idVisita": 80,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "PD"
+ }
+]
