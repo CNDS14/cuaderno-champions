@@ -1,1 +1,66 @@
-[]
+[
+ {
+  "id": 558525,
+  "utc": "2026-11-21T14:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": null,
+  "local": "Como 1907",
+  "visita": "Cagliari",
+  "idLocal": 7397,
+  "idVisita": 104,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
+ },
+ {
+  "id": 558528,
+  "utc": "2026-11-21T14:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": null,
+  "local": "Lazio",
+  "visita": "Lecce",
+  "idLocal": 110,
+  "idVisita": 5890,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
+ },
+ {
+  "id": 558526,
+  "utc": "2026-11-21T17:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": null,
+  "local": "Parma",
+  "visita": "Roma",
+  "idLocal": 112,
+  "idVisita": 100,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
+ },
+ {
+  "id": 558527,
+  "utc": "2026-11-21T19:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": null,
+  "local": "Napoli",
+  "visita": "Torino",
+  "idLocal": 113,
+  "idVisita": 586,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
+ }
+]
