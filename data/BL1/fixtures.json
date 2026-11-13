@@ -110,5 +110,37 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "BL1"
+ },
+ {
+  "id": 565864,
+  "utc": "2026-11-22T14:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": null,
+  "local": "Augsburg",
+  "visita": "Mainz",
+  "idLocal": 16,
+  "idVisita": 15,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "BL1"
+ },
+ {
+  "id": 565863,
+  "utc": "2026-11-22T16:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": null,
+  "local": "Bremen",
+  "visita": "HSV",
+  "idLocal": 12,
+  "idVisita": 7,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "BL1"
  }
 ]
