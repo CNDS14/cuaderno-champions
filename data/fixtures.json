@@ -144,6 +144,22 @@
   "comp": "PD"
  },
  {
+  "id": 564757,
+  "utc": "2026-11-23T20:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 13,
+  "sede": "",
+  "arbitro": null,
+  "local": "Levante",
+  "visita": "Elche",
+  "idLocal": 88,
+  "idVisita": 285,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "PD"
+ },
+ {
   "id": 560643,
   "utc": "2026-11-21T12:30:00Z",
   "estado": "NS",
@@ -288,6 +304,22 @@
   "comp": "PL"
  },
  {
+  "id": 560649,
+  "utc": "2026-11-23T20:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 11,
+  "sede": "",
+  "arbitro": null,
+  "local": "Brentford",
+  "visita": "Everton",
+  "idLocal": 402,
+  "idVisita": 62,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "PL"
+ },
+ {
   "id": 558525,
   "utc": "2026-11-21T14:00:00Z",
   "estado": "NS",
@@ -427,6 +459,22 @@
   "visita": "Inter",
   "idLocal": 102,
   "idVisita": 108,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
+ },
+ {
+  "id": 558519,
+  "utc": "2026-11-23T19:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": null,
+  "local": "Monza",
+  "visita": "Fiorentina",
+  "idLocal": 5911,
+  "idVisita": 99,
   "golesLocal": null,
   "golesVisita": null,
   "comp": "SA"
