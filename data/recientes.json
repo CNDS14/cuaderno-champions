@@ -1,21 +1,5 @@
 [
  {
-  "id": 564740,
-  "utc": "2026-11-06T20:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 12,
-  "sede": "",
-  "arbitro": "Luis Bestard Servera",
-  "local": "Sevilla FC",
-  "visita": "Alavés",
-  "idLocal": 559,
-  "idVisita": 263,
-  "golesLocal": 0,
-  "golesVisita": 0,
-  "comp": "PD"
- },
- {
   "id": 564744,
   "utc": "2026-11-07T13:00:00Z",
   "estado": "FT",
@@ -158,22 +142,6 @@
   "golesLocal": 1,
   "golesVisita": 2,
   "comp": "PD"
- },
- {
-  "id": 560634,
-  "utc": "2026-11-06T20:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 10,
-  "sede": "",
-  "arbitro": "Stuart Attwell",
-  "local": "Everton",
-  "visita": "Coventry City",
-  "idLocal": 62,
-  "idVisita": 1076,
-  "golesLocal": 3,
-  "golesVisita": 1,
-  "comp": "PL"
  },
  {
   "id": 560632,
@@ -320,22 +288,6 @@
   "comp": "PL"
  },
  {
-  "id": 558537,
-  "utc": "2026-11-06T19:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 11,
-  "sede": "",
-  "arbitro": "Juan Luca Sacchi",
-  "local": "Venezia FC",
-  "visita": "Udinese",
-  "idLocal": 454,
-  "idVisita": 115,
-  "golesLocal": 2,
-  "golesVisita": 1,
-  "comp": "SA"
- },
- {
   "id": 558532,
   "utc": "2026-11-07T14:00:00Z",
   "estado": "FT",
@@ -480,22 +432,6 @@
   "comp": "SA"
  },
  {
-  "id": 565852,
-  "utc": "2026-11-06T19:30:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 9,
-  "sede": "",
-  "arbitro": "Sven Jablonski",
-  "local": "HSV",
-  "visita": "M'gladbach",
-  "idLocal": 7,
-  "idVisita": 18,
-  "golesLocal": 3,
-  "golesVisita": 1,
-  "comp": "BL1"
- },
- {
   "id": 565848,
   "utc": "2026-11-07T14:30:00Z",
   "estado": "FT",
@@ -622,22 +558,6 @@
   "golesLocal": 2,
   "golesVisita": 1,
   "comp": "BL1"
- },
- {
-  "id": 559638,
-  "utc": "2026-11-06T19:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 10,
-  "sede": "",
-  "arbitro": "Mathieu Vernice",
-  "local": "Toulouse",
-  "visita": "Strasbourg",
-  "idLocal": 511,
-  "idVisita": 576,
-  "golesLocal": 3,
-  "golesVisita": 1,
-  "comp": "FL1"
  },
  {
   "id": 559637,

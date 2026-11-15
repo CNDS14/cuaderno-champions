@@ -1,21 +1,5 @@
 [
  {
-  "id": 558537,
-  "utc": "2026-11-06T19:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 11,
-  "sede": "",
-  "arbitro": "Juan Luca Sacchi",
-  "local": "Venezia FC",
-  "visita": "Udinese",
-  "idLocal": 454,
-  "idVisita": 115,
-  "golesLocal": 2,
-  "golesVisita": 1,
-  "comp": "SA"
- },
- {
   "id": 558532,
   "utc": "2026-11-07T14:00:00Z",
   "estado": "FT",
