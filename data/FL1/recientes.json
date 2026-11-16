@@ -1,37 +1,5 @@
 [
  {
-  "id": 559637,
-  "utc": "2026-11-07T18:00:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 10,
-  "sede": "",
-  "arbitro": "Marc Bollengier",
-  "local": "Auxerre",
-  "visita": "Paris FC",
-  "idLocal": 519,
-  "idVisita": 1045,
-  "golesLocal": 0,
-  "golesVisita": 1,
-  "comp": "FL1"
- },
- {
-  "id": 559635,
-  "utc": "2026-11-07T20:05:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 10,
-  "sede": "",
-  "arbitro": "Ruddy Buquet",
-  "local": "PSG",
-  "visita": "Troyes",
-  "idLocal": 524,
-  "idVisita": 531,
-  "golesLocal": 1,
-  "golesVisita": 0,
-  "comp": "FL1"
- },
- {
   "id": 559636,
   "utc": "2026-11-08T14:00:00Z",
   "estado": "FT",

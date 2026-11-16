@@ -1,11 +1,11 @@
 {
- "actualizado": "2026-11-15T20:05:45.463Z",
+ "actualizado": "2026-11-16T00:07:46.227Z",
  "competiciones": [
   {
    "fd": "CL",
    "nombre": "Champions League",
    "pais": "Europa",
-   "partidos": 9,
+   "partidos": 18,
    "hoy": 0,
    "enTabla": 36,
    "conCuotas": 9,
@@ -19,7 +19,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 9
+   "resultados": 5
   },
   {
    "fd": "PL",
@@ -29,7 +29,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 5,
-   "resultados": 9
+   "resultados": 5
   },
   {
    "fd": "SA",
@@ -39,7 +39,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 9
+   "resultados": 5
   },
   {
    "fd": "BL1",
@@ -49,7 +49,7 @@
    "hoy": 0,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 8
+   "resultados": 3
   },
   {
    "fd": "FL1",
@@ -59,18 +59,18 @@
    "hoy": 0,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 8
+   "resultados": 6
   }
  ],
- "partidosTotales": 57,
+ "partidosTotales": 66,
  "creditosCuotas": {
   "gastados": 44,
   "tope": 450,
   "mes": "2026-11"
  },
  "picksModelo": {
-  "total": 1285,
-  "nuevos": 0,
+  "total": 1325,
+  "nuevos": 40,
   "calificados": 1130,
   "aciertos": 824,
   "brier": 0.1754,
