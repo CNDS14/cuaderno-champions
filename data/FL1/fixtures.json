@@ -142,5 +142,21 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "FL1"
+ },
+ {
+  "id": 559616,
+  "utc": "2026-11-27T19:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": null,
+  "local": "Brest",
+  "visita": "Paris FC",
+  "idLocal": 512,
+  "idVisita": 1045,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "FL1"
  }
 ]

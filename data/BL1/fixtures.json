@@ -142,5 +142,21 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "BL1"
+ },
+ {
+  "id": 565869,
+  "utc": "2026-11-27T19:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 11,
+  "sede": "",
+  "arbitro": null,
+  "local": "Bremen",
+  "visita": "M'gladbach",
+  "idLocal": 12,
+  "idVisita": 18,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "BL1"
  }
 ]
