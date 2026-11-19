@@ -174,5 +174,53 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "SA"
+ },
+ {
+  "id": 558513,
+  "utc": "2026-11-28T14:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 13,
+  "sede": "",
+  "arbitro": null,
+  "local": "Frosinone",
+  "visita": "Parma",
+  "idLocal": 470,
+  "idVisita": 112,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
+ },
+ {
+  "id": 558514,
+  "utc": "2026-11-28T17:00:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 13,
+  "sede": "",
+  "arbitro": null,
+  "local": "Torino",
+  "visita": "Lazio",
+  "idLocal": 586,
+  "idVisita": 110,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
+ },
+ {
+  "id": 558518,
+  "utc": "2026-11-28T19:45:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 13,
+  "sede": "",
+  "arbitro": null,
+  "local": "Inter",
+  "visita": "Genoa",
+  "idLocal": 108,
+  "idVisita": 107,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "SA"
  }
 ]
