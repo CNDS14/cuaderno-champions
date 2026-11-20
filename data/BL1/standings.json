@@ -3,13 +3,13 @@
   "pos": 1,
   "equipo": "Bayern",
   "escudo": "https://crests.football-data.org/5.png",
-  "pj": 9,
+  "pj": 10,
   "g": 6,
-  "e": 3,
+  "e": 4,
   "p": 0,
-  "gf": 29,
-  "gc": 9,
-  "pts": 21,
+  "gf": 30,
+  "gc": 10,
+  "pts": 22,
   "forma": ""
  },
  {
@@ -170,6 +170,19 @@
  },
  {
   "pos": 14,
+  "equipo": "1. FC Köln",
+  "escudo": "https://crests.football-data.org/1.png",
+  "pj": 10,
+  "g": 2,
+  "e": 4,
+  "p": 4,
+  "gf": 11,
+  "gc": 15,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 15,
   "equipo": "Augsburg",
   "escudo": "https://crests.football-data.org/16.png",
   "pj": 9,
@@ -178,19 +191,6 @@
   "p": 4,
   "gf": 20,
   "gc": 20,
-  "pts": 9,
-  "forma": ""
- },
- {
-  "pos": 15,
-  "equipo": "1. FC Köln",
-  "escudo": "https://crests.football-data.org/1.png",
-  "pj": 9,
-  "g": 2,
-  "e": 3,
-  "p": 4,
-  "gf": 10,
-  "gc": 14,
   "pts": 9,
   "forma": ""
  },
