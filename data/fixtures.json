@@ -338,7 +338,7 @@
  {
   "id": 564754,
   "utc": "2026-11-21T20:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 13,
   "sede": "",
@@ -347,8 +347,8 @@
   "visita": "Celta",
   "idLocal": 86,
   "idVisita": 558,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "PD"
  },
  {
@@ -466,7 +466,7 @@
  {
   "id": 558525,
   "utc": "2026-11-21T14:00:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -475,14 +475,14 @@
   "visita": "Cagliari",
   "idLocal": 7397,
   "idVisita": 104,
-  "golesLocal": 2,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "SA"
  },
  {
   "id": 558528,
   "utc": "2026-11-21T14:00:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -491,14 +491,14 @@
   "visita": "Lecce",
   "idLocal": 110,
   "idVisita": 5890,
-  "golesLocal": 3,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "SA"
  },
  {
   "id": 558526,
   "utc": "2026-11-21T17:00:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -507,14 +507,14 @@
   "visita": "Roma",
   "idLocal": 112,
   "idVisita": 100,
-  "golesLocal": 1,
-  "golesVisita": 5,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "SA"
  },
  {
   "id": 558527,
   "utc": "2026-11-21T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "NS",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -523,8 +523,8 @@
   "visita": "Torino",
   "idLocal": 113,
   "idVisita": 586,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "SA"
  },
  {
@@ -642,7 +642,7 @@
  {
   "id": 559621,
   "utc": "2026-11-21T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -651,14 +651,14 @@
   "visita": "Auxerre",
   "idLocal": 548,
   "idVisita": 519,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559623,
   "utc": "2026-11-21T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -667,14 +667,14 @@
   "visita": "Toulouse",
   "idLocal": 546,
   "idVisita": 511,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559624,
   "utc": "2026-11-21T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -684,13 +684,13 @@
   "idLocal": 521,
   "idVisita": 523,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559627,
   "utc": "2026-11-21T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -700,7 +700,7 @@
   "idLocal": 576,
   "idVisita": 512,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "FL1"
  }
 ]

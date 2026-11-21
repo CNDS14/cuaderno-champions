@@ -18,7 +18,7 @@
  {
   "id": 559621,
   "utc": "2026-11-21T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -27,14 +27,14 @@
   "visita": "Auxerre",
   "idLocal": 548,
   "idVisita": 519,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559623,
   "utc": "2026-11-21T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -43,14 +43,14 @@
   "visita": "Toulouse",
   "idLocal": 546,
   "idVisita": 511,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 1,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559624,
   "utc": "2026-11-21T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -60,13 +60,13 @@
   "idLocal": 521,
   "idVisita": 523,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "FL1"
  },
  {
   "id": 559627,
   "utc": "2026-11-21T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -76,7 +76,7 @@
   "idLocal": 576,
   "idVisita": 512,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 1,
   "comp": "FL1"
  }
 ]

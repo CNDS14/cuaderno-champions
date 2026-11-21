@@ -2803,9 +2803,9 @@
   "k": "1X2::H",
   "p": 0.6088,
   "registradoEl": "2026-11-12T03:16:33.355Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 559621,
@@ -2816,9 +2816,9 @@
   "k": "DO::1X",
   "p": 0.8228,
   "registradoEl": "2026-11-12T03:16:33.355Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559621,
@@ -2829,9 +2829,9 @@
   "k": "OU::O|1.5",
   "p": 0.8118,
   "registradoEl": "2026-11-12T03:16:33.355Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559621,
@@ -2842,9 +2842,9 @@
   "k": "AA::S",
   "p": 0.5569,
   "registradoEl": "2026-11-12T03:16:33.355Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559621,
@@ -2855,9 +2855,9 @@
   "k": "PA::NV",
   "p": 0.8703,
   "registradoEl": "2026-11-12T03:16:33.355Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559623,
@@ -2868,9 +2868,9 @@
   "k": "1X2::H",
   "p": 0.5692,
   "registradoEl": "2026-11-12T03:16:33.356Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 559623,
@@ -2881,9 +2881,9 @@
   "k": "DO::1X",
   "p": 0.8057,
   "registradoEl": "2026-11-12T03:16:33.356Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559623,
@@ -2894,9 +2894,9 @@
   "k": "OU::O|1.5",
   "p": 0.7644,
   "registradoEl": "2026-11-12T03:16:33.356Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559623,
@@ -2907,9 +2907,9 @@
   "k": "AA::S",
   "p": 0.5167,
   "registradoEl": "2026-11-12T03:16:33.356Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559623,
@@ -2920,9 +2920,9 @@
   "k": "PA::NV",
   "p": 0.8347,
   "registradoEl": "2026-11-12T03:16:33.356Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 1,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559627,
@@ -2933,9 +2933,9 @@
   "k": "1X2::H",
   "p": 0.5826,
   "registradoEl": "2026-11-12T03:16:33.356Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 559627,
@@ -2946,9 +2946,9 @@
   "k": "DO::12",
   "p": 0.7939,
   "registradoEl": "2026-11-12T03:16:33.356Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 1,
+  "ok": true
  },
  {
   "fixId": 559627,
@@ -2959,9 +2959,9 @@
   "k": "OU::O|1.5",
   "p": 0.8648,
   "registradoEl": "2026-11-12T03:16:33.356Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 559627,
@@ -2972,9 +2972,9 @@
   "k": "AA::S",
   "p": 0.6439,
   "registradoEl": "2026-11-12T03:16:33.356Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 559627,
@@ -2985,9 +2985,9 @@
   "k": "PA::NV",
   "p": 0.8899,
   "registradoEl": "2026-11-12T03:16:33.356Z",
-  "gl": null,
-  "gv": null,
-  "ok": null
+  "gl": 0,
+  "gv": 1,
+  "ok": false
  },
  {
   "fixId": 560651,

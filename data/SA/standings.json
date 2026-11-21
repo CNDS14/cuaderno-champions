@@ -79,6 +79,19 @@
  },
  {
   "pos": 7,
+  "equipo": "Napoli",
+  "escudo": "https://crests.football-data.org/113.png",
+  "pj": 12,
+  "g": 5,
+  "e": 3,
+  "p": 4,
+  "gf": 19,
+  "gc": 14,
+  "pts": 18,
+  "forma": ""
+ },
+ {
+  "pos": 8,
   "equipo": "Juventus",
   "escudo": "https://crests.football-data.org/109.png",
   "pj": 11,
@@ -91,7 +104,7 @@
   "forma": ""
  },
  {
-  "pos": 8,
+  "pos": 9,
   "equipo": "Bologna",
   "escudo": "https://crests.football-data.org/103.png",
   "pj": 11,
@@ -101,19 +114,6 @@
   "gf": 16,
   "gc": 14,
   "pts": 17,
-  "forma": ""
- },
- {
-  "pos": 9,
-  "equipo": "Napoli",
-  "escudo": "https://crests.football-data.org/113.png",
-  "pj": 12,
-  "g": 4,
-  "e": 4,
-  "p": 4,
-  "gf": 18,
-  "gc": 14,
-  "pts": 16,
   "forma": ""
  },
  {
@@ -131,19 +131,6 @@
  },
  {
   "pos": 11,
-  "equipo": "Torino",
-  "escudo": "https://crests.football-data.org/586.png",
-  "pj": 12,
-  "g": 4,
-  "e": 3,
-  "p": 5,
-  "gf": 15,
-  "gc": 17,
-  "pts": 15,
-  "forma": ""
- },
- {
-  "pos": 12,
   "equipo": "Atalanta",
   "escudo": "https://crests.football-data.org/102.png",
   "pj": 11,
@@ -152,6 +139,19 @@
   "p": 5,
   "gf": 17,
   "gc": 20,
+  "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 12,
+  "equipo": "Torino",
+  "escudo": "https://crests.football-data.org/586.png",
+  "pj": 12,
+  "g": 4,
+  "e": 2,
+  "p": 6,
+  "gf": 15,
+  "gc": 18,
   "pts": 14,
   "forma": ""
  },
