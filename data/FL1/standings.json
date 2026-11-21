@@ -157,6 +157,19 @@
  },
  {
   "pos": 13,
+  "equipo": "Troyes",
+  "escudo": "https://crests.football-data.org/531.png",
+  "pj": 11,
+  "g": 3,
+  "e": 2,
+  "p": 6,
+  "gf": 10,
+  "gc": 18,
+  "pts": 11,
+  "forma": ""
+ },
+ {
+  "pos": 14,
   "equipo": "Strasbourg",
   "escudo": "https://crests.football-data.org/576.png",
   "pj": 10,
@@ -169,7 +182,7 @@
   "forma": ""
  },
  {
-  "pos": 14,
+  "pos": 15,
   "equipo": "Auxerre",
   "escudo": "https://crests.football-data.org/519.png",
   "pj": 10,
@@ -179,19 +192,6 @@
   "gf": 13,
   "gc": 24,
   "pts": 10,
-  "forma": ""
- },
- {
-  "pos": 15,
-  "equipo": "Troyes",
-  "escudo": "https://crests.football-data.org/531.png",
-  "pj": 11,
-  "g": 2,
-  "e": 3,
-  "p": 6,
-  "gf": 8,
-  "gc": 18,
-  "pts": 9,
   "forma": ""
  },
  {
@@ -226,11 +226,11 @@
   "escudo": "https://crests.football-data.org/533.png",
   "pj": 11,
   "g": 0,
-  "e": 3,
-  "p": 8,
+  "e": 2,
+  "p": 9,
   "gf": 10,
-  "gc": 23,
-  "pts": 3,
+  "gc": 25,
+  "pts": 2,
   "forma": ""
  }
 ]

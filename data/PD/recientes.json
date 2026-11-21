@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": 564748,
+  "utc": "2026-11-20T20:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 13,
+  "sede": "",
+  "arbitro": "Mateo Busquets Ferrer",
+  "local": "Athletic",
+  "visita": "Espanyol",
+  "idLocal": 77,
+  "idVisita": 80,
+  "golesLocal": 0,
+  "golesVisita": 1,
+  "comp": "PD"
+ }
+]

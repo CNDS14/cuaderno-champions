@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": 559622,
+  "utc": "2026-11-20T19:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 11,
+  "sede": "",
+  "arbitro": "Jérémie Pignard",
+  "local": "Troyes",
+  "visita": "Le Havre",
+  "idLocal": 531,
+  "idVisita": 533,
+  "golesLocal": 3,
+  "golesVisita": 1,
+  "comp": "FL1"
+ }
+]

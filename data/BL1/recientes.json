@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": 565859,
+  "utc": "2026-11-20T19:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 10,
+  "sede": "",
+  "arbitro": "Robin Braun",
+  "local": "Bayern",
+  "visita": "1. FC Köln",
+  "idLocal": 5,
+  "idVisita": 1,
+  "golesLocal": 1,
+  "golesVisita": 1,
+  "comp": "BL1"
+ }
+]
