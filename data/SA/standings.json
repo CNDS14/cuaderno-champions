@@ -14,6 +14,19 @@
  },
  {
   "pos": 2,
+  "equipo": "Roma",
+  "escudo": "https://crests.football-data.org/100.png",
+  "pj": 12,
+  "g": 9,
+  "e": 3,
+  "p": 0,
+  "gf": 36,
+  "gc": 11,
+  "pts": 30,
+  "forma": ""
+ },
+ {
+  "pos": 3,
   "equipo": "Inter",
   "escudo": "https://crests.football-data.org/108.png",
   "pj": 11,
@@ -23,19 +36,6 @@
   "gf": 28,
   "gc": 13,
   "pts": 28,
-  "forma": ""
- },
- {
-  "pos": 3,
-  "equipo": "Roma",
-  "escudo": "https://crests.football-data.org/100.png",
-  "pj": 11,
-  "g": 8,
-  "e": 3,
-  "p": 0,
-  "gf": 31,
-  "gc": 10,
-  "pts": 27,
   "forma": ""
  },
  {
@@ -105,6 +105,19 @@
  },
  {
   "pos": 9,
+  "equipo": "Napoli",
+  "escudo": "https://crests.football-data.org/113.png",
+  "pj": 12,
+  "g": 4,
+  "e": 4,
+  "p": 4,
+  "gf": 18,
+  "gc": 14,
+  "pts": 16,
+  "forma": ""
+ },
+ {
+  "pos": 10,
   "equipo": "Cagliari",
   "escudo": "https://crests.football-data.org/104.png",
   "pj": 12,
@@ -117,29 +130,16 @@
   "forma": ""
  },
  {
-  "pos": 10,
-  "equipo": "Napoli",
-  "escudo": "https://crests.football-data.org/113.png",
-  "pj": 11,
-  "g": 4,
-  "e": 3,
-  "p": 4,
-  "gf": 18,
-  "gc": 14,
-  "pts": 15,
-  "forma": ""
- },
- {
   "pos": 11,
   "equipo": "Torino",
   "escudo": "https://crests.football-data.org/586.png",
-  "pj": 11,
+  "pj": 12,
   "g": 4,
-  "e": 2,
+  "e": 3,
   "p": 5,
   "gf": 15,
   "gc": 17,
-  "pts": 14,
+  "pts": 15,
   "forma": ""
  },
  {
@@ -198,12 +198,12 @@
   "pos": 16,
   "equipo": "Parma",
   "escudo": "https://crests.football-data.org/112.png",
-  "pj": 11,
+  "pj": 12,
   "g": 2,
   "e": 2,
-  "p": 7,
-  "gf": 9,
-  "gc": 17,
+  "p": 8,
+  "gf": 10,
+  "gc": 22,
   "pts": 8,
   "forma": ""
  },

@@ -34,7 +34,7 @@
  {
   "id": 558526,
   "utc": "2026-11-21T17:00:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -43,24 +43,24 @@
   "visita": "Roma",
   "idLocal": 112,
   "idVisita": 100,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 5,
   "comp": "SA"
  },
  {
   "id": 558527,
   "utc": "2026-11-21T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 12,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Antonio Rapuano",
   "local": "Napoli",
   "visita": "Torino",
   "idLocal": 113,
   "idVisita": 586,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  }
 ]

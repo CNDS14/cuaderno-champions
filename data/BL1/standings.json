@@ -92,6 +92,19 @@
  },
  {
   "pos": 8,
+  "equipo": "Stuttgart",
+  "escudo": "https://crests.football-data.org/10.png",
+  "pj": 10,
+  "g": 4,
+  "e": 1,
+  "p": 5,
+  "gf": 15,
+  "gc": 15,
+  "pts": 13,
+  "forma": ""
+ },
+ {
+  "pos": 9,
   "equipo": "Elversberg",
   "escudo": "https://crests.football-data.org/719.png",
   "pj": 10,
@@ -101,19 +114,6 @@
   "gf": 17,
   "gc": 19,
   "pts": 13,
-  "forma": ""
- },
- {
-  "pos": 9,
-  "equipo": "Stuttgart",
-  "escudo": "https://crests.football-data.org/10.png",
-  "pj": 9,
-  "g": 4,
-  "e": 0,
-  "p": 5,
-  "gf": 15,
-  "gc": 15,
-  "pts": 12,
   "forma": ""
  },
  {
@@ -196,6 +196,19 @@
  },
  {
   "pos": 16,
+  "equipo": "Schalke",
+  "escudo": "https://crests.football-data.org/6.png",
+  "pj": 10,
+  "g": 1,
+  "e": 4,
+  "p": 5,
+  "gf": 5,
+  "gc": 11,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 17,
   "equipo": "Union Berlin",
   "escudo": "https://crests.football-data.org/28.png",
   "pj": 10,
@@ -205,19 +218,6 @@
   "gf": 8,
   "gc": 26,
   "pts": 7,
-  "forma": ""
- },
- {
-  "pos": 17,
-  "equipo": "Schalke",
-  "escudo": "https://crests.football-data.org/6.png",
-  "pj": 9,
-  "g": 1,
-  "e": 3,
-  "p": 5,
-  "gf": 5,
-  "gc": 11,
-  "pts": 6,
   "forma": ""
  },
  {
