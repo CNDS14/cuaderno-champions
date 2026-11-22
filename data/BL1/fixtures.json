@@ -2,7 +2,7 @@
  {
   "id": 565864,
   "utc": "2026-11-22T14:30:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -11,14 +11,14 @@
   "visita": "Mainz",
   "idLocal": 16,
   "idVisita": 15,
-  "golesLocal": 3,
-  "golesVisita": 1,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "BL1"
  },
  {
   "id": 565863,
   "utc": "2026-11-22T16:30:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -27,8 +27,8 @@
   "visita": "HSV",
   "idLocal": 12,
   "idVisita": 7,
-  "golesLocal": 4,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "BL1"
  }
 ]

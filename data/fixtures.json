@@ -338,7 +338,7 @@
  {
   "id": 564753,
   "utc": "2026-11-22T20:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 13,
   "sede": "",
@@ -348,7 +348,7 @@
   "idLocal": 82,
   "idVisita": 78,
   "golesLocal": 0,
-  "golesVisita": 0,
+  "golesVisita": 3,
   "comp": "PD"
  },
  {
@@ -450,7 +450,7 @@
  {
   "id": 558520,
   "utc": "2026-11-22T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -459,14 +459,14 @@
   "visita": "Inter",
   "idLocal": 102,
   "idVisita": 108,
-  "golesLocal": 0,
-  "golesVisita": 1,
+  "golesLocal": 4,
+  "golesVisita": 4,
   "comp": "SA"
  },
  {
   "id": 565864,
   "utc": "2026-11-22T14:30:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -475,14 +475,14 @@
   "visita": "Mainz",
   "idLocal": 16,
   "idVisita": 15,
-  "golesLocal": 3,
-  "golesVisita": 1,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "BL1"
  },
  {
   "id": 565863,
   "utc": "2026-11-22T16:30:00Z",
-  "estado": "FT",
+  "estado": "NS",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -491,8 +491,8 @@
   "visita": "HSV",
   "idLocal": 12,
   "idVisita": 7,
-  "golesLocal": 4,
-  "golesVisita": 0,
+  "golesLocal": null,
+  "golesVisita": null,
   "comp": "BL1"
  },
  {
@@ -530,7 +530,7 @@
  {
   "id": 559629,
   "utc": "2026-11-22T19:45:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -539,8 +539,8 @@
   "visita": "Le Mans",
   "idLocal": 516,
   "idVisita": 535,
-  "golesLocal": 0,
-  "golesVisita": 0,
+  "golesLocal": 2,
+  "golesVisita": 3,
   "comp": "FL1"
  }
 ]
