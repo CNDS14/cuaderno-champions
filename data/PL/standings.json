@@ -16,12 +16,12 @@
   "pos": 2,
   "equipo": "Brighton Hove",
   "escudo": "https://crests.football-data.org/397.png",
-  "pj": 10,
+  "pj": 11,
   "g": 7,
   "e": 1,
-  "p": 2,
+  "p": 3,
   "gf": 26,
-  "gc": 7,
+  "gc": 9,
   "pts": 22,
   "forma": ""
  },
@@ -40,6 +40,19 @@
  },
  {
   "pos": 4,
+  "equipo": "Liverpool",
+  "escudo": "https://crests.football-data.org/64.png",
+  "pj": 11,
+  "g": 6,
+  "e": 3,
+  "p": 2,
+  "gf": 16,
+  "gc": 10,
+  "pts": 21,
+  "forma": ""
+ },
+ {
+  "pos": 5,
   "equipo": "Bournemouth",
   "escudo": "https://crests.football-data.org/bournemouth.png",
   "pj": 11,
@@ -48,19 +61,6 @@
   "p": 3,
   "gf": 18,
   "gc": 14,
-  "pts": 18,
-  "forma": ""
- },
- {
-  "pos": 5,
-  "equipo": "Liverpool",
-  "escudo": "https://crests.football-data.org/64.png",
-  "pj": 10,
-  "g": 5,
-  "e": 3,
-  "p": 2,
-  "gf": 14,
-  "gc": 10,
   "pts": 18,
   "forma": ""
  },
@@ -131,6 +131,19 @@
  },
  {
   "pos": 11,
+  "equipo": "Hull City",
+  "escudo": "https://crests.football-data.org/322.png",
+  "pj": 11,
+  "g": 3,
+  "e": 5,
+  "p": 3,
+  "gf": 13,
+  "gc": 11,
+  "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 12,
   "equipo": "Aston Villa",
   "escudo": "https://crests.football-data.org/58.png",
   "pj": 11,
@@ -143,7 +156,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 13,
   "equipo": "Newcastle",
   "escudo": "https://crests.football-data.org/67.png",
   "pj": 11,
@@ -156,7 +169,7 @@
   "forma": ""
  },
  {
-  "pos": 13,
+  "pos": 14,
   "equipo": "Coventry City",
   "escudo": "https://crests.football-data.org/1076.png",
   "pj": 11,
@@ -166,19 +179,6 @@
   "gf": 13,
   "gc": 21,
   "pts": 12,
-  "forma": ""
- },
- {
-  "pos": 14,
-  "equipo": "Hull City",
-  "escudo": "https://crests.football-data.org/322.png",
-  "pj": 10,
-  "g": 2,
-  "e": 5,
-  "p": 3,
-  "gf": 11,
-  "gc": 11,
-  "pts": 11,
   "forma": ""
  },
  {
@@ -237,12 +237,12 @@
   "pos": 19,
   "equipo": "Man United",
   "escudo": "https://crests.football-data.org/66.png",
-  "pj": 10,
+  "pj": 11,
   "g": 1,
   "e": 5,
-  "p": 4,
+  "p": 5,
   "gf": 14,
-  "gc": 19,
+  "gc": 21,
   "pts": 8,
   "forma": ""
  },
