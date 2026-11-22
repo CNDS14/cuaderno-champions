@@ -17,12 +17,12 @@
   "equipo": "Real Madrid",
   "escudo": "https://crests.football-data.org/86.png",
   "pj": 13,
-  "g": 10,
-  "e": 1,
+  "g": 11,
+  "e": 0,
   "p": 2,
-  "gf": 32,
+  "gf": 33,
   "gc": 11,
-  "pts": 31,
+  "pts": 33,
   "forma": ""
  },
  {
@@ -144,19 +144,6 @@
  },
  {
   "pos": 12,
-  "equipo": "Celta",
-  "escudo": "https://crests.football-data.org/558.png",
-  "pj": 13,
-  "g": 2,
-  "e": 8,
-  "p": 3,
-  "gf": 11,
-  "gc": 11,
-  "pts": 14,
-  "forma": ""
- },
- {
-  "pos": 13,
   "equipo": "Santander",
   "escudo": "https://crests.football-data.org/5335.png",
   "pj": 12,
@@ -166,6 +153,19 @@
   "gf": 17,
   "gc": 30,
   "pts": 14,
+  "forma": ""
+ },
+ {
+  "pos": 13,
+  "equipo": "Celta",
+  "escudo": "https://crests.football-data.org/558.png",
+  "pj": 13,
+  "g": 2,
+  "e": 7,
+  "p": 4,
+  "gf": 11,
+  "gc": 12,
+  "pts": 13,
   "forma": ""
  },
  {
