@@ -18,7 +18,7 @@
  {
   "id": 559626,
   "utc": "2026-11-22T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -34,17 +34,17 @@
  {
   "id": 559629,
   "utc": "2026-11-22T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 11,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Eric Wattellier",
   "local": "Marseille",
   "visita": "Le Mans",
   "idLocal": 516,
   "idVisita": 535,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

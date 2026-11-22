@@ -306,7 +306,7 @@
  {
   "id": 564750,
   "utc": "2026-11-22T15:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 13,
   "sede": "",
@@ -322,7 +322,7 @@
  {
   "id": 564752,
   "utc": "2026-11-22T17:30:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 13,
   "sede": "",
@@ -331,24 +331,24 @@
   "visita": "Málaga",
   "idLocal": 79,
   "idVisita": 84,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
   "id": 564753,
   "utc": "2026-11-22T20:00:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 13,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Jesús Gil Manzano",
   "local": "Getafe",
   "visita": "Atleti",
   "idLocal": 82,
   "idVisita": 78,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "PD"
  },
  {
@@ -370,7 +370,7 @@
  {
   "id": 560645,
   "utc": "2026-11-22T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -379,7 +379,7 @@
   "visita": "Man United",
   "idLocal": 64,
   "idVisita": 66,
-  "golesLocal": 2,
+  "golesLocal": 4,
   "golesVisita": 0,
   "comp": "PL"
  },
@@ -434,7 +434,7 @@
  {
   "id": 558523,
   "utc": "2026-11-22T17:00:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -443,24 +443,24 @@
   "visita": "Frosinone",
   "idLocal": 98,
   "idVisita": 470,
-  "golesLocal": 1,
-  "golesVisita": 0,
+  "golesLocal": 5,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
   "id": 558520,
   "utc": "2026-11-22T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 12,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Fabio Maresca",
   "local": "Atalanta",
   "visita": "Inter",
   "idLocal": 102,
   "idVisita": 108,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 1,
   "comp": "SA"
  },
  {
@@ -482,7 +482,7 @@
  {
   "id": 565863,
   "utc": "2026-11-22T16:30:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 10,
   "sede": "",
@@ -491,7 +491,7 @@
   "visita": "HSV",
   "idLocal": 12,
   "idVisita": 7,
-  "golesLocal": 0,
+  "golesLocal": 4,
   "golesVisita": 0,
   "comp": "BL1"
  },
@@ -514,7 +514,7 @@
  {
   "id": 559626,
   "utc": "2026-11-22T16:15:00Z",
-  "estado": "LIVE",
+  "estado": "FT",
   "minuto": null,
   "jornada": 11,
   "sede": "",
@@ -530,17 +530,17 @@
  {
   "id": 559629,
   "utc": "2026-11-22T19:45:00Z",
-  "estado": "NS",
+  "estado": "LIVE",
   "minuto": null,
   "jornada": 11,
   "sede": "",
-  "arbitro": null,
+  "arbitro": "Eric Wattellier",
   "local": "Marseille",
   "visita": "Le Mans",
   "idLocal": 516,
   "idVisita": 535,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

@@ -69,12 +69,12 @@
   "equipo": "Bremen",
   "escudo": "https://crests.football-data.org/12.png",
   "pj": 10,
-  "g": 4,
-  "e": 4,
+  "g": 5,
+  "e": 3,
   "p": 2,
-  "gf": 17,
+  "gf": 21,
   "gc": 15,
-  "pts": 16,
+  "pts": 18,
   "forma": ""
  },
  {
@@ -118,19 +118,6 @@
  },
  {
   "pos": 10,
-  "equipo": "HSV",
-  "escudo": "https://crests.football-data.org/7.png",
-  "pj": 10,
-  "g": 4,
-  "e": 1,
-  "p": 5,
-  "gf": 10,
-  "gc": 20,
-  "pts": 13,
-  "forma": ""
- },
- {
-  "pos": 11,
   "equipo": "Augsburg",
   "escudo": "https://crests.football-data.org/16.png",
   "pj": 10,
@@ -143,7 +130,7 @@
   "forma": ""
  },
  {
-  "pos": 12,
+  "pos": 11,
   "equipo": "Hoffenheim",
   "escudo": "https://crests.football-data.org/2.png",
   "pj": 10,
@@ -152,6 +139,19 @@
   "p": 6,
   "gf": 16,
   "gc": 18,
+  "pts": 12,
+  "forma": ""
+ },
+ {
+  "pos": 12,
+  "equipo": "HSV",
+  "escudo": "https://crests.football-data.org/7.png",
+  "pj": 10,
+  "g": 4,
+  "e": 0,
+  "p": 6,
+  "gf": 10,
+  "gc": 24,
   "pts": 12,
   "forma": ""
  },
