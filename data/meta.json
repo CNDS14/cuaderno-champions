@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22T22:40:08.821Z",
+ "actualizado": "2026-11-23T03:26:03.065Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -15,62 +15,62 @@
    "fd": "PD",
    "nombre": "LaLiga",
    "pais": "España",
-   "partidos": 4,
-   "hoy": 4,
+   "partidos": 1,
+   "hoy": 1,
    "enTabla": 20,
-   "conCuotas": 2,
-   "resultados": 5
+   "conCuotas": 1,
+   "resultados": 9
   },
   {
    "fd": "PL",
    "nombre": "Premier League",
    "pais": "Inglaterra",
-   "partidos": 2,
-   "hoy": 2,
+   "partidos": 1,
+   "hoy": 1,
    "enTabla": 20,
-   "conCuotas": 2,
-   "resultados": 7
+   "conCuotas": 1,
+   "resultados": 9
   },
   {
    "fd": "SA",
    "nombre": "Serie A",
    "pais": "Italia",
-   "partidos": 5,
-   "hoy": 5,
+   "partidos": 1,
+   "hoy": 1,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 4
+   "resultados": 9
   },
   {
    "fd": "BL1",
    "nombre": "Bundesliga",
    "pais": "Alemania",
-   "partidos": 2,
-   "hoy": 2,
+   "partidos": 9,
+   "hoy": 0,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 7
+   "resultados": 9
   },
   {
    "fd": "FL1",
    "nombre": "Ligue 1",
    "pais": "Francia",
-   "partidos": 3,
-   "hoy": 3,
+   "partidos": 9,
+   "hoy": 0,
    "enTabla": 18,
    "conCuotas": 0,
-   "resultados": 6
+   "resultados": 9
   }
  ],
- "partidosTotales": 34,
+ "partidosTotales": 39,
  "creditosCuotas": {
-  "gastados": 60,
+  "gastados": 62,
   "tope": 450,
   "mes": "2026-11"
  },
  "picksModelo": {
-  "total": 1400,
-  "nuevos": 0,
+  "total": 1420,
+  "nuevos": 20,
   "calificados": 1230,
   "aciertos": 899,
   "brier": 0.1759,
