@@ -144,6 +144,22 @@
   "comp": "PD"
  },
  {
+  "id": 564757,
+  "utc": "2026-11-23T20:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 13,
+  "sede": "",
+  "arbitro": "Francisco Hernández Maeso",
+  "local": "Levante",
+  "visita": "Elche",
+  "idLocal": 88,
+  "idVisita": 285,
+  "golesLocal": 1,
+  "golesVisita": 1,
+  "comp": "PD"
+ },
+ {
   "id": 560643,
   "utc": "2026-11-21T12:30:00Z",
   "estado": "FT",
@@ -445,22 +461,6 @@
   "idVisita": 108,
   "golesLocal": 4,
   "golesVisita": 4,
-  "comp": "SA"
- },
- {
-  "id": 558519,
-  "utc": "2026-11-23T19:45:00Z",
-  "estado": "FT",
-  "minuto": null,
-  "jornada": 12,
-  "sede": "",
-  "arbitro": "Daniele Doveri",
-  "local": "Monza",
-  "visita": "Fiorentina",
-  "idLocal": 5911,
-  "idVisita": 99,
-  "golesLocal": 3,
-  "golesVisita": 0,
   "comp": "SA"
  },
  {

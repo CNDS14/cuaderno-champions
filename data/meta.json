@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24T00:39:22.790Z",
+ "actualizado": "2026-11-24T01:07:19.147Z",
  "competiciones": [
   {
    "fd": "CL",
@@ -19,7 +19,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 1,
-   "resultados": 9
+   "resultados": 10
   },
   {
    "fd": "PL",
@@ -39,7 +39,7 @@
    "hoy": 0,
    "enTabla": 20,
    "conCuotas": 0,
-   "resultados": 10
+   "resultados": 9
   },
   {
    "fd": "BL1",
@@ -70,10 +70,10 @@
  },
  "picksModelo": {
   "total": 1475,
-  "nuevos": 55,
-  "calificados": 1240,
-  "aciertos": 904,
-  "brier": 0.1767,
+  "nuevos": 0,
+  "calificados": 1245,
+  "aciertos": 907,
+  "brier": 0.1768,
   "equiposAjustados": 21,
   "ajuste": {
    "partidos": 3650,
