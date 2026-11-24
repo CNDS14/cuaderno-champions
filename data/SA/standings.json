@@ -170,6 +170,19 @@
  },
  {
   "pos": 14,
+  "equipo": "Monza",
+  "escudo": "https://crests.football-data.org/5911.png",
+  "pj": 12,
+  "g": 3,
+  "e": 1,
+  "p": 8,
+  "gf": 20,
+  "gc": 25,
+  "pts": 10,
+  "forma": ""
+ },
+ {
+  "pos": 15,
   "equipo": "Lecce",
   "escudo": "https://crests.football-data.org/5890.png",
   "pj": 12,
@@ -182,20 +195,20 @@
   "forma": ""
  },
  {
-  "pos": 15,
+  "pos": 16,
   "equipo": "Fiorentina",
   "escudo": "https://crests.football-data.org/99.png",
-  "pj": 11,
+  "pj": 12,
   "g": 2,
   "e": 3,
-  "p": 6,
+  "p": 7,
   "gf": 17,
-  "gc": 25,
+  "gc": 28,
   "pts": 9,
   "forma": ""
  },
  {
-  "pos": 16,
+  "pos": 17,
   "equipo": "Parma",
   "escudo": "https://crests.football-data.org/112.png",
   "pj": 12,
@@ -208,7 +221,7 @@
   "forma": ""
  },
  {
-  "pos": 17,
+  "pos": 18,
   "equipo": "Sassuolo",
   "escudo": "https://crests.football-data.org/471.png",
   "pj": 12,
@@ -218,19 +231,6 @@
   "gf": 16,
   "gc": 31,
   "pts": 8,
-  "forma": ""
- },
- {
-  "pos": 18,
-  "equipo": "Monza",
-  "escudo": "https://crests.football-data.org/5911.png",
-  "pj": 11,
-  "g": 2,
-  "e": 1,
-  "p": 8,
-  "gf": 17,
-  "gc": 25,
-  "pts": 7,
   "forma": ""
  },
  {
