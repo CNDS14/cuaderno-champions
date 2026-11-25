@@ -142,5 +142,21 @@
   "golesLocal": null,
   "golesVisita": null,
   "comp": "BL1"
+ },
+ {
+  "id": 565882,
+  "utc": "2026-12-04T19:30:00Z",
+  "estado": "NS",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": null,
+  "local": "Bayern",
+  "visita": "SC Paderborn",
+  "idLocal": 5,
+  "idVisita": 29,
+  "golesLocal": null,
+  "golesVisita": null,
+  "comp": "BL1"
  }
 ]
