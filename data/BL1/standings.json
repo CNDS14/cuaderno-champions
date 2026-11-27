@@ -68,13 +68,13 @@
   "pos": 6,
   "equipo": "Bremen",
   "escudo": "https://crests.football-data.org/12.png",
-  "pj": 10,
+  "pj": 11,
   "g": 5,
-  "e": 3,
+  "e": 4,
   "p": 2,
-  "gf": 21,
-  "gc": 15,
-  "pts": 18,
+  "gf": 24,
+  "gc": 18,
+  "pts": 19,
   "forma": ""
  },
  {
@@ -224,13 +224,13 @@
   "pos": 18,
   "equipo": "M'gladbach",
   "escudo": "https://crests.football-data.org/18.png",
-  "pj": 10,
+  "pj": 11,
   "g": 1,
-  "e": 1,
+  "e": 2,
   "p": 8,
-  "gf": 12,
-  "gc": 26,
-  "pts": 4,
+  "gf": 15,
+  "gc": 29,
+  "pts": 5,
   "forma": ""
  }
 ]

@@ -2,7 +2,7 @@
  {
   "id": 559616,
   "utc": "2026-11-27T19:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 12,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Paris FC",
   "idLocal": 512,
   "idVisita": 1045,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

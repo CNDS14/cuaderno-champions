@@ -92,6 +92,19 @@
  },
  {
   "pos": 8,
+  "equipo": "Bologna",
+  "escudo": "https://crests.football-data.org/103.png",
+  "pj": 13,
+  "g": 5,
+  "e": 4,
+  "p": 4,
+  "gf": 17,
+  "gc": 15,
+  "pts": 19,
+  "forma": ""
+ },
+ {
+  "pos": 9,
   "equipo": "Napoli",
   "escudo": "https://crests.football-data.org/113.png",
   "pj": 12,
@@ -100,19 +113,6 @@
   "p": 4,
   "gf": 19,
   "gc": 14,
-  "pts": 18,
-  "forma": ""
- },
- {
-  "pos": 9,
-  "equipo": "Bologna",
-  "escudo": "https://crests.football-data.org/103.png",
-  "pj": 12,
-  "g": 5,
-  "e": 3,
-  "p": 4,
-  "gf": 17,
-  "gc": 15,
   "pts": 18,
   "forma": ""
  },
@@ -235,6 +235,19 @@
  },
  {
   "pos": 19,
+  "equipo": "Venezia FC",
+  "escudo": "https://crests.football-data.org/454.png",
+  "pj": 13,
+  "g": 2,
+  "e": 1,
+  "p": 10,
+  "gf": 8,
+  "gc": 25,
+  "pts": 7,
+  "forma": ""
+ },
+ {
+  "pos": 20,
   "equipo": "Udinese",
   "escudo": "https://crests.football-data.org/115.png",
   "pj": 12,
@@ -243,19 +256,6 @@
   "p": 8,
   "gf": 13,
   "gc": 26,
-  "pts": 6,
-  "forma": ""
- },
- {
-  "pos": 20,
-  "equipo": "Venezia FC",
-  "escudo": "https://crests.football-data.org/454.png",
-  "pj": 12,
-  "g": 2,
-  "e": 0,
-  "p": 10,
-  "gf": 8,
-  "gc": 25,
   "pts": 6,
   "forma": ""
  }

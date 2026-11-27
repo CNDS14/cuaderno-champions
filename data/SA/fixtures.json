@@ -2,7 +2,7 @@
  {
   "id": 558515,
   "utc": "2026-11-27T19:45:00Z",
-  "estado": "NS",
+  "estado": "FT",
   "minuto": null,
   "jornada": 13,
   "sede": "",
@@ -11,8 +11,8 @@
   "visita": "Bologna",
   "idLocal": 454,
   "idVisita": 103,
-  "golesLocal": null,
-  "golesVisita": null,
+  "golesLocal": 0,
+  "golesVisita": 0,
   "comp": "SA"
  }
 ]

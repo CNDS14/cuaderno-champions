@@ -66,6 +66,19 @@
  },
  {
   "pos": 6,
+  "equipo": "Santander",
+  "escudo": "https://crests.football-data.org/5335.png",
+  "pj": 14,
+  "g": 6,
+  "e": 2,
+  "p": 6,
+  "gf": 22,
+  "gc": 33,
+  "pts": 20,
+  "forma": ""
+ },
+ {
+  "pos": 7,
   "equipo": "Sevilla FC",
   "escudo": "https://crests.football-data.org/559.png",
   "pj": 13,
@@ -75,19 +88,6 @@
   "gf": 18,
   "gc": 20,
   "pts": 19,
-  "forma": ""
- },
- {
-  "pos": 7,
-  "equipo": "Santander",
-  "escudo": "https://crests.football-data.org/5335.png",
-  "pj": 13,
-  "g": 5,
-  "e": 2,
-  "p": 6,
-  "gf": 20,
-  "gc": 32,
-  "pts": 17,
   "forma": ""
  },
  {
@@ -185,12 +185,12 @@
   "pos": 15,
   "equipo": "Levante",
   "escudo": "https://crests.football-data.org/88.png",
-  "pj": 13,
+  "pj": 14,
   "g": 2,
   "e": 6,
-  "p": 5,
-  "gf": 17,
-  "gc": 22,
+  "p": 6,
+  "gf": 18,
+  "gc": 24,
   "pts": 12,
   "forma": ""
  },

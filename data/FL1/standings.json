@@ -16,17 +16,30 @@
   "pos": 2,
   "equipo": "Paris FC",
   "escudo": "https://crests.football-data.org/1045.png",
-  "pj": 11,
+  "pj": 12,
   "g": 7,
   "e": 2,
-  "p": 2,
+  "p": 3,
   "gf": 21,
-  "gc": 10,
+  "gc": 11,
   "pts": 23,
   "forma": ""
  },
  {
   "pos": 3,
+  "equipo": "Brest",
+  "escudo": "https://crests.football-data.org/512.png",
+  "pj": 12,
+  "g": 6,
+  "e": 3,
+  "p": 3,
+  "gf": 20,
+  "gc": 12,
+  "pts": 21,
+  "forma": ""
+ },
+ {
+  "pos": 4,
   "equipo": "Lille",
   "escudo": "https://crests.football-data.org/521.png",
   "pj": 11,
@@ -39,7 +52,7 @@
   "forma": ""
  },
  {
-  "pos": 4,
+  "pos": 5,
   "equipo": "Olympique Lyon",
   "escudo": "https://crests.football-data.org/523.png",
   "pj": 11,
@@ -52,7 +65,7 @@
   "forma": ""
  },
  {
-  "pos": 5,
+  "pos": 6,
   "equipo": "Marseille",
   "escudo": "https://crests.football-data.org/516.png",
   "pj": 11,
@@ -61,19 +74,6 @@
   "p": 5,
   "gf": 24,
   "gc": 17,
-  "pts": 18,
-  "forma": ""
- },
- {
-  "pos": 6,
-  "equipo": "Brest",
-  "escudo": "https://crests.football-data.org/512.png",
-  "pj": 11,
-  "g": 5,
-  "e": 3,
-  "p": 3,
-  "gf": 19,
-  "gc": 12,
   "pts": 18,
   "forma": ""
  },
@@ -158,7 +158,7 @@
  {
   "pos": 13,
   "equipo": "Le Mans",
-  "escudo": "https://crests.football-data.org/535.png",
+  "escudo": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
   "pj": 11,
   "g": 2,
   "e": 5,

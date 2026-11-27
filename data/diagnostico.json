@@ -5,10 +5,7 @@
   "estadisticas": "API-Football"
  },
  "avisos": [
-  "Sin calificacion para Levante o Santander: no registro picks de ese partido.",
-  "Sin calificacion para Nottingham o Chelsea: no registro picks de ese partido.",
-  "Sin calificacion para Venezia FC o Bologna: no registro picks de ese partido.",
-  "Sin calificacion para Bremen o M'gladbach: no registro picks de ese partido."
+  "Sin calificacion para Levante o Santander: no registro picks de ese partido."
  ],
  "errores": []
 }
