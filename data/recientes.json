@@ -448,6 +448,22 @@
   "comp": "PD"
  },
  {
+  "id": 564765,
+  "utc": "2026-11-27T20:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 14,
+  "sede": "",
+  "arbitro": "Miguel Sesma Espinosa",
+  "local": "Levante",
+  "visita": "Santander",
+  "idLocal": 88,
+  "idVisita": 5335,
+  "golesLocal": 1,
+  "golesVisita": 3,
+  "comp": "PD"
+ },
+ {
   "id": 560643,
   "utc": "2026-11-21T12:30:00Z",
   "estado": "FT",
@@ -605,6 +621,22 @@
   "idVisita": 62,
   "golesLocal": 4,
   "golesVisita": 0,
+  "comp": "PL"
+ },
+ {
+  "id": 560658,
+  "utc": "2026-11-27T20:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": "Andy Madley",
+  "local": "Nottingham",
+  "visita": "Chelsea",
+  "idLocal": 351,
+  "idVisita": 61,
+  "golesLocal": 3,
+  "golesVisita": 2,
   "comp": "PL"
  },
  {
@@ -768,6 +800,22 @@
   "comp": "SA"
  },
  {
+  "id": 558515,
+  "utc": "2026-11-27T19:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 13,
+  "sede": "",
+  "arbitro": "Andrea Colombo",
+  "local": "Venezia FC",
+  "visita": "Bologna",
+  "idLocal": 454,
+  "idVisita": 103,
+  "golesLocal": 0,
+  "golesVisita": 0,
+  "comp": "SA"
+ },
+ {
   "id": 565859,
   "utc": "2026-11-20T19:30:00Z",
   "estado": "FT",
@@ -912,6 +960,22 @@
   "comp": "BL1"
  },
  {
+  "id": 565869,
+  "utc": "2026-11-27T19:30:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 11,
+  "sede": "",
+  "arbitro": "Felix Zwayer",
+  "local": "Bremen",
+  "visita": "M'gladbach",
+  "idLocal": 12,
+  "idVisita": 18,
+  "golesLocal": 3,
+  "golesVisita": 3,
+  "comp": "BL1"
+ },
+ {
   "id": 559622,
   "utc": "2026-11-20T19:45:00Z",
   "estado": "FT",
@@ -1053,6 +1117,22 @@
   "idVisita": 535,
   "golesLocal": 2,
   "golesVisita": 3,
+  "comp": "FL1"
+ },
+ {
+  "id": 559616,
+  "utc": "2026-11-27T19:45:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": "Ruddy Buquet",
+  "local": "Brest",
+  "visita": "Paris FC",
+  "idLocal": 512,
+  "idVisita": 1045,
+  "golesLocal": 1,
+  "golesVisita": 0,
   "comp": "FL1"
  }
 ]

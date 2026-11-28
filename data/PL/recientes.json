@@ -158,5 +158,21 @@
   "golesLocal": 4,
   "golesVisita": 0,
   "comp": "PL"
+ },
+ {
+  "id": 560658,
+  "utc": "2026-11-27T20:00:00Z",
+  "estado": "FT",
+  "minuto": null,
+  "jornada": 12,
+  "sede": "",
+  "arbitro": "Andy Madley",
+  "local": "Nottingham",
+  "visita": "Chelsea",
+  "idLocal": 351,
+  "idVisita": 61,
+  "golesLocal": 3,
+  "golesVisita": 2,
+  "comp": "PL"
  }
 ]
